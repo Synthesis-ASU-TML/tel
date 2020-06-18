@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 849.0, 393.0, 181.0, 47.0 ],
-					"presentation_linecount" : 7,
 					"text" : "select which anchor to change before recalling object from media bundle patch"
 				}
 
@@ -58,7 +57,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 688.0, 438.0, 97.0, 22.0 ],
+					"patching_rect" : [ 688.0, 507.0, 97.0, 22.0 ],
 					"text" : "r recallMediaFile"
 				}
 
@@ -1557,21 +1556,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "mb.dict_pak.maxpat",
 				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/media_bundle",
-				"patcherrelativepath" : "../GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/media_bundle",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.paintunpack.maxpat",
 				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/media_bundle",
-				"patcherrelativepath" : "../GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/media_bundle",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.planeunpack.maxpat",
 				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/media_bundle",
-				"patcherrelativepath" : "../GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/media_bundle",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
