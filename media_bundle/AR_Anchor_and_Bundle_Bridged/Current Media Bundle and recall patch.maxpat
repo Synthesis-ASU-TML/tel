@@ -1213,7 +1213,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-36",
-					"items" : [ "Bundle1", ",", "bundle 2" ],
+					"items" : [ "Bundle1", ",", "ok" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1894,7 +1894,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-1",
-													"linecount" : 28,
+													"linecount" : 2,
 													"maxclass" : "textedit",
 													"numinlets" : 1,
 													"numoutlets" : 4,
@@ -1902,9 +1902,8 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 430.0, 112.0, 100.0, 50.0 ],
 													"presentation" : 1,
-													"presentation_linecount" : 8,
 													"presentation_rect" : [ 0.0, 0.0, 640.0, 481.0 ],
-													"text" : "I am going to type a long passage of complicated text and hope this works...\n\n\nin the beginning god created the forth right interference campaign to allow the proclimation tt america was getting stupider which is true as you can see because I can't type when I cant see and thats just the way it is and some things will never change\n\n:)"
+													"text" : "oh hmmmm interesting"
 												}
 
 											}
