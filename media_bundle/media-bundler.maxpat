@@ -45,7 +45,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 318.0, 277.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 247.0, 231.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 247.0, 229.0, 86.0, 20.0 ],
 					"text" : "which anchor?"
 				}
 
@@ -111,9 +111,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 532.5, 77.5, 20.5, 146.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.75000536441803, 172.25, 20.5, 146.0 ],
+					"presentation_rect" : [ 217.75000536441803, 170.25, 20.5, 146.0 ],
 					"size" : 9,
-					"value" : 0
+					"value" : -1
 				}
 
 			}
@@ -200,7 +200,7 @@
 					"patching_rect" : [ 234.666677415371623, 1086.0, 151.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 216.00000536441803, 144.5, 236.0, 22.0 ],
-					"text" : "\"Andrew Motion.aif\""
+					"text" : "0"
 				}
 
 			}
@@ -1269,7 +1269,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-36",
-					"items" : [ "Bundle1", ",", "bundle 2" ],
+					"items" : "Bundle1",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1957,8 +1957,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 430.0, 112.0, 100.0, 50.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 0.0, 0.0, 640.0, 481.0 ],
-													"text" : "yes it does yes?"
+													"presentation_rect" : [ 0.0, 0.0, 640.0, 481.0 ]
 												}
 
 											}
