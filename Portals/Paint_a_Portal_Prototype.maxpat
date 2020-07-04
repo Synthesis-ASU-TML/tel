@@ -117,12 +117,12 @@
 					"presentation_rect" : [ 324.0, 50.0, 152.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.tab",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "Syphoner", "Desktop" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_longname" : "live.tab"
 						}
 
 					}
@@ -244,11 +244,11 @@
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 274.0, 1050.0, 105.0, 22.0 ],
-					"text" : "jit.gl.syphonserver"
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 274.0, 1050.0, 100.0, 22.0 ],
+					"text" : "jit.gl.syphonclient"
 				}
 
 			}
@@ -836,7 +836,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 629.0, 940.0, 160.0, 22.0 ],
-					"text" : "position -1.01 1.66"
+					"text" : "position -1.01 1.27"
 				}
 
 			}
@@ -1442,11 +1442,11 @@
 					"presentation_rect" : [ 324.0, 3.0, 152.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "live.text"
 						}
 
 					}
@@ -2369,8 +2369,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-99" : [ "live.tab", "live.tab", 0 ],
+			"obj-2" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2378,11 +2378,11 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "jit.+.mxo",
+				"name" : "jit.>.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jit.gl.syphonserver.mxo",
+				"name" : "jit.gl.syphonclient.mxo",
 				"type" : "iLaX"
 			}
  ],
