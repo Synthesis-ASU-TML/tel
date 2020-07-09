@@ -39,13 +39,65 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 476.0, 96.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 476.0, 94.0, 19.0, 20.0 ],
+					"text" : "4."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 487.0, 61.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 476.0, 61.0, 19.0, 20.0 ],
+					"text" : "3."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 720.0, 26.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 613.0, 26.0, 19.0, 20.0 ],
+					"text" : "2."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 512.0, 3.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 478.0, 3.0, 19.0, 20.0 ],
+					"text" : "1."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 893.25, 1074.0, 240.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 212.0, 240.0, 20.0 ],
+					"presentation_rect" : [ 324.0, 168.0, 240.0, 20.0 ],
 					"text" : "jit.World window should be sent to projector"
 				}
 
@@ -60,7 +112,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 481.0, 343.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 116.0, 152.0, 20.0 ],
+					"presentation_rect" : [ 324.0, 146.0, 152.0, 20.0 ],
 					"text" : "Reset"
 				}
 
@@ -85,7 +137,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 263.25, 940.0, 111.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 478.0, 61.0, 111.0, 20.0 ],
+					"presentation_rect" : [ 490.0, 61.0, 111.0, 20.0 ],
 					"text" : "Grab Video Stream"
 				}
 
@@ -117,12 +169,12 @@
 					"presentation_rect" : [ 324.0, 50.0, 152.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.tab",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "Syphoner", "Desktop" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab"
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -289,7 +341,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 115.75, 458.0, 89.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 613.0, 26.0, 89.0, 20.0 ],
+					"presentation_rect" : [ 627.0, 26.0, 89.0, 20.0 ],
 					"text" : "turn on camera"
 				}
 
@@ -836,7 +888,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 629.0, 940.0, 160.0, 22.0 ],
-					"text" : "position -1.01 1.27"
+					"text" : "position -0.25 0.25"
 				}
 
 			}
@@ -1442,11 +1494,11 @@
 					"presentation_rect" : [ 324.0, 3.0, 152.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "live.text"
+							"parameter_type" : 2
 						}
 
 					}
@@ -1464,8 +1516,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 19.0, 34.0, 352.0, 22.0 ],
-					"text" : "jit.world @floating 1 @fsaa 1 @fsmenubar 0 @erase_color 0 0 0"
+					"patching_rect" : [ 19.0, 34.0, 413.0, 22.0 ],
+					"text" : "jit.world toProjector @floating 1 @fsaa 1 @fsmenubar 0 @erase_color 0 0 0"
 				}
 
 			}
@@ -1542,7 +1594,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 195.0, 59.0, 194.5, 59.0 ],
+					"midpoints" : [ 225.5, 59.0, 194.5, 59.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -2369,8 +2421,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-99" : [ "live.tab", "live.tab", 0 ],
 			"obj-2" : [ "live.text", "live.text", 0 ],
+			"obj-99" : [ "live.tab", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2378,7 +2430,11 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "jit.>.mxo",
+				"name" : "jit.+.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.*.mxo",
 				"type" : "iLaX"
 			}
 , 			{
