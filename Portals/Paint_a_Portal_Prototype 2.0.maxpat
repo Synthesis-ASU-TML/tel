@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1314.0, 56.0, 1852.0, 990.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,14 +39,89 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-81",
+					"id" : "obj-102",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 82.25, 682.0, 45.0, 22.0 ],
+					"text" : "jit.grab"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 82.25, 718.0, 251.0, 22.0 ],
+					"text" : "jit.gl.videoplane Webcam @transform_reset 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "" ],
+					"patching_rect" : [ 19.0, 65.0, 403.0, 22.0 ],
+					"text" : "jit.world Webcam @floating 1 @fsaa 1 @fsmenubar 0 @erase_color 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 893.25, 1074.0, 240.0, 20.0 ],
+					"patching_rect" : [ 476.0, 96.0, 89.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 212.0, 240.0, 20.0 ],
-					"text" : "jit.World window should be sent to projector"
+					"presentation_rect" : [ 476.0, 100.0, 19.0, 20.0 ],
+					"text" : "4."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-85",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 487.0, 61.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 476.0, 61.0, 19.0, 20.0 ],
+					"text" : "3."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 720.0, 26.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 613.0, 26.0, 19.0, 20.0 ],
+					"text" : "2."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 512.0, 3.0, 89.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 478.0, 3.0, 19.0, 20.0 ],
+					"text" : "1."
 				}
 
 			}
@@ -60,7 +135,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 481.0, 343.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 116.0, 152.0, 20.0 ],
+					"presentation_rect" : [ 324.0, 146.0, 152.0, 20.0 ],
 					"text" : "Reset"
 				}
 
@@ -85,7 +160,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 263.25, 940.0, 111.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 478.0, 61.0, 111.0, 20.0 ],
+					"presentation_rect" : [ 490.0, 61.0, 111.0, 20.0 ],
 					"text" : "Grab Video Stream"
 				}
 
@@ -117,12 +192,12 @@
 					"presentation_rect" : [ 324.0, 50.0, 152.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.tab",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "Syphoner", "Desktop" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab"
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -261,7 +336,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 173.75, 484.0, 37.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 361.0, 26.0, 37.0, 22.0 ],
+					"presentation_rect" : [ 573.0, 26.0, 37.0, 22.0 ],
 					"text" : "close"
 				}
 
@@ -276,7 +351,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 353.5, 189.0, 152.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 94.0, 152.0, 20.0 ],
+					"presentation_rect" : [ 324.0, 100.0, 152.0, 20.0 ],
 					"text" : "paint a portal in pwindow"
 				}
 
@@ -289,7 +364,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 115.75, 458.0, 89.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 613.0, 26.0, 89.0, 20.0 ],
+					"presentation_rect" : [ 627.0, 26.0, 89.0, 20.0 ],
 					"text" : "turn on camera"
 				}
 
@@ -297,15 +372,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"linecount" : 2,
+					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 353.5, 228.0, 276.0, 33.0 ],
+					"patching_rect" : [ 353.5, 228.0, 276.0, 234.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 2.0, 256.0, 320.0, 33.0 ],
-					"text" : "field of view of camera is larger than my projector. Lines up better towards center than edges"
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 2.0, 250.0, 320.0, 221.0 ],
+					"text" : "Version 2.0\n\n1. The Paint Portal Pwindow is setup to be the laptop webcam.\n\n2. The Projector should be setup behind the latop and onto the same field of vision of the laptop webcam\n\n3. The External webcam is meant to be setup underneath the projected portal. You can look at them directly to talk to them. \n\n\nIdeally the setup is mirrored on the other side and streams the other person's videofeed so each person can look through the portal."
 				}
 
 			}
@@ -330,7 +405,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.0, 517.0, 65.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 546.0, 26.0, 65.0, 22.0 ],
+					"presentation_rect" : [ 324.0, 26.0, 65.0, 22.0 ],
 					"text" : "getvdevlist"
 				}
 
@@ -634,7 +709,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
-					"items" : [ "FaceTime HD Camera", ",", "CamTwist", ",", "CamTwist (2VUY)" ],
+					"items" : [ "FaceTime HD Camera", ",", "Microsoft® LifeCam Cinema(TM) #2", ",", "CamTwist (2VUY)", ",", "CamTwist" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -642,7 +717,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 14.0, 605.5, 145.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 400.0, 26.0, 145.0, 22.0 ]
+					"presentation_rect" : [ 390.0, 26.0, 145.0, 22.0 ]
 				}
 
 			}
@@ -836,7 +911,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 629.0, 940.0, 160.0, 22.0 ],
-					"text" : "position -1.01 1.27"
+					"text" : "position -0.49 -0.11"
 				}
 
 			}
@@ -1075,8 +1150,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 588.25, 1110.0, 545.0, 22.0 ],
-					"text" : "jit.gl.videoplane @transform_reset 2 @depth_enable 0 @layer 1 @blend_enable 1 @scale 0.25 0.25"
+					"patching_rect" : [ 588.25, 1110.0, 606.0, 22.0 ],
+					"text" : "jit.gl.videoplane toProjector @transform_reset 2 @depth_enable 0 @layer 1 @blend_enable 1 @scale 0.25 0.25"
 				}
 
 			}
@@ -1267,8 +1342,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 109.25, 887.0, 448.0, 22.0 ],
-					"text" : "jit.gl.videoplane @transform_reset 2 @depth_enable 0 @layer 0 @blend_enable 1"
+					"patching_rect" : [ 34.0, 891.0, 510.0, 22.0 ],
+					"text" : "jit.gl.videoplane toProjector @transform_reset 2 @depth_enable 0 @layer 0 @blend_enable 1"
 				}
 
 			}
@@ -1424,7 +1499,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 185.0, 60.0, 53.0, 22.0 ],
+					"patching_rect" : [ 434.0, 34.0, 53.0, 22.0 ],
 					"text" : "s render"
 				}
 
@@ -1442,11 +1517,11 @@
 					"presentation_rect" : [ 324.0, 3.0, 152.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "live.text"
+							"parameter_type" : 2
 						}
 
 					}
@@ -1464,8 +1539,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 19.0, 34.0, 352.0, 22.0 ],
-					"text" : "jit.world @floating 1 @fsaa 1 @fsmenubar 0 @erase_color 0 0 0"
+					"patching_rect" : [ 19.0, 34.0, 413.0, 22.0 ],
+					"text" : "jit.world toProjector @floating 1 @fsaa 1 @fsmenubar 0 @erase_color 0 0 0"
 				}
 
 			}
@@ -1478,7 +1553,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 126.5, 484.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 26.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 537.0, 26.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -1542,7 +1617,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 195.0, 59.0, 194.5, 59.0 ],
+					"midpoints" : [ 225.5, 59.0, 443.5, 59.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -1592,6 +1667,20 @@
 					"destination" : [ "obj-25", 0 ],
 					"order" : 0,
 					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-102", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-102", 0 ]
 				}
 
 			}
@@ -1677,14 +1766,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-20", 1 ]
+					"destination" : [ "obj-92", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1704,7 +1795,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -1809,7 +1909,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-102", 0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -1953,14 +2053,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
+					"destination" : [ "obj-102", 0 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"order" : 1,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -2369,8 +2478,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-99" : [ "live.tab", "live.tab", 0 ],
 			"obj-2" : [ "live.text", "live.text", 0 ],
+			"obj-99" : [ "live.tab", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2378,7 +2487,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "jit.>.mxo",
+				"name" : "jit.+.mxo",
 				"type" : "iLaX"
 			}
 , 			{
