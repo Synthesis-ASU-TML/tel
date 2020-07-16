@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 162.0, 1429.0, 79.0, 22.0 ],
+					"text" : "loadmess set"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-226",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -83,7 +95,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 674.999997317790985, 1521.0, 217.0, 60.0 ],
-					"presentation_linecount" : 4,
 					"text" : "<-- don't get this object well. Was thinking there'd be a way to strip .txt and read the actual text back into a text viewer"
 				}
 
@@ -97,7 +108,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 652.75, 1592.0, 50.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : "\"more text.txt\""
 				}
 
@@ -642,7 +652,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 267.061412990093231, 1684.0, 45.0, 45.0 ]
+					"patching_rect" : [ 184.561412990093231, 1592.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -653,9 +663,12 @@
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
 					"numoutlets" : 5,
+					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 267.061412990093231, 1538.0, 48.0, 136.0 ],
+					"patching_rect" : [ 184.561412990093231, 1538.0, 136.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 310.957835555076599, 858.333331763744354, 216.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_type" : 0,
@@ -663,7 +676,7 @@
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_shortname" : "live.gain~"
+							"parameter_shortname" : "Volume"
 						}
 
 					}
@@ -932,7 +945,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 328.894746323426546, 1538.0, 156.0, 115.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 306.457827508449554, 695.333331763744354, 216.0, 167.0 ]
+					"presentation_rect" : [ 306.457827508449554, 690.333331763744354, 220.500008046627045, 167.0 ]
 				}
 
 			}
@@ -1267,7 +1280,7 @@
 					"patching_rect" : [ 1344.542356491088867, 1701.389753639698029, 150.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 35.029411341462037, 901.92264586687088, 233.848797619342804, 47.0 ],
+					"presentation_rect" : [ 35.029411341462037, 918.92264586687088, 233.848797619342804, 47.0 ],
 					"text" : "Andrew Robinson\nGarrett Johnson\nSynthesis @ ASU // Summer 2020"
 				}
 
@@ -1891,8 +1904,7 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 430.0, 112.0, 100.0, 50.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 640.0, 481.0 ],
-																	"text" : "more text"
+																	"presentation_rect" : [ 0.0, 0.0, 640.0, 481.0 ]
 																}
 
 															}
@@ -4955,13 +4967,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-150",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 941.0, 679.350896775722504, 50.0, 62.0 ],
-					"text" : "set \"Newest Bundle\""
+					"patching_rect" : [ 941.0, 679.350896775722504, 50.0, 35.0 ],
+					"text" : "set Bundle"
 				}
 
 			}
@@ -5398,13 +5410,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-108",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1278.842103004455566, 916.350896775722504, 63.0, 35.0 ],
-					"text" : "\"Newest Bundle\""
+					"patching_rect" : [ 1278.842103004455566, 916.350896775722504, 63.0, 22.0 ],
+					"text" : "Bundle"
 				}
 
 			}
@@ -5578,15 +5589,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-92",
-					"linecount" : 3,
+					"linecount" : 11,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.730899393558502, 1388.447367787361145, 41.0, 49.0 ],
+					"patching_rect" : [ 227.730899393558502, 1388.447367787361145, 41.0, 156.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 345.457827508449554, 663.371575385332108, 176.500013411045074, 22.0 ],
-					"text" : "IMG_2733.mov"
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 345.457827508449554, 663.371575385332108, 181.500008046627045, 49.0 ],
+					"text" : "\"Best Cardinal Bird-SoundBible.com-1171415022.wav\""
 				}
 
 			}
@@ -6627,7 +6639,7 @@
 					"bgfillcolor_type" : "color",
 					"fontface" : 1,
 					"id" : "obj-36",
-					"items" : "<empty>",
+					"items" : "Bundle",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7465,7 +7477,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 197.724324192318818, 121.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 543.529644072055817, 159.143024682998657, 255.601681649684906, 730.576239824295044 ],
+					"presentation_rect" : [ 543.529644072055817, 159.143024682998657, 255.601681649684906, 749.576239824295044 ],
 					"proportion" : 0.5
 				}
 
@@ -7484,7 +7496,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.710524141788483, 889.508792817592621, 858.513070195913315, 916.329495025135088 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 35.029411341462037, 159.143024682998657, 257.296596825122833, 730.576239824295044 ],
+					"presentation_rect" : [ 35.029411341462037, 159.143024682998657, 257.296596825122833, 749.576239824295044 ],
 					"proportion" : 0.5
 				}
 
@@ -7503,7 +7515,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 831.728791534901347, 33.635601222515106, 297.123560845851898, 170.864396929740906 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 299.38157731294632, 159.143024682998657, 238.652529895305634, 730.576239824295044 ],
+					"presentation_rect" : [ 299.38157731294632, 159.143024682998657, 238.652529895305634, 749.576239824295044 ],
 					"proportion" : 0.5
 				}
 
@@ -7688,6 +7700,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-73", 0 ],
 					"source" : [ "obj-119", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -8954,7 +8973,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-192" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-192" : [ "live.gain~", "Volume", 0 ],
 			"parameterbanks" : 			{
 
 			}
