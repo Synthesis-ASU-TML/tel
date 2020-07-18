@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 579.0, 251.0, 1539.0, 960.0 ],
+		"rect" : [ 557.0, 409.0, 730.0, 824.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -210,7 +210,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-15",
@@ -220,7 +219,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 350.0, 103.0, 50.0, 50.0 ],
-									"text" : "533 663 665"
+									"text" : "533 663 694"
 								}
 
 							}
@@ -679,15 +678,15 @@
 				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-40",
-					"linecount" : 17,
+					"linecount" : 18,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 300.0, 250.0, 154.0, 245.0 ],
+					"patching_rect" : [ 300.0, 250.0, 157.0, 259.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 17,
-					"presentation_rect" : [ 276.0, 172.0, 154.0, 245.0 ],
-					"text" : "1. this module grabs the desired camera feed here.  (epoccam etc. for cell phone, webcam, kinect) to CamTwist (MacOS) or SplitCam (Windows). \n\nAccess that camera stream here under devices. \n\n\n\n(reacTIVision should also grab the CamTwist or SplitCam stream.)"
+					"presentation_linecount" : 18,
+					"presentation_rect" : [ 276.0, 172.0, 157.0, 259.0 ],
+					"text" : "1. this module grabs the desired camera feed here.  (epoccam etc. for cell phone, webcam, kinect) to CamTwist (MacOS) or SplitCam (Windows). \n\nAccess that camera stream here under devices. Click open to get the party started.\n\n\n\n(reacTIVision should also grab the CamTwist or SplitCam stream.)"
 				}
 
 			}
@@ -708,7 +707,7 @@
 					}
 ,
 					"text" : "pattrstorage @greedy 1",
-					"varname" : "u915000624"
+					"varname" : "u311001281"
 				}
 
 			}
