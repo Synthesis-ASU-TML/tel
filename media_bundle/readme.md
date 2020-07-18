@@ -18,3 +18,7 @@ Unfortunately there's a lot to download and set up to get running smoothly. No w
 
 -epochCamera
 --if you want to use a cell phone / web phone as a desktop / wall camera device I recommend <a href = "https://www.kinoni.com/support-and-instructions/">EpocCam from Kinoni</a>.
+
+## Setup
+
+Get all that shiz running and follow instructions in Max patches. Download this repo, and open BOTH media-bundler.maxpat and anchor-grabber.maxpat. Ask Garrett questions and he will make many things more CLEAR in this process.
