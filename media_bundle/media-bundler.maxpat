@@ -150,12 +150,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-242",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 516.561412990093231, 1545.0, 96.0, 22.0 ],
-					"text" : "\"ok text now\""
+					"patching_rect" : [ 516.561412990093231, 1545.0, 96.0, 35.0 ],
+					"text" : "\"and this is my text\""
 				}
 
 			}
@@ -562,7 +563,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 275519.999999999941792, "ticks" ],
+						"originallength" : [ 3007.499319727890452, "ticks" ],
 						"originaltempo" : 119.999999999999972,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -2201,6 +2202,7 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-1",
+																	"linecount" : 2,
 																	"maxclass" : "textedit",
 																	"numinlets" : 1,
 																	"numoutlets" : 4,
@@ -2209,7 +2211,7 @@
 																	"patching_rect" : [ 430.0, 112.0, 100.0, 50.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 0.0, 0.0, 640.0, 481.0 ],
-																	"text" : "ok text now\n"
+																	"text" : "and this is my text"
 																}
 
 															}
@@ -5272,12 +5274,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-150",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 941.0, 679.350896775722504, 50.0, 22.0 ],
-					"text" : "set ok"
+					"patching_rect" : [ 941.0, 679.350896775722504, 50.0, 49.0 ],
+					"text" : "set Presentation"
 				}
 
 			}
@@ -5683,7 +5686,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1148.921051502227783, 920.929844677448273, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -5714,12 +5717,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-108",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1278.842103004455566, 916.350896775722504, 63.0, 22.0 ],
-					"text" : "ok"
+					"patching_rect" : [ 1278.842103004455566, 916.350896775722504, 63.0, 35.0 ],
+					"text" : "Presentation"
 				}
 
 			}
@@ -6941,7 +6945,7 @@
 					"bgfillcolor_type" : "color",
 					"fontface" : 1,
 					"id" : "obj-36",
-					"items" : [ "Alright", ",", "ok" ],
+					"items" : [ "Presentation", ",", "cool" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,

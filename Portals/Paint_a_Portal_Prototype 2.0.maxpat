@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.92 ],
+					"fontface" : 1,
+					"fontsize" : 14.0,
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 815.75, 102.0, 270.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 2.0, 247.0, 323.0, 22.0 ],
+					"text" : "Laptop & Projector Setup Instructions: ",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -105,7 +122,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 583.0, 46.0, 19.0, 20.0 ],
+					"patching_rect" : [ 1115.0, 124.0, 19.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.0, 139.5, 19.0, 20.0 ],
 					"text" : "3."
@@ -120,7 +137,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 583.0, 24.0, 19.0, 20.0 ],
+					"patching_rect" : [ 1115.0, 102.0, 19.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.0, 73.0, 19.0, 20.0 ],
 					"text" : "2."
@@ -135,7 +152,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 583.0, 2.0, 19.0, 20.0 ],
+					"patching_rect" : [ 1115.0, 80.0, 19.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.0, 3.0, 19.0, 20.0 ],
 					"text" : "1."
@@ -152,7 +169,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 284.0, 407.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 205.0, 69.0, 20.0 ],
+					"presentation_rect" : [ 375.0, 188.0, 69.0, 20.0 ],
 					"text" : "Reset",
 					"textoncolor" : [ 0.847058823529412, 0.0, 0.0, 1.0 ]
 				}
@@ -210,12 +227,12 @@
 					"presentation_rect" : [ 324.0, 62.0, 171.0, 42.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "Syphoner", "Desktop" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.tab",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.tab"
+							"parameter_mmax" : 1
 						}
 
 					}
@@ -393,15 +410,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.92 ],
 					"id" : "obj-39",
 					"linecount" : 21,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 822.0, 133.0, 276.0, 288.0 ],
+					"patching_rect" : [ 822.0, 133.0, 279.0, 288.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 19,
-					"presentation_rect" : [ 2.0, 245.0, 320.0, 261.0 ],
+					"presentation_rect" : [ 2.0, 271.0, 323.0, 261.0 ],
 					"text" : "\n1. The window above is your laptop webcam and drawing plane. The floating window is meant to be dragged over to the projector and set to fullscreen (do not have mirror display on in your computer's display system prefrences!)\n\n2. With the Webcam open, set the latop underneath your projector within the same field of view to get a rough estimate of where your portal will be placed. Click and drag in the above window to draw out the location and size of your portal.\n\n3. The External webcam is meant to be the other person's view into your space. Set it up underneath the space of the projected portal and select it to be your camera in the external video chat software so you can look and talk directly to them embedded into your physical space. other extra equipment such as a microphone or speakers can be placed in the same general area."
 				}
 
@@ -596,7 +614,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 629.0, 940.0, 160.0, 22.0 ],
-					"text" : "position -1.01 1.52"
+					"text" : "position -1.01 1.85"
 				}
 
 			}
@@ -1070,11 +1088,11 @@
 					"presentation_rect" : [ 324.0, 3.0, 171.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_mmax" : 1
 						}
 
 					}
