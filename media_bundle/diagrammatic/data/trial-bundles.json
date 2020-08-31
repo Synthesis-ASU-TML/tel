@@ -1,5 +1,4 @@
 {
-	"bundlename" : "*",
 	"taco" : 	{
 		"limes" : 		{
 			"datatype" : "image",
@@ -7,7 +6,8 @@
 			"matrixtype" : "char",
 			"dim" : [ 2500, 1667 ],
 			"extension" : "jpg",
-			"filename" : "1520956952-chicken-tacos-horizontal.jpg"
+			"filename" : "1520956952-chicken-tacos-horizontal.jpg",
+			"scale" : 46
 		}
 ,
 		"topology" : 		{
@@ -36,6 +36,10 @@
 			"extension" : "jpg",
 			"filename" : "tacospread.jpg"
 		}
+,
+		"" : 		{
+			"scale" : 0
+		}
 
 	}
 ,
@@ -46,7 +50,8 @@
 			"matrixtype" : "char",
 			"dim" : [ 275, 183 ],
 			"extension" : "jpg",
-			"filename" : "beefyboi.jpg"
+			"filename" : "beefyboi.jpg",
+			"scale" : 35
 		}
 ,
 		"brecky" : 		{
@@ -64,7 +69,17 @@
 			"matrixtype" : "char",
 			"dim" : [ 259, 194 ],
 			"extension" : "jpg",
-			"filename" : "chuys.jpg"
+			"filename" : "chuys.jpg",
+			"scale" : 33
+		}
+,
+		"limes" : 		{
+			"scale" : 46
+		}
+,
+		"" : 		{
+			"region" : 0,
+			"scale" : 33
 		}
 
 	}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1092.0, 133.0, 927.0, 1280.0 ],
+		"rect" : [ -423.0, 174.0, 1954.0, 1121.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"linecount" : 49,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 821.0, 409.0, 150.0, 683.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 34,
+					"presentation_rect" : [ 740.0, 200.0, 418.0, 476.0 ],
+					"text" : "To do: \n\nchange image size (done)\nsave resize transformation with media bundle (done)\n\ntransparent images / images with no background opacity\n\njit.gl.videoplane @blendenable 1\n\nvariable resolution-- control 320 240 --- HD))\n\nadd and subtract anchor button (needs work)\n\nmodulate opacity (jit.op functionality)\n\naffect framing (masking) \n\n\nThe Legend Space >>>>>\n\n\n\n\n\n\n\ngeometry module --> bounding etc. (in or out, effects media bundler objects in various ways)\n\nlines between media objects\n\nconnectiosn between objects, relationships between objects\n(physics conversation of information, a determinate system can only have one arrow in and one arrow out"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "newobj",
@@ -237,13 +252,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 705.0, 351.0, 179.5, 50.0 ],
-									"text" : "76 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120"
+									"patching_rect" : [ 705.0, 351.0, 193.5, 50.0 ],
+									"text" : "770 771 772 773 774 775 776 777 778 779 780 781 782 783 784 785 786 787 788"
 								}
 
 							}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 696.0, 684.0, 1687.0, 1007.0 ],
+		"rect" : [ 983.0, 237.0, 1687.0, 1007.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1245.0, 930.0, 50.0, 22.0 ],
-					"text" : "28"
+					"text" : "27"
 				}
 
 			}
@@ -59,7 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 750.0, 1155.0, 50.0, 50.0 ],
-					"text" : "scale 0.28 0.28"
+					"text" : "scale 0.27 0.27"
 				}
 
 			}
@@ -138,13 +138,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-115",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 288.0, 52.0, 36.0 ],
-					"text" : "\"0\" \"91\" \"90\""
+					"patching_rect" : [ 390.0, 288.0, 52.0, 50.0 ],
+					"text" : "\"8\" \"7\" \"6\" \"5\" \"51\""
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 360.0, 378.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "8"
 				}
 
 			}
@@ -169,7 +169,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 102.0, 705.0, 50.0, 36.0 ],
-					"text" : "0::index 156"
+					"text" : "8::index 23"
 				}
 
 			}
@@ -206,7 +206,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 465.0, 930.0, 50.0, 22.0 ],
-					"text" : "156"
+					"text" : "23"
 				}
 
 			}
@@ -225,13 +225,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-97",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 435.0, 138.0, 52.0, 36.0 ],
-					"text" : "\"0\" \"91\" \"90\""
+					"patching_rect" : [ 435.0, 138.0, 52.0, 50.0 ],
+					"text" : "\"8\" \"7\" \"6\" \"5\" \"51\""
 				}
 
 			}
@@ -549,7 +549,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 144.0, 580.0, 296.0, 22.0 ],
-					"text" : "get 0::x, get 0::y, get 0::theta, get 0::index"
+					"text" : "get 8::x, get 8::y, get 8::theta, get 8::index"
 				}
 
 			}
@@ -745,7 +745,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-44",
-					"items" : [ 0, ",", 91, ",", 90 ],
+					"items" : [ 8, ",", 7, ",", 6, ",", 5, ",", 51 ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -858,7 +858,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-109",
-					"items" : [ "limes", ",", "topology", ",", "onions", ",", "verde", ",", "" ],
+					"items" : [ "blank", ",", "" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1393,15 +1393,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-92",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 823.666677415372305, 879.0, 71.0, 64.0 ],
+					"patching_rect" : [ 823.666677415372305, 879.0, 71.0, 36.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.00000536441803, 144.5, 236.0, 22.0 ],
-					"text" : "1520956952-chicken-tacos-horizontal.jpg"
+					"text" : "logo-finished.png"
 				}
 
 			}
@@ -1505,7 +1505,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"items" : [ "taco", ",", "burrito", ",", "pizza" ],
+					"items" : "blank",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1552,6 +1552,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 3.0, 284.0, 379.0 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "depth_enable",
+					"id" : "obj-8",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 316.0, 1125.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -2419,6 +2431,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
