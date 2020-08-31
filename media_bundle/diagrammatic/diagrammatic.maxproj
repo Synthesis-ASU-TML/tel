@@ -2,8 +2,8 @@
 	"name" : "diagrammatic",
 	"version" : 1,
 	"creationdate" : 3677920945,
-	"modificationdate" : 3677921010,
-	"viewrect" : [ 25.0, 107.0, 300.0, 500.0 ],
+	"modificationdate" : 3681729082,
+	"viewrect" : [ 741.0, 195.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -18,8 +18,12 @@
 ,
 			"media-bundler.maxpat" : 			{
 				"kind" : "patcher",
-				"toplevel" : 1
+				"local" : 1
 			}
+
+		}
+,
+		"media" : 		{
 
 		}
 ,
