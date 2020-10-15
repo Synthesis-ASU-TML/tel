@@ -38,7 +38,7 @@ void setup() {
   Serial.println(chipname);
   SerialBT.println(chipname);
   M5.Lcd.setCursor(8*4, 8*3);
-  M5.Lcd.printf("%s", "Ed's Bluetooth Demo");
+  M5.Lcd.printf("%s", "Synthesis Center");
 }
 
 void loop() {
