@@ -6,7 +6,7 @@ Unfortunately there's a lot to download and set up to get running smoothly. No w
 --Download <a href = "https://cycling74.com/downloads">Max 8</a>. Make sure your license is up-to-date.
 --You will need to install the <a href = "https://github.com/Synthesis-ASU-TML/SC">SC repo from Synthesis Center's GitHub</a> (in addition to this one). Follow the instructions on the page to install correctly.
 
-<img href = "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/01_1200x1200.jpg?v=1587104211">
+<img src= "https://cdn.shopify.com/s/files/1/0056/7689/2250/products/01_1200x1200.jpg?v=1587104211">
 
 -reacTIVision
 --Download this program called <a href = "http://reactivision.sourceforge.net/">reacTIVISION</a> that takes camera feed and looks for markers. Print some markers. Launch it and try it out. After you get it working and calibrated, it's easy to launch. 
