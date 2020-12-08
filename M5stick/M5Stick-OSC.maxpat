@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 529.0, 416.0, 1263.0, 620.0 ],
+		"rect" : [ 1130.0, 918.0, 1322.0, 474.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -16944,7 +16944,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 675.0, 808.0, 1477.0, 648.0 ],
+						"rect" : [ 140.0, 498.0, 1218.0, 771.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -16972,7 +16972,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -18935,7 +18934,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 469.0, 79.0, 772.0, 480.0 ],
+										"rect" : [ 469.0, 85.0, 772.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -18964,6 +18963,18 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-8",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 251.0, 429.0, 267.0, 22.0 ],
+													"text" : "/sscape/t2/speed 0.186369"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-5",
 													"maxclass" : "newobj",
@@ -19082,7 +19093,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 48.0, 50.0, 22.0 ],
-													"text" : "1 1 1"
+													"text" : "1 1 0"
 												}
 
 											}
@@ -19457,6 +19468,15 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-71", 0 ],
+													"order" : 1,
+													"source" : [ "obj-111", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-8", 1 ],
+													"order" : 0,
 													"source" : [ "obj-111", 0 ]
 												}
 
@@ -20155,6 +20175,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hidden" : 1,
 									"id" : "obj-152",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -20168,6 +20189,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hidden" : 1,
 									"id" : "obj-153",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -20181,6 +20203,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hidden" : 1,
 									"id" : "obj-154",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -20195,6 +20218,7 @@
 , 							{
 								"box" : 								{
 									"columns" : 3,
+									"hidden" : 1,
 									"id" : "obj-155",
 									"maxclass" : "matrixctrl",
 									"numinlets" : 1,
@@ -20262,8 +20286,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 347.0, 380.0, 211.0, 22.0 ],
-													"text" : "/sscape/t1/speed -1.663109"
+													"patching_rect" : [ 219.0, 417.0, 211.0, 22.0 ],
+													"text" : "/sscape/t1/speed 1.072394"
 												}
 
 											}
@@ -20386,7 +20410,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 219.0, 48.0, 50.0, 22.0 ],
-													"text" : "0 0 1"
+													"text" : "0 1 1"
 												}
 
 											}
@@ -21255,6 +21279,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hidden" : 1,
 									"id" : "obj-83",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -21268,6 +21293,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hidden" : 1,
 									"id" : "obj-82",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -21281,6 +21307,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hidden" : 1,
 									"id" : "obj-76",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -21295,6 +21322,7 @@
 , 							{
 								"box" : 								{
 									"columns" : 3,
+									"hidden" : 1,
 									"id" : "obj-73",
 									"maxclass" : "matrixctrl",
 									"numinlets" : 1,
