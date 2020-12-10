@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 1314.0, 56.0, 1852.0, 990.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -3678,6 +3678,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "jit.-.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "jit.<.mxo",
 				"type" : "iLaX"
 			}
@@ -3694,8 +3698,8 @@
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
