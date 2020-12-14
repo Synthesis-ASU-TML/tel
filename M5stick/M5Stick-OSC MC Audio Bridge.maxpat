@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 657.0, 196.0 ],
+		"rect" : [ 1314.0, 56.0, 1852.0, 990.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -5849,7 +5849,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 431.5, 411.5, 107.0, 33.0 ],
+					"patching_rect" : [ 754.5, 411.5, 107.0, 33.0 ],
 					"text" : "Change up and down"
 				}
 
@@ -6019,8 +6019,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 750.0, 415.5, 107.0, 33.0 ],
-					"text" : "Change Left to right"
+					"patching_rect" : [ 427.0, 411.5, 107.0, 33.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Change top to bottom"
 				}
 
 			}
@@ -6031,8 +6032,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 587.5, 415.5, 107.0, 33.0 ],
-					"text" : "Change up and down"
+					"patching_rect" : [ 584.5, 411.5, 107.0, 33.0 ],
+					"text" : "Change left and right"
 				}
 
 			}
@@ -16928,7 +16929,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 675.0, 808.0, 1477.0, 648.0 ],
+						"rect" : [ 1781.0, 260.0, 1477.0, 648.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -16955,7 +16956,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
