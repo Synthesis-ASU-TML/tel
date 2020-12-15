@@ -24,8 +24,8 @@
 
 ////////// User Variables //////////////////////////////////////////////////
 // Be sure to set these for your own WiFi network
-const char * networkName = "EnterNetworkNameHere";
-const char * networkPswd = "EnterNetworkPasswordHere";
+const char * networkName = "TheSunroom";
+const char * networkPswd = "lotsofZanyfun744";
 
 
 int nonTurboRefreshDelay = 40;
