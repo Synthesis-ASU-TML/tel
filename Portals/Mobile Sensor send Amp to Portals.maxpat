@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 493.0, 272.0, 40.0, 22.0 ],
+					"text" : "t l l l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 718.0, 412.0, 72.0, 22.0 ],
+					"text" : "0. 0.062103"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
@@ -103,7 +127,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 664.0, 412.0, 61.0, 22.0 ],
+					"patching_rect" : [ 664.0, 455.0, 61.0, 22.0 ],
 					"text" : "s winNum"
 				}
 
@@ -116,7 +140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 602.0, 303.0, 24.0, 24.0 ]
+					"patching_rect" : [ 600.0, 351.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -127,8 +151,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 602.0, 277.0, 84.0, 22.0 ],
-					"text" : "match player3"
+					"patching_rect" : [ 600.0, 325.0, 82.0, 22.0 ],
+					"text" : "match Garrett"
 				}
 
 			}
@@ -140,7 +164,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 503.0, 303.0, 24.0, 24.0 ]
+					"patching_rect" : [ 501.0, 351.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -151,8 +175,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 503.0, 277.0, 84.0, 22.0 ],
-					"text" : "match player2"
+					"patching_rect" : [ 501.0, 325.0, 67.0, 22.0 ],
+					"text" : "match Tian"
 				}
 
 			}
@@ -163,7 +187,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 445.5, 349.0, 29.5, 22.0 ],
+					"patching_rect" : [ 443.5, 397.0, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -175,8 +199,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 539.0, 349.0, 29.5, 22.0 ],
-					"text" : "2"
+					"patching_rect" : [ 537.0, 397.0, 29.5, 22.0 ],
+					"text" : "1"
 				}
 
 			}
@@ -187,8 +211,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.0, 349.0, 29.5, 22.0 ],
-					"text" : "1"
+					"patching_rect" : [ 500.0, 397.0, 29.5, 22.0 ],
+					"text" : "2"
 				}
 
 			}
@@ -200,7 +224,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 409.0, 303.0, 24.0, 24.0 ]
+					"patching_rect" : [ 407.0, 354.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -211,8 +235,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 277.0, 84.0, 22.0 ],
-					"text" : "match player1"
+					"patching_rect" : [ 407.0, 325.0, 85.0, 22.0 ],
+					"text" : "match Andrew"
 				}
 
 			}
@@ -296,7 +320,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 426.0, 187.0, 50.0, 22.0 ],
-					"text" : "player1"
+					"text" : "Andrew"
 				}
 
 			}
@@ -434,6 +458,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-12", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -483,16 +528,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 3,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-12", 0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -500,15 +537,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 1 ],
-					"order" : 2,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -544,6 +573,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
+					"order" : 1,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"order" : 0,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -601,14 +639,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "sc.mobile.sensors.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/physical/sc.mobile.sensors",
-				"patcherrelativepath" : "../Documents/Max 7/Packages/SC/patchers/physical/sc.mobile.sensors",
+				"patcherrelativepath" : "../../../../../../Documents/Max 7/Packages/SC/patchers/physical/sc.mobile.sensors",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.mobile.sensors.js",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/physical/sc.mobile.sensors",
-				"patcherrelativepath" : "../Documents/Max 7/Packages/SC/patchers/physical/sc.mobile.sensors",
+				"patcherrelativepath" : "../../../../../../Documents/Max 7/Packages/SC/patchers/physical/sc.mobile.sensors",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

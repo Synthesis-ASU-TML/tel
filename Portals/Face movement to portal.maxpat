@@ -85,7 +85,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -144,8 +144,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 106.0, 192.5, 50.0, 35.0 ],
-									"text" : "5.877604"
+									"patching_rect" : [ 106.0, 192.5, 44.0, 35.0 ],
+									"text" : "8.523594"
 								}
 
 							}
@@ -768,7 +768,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 40.0, 488.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -1208,7 +1208,7 @@
 						}
 ,
 						"classnamespace" : "jit.gen",
-						"rect" : [ 59.0, 104.0, 600.0, 450.0 ],
+						"rect" : [ 145.0, 197.0, 600.0, 450.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1242,8 +1242,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 283.0, 213.0, 104.0, 22.0 ],
-									"text" : "smoothstep 0. 0.2"
+									"patching_rect" : [ 283.0, 213.0, 111.0, 22.0 ],
+									"text" : "smoothstep 0. 0.12"
 								}
 
 							}
@@ -1420,7 +1420,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 404.0, 592.0 ],
+						"rect" : [ 116.0, 146.0, 1212.0, 687.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1448,6 +1448,40 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 272.500000000000057, 18.0, 57.0, 20.0 ],
+									"presentation_linecount" : 3,
+									"text" : "og matix "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 199.666666666666686, 57.0, 33.0, 20.0 ],
+									"text" : "slide"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 92.333344000000011, 13.0, 71.0, 20.0 ],
+									"text" : "coordinates"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "newobj",
@@ -1586,8 +1620,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 319.0, 129.0, 97.0, 22.0 ],
-									"text" : "376 312"
+									"patching_rect" : [ 92.333344000000011, 506.0, 52.0, 22.0 ],
+									"text" : "464 396"
 								}
 
 							}
@@ -1862,7 +1896,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 181.166666666666686, 561.0, 75.0, 22.0 ],
+									"patching_rect" : [ 181.166666666666686, 569.0, 75.0, 22.0 ],
 									"text" : "prepend dim"
 								}
 
@@ -1913,7 +1947,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 170.166655999999989, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 205.166666666666686, 79.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1938,7 +1972,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 109.5, 541.0, 30.0, 30.0 ]
+									"patching_rect" : [ 66.0, 608.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2505,16 +2539,16 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 13.0, 17.0, 65.0, 21.0 ],
+					"patching_rect" : [ 13.0, 20.0, 65.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 3.0, 270.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text",
-							"parameter_mmax" : 1
+							"parameter_longname" : "live.text"
 						}
 
 					}
@@ -2548,7 +2582,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.0, 17.0, 28.0, 22.0 ],
+					"patching_rect" : [ 111.0, 12.5, 26.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 27.0, 270.0, 57.0 ],
 					"proportion" : 0.5
@@ -2861,10 +2895,6 @@
 			}
 , 			{
 				"name" : "cv.jit.faces.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.absdiff.mxo",
 				"type" : "iLaX"
 			}
  ],
