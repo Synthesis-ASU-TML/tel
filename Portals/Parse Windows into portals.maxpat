@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 200.166666666666742, 909.5, 162.0, 100.0 ],
+					"text" : "To Do:\n1. click and drag any direction in capture window\n2. scale all or indivual button\n3. incorperate Brandon's sensor patch\n4. UI",
+					"textcolor" : [ 0.847058823529412, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-207",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -336,7 +349,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 1323.0, 630.0, 61.0, 22.0 ],
+					"patching_rect" : [ 1355.33333333333303, 600.5, 61.0, 22.0 ],
 					"text" : "unpack f f"
 				}
 
@@ -348,7 +361,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1323.0, 600.0, 59.0, 22.0 ],
+					"patching_rect" : [ 1355.33333333333303, 570.5, 59.0, 22.0 ],
 					"text" : "r winNum"
 				}
 
@@ -360,7 +373,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1389.5, 630.0, 124.0, 33.0 ],
+					"patching_rect" : [ 1396.5, 633.0, 124.0, 33.0 ],
 					"text" : "this scales it to amp from m5 patch."
 				}
 
@@ -6309,13 +6322,33 @@
 				"name" : "jit.*.mxo",
 				"type" : "iLaX"
 			}
+, 			{
+				"name" : "jit.>.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.-.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.<.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.+.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.&&.mxo",
+				"type" : "iLaX"
+			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
