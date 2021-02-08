@@ -130,7 +130,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 213.5, 464.0, 77.0, 22.0 ],
-					"text" : "loadmess 50"
+					"text" : "loadmess 77"
 				}
 
 			}
@@ -1013,7 +1013,7 @@
 					"patching_rect" : [ 441.0, 476.0, 256.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 201.0, 300.0, 100.0 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 41.377956390380859, 1.0, 0.300000011920929, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"setfilter" : [ 0, 1, 1, 0, 0, 816.68353271484375, 1.0, 0.300000011920929, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -1824,7 +1824,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 216.933333333333394, 351.0, 83.0, 22.0 ],
-					"text" : "loadmess 100"
+					"text" : "loadmess 127"
 				}
 
 			}
@@ -4668,12 +4668,12 @@
 					"presentation_rect" : [ 10.0, 331.0, 256.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
