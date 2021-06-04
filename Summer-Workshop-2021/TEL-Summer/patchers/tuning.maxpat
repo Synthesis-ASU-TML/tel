@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 107.0, 436.0, 972.0 ],
+		"rect" : [ 59.0, 107.0, 421.0, 1015.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,73 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 949.5, 385.0, 70.0, 22.0 ],
+					"text" : "loadmess 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 805.838279499999771, 11.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 373.0, 253.0, 60.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-1",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 372.0, 277.0, 87.0, 22.0 ],
+					"text" : "presentation 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 372.0, 297.0, 69.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-94",
 					"maxclass" : "newobj",
@@ -71,13 +138,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-92",
-					"linecount" : 12,
+					"linecount" : 10,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1452.0, 375.0, 50.0, 174.0 ],
-					"text" : "440. 509.391703 581.755533 694.164203 765.334203 838.496303 880."
+					"patching_rect" : [ 1452.0, 375.0, 50.0, 146.0 ],
+					"text" : "440. 532.631587 625.263173 717.894723 810.52631 880."
 				}
 
 			}
@@ -149,15 +216,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-73",
-					"linecount" : 5,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 932.338279499999771, 262.0, 150.0, 75.0 ],
+					"patching_rect" : [ 932.338279499999771, 262.0, 48.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 53.323441000000003, 436.0, 150.0, 75.0 ],
-					"text" : "J¸rgen Grˆnewald simplified Bach temperament Ars Organi vol.57 no.1 March 2009 p.39"
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 53.323441000000003, 436.0, 48.0, 48.0 ],
+					"text" : "5 out of 19-tET"
 				}
 
 			}
@@ -180,7 +247,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 934.676558999999543, 134.0, 53.0, 22.0 ],
+					"patching_rect" : [ 1088.676558999999543, 121.0, 53.0, 22.0 ],
 					"text" : "prepend"
 				}
 
@@ -262,35 +329,85 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 5,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ "5 out of 19-tET" ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ "1st Inverted Schlesinger's Chromatic Dorian Harmonia" ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ "Aaron Johnson temperament with just 5/4 24/19 and 19/15" ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ "A folk scale from Rajasthan India" ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ "J¸rgen Grˆnewald simplified Bach temperament Ars Organi vol.57 no.1 March 2009 p.39" ]
+							}
+ ]
+					}
+,
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 934.676558999999543, 166.0, 88.0, 22.0 ],
+					"patching_rect" : [ 934.676558999999543, 166.0, 150.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0,
+						"embed" : 1,
 						"precision" : 6
 					}
 ,
-					"text" : "coll description"
+					"text" : "coll description @embed 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 5,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ 440.0, 532.631586666666635, 625.26317333333327, 717.894723333333332, 810.526309999999967, 880.0 ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ 440.0, 520.0, 540.0, 560.0, 640.0, 800.0, 840.0, 880.0 ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ 440.0, 472.869796666666673, 510.82441666666665, 547.457606666666607, 622.485856666666677, 655.796129999999948, 695.412226666666697, 766.236643333333404, 804.971713333333355, 838.722499999999968, 880.0 ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ 440.0, 495.0, 550.0, 586.666666666666629, 660.0, 825.0, 880.0 ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ 440.0, 509.391703333333339, 581.755533333333346, 694.164203333333262, 765.334203333333335, 838.496303333333344, 880.0 ]
+							}
+ ]
+					}
+,
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 805.838279499999771, 259.0, 92.0, 22.0 ],
+					"patching_rect" : [ 805.838279499999771, 259.0, 154.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0,
+						"embed" : 1,
 						"precision" : 6
 					}
 ,
-					"text" : "coll frequencies"
+					"text" : "coll frequencies @embed 1"
 				}
 
 			}
@@ -436,7 +553,7 @@
 					"patching_rect" : [ 482.0, 244.0, 153.0, 177.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 8,
-					"presentation_rect" : [ 44.323441000000003, 6.5, 201.0, 136.0 ],
+					"presentation_rect" : [ 44.323441000000003, 6.5, 205.0, 136.0 ],
 					"text" : "here are the two data streams from the m5 we will use. [Accel X] controls the pitch, [Gyro X] contls the volume. There is a tail on the volume. Adjust that with this exponsed parameter and see how it affects the decay of the data (how it slides down after a spike)"
 				}
 
@@ -1158,6 +1275,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
@@ -1246,6 +1370,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 2 ],
 					"source" : [ "obj-130", 0 ]
 				}
@@ -1327,6 +1458,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-413", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -1457,7 +1602,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -1465,6 +1610,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
+					"order" : 1,
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
 					"order" : 0,
 					"source" : [ "obj-43", 0 ]
 				}
