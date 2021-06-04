@@ -114,11 +114,11 @@
 				"box" : 				{
 					"id" : "obj-399",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 5,
 					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 99.25, 51.5, 308.0, 22.0 ],
-					"text" : "o.route /volume /transform /frequencies /amplitudes"
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 99.25, 51.5, 272.0, 22.0 ],
+					"text" : "route /volume /transform /frequencies /amplitudes"
 				}
 
 			}
@@ -126,7 +126,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -138,11 +138,11 @@
 				"box" : 				{
 					"comment" : "left inlet: list of frequencies",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 99.25, 6.0, 30.0, 30.0 ]
 				}
 
@@ -805,7 +805,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 325.5, 149.0, 420.0, 178.0, 456.0, 289.0, 456.0, 378.0 ],
+					"midpoints" : [ 298.5, 149.0, 420.0, 178.0, 456.0, 289.0, 456.0, 378.0 ],
 					"source" : [ "obj-399", 3 ]
 				}
 
@@ -922,7 +922,18 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-5" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
