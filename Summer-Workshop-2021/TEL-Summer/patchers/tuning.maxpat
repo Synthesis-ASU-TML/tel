@@ -186,25 +186,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-92",
-					"linecount" : 8,
+					"linecount" : 10,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1452.0, 375.0, 50.0, 119.0 ],
-					"text" : "440. 495. 550. 586.666667 660. 825. 880."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-89",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 618.0, 1129.0, 45.0, 45.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 183.0, 828.5, 79.0, 79.0 ]
+					"patching_rect" : [ 1452.0, 375.0, 50.0, 146.0 ],
+					"text" : "440. 532.631587 625.263173 717.894723 810.52631 880."
 				}
 
 			}
@@ -268,11 +256,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 932.338279499999771, 262.0, 48.0, 89.0 ],
+					"patching_rect" : [ 932.338279499999771, 262.0, 26.0, 89.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 53.323441000000003, 436.0, 48.0, 89.0 ],
-					"text" : "A folk scale from Rajasthan India"
+					"presentation_rect" : [ 53.323441000000003, 436.0, 26.0, 89.0 ],
+					"text" : "5 out of 19-tET"
 				}
 
 			}
@@ -653,7 +641,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "ChamberVerb.amxd",
-						"patchername_fallback" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd"
+						"patchername_fallback" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -667,7 +655,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "ChamberVerb.amxd",
-							"origname" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
+							"origname" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"1_delay" : 49.599997999999999,
@@ -704,7 +692,7 @@
 									"embed" : 0,
 									"snapshot" : 									{
 										"name" : "ChamberVerb.amxd",
-										"origname" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
+										"origname" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"1_delay" : 49.599997999999999,
@@ -1375,7 +1363,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 0,
 					"source" : [ "obj-121", 0 ]
 				}
 
@@ -1383,24 +1370,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"order" : 0,
 					"source" : [ "obj-121", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-89", 1 ],
-					"order" : 1,
-					"source" : [ "obj-121", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-89", 0 ],
-					"order" : 1,
-					"source" : [ "obj-121", 0 ]
 				}
 
 			}
@@ -1921,21 +1891,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sc.scala.maxpat",
-				"bootpath" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers",
+				"bootpath" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bach.filter.maxpat",
-				"bootpath" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers",
+				"bootpath" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.ioscbank~.maxpat",
-				"bootpath" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers",
+				"bootpath" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1943,12 +1913,13 @@
 , 			{
 				"name" : "ChamberVerb.amxd.maxsnap",
 				"bootpath" : "Z:/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ChamberVerb.amxd",
-				"bootpath" : "~/Desktop/tel-master/Summer-Workshop-2021/TEL-Summer/patchers",
+				"bootpath" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "amxd",
 				"implicit" : 1
