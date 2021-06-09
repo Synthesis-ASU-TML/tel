@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 672.0, 85.0, 444.0, 1280.0 ],
+		"rect" : [ 672.0, 85.0, 444.0, 1273.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -112,7 +112,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 338.0, 880.0, 50.0, 91.0 ],
-					"text" : "7.943398 -3.012497 -175.818008"
+					"text" : "5.793736 -2.487998 35.613949"
 				}
 
 			}
@@ -296,7 +296,7 @@
 			}
 , 			{
 				"box" : 				{
-					"filename" : "scale.js",
+					"filename" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/code/scale-dial.js",
 					"id" : "obj-66",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
@@ -1720,9 +1720,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "scale.js",
-				"bootpath" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
-				"patcherrelativepath" : "../data",
+				"name" : "scale-dial.js",
+				"bootpath" : "Z:/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/code",
+				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
