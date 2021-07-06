@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,20 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 498.75, 375.5, 172.0, 22.0 ],
+					"text" : "loadmess replace drumloop.aif"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-107",
 					"maxclass" : "button",
@@ -651,9 +664,9 @@
 					"presentation_rect" : [ 10.0, 263.0, 256.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
 							"parameter_longname" : "Volume",
 							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "Volume",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -741,15 +754,15 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 28691.996457607983757, "ms" ],
-						"loopstart" : [ 22523.764951667522837, "ms" ],
+						"loopend" : [ 931.995497100051466, "ms" ],
+						"loopstart" : [ 585.714305980251766, "ms" ],
 						"mode" : "extremestretch",
 						"originallength" : [ 0.0, "ticks" ],
 						"originaltempo" : 119.999999999999986,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
-						"pitchshift" : [ 1.07860502983647 ],
-						"pitchshiftcent" : [ 131 ],
+						"pitchshift" : [ 1.163388810388533 ],
+						"pitchshiftcent" : [ 262 ],
 						"quality" : "basic",
 						"timestretch" : [ 1 ]
 					}
@@ -1572,6 +1585,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-254", 2 ],
 					"order" : 8,
 					"source" : [ "obj-22", 0 ]
@@ -2230,7 +2250,8 @@
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [  ],
