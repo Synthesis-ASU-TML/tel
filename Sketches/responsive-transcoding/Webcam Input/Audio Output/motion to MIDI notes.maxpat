@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-18",
@@ -51,10 +52,10 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "live.text",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "live.text"
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2
 						}
 
 					}
@@ -111,7 +112,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 248.0, 178.0, 49.0, 22.0 ],
-					"text" : ">= 0.04"
+					"text" : ">= 0.03"
 				}
 
 			}
@@ -195,7 +196,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 53.5, 258.0, 147.0, 22.0 ],
 					"text" : "sc.texture.framedifference",
 					"varname" : "sc.texture.framedifference"
@@ -234,7 +235,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "" ],
+					"outlettype" : [ "jit_matrix", "bang", "" ],
 					"patching_rect" : [ 5.5, 33.0, 197.0, 22.0 ],
 					"text" : "jit.world @floating 1 @size 480 320"
 				}
@@ -246,7 +247,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 22.0, 203.0, 208.0, 22.0 ],
 					"text" : "jit.grab @output_texture 1 @unique 1"
 				}
@@ -630,20 +631,21 @@
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "sc.texture.framedifference.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../../../Users/andrewrobinson/Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../../../../../../Documents/Max 7/Packages/SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bypass_dummy.genjit",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/Media-Choreography-Lower-Division/Unit 1/Unit 1 Source/code",
-				"patcherrelativepath" : "../../../../../Users/andrewrobinson/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/Media-Choreography-Lower-Division/Unit 1/Unit 1 Source/code",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/Media-Choreography-Lower-Division/Unit 2/Application Projects/Live Input/PC Builds/Colored Edges/code",
+				"patcherrelativepath" : "../../../../../Media-Choreography-Lower-Division/Unit 2/Application Projects/Live Input/PC Builds/Colored Edges/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
@@ -656,21 +658,21 @@
 , 			{
 				"name" : "sc.texture.rgb2luma.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../../../../Users/andrewrobinson/Documents/Max 7/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../../../../../../../Documents/Max 7/Packages/SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.rgb2luma.genjit",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/code",
-				"patcherrelativepath" : "../../../../../Users/andrewrobinson/Documents/Max 7/Packages/SC/code",
+				"patcherrelativepath" : "../../../../../../../../../Documents/Max 7/Packages/SC/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.3m.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/SC/patchers/utilities",
-				"patcherrelativepath" : "../../../../../Users/andrewrobinson/Documents/Max 7/Packages/SC/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../../../../Documents/Max 7/Packages/SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
