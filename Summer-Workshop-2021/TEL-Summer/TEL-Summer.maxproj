@@ -2,8 +2,8 @@
 	"name" : "TEL-Summer",
 	"version" : 1,
 	"creationdate" : 3704809133,
-	"modificationdate" : 3706095227,
-	"viewrect" : [ 132.0, 405.0, 318.0, 655.0 ],
+	"modificationdate" : 3706707864,
+	"viewrect" : [ 35.0, 513.0, 318.0, 655.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -22,6 +22,11 @@
 			}
 ,
 			"boomwhacker.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"m5-intro.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
