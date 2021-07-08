@@ -20,7 +20,7 @@ You will need to download and install a few programs to get going.
 <ol>
 <li>First, you will want to write down or store somewhere the following information: 1) your SSID or router name. This must be a 2.5ghz and NOT 5ghz router 2) WIFI password and 3) your computer's <a href = "https://www.hellotech.com/guide/for/how-do-i-find-my-router-ip-address">IP address on the router</a>.</li>
 <li><p>Turn on your pre-flashed M5 stick by holding down the button on left side for 5-6 seconds (see illustration below). After it turns on, you will know if it flashed as the display will illuminate and indicate X,Y,Z data for the sensors.</p>
-<img src = "http://m5edu.com/wp-content/uploads/2019/04/LPD190009-M5Core-M5Stick-C_002.png" style = "width:50%;height:50%">
+<img src = "https://github.com/Synthesis-ASU-TML/tel/blob/master/m5.png" style = "width:50%;height:50%">
 </li>
 <li>Your M5 will now be searching for Wireless networks it already knows. It will not know any wireless networks after it has been flashed. If it has not found a wireless network after ~2 minutes, it will make its own network. It will be called something like <code>M5Stick....</code>. Connect to that network. 
 </li>
