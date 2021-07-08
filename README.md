@@ -17,12 +17,13 @@ You will need to download and install a few programs to get going.
 3. <b><a href = "https://www.arduino.cc/en/donate/">Arduino IDE</a></b> will be important ONLY if you do not have a pre-flashed M5 stick (if you bought if fresh off the internet for example). If you received a pre-flash M5stick from a TEL team member, then you may skip this!
 
   <h2>Network Configuration</h2>
-<ol>
-  <li>If you are using Sonobus to send your audio over the network, it's highly recommended that you physically connect your computer directly to the router using an ethernet cable. In the case of modern Macintosh and some Windows machines, you may need an adapter.</li>
-<li>M5 WIFI config. You will need to communicate to your M5 stick the SSID (router name) and Password of your home internet router so it can use your WIFI network to send data to our TEL kit. Follow these steps.
+  <h3>Ethernet</h3>
+  <p>If you are using Sonobus to send your audio over the network, it's highly recommended that you physically connect your computer directly to the router using an ethernet cable. In the case of modern Macintosh and some Windows machines, you may need an adapter.</p>
+  <h3>M5 WIFI config</h3>
+  <p>You will need to communicate to your M5 stick the SSID (router name) and Password of your home internet router so it can use your WIFI network to send data to our TEL kit. Follow these steps.</p>
 <ol>
 <li>First, you will want to write down or store somewhere the following information: 1) your SSID or router name. This must be a 2.5ghz and NOT 5ghz router 2) WIFI password and 3) your computer's <a href = "https://www.hellotech.com/guide/for/how-do-i-find-my-router-ip-address">IP address on the router</a>.</li>
-<li><p>Turn on you pre-flash M5 stick by holding down the button on left side for 5-6 seconds (see illustration below). After it turns on, you will know if it flashed as the display will illuminate and indicate X,Y,Z data for the sensors.</p>
+<li><p>Turn on your pre-flashed M5 stick by holding down the button on left side for 5-6 seconds (see illustration below). After it turns on, you will know if it flashed as the display will illuminate and indicate X,Y,Z data for the sensors.</p>
 <img src = "http://m5edu.com/wp-content/uploads/2019/04/LPD190009-M5Core-M5Stick-C_002.png" width = 50% height = 50%>
 </li>
 <li>Your M5 will now be searching for Wireless networks it already knows. It will not know any wireless networks after it has been flashed. If it has not found a wireless network after ~2 minutes, it will make its own network. It will be called something like "M5Stick....". Connect to that network. 
