@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1040.0, 288.0, 830.0, 957.0 ],
+		"rect" : [ 908.0, 288.0, 271.0, 794.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,138 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.0, 686.0, 151.0, 22.0 ],
+					"text" : "load trouble.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.0, 716.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-2",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 66.0, 651.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 59.0, 698.0, 142.0, 44.0 ],
+					"text" : "troubleshooting",
+					"textjustification" : 0,
+					"texton" : "sonobus"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Rounded MT",
+					"fontsize" : 24.0,
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 220.0, 40.0, 427.0, 90.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 59.0, 37.0, 143.0, 145.0 ],
+					"text" : "T|elematic E|mbodied L|earning\nkit \n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Rounded MT",
+					"fontsize" : 18.0,
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 768.0, 52.0, 323.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 59.0, 458.0, 142.0, 27.0 ],
+					"text" : "Settings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Rounded MT",
+					"fontsize" : 18.0,
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 29.0, 427.0, 323.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 59.0, 193.0, 142.0, 27.0 ],
+					"text" : "Instruments"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 327.0, 685.0, 165.0, 22.0 ],
+					"text" : "load shake-wag-poke.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 327.0, 715.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "open" ],
+					"patching_rect" : [ 699.0, 253.0, 42.0, 22.0 ],
+					"text" : "t open"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 564.0, 151.0, 22.0 ],
+					"patching_rect" : [ 115.0, 569.0, 151.0, 22.0 ],
 					"text" : "load boomwhacker.maxpat"
 				}
 
@@ -57,7 +183,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 592.0, 51.0, 22.0 ],
+					"patching_rect" : [ 115.0, 599.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -69,7 +195,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1117.0, 312.0, 84.0, 22.0 ],
+					"patching_rect" : [ 1113.0, 171.0, 219.0, 22.0 ],
 					"text" : "receive~ bell-r"
 				}
 
@@ -81,7 +207,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 757.838279499999771, 301.0, 83.0, 22.0 ],
+					"patching_rect" : [ 753.838279499999771, 160.0, 218.0, 22.0 ],
 					"text" : "receive~ bell-l"
 				}
 
@@ -93,7 +219,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1168.838279499999771, 368.0, 98.0, 22.0 ],
+					"patching_rect" : [ 1164.838279499999771, 227.0, 233.0, 22.0 ],
 					"text" : "receive~ tuning-r"
 				}
 
@@ -105,7 +231,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 796.0, 340.0, 97.0, 22.0 ],
+					"patching_rect" : [ 792.0, 199.0, 232.0, 22.0 ],
 					"text" : "receive~ tuning-l"
 				}
 
@@ -125,60 +251,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
+					"linecount" : 8,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 401.838279499999771, 848.0, 514.0, 22.0 ],
+					"patching_rect" : [ 422.0, 816.0, 87.0, 119.0 ],
 					"text" : "dialog we haven't added these patches yet! check back at github for updates soon :-) @mode 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubbleside" : 2,
-					"id" : "obj-18",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 962.0, 332.0, 153.0, 94.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 581.0, 118.5, 192.999999999999886, 81.0 ],
-					"text" : "click the wrench icon on the window below to configure sonobus to hear and send sound from your friends."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 862.0, 1079.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 152.999999999999886, 881.0, 99.0, 34.0 ],
-					"text" : "output from sonobus"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubbleside" : 3,
-					"id" : "obj-134",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 598.0, 1079.0, 150.0, 66.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 351.999999999999886, 852.0, 146.000000000000114, 66.0 ],
-					"text" : "this button turns Audio Processing on and off. You'll need to turn it on to get going."
 				}
 
 			}
@@ -190,43 +269,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 753.838279499999771, 1162.5, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 509.499999999999886, 841.5, 87.0, 87.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 857.0, 383.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 341.0, 127.0, 99.0, 20.0 ],
-					"text" : "input to sonobus"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 574.0, 524.0, 150.0, 20.0 ],
-					"text" : "this doesnt work "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-40",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 438.0, 523.0, 129.0, 22.0 ],
-					"text" : "change size of window"
+					"presentation_rect" : [ 59.0, 545.5, 142.0, 142.0 ]
 				}
 
 			}
@@ -256,50 +299,36 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-32",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 438.0, 564.0, 67.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"align" : 0,
-					"fontsize" : 30.0,
+					"fontsize" : 16.0,
 					"id" : "obj-31",
 					"maxclass" : "textbutton",
-					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 438.0, 471.0, 100.0, 20.0 ],
+					"patching_rect" : [ 699.0, 217.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 770.0, 285.0, 61.0 ],
-					"text" : "local",
+					"presentation_rect" : [ 59.0, 487.0, 142.0, 44.0 ],
+					"text" : "sonobus",
 					"textjustification" : 0,
-					"texton" : "telematic"
+					"texton" : "sonobus"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"fontsize" : 30.0,
+					"fontsize" : 16.0,
 					"id" : "obj-21",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 319.0, 532.0, 100.0, 20.0 ],
+					"patching_rect" : [ 503.0, 706.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 626.0, 285.0, 61.0 ],
+					"presentation_rect" : [ 59.0, 384.0, 142.0, 43.0 ],
 					"text" : "4 // ",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -309,17 +338,17 @@
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"fontsize" : 30.0,
+					"fontsize" : 16.0,
 					"id" : "obj-19",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 216.0, 464.0, 100.0, 20.0 ],
+					"patching_rect" : [ 400.0, 638.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 552.0, 285.0, 61.0 ],
-					"text" : "3 //",
+					"presentation_rect" : [ 59.0, 327.0, 142.0, 41.0 ],
+					"text" : "3 // shake, waggle, poke",
 					"textjustification" : 0,
 					"texton" : "Tuning"
 				}
@@ -328,7 +357,7 @@
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"fontsize" : 30.0,
+					"fontsize" : 16.0,
 					"id" : "obj-16",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -337,7 +366,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 115.0, 532.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 482.0, 285.0, 61.0 ],
+					"presentation_rect" : [ 59.0, 276.0, 142.0, 41.0 ],
 					"text" : "2 // boomwhacker",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -347,7 +376,7 @@
 , 			{
 				"box" : 				{
 					"align" : 0,
-					"fontsize" : 30.0,
+					"fontsize" : 16.0,
 					"id" : "obj-15",
 					"maxclass" : "textbutton",
 					"numinlets" : 1,
@@ -356,7 +385,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 36.0, 464.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 413.0, 285.0, 61.0 ],
+					"presentation_rect" : [ 59.0, 226.0, 142.0, 41.0 ],
 					"text" : "1 // tuning",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -366,51 +395,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial Rounded MT",
-					"fontsize" : 16.0,
-					"id" : "obj-14",
-					"linecount" : 10,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 227.0, 351.0, 192.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 13,
-					"presentation_rect" : [ 29.0, 160.0, 285.0, 247.0 ],
-					"text" : "welcome! this software gathers a few simple instruments to be used with the M5stick-C. Click an instrument below to open. You can use multiple at once. \n\nThese apps can be used by yourself or with others in the same space. If you want to link your sound with others online, click 'local' below to switch to 'telematic mode' and open up the Sonobus plugin."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Rounded MT",
-					"fontsize" : 18.0,
+					"fontsize" : 10.0,
 					"id" : "obj-10",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 146.0, 260.0, 69.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 29.0, 704.0, 285.0, 48.0 ],
+					"patching_rect" : [ 37.0, 146.0, 148.0, 41.0 ],
 					"text" : "patching by andrew robison, garrett johnson, connor rawls"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Rounded MT",
-					"fontsize" : 36.0,
-					"id" : "obj-9",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 7.0, 441.0, 131.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 29.0, 22.0, 285.0, 131.0 ],
-					"text" : "TEL 2021 \nSUMMER \nWORKSHOP "
 				}
 
 			}
@@ -438,9 +430,7 @@
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 757.838279499999771, 427.0, 430.0, 643.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 337.999999999999886, 191.0, 430.0, 643.0 ],
+					"patching_rect" : [ 753.838279499999771, 286.0, 435.0, 763.0 ],
 					"save" : [ "#N", "vst~", "loaduniqueid", 0, "C74_VST:/SonoBus", ";" ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -523,6 +513,42 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.862745098039216, 0.886274509803922, 0.592156862745098, 1.0 ],
+					"id" : "obj-70",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 136.0, 160.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 46.5, 193.0, 175.0, 247.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.431372549019608, 0.490196078431373, 0.811764705882353, 1.0 ],
+					"id" : "obj-69",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 22.0, 14.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 51.5, 444.0, 159.0, 320.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -554,8 +580,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
+					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -575,6 +608,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -582,7 +629,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -598,13 +645,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-40", 0 ]
 				}
 
 			}
@@ -626,6 +666,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
