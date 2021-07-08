@@ -22,16 +22,18 @@ You will need to download and install a few programs to get going.
 <li><p>Turn on your pre-flashed M5 stick by holding down the button on left side for 5-6 seconds (see illustration below). After it turns on, you will know if it flashed as the display will illuminate and indicate X,Y,Z data for the sensors.</p>
 <img src = "http://m5edu.com/wp-content/uploads/2019/04/LPD190009-M5Core-M5Stick-C_002.png" width = 50% height = 50%>
 </li>
-<li>Your M5 will now be searching for Wireless networks it already knows. It will not know any wireless networks after it has been flashed. If it has not found a wireless network after ~2 minutes, it will make its own network. It will be called something like "M5Stick....". Connect to that network. 
+<li>Your M5 will now be searching for Wireless networks it already knows. It will not know any wireless networks after it has been flashed. If it has not found a wireless network after ~2 minutes, it will make its own network. It will be called something like <code>M5Stick....</code>. Connect to that network. 
 </li>
-<li>Once you are connected, open up a browser and enter the following address: "192.168.1.1". This will take you to a webpage where you can enter your info.</li> 
+<li>Once you are connected, open up a browser and enter the following address: <code>192.168.1.1</code>. This will take you to a webpage where you can enter your info.</li> 
  <li>First go to WIFI settings and enter the 2.5ghz router SSID and the password. Click save. Return to main menu.</li>
   <li>Navigate to OSC settings. Enter your computer's IP address. Click save. Return to Main Menu.</li>
-<li>Click save settings. Power cycle your M5 stick. You should see on the top line of the display "OSC SEND: " follow by your IP address on the WIFI router. Congrats, your M5 is set up!</li>
+<li>Click save settings. Power cycle your M5 stick. You should see on the top line of the display <code>OSC SEND: </code> follow by your IP address on the WIFI router. Congrats, your M5 is set up!</li>
 </ol>
 </ol>
   <h2>TEL KIT Instruments</h2> 
-  <p>Navigate on this page to <a href ="release.html">releases</a>. Download sourcecode.zip. This will contain something called a Max Project. Unzip the file to your Desktop, Documents, or somewhere memorable. Open files until you get to "Summer-Workshop-2021", then open the file "TEL-Summer". In there you will find TEL-Summer.maxproj. Open that and begin! If your M5 is turned on, you should be ready to go.</p>
+  <p>Navigate on this page to <a href ="https://github.com/Synthesis-ASU-TML/tel/releases">releases</a>. Click on <code>Assets</code> and download the <code>Source code zip</code>. Unzip the file to your Desktop, Documents, or somewhere memorable.</p> 
+  
+  </p>Open files until you get to "Summer-Workshop-2021", then open the file "TEL-Summer". In there you will find <code>TEL-Summer.maxproj</code>. Open that and begin! If your M5 is turned on, you should be ready to go.</p>
 
 
 
