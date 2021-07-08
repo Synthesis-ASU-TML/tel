@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 908.0, 288.0, 271.0, 794.0 ],
+		"rect" : [ 908.0, 288.0, 282.0, 969.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,49 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.0, 868.0, 151.0, 22.0 ],
+					"text" : "load m5-intro.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 66.0, 898.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-13",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 66.0, 826.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 59.0, 227.5, 142.0, 41.0 ],
+					"text" : "m5stick intro",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "message",
@@ -74,7 +117,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 66.0, 651.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 698.0, 142.0, 44.0 ],
+					"presentation_rect" : [ 59.0, 793.0, 142.0, 44.0 ],
 					"text" : "troubleshooting",
 					"textjustification" : 0,
 					"texton" : "sonobus"
@@ -83,18 +126,18 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial Rounded MT",
+					"fontname" : "Arial Rounded MT Bold",
 					"fontsize" : 24.0,
 					"id" : "obj-30",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.0, 40.0, 427.0, 90.0 ],
+					"patching_rect" : [ 220.0, 40.0, 427.0, 118.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 59.0, 37.0, 143.0, 145.0 ],
-					"text" : "T|elematic E|mbodied L|earning\nkit \n"
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 59.0, 37.0, 143.0, 173.0 ],
+					"text" : "T|elematic E|mbodied L|earning\nm5\nkit \n"
 				}
 
 			}
@@ -108,7 +151,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 768.0, 52.0, 323.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 458.0, 142.0, 27.0 ],
+					"presentation_rect" : [ 59.0, 553.0, 142.0, 27.0 ],
 					"text" : "Settings"
 				}
 
@@ -123,7 +166,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 427.0, 323.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 193.0, 142.0, 27.0 ],
+					"presentation_rect" : [ 59.0, 288.0, 142.0, 27.0 ],
 					"text" : "Instruments"
 				}
 
@@ -269,7 +312,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 753.838279499999771, 1162.5, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 545.5, 142.0, 142.0 ]
+					"presentation_rect" : [ 59.0, 640.5, 142.0, 142.0 ]
 				}
 
 			}
@@ -309,7 +352,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 699.0, 217.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 487.0, 142.0, 44.0 ],
+					"presentation_rect" : [ 59.0, 582.0, 142.0, 44.0 ],
 					"text" : "sonobus",
 					"textjustification" : 0,
 					"texton" : "sonobus"
@@ -328,7 +371,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 503.0, 706.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 384.0, 142.0, 43.0 ],
+					"presentation_rect" : [ 59.0, 479.0, 142.0, 43.0 ],
 					"text" : "4 // ",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -347,7 +390,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 400.0, 638.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 327.0, 142.0, 41.0 ],
+					"presentation_rect" : [ 59.0, 422.0, 142.0, 41.0 ],
 					"text" : "3 // shake, waggle, poke",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -366,7 +409,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 115.0, 532.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 276.0, 142.0, 41.0 ],
+					"presentation_rect" : [ 59.0, 371.0, 142.0, 41.0 ],
 					"text" : "2 // boomwhacker",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -385,7 +428,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 36.0, 464.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 226.0, 142.0, 41.0 ],
+					"presentation_rect" : [ 59.0, 321.0, 142.0, 41.0 ],
 					"text" : "1 // tuning",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -517,6 +560,25 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
+					"bgcolor" : [ 0.772549019607843, 0.803921568627451, 0.964705882352941, 1.0 ],
+					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-12",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 54.5, 216.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 51.5, 215.0, 170.0, 66.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
 					"bgcolor" : [ 0.862745098039216, 0.886274509803922, 0.592156862745098, 1.0 ],
 					"id" : "obj-70",
 					"maxclass" : "panel",
@@ -525,7 +587,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 136.0, 160.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 46.5, 193.0, 175.0, 247.0 ],
+					"presentation_rect" : [ 46.5, 288.0, 175.0, 247.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -543,7 +605,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 14.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 51.5, 444.0, 159.0, 320.0 ],
+					"presentation_rect" : [ 51.5, 539.0, 170.0, 320.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -561,6 +623,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
