@@ -8,8 +8,8 @@ You need a modern Windows or Mac operating system to run this version of TEL. Un
 <h2>Dependencies</h2>
 You will need to download and install a few programs to get going.
 
-1. <b>Max/MSP/Jitter</b> <a href = "http://www.cycling74.com/downloads"> "aka Max 8"</a>. Max will probe you for a license key, but you don't need to enter that. You'll be barred from saving, but in most cases this will be fine. The Max 8 application will open the Max project where all our TEL instruments are. It is preset to receive from the M5 stick once the M5 is configured to your network.   
-2. <b><a href = "https://www.sonobus.net/">Sonobus</a></b> will be important for sharing your M5 sound with others in distanced situatiions ( telematically, or, over the telecommunications network, or internet). There are certainly other ways to do this, but we have embedded Sonobus into our Kit to keep things as simple as possible.
+1. <b>Max/MSP/Jitter</b> <a href = "http://www.cycling74.com/downloads"> "aka Max 8"</a>. Max will probe you for a license key. You don't need to enter that. A license costs money and will allow you some other features (including saving new applications). People using this kit at home or in the classroom shouldn't need to do any of that. The Max 8 application will open the Max project where all our TEL instruments are. It is preset to receive from the M5 stick once the M5 is configured to your network.   
+2. <b><a href = "https://www.sonobus.net/">Sonobus</a></b> will allow you to share your M5 sound with others in distanced situatiions ( telematically, or, over the telecommunications network, or internet). There are certainly other ways to do this, but we have embedded Sonobus into our Kit to keep things as simple as possible. The Sonobus website and YouTube have information about setting up connections and other tips and tricks. We will leave that out of this tutorial and instead direct you to those resources. 
 3. <b><a href = "https://www.arduino.cc/en/donate/">Arduino IDE</a></b> will be important ONLY if you do not have a pre-flashed M5 stick (if you bought if fresh off the internet for example). If you received a pre-flash M5stick from a TEL team member, then you may skip this!
 
   <h2>Network Configuration</h2>
@@ -33,7 +33,7 @@ You will need to download and install a few programs to get going.
   <h2>TEL KIT Instruments</h2> 
   <p>Navigate on this page to <a href ="https://github.com/Synthesis-ASU-TML/tel/releases">releases</a>. Click on <code>Assets</code> and download the <code>Source code zip</code>. Unzip the file to your Desktop, Documents, or somewhere memorable.</p> 
   
-  </p>Open files until you get to "Summer-Workshop-2021", then open the file "TEL-Summer". In there you will find <code>TEL-Summer.maxproj</code>. Open that and begin! If your M5 is turned on, you should be ready to go.</p>
+  <p>Open files until you get to "Summer-Workshop-2021", then open the file "TEL-Summer". In there you will find <code>TEL-Summer.maxproj</code>. Open that and begin! If your M5 is turned on, you should be ready to go.</p>
 
 
 
