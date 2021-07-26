@@ -2,8 +2,8 @@
 	"name" : "TEL-Summer",
 	"version" : 1,
 	"creationdate" : 3704809133,
-	"modificationdate" : 3706707864,
-	"viewrect" : [ 35.0, 513.0, 318.0, 655.0 ],
+	"modificationdate" : 3710154832,
+	"viewrect" : [ 13.0, 79.0, 318.0, 1036.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -28,6 +28,103 @@
 ,
 			"m5-intro.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"Loop Timestretch.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"Noise filter.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"m5 shake to arpeggiate.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"m5 beat machine.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"m5-stick FM Spin.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"Bongo High.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Bongo Low.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Cabasa.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Chord.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Conga High.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Conga Low.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Drone.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Future Hi Hat.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Future Kick.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Future Snare.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"hat sample 1.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"kick sample 1.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"snare sample 1.wav" : 			{
+				"kind" : "audiofile"
+			}
+,
+			"Wood Block.wav" : 			{
+				"kind" : "audiofile",
 				"local" : 1
 			}
 
