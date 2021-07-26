@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 844.0, 687.0 ],
+		"rect" : [ 123.0, 79.0, 844.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,93 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"angle" : 270.0,
+					"border" : 1,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"grad1" : [ 1.0, 1.0, 1.0, 0.25 ],
+					"grad2" : [ 0.0, 0.0, 0.0, 0.04 ],
+					"id" : "obj-105",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 538.0, 519.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 37.0, 164.25, 125.833333492279053, 26.166666507720947 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 229.0, 521.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 228.0, 637.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-70",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 271.0, 678.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 228.0, 577.0, 100.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 163.833333492279053, 164.25, 138.166666507720947, 28.5 ],
+					"preset_data" : [ 						{
+							"number" : 1,
+							"data" : [ 5, "obj-10", "playlist~", "preset_count", 3, 7, "obj-10", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 1, "absolutepath", "snare sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "filename", "snare sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 1, "id", "u214004741", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 2, "absolutepath", "kick sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filename", "kick sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 2, "id", "u133003313", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 3, "absolutepath", "hat sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filename", "hat sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 3, "id", "u554003294", 4, "obj-10", "playlist~", "preset_execute", 5, "obj-66", "number", "int", 3 ]
+						}
+, 						{
+							"number" : 2,
+							"data" : [ 5, "obj-10", "playlist~", "preset_count", 6, 7, "obj-10", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 1, "absolutepath", "Conga Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "filename", "Conga Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 1, "id", "u849002535", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 2, "absolutepath", "Conga High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filename", "Conga High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 2, "id", "u813002546", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 3, "absolutepath", "Bongo Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filename", "Bongo Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 3, "id", "u720002565", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 4, "absolutepath", "Bongo High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filename", "Bongo High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 4, "id", "u135002572", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 5, "absolutepath", "Wood Block.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filename", "Wood Block.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 5, "id", "u487002741", 7, "obj-10", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 6, "absolutepath", "Cabasa.wav", 7, "obj-10", "playlist~", "preset_clipstate", 6, "filename", "Cabasa.wav", 7, "obj-10", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 6, "id", "u912002748", 4, "obj-10", "playlist~", "preset_execute", 5, "obj-66", "number", "int", 6 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-10", "playlist~", "preset_count", 5, 7, "obj-10", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 1, "absolutepath", "Future Kick.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "filename", "Future Kick.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 1, "id", "u314000700", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 2, "absolutepath", "Future Snare.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filename", "Future Snare.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 2, "id", "u600000707", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 3, "absolutepath", "Future Hi Hat.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filename", "Future Hi Hat.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 3, "id", "u366000714", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 4, "absolutepath", "Drone.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filename", "Drone.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 4, "id", "u322000721", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 5, "absolutepath", "Chord.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filename", "Chord.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 5, "id", "u629000728", 4, "obj-10", "playlist~", "preset_execute", 5, "obj-66", "number", "int", 5 ]
+						}
+ ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-110",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 773.5, 283.0, 70.0, 22.0 ],
+					"patching_rect" : [ 784.5, 288.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -57,8 +138,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 923.0, 596.0, 73.0, 22.0 ],
-					"text" : "clip 50 1000"
+					"patching_rect" : [ 923.0, 596.0, 67.0, 22.0 ],
+					"text" : "clip 50 500"
 				}
 
 			}
@@ -70,26 +151,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 926.5, 542.0, 63.0, 22.0 ],
-					"text" : "-0.031123"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"border" : 1,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 1.0, 1.0, 1.0, 0.25 ],
-					"grad2" : [ 0.0, 0.0, 0.0, 0.04 ],
-					"id" : "obj-105",
-					"maxclass" : "panel",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 78.0, 203.5, 128.0, 128.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 42.0, 145.0, 257.0, 28.0 ],
-					"proportion" : 0.5
+					"text" : "-0.003277"
 				}
 
 			}
@@ -105,7 +167,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1003.0, 216.0, 50.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 42.0, 145.0, 257.0, 27.5 ],
+					"presentation_rect" : [ 37.0, 164.25, 125.833333492279053, 26.166666507720947 ],
 					"setstyle" : 5,
 					"slidercolor" : [ 0.054901960784314, 0.545098039215686, 0.007843137254902, 1.0 ]
 				}
@@ -172,9 +234,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 773.5, 311.0, 100.0, 20.0 ],
+					"patching_rect" : [ 784.5, 312.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 79.000000417232513, 8.0, 39.333333194255829, 20.0 ],
+					"presentation_rect" : [ 74.000000417232513, 9.0, 39.333333194255829, 20.0 ],
 					"text" : "Shake",
 					"textcolor" : [ 0.976470588235294, 0.996078431372549, 0.0, 1.0 ],
 					"textjustification" : 2,
@@ -197,7 +259,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 26.0, 84.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.833333492279053, 8.0, 58.5, 20.0 ],
+					"presentation_rect" : [ 7.833333492279053, 9.0, 58.5, 20.0 ],
 					"text" : "Off",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"texton" : "On",
@@ -216,7 +278,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 70.0, 152.0, 66.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 235.0, 8.0, 46.5, 20.0 ]
+					"presentation_rect" : [ 230.0, 9.0, 46.5, 20.0 ]
 				}
 
 			}
@@ -229,7 +291,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, 125.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 113.5, 8.0, 125.0, 20.0 ],
+					"presentation_rect" : [ 108.5, 9.0, 125.0, 20.0 ],
 					"text" : " to change the tempo:",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -249,7 +311,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 484.5, 531.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.5, 95.0, 295.0, 37.5 ],
+					"presentation_rect" : [ 7.833333492279053, 195.25, 295.0, 37.5 ],
 					"proportion" : 0.5
 				}
 
@@ -268,7 +330,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 571.5, 542.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.5, 32.0, 295.0, 59.0 ],
+					"presentation_rect" : [ 7.833333492279053, 33.0, 295.0, 129.0 ],
 					"proportion" : 0.5
 				}
 
@@ -328,8 +390,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 235.0, 328.0, 73.0, 22.0 ],
-					"text" : "clip 50 1000"
+					"patching_rect" : [ 235.0, 328.0, 67.0, 22.0 ],
+					"text" : "clip 50 500"
 				}
 
 			}
@@ -340,8 +402,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 235.0, 300.0, 127.0, 22.0 ],
-					"text" : "scale -0.6 0.6 1000 50"
+					"patching_rect" : [ 235.0, 300.0, 121.0, 22.0 ],
+					"text" : "scale -0.6 0.6 500 50"
 				}
 
 			}
@@ -360,38 +422,60 @@
 , 			{
 				"box" : 				{
 					"basictuning" : 440,
-					"clipheight" : 20.0,
+					"clipheight" : 22.199999999999999,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "snare sample 1.wav",
-								"filename" : "snare sample 1.wav",
+								"absolutepath" : "Future Kick.wav",
+								"filename" : "Future Kick.wav",
 								"filekind" : "audiofile",
-								"id" : "u214004741",
+								"id" : "u314000700",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 1.32
+									"speed" : 0.56
 								}
 
 							}
 , 							{
-								"absolutepath" : "kick sample 1.wav",
-								"filename" : "kick sample 1.wav",
+								"absolutepath" : "Future Snare.wav",
+								"filename" : "Future Snare.wav",
 								"filekind" : "audiofile",
-								"id" : "u133003313",
+								"id" : "u600000707",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 1.32
+									"speed" : 0.56
 								}
 
 							}
 , 							{
-								"absolutepath" : "hat sample 1.wav",
-								"filename" : "hat sample 1.wav",
+								"absolutepath" : "Future Hi Hat.wav",
+								"filename" : "Future Hi Hat.wav",
 								"filekind" : "audiofile",
-								"id" : "u554003294",
+								"id" : "u366000714",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 1.32
+									"speed" : 0.56
+								}
+
+							}
+, 							{
+								"absolutepath" : "Drone.wav",
+								"filename" : "Drone.wav",
+								"filekind" : "audiofile",
+								"id" : "u322000721",
+								"loop" : 0,
+								"content_state" : 								{
+									"speed" : 0.56
+								}
+
+							}
+, 							{
+								"absolutepath" : "Chord.wav",
+								"filename" : "Chord.wav",
+								"filekind" : "audiofile",
+								"id" : "u629000728",
+								"loop" : 0,
+								"content_state" : 								{
+									"speed" : 0.56
 								}
 
 							}
@@ -410,10 +494,10 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 26.0, 621.0, 154.0, 60.0 ],
+					"patching_rect" : [ 26.0, 620.0, 187.0, 116.0 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
-					"presentation_rect" : [ 6.5, 32.0, 295.0, 60.0 ],
+					"presentation_rect" : [ 7.833333492279053, 33.0, 295.0, 129.0 ],
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
 				}
@@ -427,9 +511,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 191.0, 621.0, 24.0, 24.0 ],
+					"patching_rect" : [ 91.0, 577.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 283.0, 8.0, 20.000000000000028, 20.0 ]
+					"presentation_rect" : [ 278.0, 9.0, 20.000000000000028, 20.0 ]
 				}
 
 			}
@@ -476,8 +560,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 924.5, 573.0, 127.0, 22.0 ],
-					"text" : "scale -0.2 0.2 50 1000"
+					"patching_rect" : [ 924.5, 573.0, 121.0, 22.0 ],
+					"text" : "scale -0.2 0.2 50 500"
 				}
 
 			}
@@ -1077,7 +1161,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 300.899999999999977, 189.5, 50.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 42.0, 145.0, 257.0, 28.5 ],
+					"presentation_rect" : [ 37.0, 164.25, 125.833333492279053, 28.5 ],
 					"setstyle" : 5,
 					"slidercolor" : [ 0.054901960784314, 0.0, 0.996078431372549, 1.0 ]
 				}
@@ -1125,7 +1209,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 557.0, 69.0, 22.0 ],
+					"patching_rect" : [ 26.0, 546.5, 69.0, 22.0 ],
 					"text" : "speedlim"
 				}
 
@@ -1149,7 +1233,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 126.0, 568.0, 29.5, 22.0 ],
+					"patching_rect" : [ 126.0, 546.5, 29.5, 22.0 ],
 					"text" : "* 2."
 				}
 
@@ -1185,7 +1269,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 26.0, 594.0, 50.0, 22.0 ],
+					"patching_rect" : [ 26.0, 577.0, 50.0, 22.0 ],
 					"text" : "pack i 1"
 				}
 
@@ -1209,7 +1293,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 594.0, 89.0, 22.0 ],
+					"patching_rect" : [ 126.0, 577.0, 89.0, 22.0 ],
 					"text" : "prepend speed"
 				}
 
@@ -1358,9 +1442,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 26.0, 694.0, 61.0, 47.0 ],
+					"patching_rect" : [ 26.0, 742.0, 61.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.5, 96.0, 293.0, 47.0 ],
+					"presentation_rect" : [ 8.833333492279053, 195.25, 293.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Vol",
@@ -1384,9 +1468,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 764.0, 45.0, 45.0 ],
+					"patching_rect" : [ 26.0, 793.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.5, 145.0, 27.5, 27.5 ]
+					"presentation_rect" : [ 7.833333492279053, 165.25, 27.166666507720947, 27.166666507720947 ]
 				}
 
 			}
@@ -1463,7 +1547,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 507.5, 513.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.5, 95.0, 295.0, 37.5 ],
+					"presentation_rect" : [ 7.833333492279053, 195.25, 295.0, 37.5 ],
 					"proportion" : 0.5
 				}
 
@@ -1481,7 +1565,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 541.5, 493.5, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.75, 3.5, 304.25, 176.5 ],
+					"presentation_rect" : [ 1.708333492279053, 2.5, 307.25, 243.5 ],
 					"proportion" : 0.5
 				}
 
@@ -2022,6 +2106,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-116", 4 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"order" : 1,
 					"source" : [ "obj-69", 0 ]
@@ -2040,6 +2138,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-70", 0 ]
 				}
 
 			}
@@ -2105,6 +2210,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
