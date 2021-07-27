@@ -32,7 +32,7 @@ You will need to download and install a few programs to get going.
 <li>Once you are connected, open up a browser and enter the following address: <code>192.168.1.1</code>. This will take you to a webpage where you can enter your info.</li> 
  <li>First go to WIFI settings and enter the 2.5ghz router SSID and the password. Click save. Return to main menu.</li>
   <li>Navigate to OSC settings. Enter your computer's IP address. Click save. Return to Main Menu.</li>
-<li>Click save settings. Power cycle your M5 stick. You should see on the top line of the display <code>OSC SEND: </code> follow by your IP address on the WIFI router. Congrats, your M5 is set up!</li>
+<li>Click save settings. Power cycle your M5 stick (this means turn it off and on again). You should see on the top line of the display <code>OSC SEND: </code> follow by your IP address on the WIFI router. Congrats, your M5 is set up!</li>
 </ol>
 
   <h2>TEL KIT Instruments</h2> 
