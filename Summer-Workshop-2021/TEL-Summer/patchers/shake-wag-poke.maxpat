@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 401.0, 419.0, 1106.0, 716.0 ],
+		"rect" : [ 167.0, 146.0, 1106.0, 716.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,18 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 168.999999105930328, 391.000000178813934, 91.0, 22.0 ],
-					"text" : "routepass /loop"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "message",
@@ -122,16 +110,16 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Hiragino Sans",
-					"fontsize" : 20.0,
+					"fontsize" : 18.0,
 					"id" : "obj-67",
 					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 329.0, 787.0, 325.0, 201.0 ],
+					"patching_rect" : [ 329.0, 787.0, 316.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 103.0, 557.0, 535.0, 128.0 ],
+					"presentation_rect" : [ 103.0, 557.0, 538.0, 116.0 ],
 					"text" : "To update settings that you previously saved, recall them by clicking the box, then change the settings, and then hold shift & click on the same box to update with your new settings.\n"
 				}
 
@@ -140,16 +128,16 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Hiragino Sans",
-					"fontsize" : 20.0,
+					"fontsize" : 18.0,
 					"id" : "obj-66",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 828.0, 290.0, 128.0 ],
+					"patching_rect" : [ 781.0, 828.0, 301.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 103.0, 478.0, 532.0, 79.0 ],
+					"presentation_rect" : [ 103.0, 478.0, 479.0, 72.0 ],
 					"text" : "To Recall your settings when you want to use them, click on the box that you saved them to.\n"
 				}
 
@@ -158,16 +146,16 @@
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Hiragino Sans",
-					"fontsize" : 20.0,
+					"fontsize" : 18.0,
 					"id" : "obj-65",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 791.0, 611.0, 328.0, 128.0 ],
+					"patching_rect" : [ 791.0, 611.0, 330.0, 116.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 103.0, 396.0, 450.0, 104.0 ],
+					"presentation_rect" : [ 103.0, 396.0, 419.0, 94.0 ],
 					"text" : "When you are happy with your current settings, hold shift and click on a box to store your settings for later.\n"
 				}
 
@@ -310,17 +298,17 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Hiragino Sans",
-					"fontsize" : 20.0,
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
 					"id" : "obj-50",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 1087.00006103515625, 332.0, 128.0 ],
+					"patching_rect" : [ 318.0, 1087.00006103515625, 307.0, 110.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 330.0, 226.0, 429.0, 104.0 ],
+					"presentation_rect" : [ 330.0, 226.0, 390.0, 89.0 ],
 					"text" : "Quickly poke the M5Stick Forward to start playing sound. Do the gesture again to start playback over.\n"
 				}
 
@@ -328,17 +316,17 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Hiragino Sans",
-					"fontsize" : 20.0,
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
 					"id" : "obj-49",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 769.0, 1000.0, 322.0, 104.0 ],
+					"patching_rect" : [ 769.0, 1000.0, 311.0, 89.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 330.0, 151.0, 363.0, 104.0 ],
+					"presentation_rect" : [ 330.0, 151.0, 333.0, 89.0 ],
 					"text" : "Waggle the M5Stick back and forth to control quickly playing a sound repeatedly.\n"
 				}
 
@@ -346,17 +334,17 @@
 , 			{
 				"box" : 				{
 					"fontface" : 1,
-					"fontname" : "Hiragino Sans",
-					"fontsize" : 20.0,
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
 					"id" : "obj-48",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 968.0, 301.0, 79.0 ],
+					"patching_rect" : [ 318.0, 968.0, 267.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 330.0, 80.0, 357.0, 79.0 ],
+					"presentation_rect" : [ 330.0, 80.0, 344.0, 69.0 ],
 					"text" : "Wave the M5Stick above your head to play a sound\n"
 				}
 
@@ -399,30 +387,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-42",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 125.0, 453.0, 44.0, 22.0 ],
-					"text" : "sig~ 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 54.787234544754028, 416.531914889812469, 75.0, 22.0 ],
-					"text" : "route /speed"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -437,7 +401,7 @@
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 0.0, "ticks" ],
-						"originaltempo" : 120.0,
+						"originaltempo" : 120.000000000000014,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -445,18 +409,6 @@
 					}
 ,
 					"text" : "groove~ sound-file 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 44.0, 380.893617272377014, 62.0, 22.0 ],
-					"text" : "route /pos"
 				}
 
 			}
@@ -566,7 +518,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 804.5, 567.0, 211.0, 22.0 ],
-					"restore" : [ "Seagate Backup Plus Drive:/Music/KH Name Shortened/Dearly Beloved.mp3" ],
+					"restore" : [ "oink.wav" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -681,24 +633,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 94.0, 104.0, 106.0, 22.0 ],
-					"text" : "metro 5 @active 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 44.0, 165.0, 69.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 44.0, 509.0, 69.0, 22.0 ],
 					"text" : "Data-Parse",
 					"varname" : "Data-Parse"
 				}
@@ -743,24 +683,14 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
-					"source" : [ "obj-1", 0 ]
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-1", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 2,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -796,13 +726,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -831,13 +754,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"order" : 1,
 					"source" : [ "obj-35", 0 ]
@@ -861,13 +777,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-45", 1 ],
 					"source" : [ "obj-40", 1 ]
 				}
@@ -877,20 +786,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
-					"source" : [ "obj-42", 0 ]
 				}
 
 			}

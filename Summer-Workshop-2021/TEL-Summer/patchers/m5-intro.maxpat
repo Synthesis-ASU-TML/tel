@@ -4,15 +4,15 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 10,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1042.0, 273.0, 392.0, 528.0 ],
+		"rect" : [ 34.0, 77.0, 2492.0, 1289.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -39,6 +39,32 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 919.5, 398.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 923.5, 436.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 34.0, 202.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
@@ -767,8 +793,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 522.0, 238.0, 105.0, 48.0 ],
-					"text" : "I have no fucking idea if this works or not"
+					"patching_rect" : [ 752.0, 153.0, 105.0, 48.0 ],
+					"text" : "I have no fracking idea if this works or not"
 				}
 
 			}
@@ -779,7 +805,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 468.0, 228.0, 33.0, 22.0 ],
+					"patching_rect" : [ 698.0, 143.0, 33.0, 22.0 ],
 					"text" : "- 90."
 				}
 
@@ -791,7 +817,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 409.0, 264.0, 43.0, 22.0 ],
+					"patching_rect" : [ 628.5, 179.0, 43.0, 22.0 ],
 					"text" : "!- 360."
 				}
 
@@ -803,7 +829,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 464.0, 264.0, 42.0, 22.0 ],
+					"patching_rect" : [ 694.0, 179.0, 42.0, 22.0 ],
 					"text" : "+ 180."
 				}
 
@@ -815,7 +841,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 409.0, 228.0, 36.0, 22.0 ],
+					"patching_rect" : [ 628.5, 143.0, 36.0, 22.0 ],
 					"text" : "+ 90."
 				}
 
@@ -827,7 +853,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 305.0, 74.0, 22.0 ],
+					"patching_rect" : [ 639.0, 220.0, 74.0, 22.0 ],
 					"text" : "pack 0. 0. 0."
 				}
 
@@ -839,7 +865,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 409.0, 170.0, 87.0, 22.0 ],
+					"patching_rect" : [ 639.0, 85.0, 87.0, 22.0 ],
 					"text" : "unpack 0. 0. 0."
 				}
 
@@ -851,7 +877,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 409.0, 132.0, 83.0, 22.0 ],
+					"patching_rect" : [ 639.0, 47.0, 83.0, 22.0 ],
 					"text" : "route /rotation"
 				}
 
@@ -863,7 +889,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.0, 339.0, 105.0, 22.0 ],
+					"patching_rect" : [ 639.0, 254.0, 105.0, 22.0 ],
 					"text" : "prepend rotatexyz"
 				}
 
@@ -875,7 +901,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 722.5, 443.0, 480.0, 22.0 ],
+					"patching_rect" : [ 950.5, 462.0, 480.0, 22.0 ],
 					"text" : "jit.world m5 @auto_handle 1 @position 0. 0. -2. @enable 1 @visible 0 @output_matrix 1"
 				}
 
@@ -889,7 +915,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 409.0, 377.0, 359.0, 23.0 ],
+					"patching_rect" : [ 639.0, 292.0, 359.0, 23.0 ],
 					"text" : "jit.gl.model m5 @file stick-co.stl @material_mode 3 @axes 1"
 				}
 
@@ -926,12 +952,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 722.5, 413.0, 150.0, 22.0 ]
+					"patching_rect" : [ 950.5, 432.0, 150.0, 22.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
 					"source" : [ "obj-102", 0 ]
@@ -1133,6 +1166,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
