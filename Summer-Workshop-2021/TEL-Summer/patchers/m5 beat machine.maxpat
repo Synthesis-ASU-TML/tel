@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 123.0, 79.0, 844.0, 687.0 ],
+		"rect" : [ 455.0, 297.0, 311.0, 248.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,19 +40,33 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.150543406605721, 0.150572344660759, 0.150538608431816, 1.0 ],
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 39.5, 170.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 54.0, 168.333333253860474, 108.0, 20.0 ],
+					"text" : "select new presets",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"angle" : 270.0,
+					"bgcolor" : [ 0.054901960784314, 0.050980392156863, 0.050980392156863, 1.0 ],
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"grad1" : [ 1.0, 1.0, 1.0, 0.25 ],
-					"grad2" : [ 0.0, 0.0, 0.0, 0.04 ],
 					"id" : "obj-105",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 538.0, 519.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.0, 164.25, 125.833333492279053, 26.166666507720947 ],
+					"presentation_rect" : [ 51.583333253860474, 165.25, 111.250000238418579, 26.166666507720947 ],
 					"proportion" : 0.5
 				}
 
@@ -65,7 +79,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.0, 521.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
+					"text" : "loadmess 3"
 				}
 
 			}
@@ -151,7 +165,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 926.5, 542.0, 63.0, 22.0 ],
-					"text" : "-0.003277"
+					"text" : "-0.007808"
 				}
 
 			}
@@ -166,8 +180,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1003.0, 216.0, 50.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 37.0, 164.25, 125.833333492279053, 26.166666507720947 ],
 					"setstyle" : 5,
 					"slidercolor" : [ 0.054901960784314, 0.545098039215686, 0.007843137254902, 1.0 ]
 				}
@@ -431,7 +443,7 @@
 								"id" : "u314000700",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.56
+									"speed" : 0.5
 								}
 
 							}
@@ -442,7 +454,7 @@
 								"id" : "u600000707",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.56
+									"speed" : 0.5
 								}
 
 							}
@@ -453,7 +465,7 @@
 								"id" : "u366000714",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.56
+									"speed" : 0.5
 								}
 
 							}
@@ -464,7 +476,7 @@
 								"id" : "u322000721",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.56
+									"speed" : 0.5
 								}
 
 							}
@@ -475,7 +487,7 @@
 								"id" : "u629000728",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.56
+									"speed" : 0.5
 								}
 
 							}
@@ -1160,8 +1172,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 300.899999999999977, 189.5, 50.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 37.0, 164.25, 125.833333492279053, 28.5 ],
 					"setstyle" : 5,
 					"slidercolor" : [ 0.054901960784314, 0.0, 0.996078431372549, 1.0 ]
 				}
@@ -2410,23 +2420,37 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "snare sample 1.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
-				"patcherrelativepath" : ".",
+				"name" : "Future Kick.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "kick sample 1.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
-				"patcherrelativepath" : ".",
+				"name" : "Future Snare.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hat sample 1.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
-				"patcherrelativepath" : ".",
+				"name" : "Future Hi Hat.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Drone.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
+				"patcherrelativepath" : "../media",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Chord.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

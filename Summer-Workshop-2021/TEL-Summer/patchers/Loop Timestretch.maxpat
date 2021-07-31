@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 602.0, 139.0, 488.0, 364.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 498.75, 375.5, 172.0, 22.0 ],
-					"text" : "loadmess replace drumloop.aif"
+					"patching_rect" : [ 498.75, 375.5, 152.0, 22.0 ],
+					"text" : "loadmess replace jongly.aif"
 				}
 
 			}
@@ -754,17 +754,17 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 931.995497100051466, "ms" ],
-						"loopstart" : [ 585.714305980251766, "ms" ],
+						"loopend" : [ 1537.981912625264385, "ms" ],
+						"loopstart" : [ 1256.621358672381575, "ms" ],
 						"mode" : "extremestretch",
 						"originallength" : [ 0.0, "ticks" ],
 						"originaltempo" : 119.999999999999986,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
-						"pitchshift" : [ 1.163388810388533 ],
-						"pitchshiftcent" : [ 262 ],
+						"pitchshift" : [ 0.535886731268147 ],
+						"pitchshiftcent" : [ -1080 ],
 						"quality" : "basic",
-						"timestretch" : [ 1 ]
+						"timestretch" : [ 0 ]
 					}
 ,
 					"text" : "mc.groove~ sampleTimestretch 2 @loop 1 @timestretch 1 @chans 8 @loopinterp 1 @mode extremestretch"

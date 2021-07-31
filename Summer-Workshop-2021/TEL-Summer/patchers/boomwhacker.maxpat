@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1246.0, 132.0, 589.0, 913.0 ],
+		"rect" : [ 192.0, 79.0, 589.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -312,10 +312,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 263.609767436981201, 553.0, 144.0, 81.0 ],
+					"patching_rect" : [ 263.609767436981201, 553.0, 144.0, 79.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 42.705794067398074, 723.52940821647644, 130.0, 94.0 ],
+					"presentation_rect" : [ 42.705794067398074, 723.52940821647644, 130.0, 93.0 ],
 					"text" : "acceleration in the X range changes the strength with which the \"virtual bell\" is struck"
 				}
 
@@ -328,10 +328,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 266.609767436981201, 155.5, 152.0, 93.0 ],
+					"patching_rect" : [ 266.609767436981201, 155.5, 152.0, 91.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
-					"presentation_rect" : [ 191.705794067398074, 4.0, 135.0, 107.0 ],
+					"presentation_rect" : [ 191.705794067398074, 4.0, 138.0, 104.0 ],
 					"text" : "when the orientation crosses from the negative to the positive (a zero crossing), your movement triggers a note "
 				}
 
@@ -374,7 +374,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.529327125564578, 257.441171884536743, 50.0, 34.0 ],
+					"patching_rect" : [ 43.529327125564578, 257.441171884536743, 50.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 47.941091747299197, 258.0, 81.617646455764771, 20.0 ],
 					"text" : "strike trigger",
@@ -455,7 +455,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 252.0, 1032.0, 150.0, 62.0 ],
+					"patching_rect" : [ 252.0, 1032.0, 150.0, 60.0 ],
 					"text" : "this is a bit buggy. use the button here to turn m5 mapping on and off. Then use your mouse to drag"
 				}
 
@@ -468,7 +468,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 338.0, 880.0, 50.0, 77.0 ],
+					"patching_rect" : [ 338.0, 880.0, 50.0, 76.0 ],
 					"text" : "6.27 -2.193107 -64.814575"
 				}
 
@@ -673,7 +673,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1071.161720500000229, 1024.0, 50.0, 48.0 ],
+					"patching_rect" : [ 1071.161720500000229, 1024.0, 50.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 154.735246167190553, 701.52940821647644, 86.852944135665894, 20.0 ],
 					"text" : "Bell Strength",
@@ -700,7 +700,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 837.823441000000003, 1000.5, 50.0, 34.0 ],
+					"patching_rect" : [ 837.823441000000003, 1000.5, 50.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 47.941091747299197, 60.382352113723755, 81.617646455764771, 20.0 ],
 					"text" : "orientation X",
@@ -820,7 +820,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -841,7 +840,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 180.0, 165.0, 190.0, 52.0 ],
+									"patching_rect" : [ 180.0, 165.0, 190.0, 51.0 ],
 									"text" : "convert the  pitch and velocity integers into properly formatted raw midi messages"
 								}
 
@@ -1139,10 +1138,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 217.0, 2179.285714285714221, 150.0, 66.0 ],
+					"patching_rect" : [ 217.0, 2179.285714285714221, 150.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 290.609767436981201, 756.882352113723755, 126.0, 79.0 ],
+					"presentation_rect" : [ 290.609767436981201, 756.882352113723755, 126.0, 78.0 ],
 					"text" : "this button turns Audio Processing on and off. You'll need to turn it on to get going."
 				}
 
@@ -1156,7 +1155,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 824.0, 632.0, 150.0, 81.0 ],
+					"patching_rect" : [ 824.0, 632.0, 150.0, 79.0 ],
 					"text" : "this is a reverb module. it makes the synth tones sound a little nicer. you can play with it if you like!"
 				}
 
@@ -1192,7 +1191,7 @@
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 1,
 						"patchername" : "ChamberVerb.amxd",
-						"patchername_fallback" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd"
+						"patchername_fallback" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd"
 					}
 ,
 					"snapshot" : 					{
@@ -1206,7 +1205,7 @@
 						"embed" : 1,
 						"snapshot" : 						{
 							"name" : "ChamberVerb.amxd",
-							"origname" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
+							"origname" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"1_delay" : 49.599997999999999,
@@ -1243,7 +1242,7 @@
 									"embed" : 1,
 									"snapshot" : 									{
 										"name" : "ChamberVerb.amxd",
-										"origname" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
+										"origname" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/patchers/ChamberVerb.amxd",
 										"valuedictionary" : 										{
 											"parameter_values" : 											{
 												"1_delay" : 49.599997999999999,
@@ -1272,7 +1271,61 @@
 										"filename" : "ChamberVerb.amxd_20210727_1.maxsnap",
 										"filepath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
 										"filepos" : -1,
-										"snapshotfileid" : "dd13364a450fa94cbfc5bdc9409516f4"
+										"snapshotfileid" : "47ae905579eaf6c00fc13855e758c708"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "ChamberVerb.amxd",
+									"origin" : "ChamberVerb.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "ChamberVerb.amxd",
+										"filename" : "ChamberVerb.amxd.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "b23d7fd7036e6252b858109fab3010e2"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "ChamberVerb.amxd",
+									"origin" : "ChamberVerb.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "ChamberVerb.amxd",
+										"filename" : "ChamberVerb.amxd_20210727.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "ad88bd4ac6c3105a414c814e0db4a300"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "ChamberVerb.amxd",
+									"origin" : "ChamberVerb.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "ChamberVerb.amxd",
+										"filename" : "ChamberVerb.amxd_20210727_1.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "6183cdbe3d608512ee21656b28247205"
 									}
 
 								}
@@ -1344,7 +1397,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1051.5, 821.5, 107.0, 34.0 ],
+					"patching_rect" : [ 1051.5, 821.5, 107.0, 33.0 ],
 					"text" : "Change up and down"
 				}
 
@@ -1447,7 +1500,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1096.5, 876.0, 51.0, 48.0 ],
+					"patching_rect" : [ 1096.5, 876.0, 51.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 47.941091747299197, 508.52940821647644, 105.0, 20.0 ],
 					"text" : "Acceleration in X",
@@ -1576,7 +1629,43 @@
 										"filename" : "Big Ben Bell.amxd_20210727.maxsnap",
 										"filepath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
 										"filepos" : -1,
-										"snapshotfileid" : "13021609784c3ca4fb40f0fab7ad22f6"
+										"snapshotfileid" : "af296a0e7f672f4f69c98f11fd82549b"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Big Ben Bell.amxd",
+									"origin" : "Big Ben Bell.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Big Ben Bell.amxd",
+										"filename" : "Big Ben Bell.amxd.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "8f0323501d45cfe104199438717dd5ea"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Big Ben Bell.amxd",
+									"origin" : "Big Ben Bell.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Big Ben Bell.amxd",
+										"filename" : "Big Ben Bell.amxd_20210727.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "607b2eb7b3a6343d7fb55dd68276c814"
 									}
 
 								}
@@ -2248,9 +2337,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Big Ben Bell.amxd.maxsnap",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"patcherrelativepath" : "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Big Ben Bell.amxd_20210727.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
-				"patcherrelativepath" : "../data",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"patcherrelativepath" : "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
@@ -2261,22 +2357,36 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ChamberVerb.amxd.maxsnap",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"patcherrelativepath" : "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ChamberVerb.amxd_20210727.maxsnap",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"patcherrelativepath" : "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ChamberVerb.amxd_20210727_1.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
-				"patcherrelativepath" : "../data",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"patcherrelativepath" : "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ChamberVerb.amxd",
-				"bootpath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "amxd",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scale-dial.js",
-				"bootpath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/code",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1

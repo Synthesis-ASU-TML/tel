@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 215.0, 85.0, 281.0, 608.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,227 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 1138.5, 178.0, 22.0 ],
+					"text" : "load \"m5-stick FM Spin.maxpat\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 1168.5, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-45",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 252.0, 1111.0, 181.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 641.0, 190.0, 41.0 ],
+					"text" : "8 // FM Spin",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 1039.5, 178.0, 22.0 ],
+					"text" : "load \"m5 beat machine.maxpat\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 1069.5, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-42",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 252.0, 1012.0, 181.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 589.0, 190.0, 41.0 ],
+					"text" : "7 // Tempo Machine",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 943.5, 211.0, 22.0 ],
+					"text" : "load \"m5 shake to arpeggiate.maxpat\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 973.5, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-39",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 252.0, 916.0, 181.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 539.0, 190.0, 41.0 ],
+					"text" : "6 // Shake to Arpeggiate",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 853.5, 142.0, 22.0 ],
+					"text" : "load \"Noise filter.maxpat\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 883.5, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-35",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 252.0, 826.0, 181.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 491.0, 190.0, 41.0 ],
+					"text" : "5 // White Noise Filter",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 761.5, 178.0, 22.0 ],
+					"text" : "load \"Loop Timestretch.maxpat\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 252.0, 791.5, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-27",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 252.0, 734.0, 181.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 441.0, 190.0, 41.0 ],
+					"text" : "4 // Timestretching Sound",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 868.0, 151.0, 22.0 ],
+					"patching_rect" : [ 29.0, 501.0, 151.0, 22.0 ],
 					"text" : "load m5-intro.maxpat"
 				}
 
@@ -57,7 +272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 898.0, 51.0, 22.0 ],
+					"patching_rect" : [ 29.0, 529.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -72,9 +287,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.0, 826.0, 100.0, 20.0 ],
+					"patching_rect" : [ 29.0, 470.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 227.5, 142.0, 41.0 ],
+					"presentation_rect" : [ 47.0, 203.5, 142.0, 41.0 ],
 					"text" : "m5stick intro",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -88,7 +303,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 686.0, 151.0, 22.0 ],
+					"patching_rect" : [ 29.0, 601.0, 151.0, 22.0 ],
 					"text" : "load trouble.maxpat"
 				}
 
@@ -100,7 +315,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 716.0, 51.0, 22.0 ],
+					"patching_rect" : [ 29.0, 635.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -115,9 +330,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.0, 651.0, 100.0, 20.0 ],
+					"patching_rect" : [ 29.0, 570.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 938.0, 142.0, 44.0 ],
+					"presentation_rect" : [ 54.5, 1010.0, 142.0, 44.0 ],
 					"text" : "troubleshooting",
 					"textjustification" : 0,
 					"texton" : "sonobus"
@@ -136,7 +351,7 @@
 					"patching_rect" : [ 220.0, 40.0, 427.0, 118.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 59.0, 37.0, 143.0, 173.0 ],
+					"presentation_rect" : [ 47.0, 16.0, 143.0, 173.0 ],
 					"text" : "T|elematic E|mbodied L|earning\nm5\nkit \n"
 				}
 
@@ -149,9 +364,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 768.0, 52.0, 323.0, 27.0 ],
+					"patching_rect" : [ 768.0, 52.0, 323.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 698.0, 142.0, 27.0 ],
+					"presentation_rect" : [ 54.5, 770.0, 142.0, 24.0 ],
 					"text" : "Settings"
 				}
 
@@ -164,9 +379,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 427.0, 323.0, 27.0 ],
+					"patching_rect" : [ 29.0, 427.0, 323.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 288.0, 142.0, 27.0 ],
+					"presentation_rect" : [ 47.0, 264.0, 142.0, 24.0 ],
 					"text" : "Instruments"
 				}
 
@@ -178,7 +393,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 685.0, 165.0, 22.0 ],
+					"patching_rect" : [ 252.0, 671.5, 165.0, 22.0 ],
 					"text" : "load shake-wag-poke.maxpat"
 				}
 
@@ -190,7 +405,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 715.0, 51.0, 22.0 ],
+					"patching_rect" : [ 252.0, 701.5, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -214,7 +429,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 569.0, 151.0, 22.0 ],
+					"patching_rect" : [ 252.0, 584.0, 151.0, 22.0 ],
 					"text" : "load boomwhacker.maxpat"
 				}
 
@@ -226,7 +441,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 599.0, 51.0, 22.0 ],
+					"patching_rect" : [ 252.0, 614.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -287,7 +502,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 422.0, 763.0, 24.0, 24.0 ]
+					"patching_rect" : [ 559.0, 625.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -299,7 +514,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 422.0, 816.0, 87.0, 119.0 ],
+					"patching_rect" : [ 559.0, 656.0, 87.0, 116.0 ],
 					"text" : "dialog we haven't added these patches yet! check back at github for updates soon :-) @mode 1"
 				}
 
@@ -312,7 +527,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 753.838279499999771, 1162.5, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 785.5, 142.0, 142.0 ]
+					"presentation_rect" : [ 54.5, 857.5, 142.0, 142.0 ]
 				}
 
 			}
@@ -323,7 +538,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 495.0, 110.0, 22.0 ],
+					"patching_rect" : [ 252.0, 501.0, 110.0, 22.0 ],
 					"text" : "load tuning.maxpat"
 				}
 
@@ -335,7 +550,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 523.0, 51.0, 22.0 ],
+					"patching_rect" : [ 252.0, 529.0, 51.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -352,7 +567,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 699.0, 217.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 727.0, 142.0, 44.0 ],
+					"presentation_rect" : [ 54.5, 799.0, 142.0, 44.0 ],
 					"text" : "sonobus",
 					"textjustification" : 0,
 					"texton" : "sonobus"
@@ -369,10 +584,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 503.0, 706.0, 100.0, 20.0 ],
+					"patching_rect" : [ 559.0, 596.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 479.0, 142.0, 43.0 ],
-					"text" : "4 // ",
+					"presentation_rect" : [ 47.0, 693.0, 190.0, 43.0 ],
+					"text" : "9 // ",
 					"textjustification" : 0,
 					"texton" : "Tuning"
 				}
@@ -388,9 +603,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 327.0, 657.5, 100.0, 20.0 ],
+					"patching_rect" : [ 252.0, 644.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 422.0, 142.0, 41.0 ],
+					"presentation_rect" : [ 47.0, 393.0, 190.0, 41.0 ],
 					"text" : "3 // shake, waggle, poke",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -407,9 +622,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 115.0, 532.0, 100.0, 20.0 ],
+					"patching_rect" : [ 252.0, 558.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 371.0, 142.0, 41.0 ],
+					"presentation_rect" : [ 47.0, 342.0, 190.0, 41.0 ],
 					"text" : "2 // boomwhacker",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -426,9 +641,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 36.0, 464.0, 100.0, 20.0 ],
+					"patching_rect" : [ 252.0, 470.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.0, 321.0, 142.0, 41.0 ],
+					"presentation_rect" : [ 47.0, 292.0, 190.0, 41.0 ],
 					"text" : "1 // tuning",
 					"textjustification" : 0,
 					"texton" : "Tuning"
@@ -444,7 +659,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 146.0, 148.0, 41.0 ],
+					"patching_rect" : [ 37.0, 146.0, 136.0, 36.0 ],
 					"text" : "patching by andrew robison, garrett johnson, connor rawls"
 				}
 
@@ -456,7 +671,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1790.476562000000058, 141.0, 326.0, 172.0 ],
+					"patching_rect" : [ 1790.476562000000058, 141.0, 326.0, 167.0 ],
 					"text" : "(!!!) read in .txt. files converted from .scl SCALA scale file \n\n(if text files unavailable, follow these steps:\n\ndownload here: http://www.huygens-fokker.org/scala/downloads.html#scales\n\nthen open terminal, \"cd\" to file location, then enter \"for f in *.scl; do base=`basename $f .scl`; mv $f $base.txt; done\").\n\nDrop the file into the rectangle below -- v "
 				}
 
@@ -541,7 +756,79 @@
 										"filename" : "SonoBus_20210727.maxsnap",
 										"filepath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
 										"filepos" : -1,
-										"snapshotfileid" : "97372e2679bb9aea597071515ed765f2"
+										"snapshotfileid" : "54cdb2b6412948be5f506dbdfd11b354"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "SonoBus",
+									"origin" : "SonoBus.vstinfo",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "SonoBus",
+										"filename" : "SonoBus.maxsnap",
+										"filepath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "62cbe66ca78a96679d1ed6114e23650d"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "SonoBus",
+									"origin" : "SonoBus.vstinfo",
+									"type" : "VST",
+									"subtype" : "MidiEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "SonoBus",
+										"filename" : "SonoBus_20210727.maxsnap",
+										"filepath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "8e20d100f3a6b17c31d683fd87ae0f8b"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "SonoBus",
+									"origin" : "SonoBus.vstinfo",
+									"type" : "VST",
+									"subtype" : "MidiEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "SonoBus",
+										"filename" : "SonoBus.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "e2077fdc573a6bdc201fca9ed0eb306b"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "SonoBus",
+									"origin" : "SonoBus.vstinfo",
+									"type" : "VST",
+									"subtype" : "MidiEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "SonoBus",
+										"filename" : "SonoBus_20210727.maxsnap",
+										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
+										"filepos" : -1,
+										"snapshotfileid" : "68f029d4b326e57104fc6bc3cfbdbd72"
 									}
 
 								}
@@ -569,7 +856,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 54.5, 216.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 51.5, 215.0, 170.0, 66.0 ],
+					"presentation_rect" : [ 39.5, 191.0, 170.0, 66.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -587,7 +874,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.5, 216.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 46.5, 288.0, 175.0, 247.0 ],
+					"presentation_rect" : [ 34.5, 259.0, 214.0, 491.5 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -605,7 +892,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 14.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 684.0, 170.0, 320.0 ],
+					"presentation_rect" : [ 47.0, 756.0, 170.0, 320.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -656,6 +943,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -698,6 +992,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -712,6 +1013,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
@@ -719,8 +1041,43 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -763,8 +1120,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "SonoBus.maxsnap",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"patcherrelativepath" : "../data",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "SonoBus_20210727.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/data",
 				"patcherrelativepath" : "../data",
 				"type" : "mx@s",
 				"implicit" : 1
