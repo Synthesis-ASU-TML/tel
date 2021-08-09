@@ -2,8 +2,8 @@
 	"name" : "TEL-Summer",
 	"version" : 1,
 	"creationdate" : 3704809133,
-	"modificationdate" : 3710154832,
-	"viewrect" : [ 13.0, 79.0, 318.0, 1036.0 ],
+	"modificationdate" : 3711371270,
+	"viewrect" : [ 0.0, 79.0, 318.0, 1036.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -55,10 +55,40 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"m5 Melody and Chords.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"media" : 		{
+			"Future Kick.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Future Snare.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Future Hi Hat.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Drone.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Chord.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
 			"Bongo High.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
@@ -74,37 +104,12 @@
 				"local" : 1
 			}
 ,
-			"Chord.wav" : 			{
-				"kind" : "audiofile",
-				"local" : 1
-			}
-,
 			"Conga High.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}
 ,
 			"Conga Low.wav" : 			{
-				"kind" : "audiofile",
-				"local" : 1
-			}
-,
-			"Drone.wav" : 			{
-				"kind" : "audiofile",
-				"local" : 1
-			}
-,
-			"Future Hi Hat.wav" : 			{
-				"kind" : "audiofile",
-				"local" : 1
-			}
-,
-			"Future Kick.wav" : 			{
-				"kind" : "audiofile",
-				"local" : 1
-			}
-,
-			"Future Snare.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}
@@ -135,10 +140,6 @@
 		}
 ,
 		"data" : 		{
-
-		}
-,
-		"externals" : 		{
 
 		}
 

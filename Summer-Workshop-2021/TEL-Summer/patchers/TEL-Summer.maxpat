@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 44.0, 79.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,50 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 505.333340883255005, 497.5, 210.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"text" : "load \"m5 Melody and Chords.maxpat\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 505.333340883255005, 527.5, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"fontsize" : 16.0,
+					"id" : "obj-48",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 505.333340883255005, 470.0, 158.333332657814026, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 691.999982118606567, 190.0, 41.0 ],
+					"text" : "9 // Melody & Chords",
+					"textjustification" : 0,
+					"texton" : "Tuning"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "message",
@@ -332,7 +376,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 29.0, 570.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.5, 1010.0, 142.0, 44.0 ],
+					"presentation_rect" : [ 54.5, 1052.666667938232422, 142.0, 44.0 ],
 					"text" : "troubleshooting",
 					"textjustification" : 0,
 					"texton" : "sonobus"
@@ -366,7 +410,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 768.0, 52.0, 323.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.5, 770.0, 142.0, 24.0 ],
+					"presentation_rect" : [ 54.5, 812.666667938232422, 142.0, 24.0 ],
 					"text" : "Settings"
 				}
 
@@ -502,7 +546,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 559.0, 625.0, 24.0, 24.0 ]
+					"patching_rect" : [ 29.0, 713.00000262260437, 24.0, 24.0 ]
 				}
 
 			}
@@ -514,7 +558,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 559.0, 656.0, 87.0, 116.0 ],
+					"patching_rect" : [ 29.0, 744.00000262260437, 87.0, 116.0 ],
 					"text" : "dialog we haven't added these patches yet! check back at github for updates soon :-) @mode 1"
 				}
 
@@ -527,7 +571,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 753.838279499999771, 1162.5, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.5, 857.5, 142.0, 142.0 ]
+					"presentation_rect" : [ 54.5, 900.166667938232422, 142.0, 142.0 ]
 				}
 
 			}
@@ -567,7 +611,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 699.0, 217.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.5, 799.0, 142.0, 44.0 ],
+					"presentation_rect" : [ 54.5, 841.666667938232422, 142.0, 44.0 ],
 					"text" : "sonobus",
 					"textjustification" : 0,
 					"texton" : "sonobus"
@@ -584,10 +628,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 559.0, 596.0, 100.0, 20.0 ],
+					"patching_rect" : [ 29.0, 684.00000262260437, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 693.0, 190.0, 43.0 ],
-					"text" : "9 // ",
+					"presentation_rect" : [ 47.0, 739.000000596046448, 190.0, 43.0 ],
+					"text" : "10 // ",
 					"textjustification" : 0,
 					"texton" : "Tuning"
 				}
@@ -874,7 +918,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 345.5, 216.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.5, 259.0, 214.0, 491.5 ],
+					"presentation_rect" : [ 34.5, 259.0, 214.0, 535.500001311302185 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -892,7 +936,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 14.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 756.0, 170.0, 320.0 ],
+					"presentation_rect" : [ 47.0, 798.666667938232422, 170.0, 320.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -1078,6 +1122,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
