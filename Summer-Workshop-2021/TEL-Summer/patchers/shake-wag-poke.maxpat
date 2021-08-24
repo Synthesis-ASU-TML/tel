@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 167.0, 146.0, 1106.0, 716.0 ],
+		"rect" : [ 1314.0, 56.0, 1852.0, 990.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,38 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 904.0, 305.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autopopulate" : 1,
+					"depth" : 1,
+					"fontname" : "Hiragino Sans",
+					"fontsize" : 30.0,
+					"id" : "obj-12",
+					"items" : [ "applause.mp3", ",", "bird-chirp.wav", ",", "car.mp3", ",", "clang.mp3", ",", "cymbal.wav", ",", "dog-bark.wav", ",", "frog.wav", ",", "meow.wav", ",", "tambourine.wav", ",", "walking-bass.wav", ",", "whoosh.wav", ",", "wolf-howl.wav" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 918.0, 356.0, 241.5, 38.0 ],
+					"prefix" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/projects/Gestural-Playback/media/",
+					"presentation" : 1,
+					"presentation_rect" : [ 724.0, 258.5, 322.609954833984375, 38.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "message",
@@ -97,10 +129,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 175.0, -102.5, 436.0, 240.0 ],
+					"patching_rect" : [ 175.0, -102.5, 436.0, 199.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 600.109954833984375, 410.5, 436.0, 240.0 ],
+					"presentation_rect" : [ 600.109954833984375, 410.5, 436.0, 199.0 ],
 					"text" : "Gestural\n\nPlayback",
 					"textjustification" : 1
 				}
@@ -116,10 +148,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 329.0, 787.0, 316.0, 182.0 ],
+					"patching_rect" : [ 329.0, 787.0, 264.0, 151.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 103.0, 557.0, 538.0, 116.0 ],
+					"presentation_rect" : [ 103.0, 557.0, 508.0, 97.0 ],
 					"text" : "To update settings that you previously saved, recall them by clicking the box, then change the settings, and then hold shift & click on the same box to update with your new settings.\n"
 				}
 
@@ -134,10 +166,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 828.0, 301.0, 116.0 ],
+					"patching_rect" : [ 781.0, 828.0, 261.0, 97.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 103.0, 478.0, 479.0, 72.0 ],
+					"presentation_rect" : [ 103.0, 478.0, 479.0, 61.0 ],
 					"text" : "To Recall your settings when you want to use them, click on the box that you saved them to.\n"
 				}
 
@@ -152,10 +184,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 791.0, 611.0, 330.0, 116.0 ],
+					"patching_rect" : [ 791.0, 611.0, 316.0, 97.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 103.0, 396.0, 419.0, 94.0 ],
+					"presentation_rect" : [ 103.0, 396.0, 419.0, 79.0 ],
 					"text" : "When you are happy with your current settings, hold shift and click on a box to store your settings for later.\n"
 				}
 
@@ -170,9 +202,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 348.0, 322.0, 356.0, 123.0 ],
+					"patching_rect" : [ 206.0, 370.5, 356.0, 103.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 28.0, 329.0, 606.0, 65.0 ],
+					"presentation_rect" : [ 28.0, 329.0, 606.0, 54.0 ],
 					"text" : "Create & Load Presets"
 				}
 
@@ -214,7 +246,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 859.0, 439.0, 192.0, 22.0 ],
+					"patching_rect" : [ 904.0, 438.0, 192.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"initial" : [ 0 ],
 						"parameter_enable" : 0,
@@ -235,28 +267,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 830.5, 190.0, 329.0, 65.0 ],
+					"patching_rect" : [ 830.5, 190.0, 329.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 714.0, 38.0, 329.0, 65.0 ],
+					"presentation_rect" : [ 714.0, 38.0, 329.0, 54.0 ],
 					"text" : "Sound File",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Hiragino Sans",
-					"fontsize" : 24.0,
-					"id" : "obj-55",
-					"items" : [ "bird-chirp.mp3", ",", "dog-bark.wav", ",", "meow.wav", ",", "wolf-howl.wav", ",", "frog.wav", ",", "oink.wav", ",", "-", ",", "bali-xylophone.aiff", ",", "tambourine.wav", ",", "cymbal.wav", ",", "wind-chimes.wav", ",", "funk-guitar.wav", ",", "walking-bass.wav", ",", "-", ",", "happy-little-synth.wav", ",", "booza-nova.wav", ",", "amusement-park.wav", ",", "hard-rock.mp3", ",", "-", ",", "rain.wav", ",", "car.mp3", ",", "clang.mp3", ",", "footsteps.wav", ",", "whoosh.wav", ",", "ambient-drone.wav", ",", "applause.wav", ",", "dutch-football.aiff", ",", "alert-plasma-cannon.wav" ],
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 859.0, 351.0, 189.0, 38.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 724.0, 150.0, 319.0, 38.0 ]
 				}
 
 			}
@@ -269,9 +284,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 695.5, 227.0, 172.0, 36.0 ],
+					"patching_rect" : [ 695.5, 227.0, 172.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 724.0, 186.0, 319.0, 36.0 ],
+					"presentation_rect" : [ 724.0, 186.0, 319.0, 30.0 ],
 					"text" : "or",
 					"textjustification" : 1
 				}
@@ -287,9 +302,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 732.5, 14.0, 194.0, 65.0 ],
+					"patching_rect" : [ 732.5, 14.0, 194.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 724.0, 118.0, 356.0, 36.0 ],
+					"presentation_rect" : [ 724.0, 118.0, 356.0, 30.0 ],
 					"text" : "Choose one of our sounds",
 					"textjustification" : 1
 				}
@@ -305,10 +320,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 1087.00006103515625, 307.0, 110.0 ],
+					"patching_rect" : [ 318.0, 1087.00006103515625, 307.0, 107.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 330.0, 226.0, 390.0, 89.0 ],
+					"presentation_rect" : [ 330.0, 226.0, 390.0, 87.0 ],
 					"text" : "Quickly poke the M5Stick Forward to start playing sound. Do the gesture again to start playback over.\n"
 				}
 
@@ -323,10 +338,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 769.0, 1000.0, 311.0, 89.0 ],
+					"patching_rect" : [ 769.0, 1000.0, 311.0, 87.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 330.0, 151.0, 333.0, 89.0 ],
+					"presentation_rect" : [ 330.0, 151.0, 333.0, 87.0 ],
 					"text" : "Waggle the M5Stick back and forth to control quickly playing a sound repeatedly.\n"
 				}
 
@@ -341,10 +356,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 968.0, 267.0, 69.0 ],
+					"patching_rect" : [ 318.0, 968.0, 267.0, 67.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 330.0, 80.0, 344.0, 69.0 ],
+					"presentation_rect" : [ 330.0, 80.0, 344.0, 67.0 ],
 					"text" : "Wave the M5Stick above your head to play a sound\n"
 				}
 
@@ -401,7 +416,7 @@
 						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 0.0, "ticks" ],
-						"originaltempo" : 120.000000000000014,
+						"originaltempo" : 120.000000000000512,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -438,7 +453,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 697.5, 174.0, 56.0, 22.0 ],
+					"patching_rect" : [ 697.5, 213.0, 56.0, 22.0 ],
 					"text" : "sel recall"
 				}
 
@@ -480,10 +495,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 697.5, 144.0, 170.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 79, 1811, 459 ],
+						"client_rect" : [ 1286, 56, 1640, 184 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 1271, 90, 1722, 218 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage gestural-playback",
@@ -518,7 +533,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 804.5, 567.0, 211.0, 22.0 ],
-					"restore" : [ "oink.wav" ],
+					"restore" : [ "Macintosh HD:/Users/andrewrobinson/Downloads/crimson flow.wav" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -574,9 +589,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 297.0, 100.0, 380.0, 65.0 ],
+					"patching_rect" : [ 297.0, 100.0, 380.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.5, 13.0, 380.0, 65.0 ],
+					"presentation_rect" : [ 13.5, 13.0, 380.0, 54.0 ],
 					"text" : "Gesture Mode"
 				}
 
@@ -605,7 +620,7 @@
 					"fontsize" : 48.0,
 					"id" : "obj-7",
 					"maxclass" : "live.tab",
-					"num_lines_patching" : 1,
+					"num_lines_patching" : 2,
 					"num_lines_presentation" : 3,
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -704,6 +719,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -721,6 +750,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -805,20 +841,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-55", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"source" : [ "obj-57", 0 ]
 				}
@@ -826,7 +848,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -879,7 +901,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Data-Parse.maxpat",
-				"bootpath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/patchers",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

@@ -2,8 +2,8 @@
 	"name" : "TEL-Summer",
 	"version" : 1,
 	"creationdate" : 3704809133,
-	"modificationdate" : 3711371270,
-	"viewrect" : [ 0.0, 79.0, 318.0, 1036.0 ],
+	"modificationdate" : 3712567280,
+	"viewrect" : [ 1634.0, 80.0, 318.0, 1036.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -129,6 +129,66 @@
 			}
 ,
 			"Wood Block.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"applause.mp3" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"bird-chirp.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"car.mp3" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"clang.mp3" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"cymbal.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"dog-bark.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"frog.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"meow.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"tambourine.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"walking-bass.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"whoosh.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"wolf-howl.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}

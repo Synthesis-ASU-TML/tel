@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 44.0, 79.0, 1212.0, 687.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 505.333340883255005, 497.5, 210.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "load \"m5 Melody and Chords.maxpat\""
 				}
 
@@ -800,7 +799,7 @@
 										"filename" : "SonoBus_20210727.maxsnap",
 										"filepath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
 										"filepos" : -1,
-										"snapshotfileid" : "54cdb2b6412948be5f506dbdfd11b354"
+										"snapshotfileid" : "75d66bf5c52e099ccc69dbc7757e9820"
 									}
 
 								}
@@ -837,42 +836,6 @@
 										"filepath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/data",
 										"filepos" : -1,
 										"snapshotfileid" : "8e20d100f3a6b17c31d683fd87ae0f8b"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "SonoBus",
-									"origin" : "SonoBus.vstinfo",
-									"type" : "VST",
-									"subtype" : "MidiEffect",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "SonoBus",
-										"filename" : "SonoBus.maxsnap",
-										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
-										"filepos" : -1,
-										"snapshotfileid" : "e2077fdc573a6bdc201fca9ed0eb306b"
-									}
-
-								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "SonoBus",
-									"origin" : "SonoBus.vstinfo",
-									"type" : "VST",
-									"subtype" : "MidiEffect",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "SonoBus",
-										"filename" : "SonoBus_20210727.maxsnap",
-										"filepath" : "~/Library/Mobile Documents/com~apple~CloudDocs/.Trash/tel/Summer-Workshop-2021/TEL-Summer/data",
-										"filepos" : -1,
-										"snapshotfileid" : "68f029d4b326e57104fc6bc3cfbdbd72"
 									}
 
 								}
