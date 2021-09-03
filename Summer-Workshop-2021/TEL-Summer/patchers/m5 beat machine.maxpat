@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 11,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,8 +37,686 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-115",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 96.0, 104.0, 997.0, 472.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 654.0, 101.5, 32.0, 22.0 ],
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 799.0, 173.5, 66.0, 22.0 ],
+									"text" : "Chord.wav"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 788.0, 149.0, 66.0, 22.0 ],
+									"text" : "Drone.wav"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 708.899999999999977, 193.5, 113.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "\"Future Hi Hat.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 681.0, 169.5, 112.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "\"Future Snare.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 654.0, 149.0, 102.0, 22.0 ],
+									"text" : "\"Future Kick.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 654.0, 216.5, 96.0, 22.0 ],
+									"text" : "prepend append"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 857.899999999999977, 210.5, 35.0, 22.0 ],
+									"text" : "clear"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 282.0, 101.5, 32.0, 22.0 ],
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 441.0, 201.5, 106.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "\"Wood Block.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 427.0, 173.5, 102.0, 22.0 ],
+									"text" : "\"Conga Low.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 416.0, 149.0, 105.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "\"Conga High.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 336.899999999999977, 193.5, 75.0, 22.0 ],
+									"text" : "Cabasa.wav"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 309.0, 169.5, 101.0, 22.0 ],
+									"text" : "\"Bongo Low.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 149.0, 104.0, 22.0 ],
+									"text" : "\"Bongo High.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 282.0, 216.5, 96.0, 22.0 ],
+									"text" : "prepend append"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 562.899999999999977, 201.5, 35.0, 22.0 ],
+									"text" : "clear"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-112",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "bang" ],
+									"patching_rect" : [ 50.0, 101.5, 32.0, 22.0 ],
+									"text" : "t b b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-111",
+									"maxclass" : "newobj",
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "bang", "" ],
+									"patching_rect" : [ 50.0, 60.0, 54.0, 22.0 ],
+									"text" : "sel 1 2 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-101",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 104.899999999999977, 197.5, 114.0, 22.0 ],
+									"text" : "\"kick sample 1.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-96",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 77.0, 173.5, 124.0, 22.0 ],
+									"text" : "\"snare sample 1.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-86",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 153.0, 110.0, 22.0 ],
+									"text" : "\"hat sample 1.wav\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-84",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 220.5, 96.0, 22.0 ],
+									"text" : "prepend append"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-70",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 220.899999999999977, 197.5, 35.0, 22.0 ],
+									"text" : "clear"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-113",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 50.0, 11.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-114",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 49.75, 404.5, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"order" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"order" : 1,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"order" : 2,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"order" : 3,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"order" : 4,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-10", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-84", 0 ],
+									"source" : [ "obj-101", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-111", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-112", 0 ],
+									"source" : [ "obj-111", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-111", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-101", 0 ],
+									"order" : 0,
+									"source" : [ "obj-112", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-70", 0 ],
+									"source" : [ "obj-112", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-86", 0 ],
+									"order" : 2,
+									"source" : [ "obj-112", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-96", 0 ],
+									"order" : 1,
+									"source" : [ "obj-112", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-111", 0 ],
+									"source" : [ "obj-113", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-114", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-114", 0 ],
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-114", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-114", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-114", 0 ],
+									"source" : [ "obj-70", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-114", 0 ],
+									"source" : [ "obj-84", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-84", 0 ],
+									"source" : [ "obj-86", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"order" : 3,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 4,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"order" : 5,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-9", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 2,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 1,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"order" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-84", 0 ],
+									"source" : [ "obj-96", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 256.0, 584.0, 95.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p Load Samples"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.150543406605721, 0.150572344660759, 0.150538608431816, 1.0 ],
 					"id" : "obj-22",
@@ -78,7 +756,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 521.0, 70.0, 22.0 ],
+					"patching_rect" : [ 229.0, 446.0, 70.0, 22.0 ],
 					"text" : "loadmess 3"
 				}
 
@@ -91,19 +769,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 228.0, 637.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-70",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 271.0, 678.0, 35.0, 22.0 ],
-					"text" : "clear"
+					"patching_rect" : [ 229.0, 532.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -114,20 +780,20 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "preset", "int", "preset", "int" ],
-					"patching_rect" : [ 228.0, 577.0, 100.0, 40.0 ],
+					"patching_rect" : [ 229.0, 475.0, 100.0, 40.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 163.833333492279053, 164.25, 138.166666507720947, 28.5 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-10", "playlist~", "preset_count", 3, 7, "obj-10", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 1, "absolutepath", "snare sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "filename", "snare sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 1, "id", "u214004741", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 2, "absolutepath", "kick sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filename", "kick sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 2, "id", "u133003313", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 3, "absolutepath", "hat sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filename", "hat sample 1.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 3, "id", "u554003294", 4, "obj-10", "playlist~", "preset_execute", 5, "obj-66", "number", "int", 3 ]
+							"data" : [ 5, "obj-66", "number", "int", 3 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-10", "playlist~", "preset_count", 6, 7, "obj-10", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 1, "absolutepath", "Conga Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "filename", "Conga Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 1, "id", "u849002535", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 2, "absolutepath", "Conga High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filename", "Conga High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 2, "id", "u813002546", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 3, "absolutepath", "Bongo Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filename", "Bongo Low.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 3, "id", "u720002565", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 4, "absolutepath", "Bongo High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filename", "Bongo High.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 4, "id", "u135002572", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 5, "absolutepath", "Wood Block.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filename", "Wood Block.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 5, "id", "u487002741", 7, "obj-10", "playlist~", "preset_clipstate", 6, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 6, "absolutepath", "Cabasa.wav", 7, "obj-10", "playlist~", "preset_clipstate", 6, "filename", "Cabasa.wav", 7, "obj-10", "playlist~", "preset_clipstate", 6, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 6, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 6, "id", "u912002748", 4, "obj-10", "playlist~", "preset_execute", 5, "obj-66", "number", "int", 6 ]
+							"data" : [ 5, "obj-66", "number", "int", 6 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-10", "playlist~", "preset_count", 5, 7, "obj-10", "playlist~", "preset_clipstate", 1, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 1, "absolutepath", "Future Kick.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "filename", "Future Kick.wav", 7, "obj-10", "playlist~", "preset_clipstate", 1, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 1, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 1, "id", "u314000700", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 2, "absolutepath", "Future Snare.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "filename", "Future Snare.wav", 7, "obj-10", "playlist~", "preset_clipstate", 2, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 2, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 2, "id", "u600000707", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 3, "absolutepath", "Future Hi Hat.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "filename", "Future Hi Hat.wav", 7, "obj-10", "playlist~", "preset_clipstate", 3, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 3, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 3, "id", "u366000714", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 4, "absolutepath", "Drone.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "filename", "Drone.wav", 7, "obj-10", "playlist~", "preset_clipstate", 4, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 4, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 4, "id", "u322000721", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filekind", "audiofile", 7, "obj-10", "playlist~", "preset_clipstate", 5, "absolutepath", "Chord.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "filename", "Chord.wav", 7, "obj-10", "playlist~", "preset_clipstate", 5, "loop", 0, 8, "obj-10", "playlist~", "preset_clipstate", 5, "selection", -1.0, -1.0, 7, "obj-10", "playlist~", "preset_clipstate", 5, "id", "u629000728", 4, "obj-10", "playlist~", "preset_execute", 5, "obj-66", "number", "int", 5 ]
+							"data" : [ 5, "obj-66", "number", "int", 5 ]
 						}
  ]
 				}
@@ -433,85 +1099,158 @@
 			}
 , 			{
 				"box" : 				{
-					"basictuning" : 440,
-					"clipheight" : 22.199999999999999,
+					"clipheight" : 20.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "Future Kick.wav",
-								"filename" : "Future Kick.wav",
+								"absolutepath" : "Wood Block.wav",
+								"filename" : "Wood Block.wav",
 								"filekind" : "audiofile",
-								"id" : "u314000700",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.5
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.66 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"quality" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Future Snare.wav",
-								"filename" : "Future Snare.wav",
+								"absolutepath" : "Conga Low.wav",
+								"filename" : "Conga Low.wav",
 								"filekind" : "audiofile",
-								"id" : "u600000707",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.5
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.66 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"quality" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Future Hi Hat.wav",
-								"filename" : "Future Hi Hat.wav",
+								"absolutepath" : "Conga High.wav",
+								"filename" : "Conga High.wav",
 								"filekind" : "audiofile",
-								"id" : "u366000714",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.5
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.66 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"quality" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Drone.wav",
-								"filename" : "Drone.wav",
+								"absolutepath" : "Cabasa.wav",
+								"filename" : "Cabasa.wav",
 								"filekind" : "audiofile",
-								"id" : "u322000721",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.5
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.66 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"quality" : [ "basic" ]
 								}
 
 							}
 , 							{
-								"absolutepath" : "Chord.wav",
-								"filename" : "Chord.wav",
+								"absolutepath" : "Bongo Low.wav",
+								"filename" : "Bongo Low.wav",
 								"filekind" : "audiofile",
-								"id" : "u629000728",
 								"loop" : 0,
 								"content_state" : 								{
-									"speed" : 0.5
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.66 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"quality" : [ "basic" ]
+								}
+
+							}
+, 							{
+								"absolutepath" : "Bongo High.wav",
+								"filename" : "Bongo High.wav",
+								"filekind" : "audiofile",
+								"loop" : 0,
+								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.66 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"quality" : [ "basic" ]
 								}
 
 							}
  ]
 					}
 ,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
 					"id" : "obj-10",
 					"ignoreclick" : 1,
 					"maxclass" : "playlist~",
-					"mode" : "basic",
 					"numinlets" : 1,
 					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
 					"patching_rect" : [ 26.0, 620.0, 187.0, 116.0 ],
-					"pitchcorrection" : 0,
 					"presentation" : 1,
-					"presentation_rect" : [ 7.833333492279053, 33.0, 295.0, 129.0 ],
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
+					"presentation_rect" : [ 7.833333492279053, 33.0, 295.0, 129.0 ]
 				}
 
 			}
@@ -1457,12 +2196,12 @@
 					"presentation_rect" : [ 8.833333492279053, 195.25, 293.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "Vol",
 							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
-							"parameter_shortname" : "Vol",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_shortname" : "Vol"
 						}
 
 					}
@@ -1655,6 +2394,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
 					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-115", 0 ]
 				}
 
 			}
@@ -2153,13 +2899,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
 					"source" : [ "obj-71", 0 ]
 				}
@@ -2225,16 +2964,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
-					"source" : [ "obj-8", 0 ]
+					"destination" : [ "obj-115", 0 ],
+					"source" : [ "obj-8", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
-					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -2415,42 +3152,48 @@
 			"parameterbanks" : 			{
 
 			}
-,
-			"inherited_shortname" : 1
+
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Future Kick.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
-				"patcherrelativepath" : "../media",
+				"name" : "Wood Block.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
+				"patcherrelativepath" : "../../../patchers/m5 beat machine",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Future Snare.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
-				"patcherrelativepath" : "../media",
+				"name" : "Conga Low.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
+				"patcherrelativepath" : "../../../patchers/m5 beat machine",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Future Hi Hat.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
-				"patcherrelativepath" : "../media",
+				"name" : "Conga High.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
+				"patcherrelativepath" : "../../../patchers/m5 beat machine",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Drone.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
-				"patcherrelativepath" : "../media",
+				"name" : "Cabasa.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
+				"patcherrelativepath" : "../../../patchers/m5 beat machine",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Chord.wav",
-				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/Summer-Workshop-2021/TEL-Summer/media",
-				"patcherrelativepath" : "../media",
+				"name" : "Bongo Low.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
+				"patcherrelativepath" : "../../../patchers/m5 beat machine",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Bongo High.wav",
+				"bootpath" : "~/Desktop/GRAD/Phenomina (Feedback Game)/AR Metagame Phenomina/tel/patchers/m5 beat machine",
+				"patcherrelativepath" : "../../../patchers/m5 beat machine",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

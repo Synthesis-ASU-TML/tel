@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 11,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-46",
@@ -555,8 +554,8 @@
 					"linecount" : 8,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "bang" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 29.0, 744.00000262260437, 87.0, 116.0 ],
 					"text" : "dialog we haven't added these patches yet! check back at github for updates soon :-) @mode 1"
 				}
@@ -799,7 +798,7 @@
 										"filename" : "SonoBus_20210727.maxsnap",
 										"filepath" : "~/OneDrive/Documents/GitHub/tel/Summer-Workshop-2021/TEL-Summer/data",
 										"filepos" : -1,
-										"snapshotfileid" : "75d66bf5c52e099ccc69dbc7757e9820"
+										"snapshotfileid" : "54cdb2b6412948be5f506dbdfd11b354"
 									}
 
 								}
@@ -1136,8 +1135,7 @@
 			"parameterbanks" : 			{
 
 			}
-,
-			"inherited_shortname" : 1
+
 		}
 ,
 		"dependency_cache" : [ 			{
