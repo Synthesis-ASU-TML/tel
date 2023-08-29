@@ -1,0 +1,36 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u435002486",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Mirror",
+				"data" : 				{
+					"live.text" : [ 1.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "Parrot",
+				"data" : 				{
+					"live.text" : [ 1.0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"name" : "Mocker",
+				"data" : 				{
+					"live.text" : [ 1.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
