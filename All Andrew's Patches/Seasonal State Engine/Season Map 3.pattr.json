@@ -1,0 +1,76 @@
+{
+	"pattrstorage" : 	{
+		"name" : "u4292220003",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "Summer"
+			}
+,
+			"3" : 			{
+				"id" : 3
+			}
+,
+			"4" : 			{
+				"id" : 4
+			}
+,
+			"5" : 			{
+				"id" : 5,
+				"name" : "Fall"
+			}
+,
+			"6" : 			{
+				"id" : 6,
+				"name" : "Winter"
+			}
+,
+			"7" : 			{
+				"id" : 7,
+				"name" : "Spring"
+			}
+,
+			"8" : 			{
+				"id" : 8
+			}
+,
+			"9" : 			{
+				"id" : 9,
+				"name" : "Summer.1"
+			}
+,
+			"10" : 			{
+				"id" : 10,
+				"name" : "Summer Storm"
+			}
+,
+			"11" : 			{
+				"id" : 11,
+				"name" : "Fall Leaves"
+			}
+,
+			"12" : 			{
+				"id" : 12,
+				"name" : "Winter Snow"
+			}
+,
+			"13" : 			{
+				"id" : 13,
+				"name" : "Spring Breeze"
+			}
+,
+			"14" : 			{
+				"id" : 14,
+				"name" : "Summer Storm.1"
+			}
+,
+			"15" : 			{
+				"id" : 15,
+				"name" : "Rain"
+			}
+
+		}
+
+	}
+
+}
