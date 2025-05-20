@@ -14,13 +14,74 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 329.0, 396.0, 125.0, 22.0 ],
+					"text" : "jit.matrix 4 char 256"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 329.0, 359.0, 207.0, 22.0 ],
+					"text" : "jit.histogram 4 long 256 @autoclear 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 472.0, 232.0, 52.0, 20.0 ],
+					"text" : "Jit.fft 2D",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 472.0, 171.5, 189.0, 47.0 ],
+					"text" : "Experiment with Downsampling/cropping/Masking Matrix",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 490.0, 388.5, 153.0, 33.0 ],
+					"text" : "Create histogram of colors and feed that to jit.peek",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1107.0, 995.0, 342.0, 33.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 1107.0, 995.0, 345.0, 33.0 ],
 					"text" : "Based on my experiments I also believe that the left side of the matrix is the top row of the video feed."
 				}
 
@@ -68,7 +129,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 39.5, 188.0, 44.0, 22.0 ],
+					"patching_rect" : [ 39.0, 179.0, 44.0, 22.0 ],
 					"text" : "sel 0 1"
 				}
 
@@ -83,7 +144,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 39.5, 154.0, 178.0, 21.0 ],
+					"patching_rect" : [ 39.0, 145.0, 178.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Camera", "Movie" ],
@@ -169,7 +230,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 783.0, 813.0, 51.0, 22.0 ],
+					"patching_rect" : [ 771.0, 818.0, 51.0, 22.0 ],
 					"text" : "r render"
 				}
 
@@ -181,7 +242,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 783.0, 877.0, 311.0, 220.0 ],
+					"patching_rect" : [ 771.0, 882.0, 311.0, 220.0 ],
 					"sync" : 1
 				}
 
@@ -193,7 +254,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 783.0, 844.0, 199.0, 22.0 ],
+					"patching_rect" : [ 771.0, 849.0, 199.0, 22.0 ],
 					"text" : "jit.matrix reconstruct 1 char 640 480"
 				}
 
@@ -205,7 +266,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 946.0, 488.0, 136.0, 22.0 ],
+					"patching_rect" : [ 946.0, 481.0, 136.0, 22.0 ],
 					"text" : "jit.poke~ reconstruct 2 0"
 				}
 
@@ -217,7 +278,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1157.0, 624.0, 311.0, 33.0 ],
+					"patching_rect" : [ 1170.0, 624.0, 311.0, 33.0 ],
 					"text" : "This is a visual representation of the audio signal amplitude over time"
 				}
 
@@ -239,7 +300,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1157.0, 664.0, 222.0, 20.0 ],
+					"patching_rect" : [ 1170.0, 664.0, 222.0, 20.0 ],
 					"text" : "Each Line is a cell value from the matrix"
 				}
 
@@ -310,7 +371,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 644.0, 271.0, 168.0, 33.0 ],
+					"patching_rect" : [ 644.0, 276.5, 168.0, 33.0 ],
 					"text" : "this should match X dim of matrix"
 				}
 
@@ -322,7 +383,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 93.0, 356.0, 71.0, 22.0 ],
+					"patching_rect" : [ 79.0, 512.0, 71.0, 22.0 ],
 					"text" : "jit.rgb2luma"
 				}
 
@@ -334,7 +395,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "reset", "float" ],
-					"patching_rect" : [ 788.0, 163.0, 49.0, 22.0 ],
+					"patching_rect" : [ 788.0, 184.0, 49.0, 22.0 ],
 					"text" : "t reset f"
 				}
 
@@ -346,7 +407,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 789.0, 137.0, 87.0, 22.0 ],
+					"patching_rect" : [ 789.0, 158.0, 87.0, 22.0 ],
 					"text" : "speedlim 1000"
 				}
 
@@ -360,7 +421,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 818.0, 218.0, 87.0, 22.0 ]
+					"patching_rect" : [ 818.0, 215.0, 87.0, 22.0 ]
 				}
 
 			}
@@ -371,7 +432,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 788.0, 111.0, 81.0, 22.0 ],
+					"patching_rect" : [ 788.0, 132.0, 81.0, 22.0 ],
 					"text" : "jit.framecount"
 				}
 
@@ -420,7 +481,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 818.0, 561.0, 311.0, 220.0 ],
+					"patching_rect" : [ 818.0, 561.0, 341.0, 241.0 ],
 					"sync" : 1
 				}
 
@@ -444,7 +505,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 93.0, 391.0, 193.0, 22.0 ],
+					"patching_rect" : [ 79.0, 547.0, 193.0, 22.0 ],
 					"text" : "jit.matrix peekFeed 1 char 640 480"
 				}
 
@@ -504,7 +565,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 39.0, 435.0, 201.0, 22.0 ],
+					"patching_rect" : [ 39.0, 375.0, 201.0, 22.0 ],
 					"text" : "jit.gl.videoplane @transform_reset 2"
 				}
 
@@ -647,6 +708,19 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"background" : 1,
+					"id" : "obj-27",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 329.0, 432.0, 374.0, 54.0 ],
+					"sync" : 1
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -722,6 +796,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"midpoints" : [ 338.5, 403.0, 338.5, 403.0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"order" : 1,
 					"source" : [ "obj-28", 0 ]
@@ -790,7 +872,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"midpoints" : [ 797.5, 188.0, 774.0, 188.0, 774.0, 107.0, 797.5, 107.0 ],
+					"midpoints" : [ 797.5, 209.0, 774.0, 209.0, 774.0, 128.0, 797.5, 128.0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -922,7 +1004,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-55", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"order" : 0,
 					"source" : [ "obj-88", 0 ]
 				}
@@ -938,13 +1020,30 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"midpoints" : [ 338.5, 425.0, 338.5, 425.0 ],
+					"order" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-90", 0 ]
 				}
 
 			}
  ],
-		"originid" : "pat-28",
+		"originid" : "pat-123",
 		"parameters" : 		{
 			"obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-75" : [ "live.tab", "live.tab", 0 ],

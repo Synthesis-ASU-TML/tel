@@ -10,42 +10,81 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1660.0, 983.0 ],
+		"rect" : [ 34.0, 100.0, 1266.0, 983.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
+					"id" : "obj-55",
+					"maxclass" : "textbutton",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 528.0, 594.0, 87.0, 22.0 ],
-					"text" : "loadmess 0.01"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 766.0, 793.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 766.0, 793.0, 100.0, 20.0 ],
+					"text" : "Save Image"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-37",
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 194.0, 850.0, 180.0, 22.0 ],
+					"text" : "jit.matrix export 4 char 1280 960"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 766.0, 818.0, 101.0, 22.0 ],
+					"text" : "exportimage jpeg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 194.125, 818.0, 120.0, 22.0 ],
+					"text" : "cv.jit.blur @radius 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 840.0, 271.0, 20.0 ],
-					"text" : "SC.texture.gaussian does not work all the time !!",
+					"patching_rect" : [ 425.0, 885.0, 153.0, 33.0 ],
+					"text" : "test mapping into jit.repos\nGet Direction (opticalflow)",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-34",
+					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 195.0, 825.0, 170.0, 22.0 ],
-					"text" : "sc.texture.gaussian @radius 2",
-					"varname" : "sc.texture.gaussian"
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 495.0, 599.0, 87.0, 22.0 ],
+					"text" : "loadmess 0.01"
 				}
 
 			}
@@ -56,7 +95,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 193.0, 890.0, 214.0, 22.0 ],
+					"patching_rect" : [ 194.125, 885.0, 214.0, 22.0 ],
 					"text" : "jit.gl.texture @adapt 0 @dim 1280 960"
 				}
 
@@ -70,7 +109,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 528.0, 627.0, 50.0, 22.0 ]
+					"patching_rect" : [ 495.0, 632.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -81,7 +120,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 528.230000000000018, 658.090000000000032, 71.0, 22.0 ],
+					"patching_rect" : [ 495.0, 663.0, 71.0, 22.0 ],
 					"text" : "prepend val"
 				}
 
@@ -92,7 +131,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 813.0, 271.0, 20.0 ],
+					"patching_rect" : [ 326.0, 819.0, 271.0, 20.0 ],
 					"text" : "Blurring to make wiping effect more smooth"
 				}
 
@@ -103,7 +142,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.125, 692.0, 83.0, 20.0 ],
+					"patching_rect" : [ 333.125, 698.0, 83.0, 20.0 ],
 					"text" : "small fade out"
 				}
 
@@ -198,36 +237,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-111",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 671.0, 805.0, 331.0, 22.0 ],
-					"text" : "jit.fastblur @mode 4 @range 1 @center 1 @ring 1 @ripple 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-110",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 671.0, 834.0, 331.0, 22.0 ],
-					"text" : "jit.fastblur @mode 4 @range 1 @center 1 @ring 1 @ripple 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 245.125, 691.0, 82.0, 22.0 ],
+					"patching_rect" : [ 242.125, 697.0, 82.0, 22.0 ],
 					"text" : "jit.- @val 0.01"
 				}
 
@@ -288,7 +303,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 254.625, 275.0, 24.0, 24.0 ]
+					"patching_rect" : [ 252.125, 273.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -701,6 +716,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 1 ],
 					"source" : [ "obj-29", 1 ]
 				}
@@ -722,8 +744,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-34", 0 ]
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -808,6 +830,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-51", 0 ]
 				}
@@ -822,7 +851,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-53", 0 ]
 				}
 
@@ -831,6 +860,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -863,7 +899,7 @@
 
 			}
  ],
-		"originid" : "pat-42",
+		"originid" : "pat-117",
 		"parameters" : 		{
 			"obj-2" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
@@ -883,21 +919,12 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jit.gl.syphonserver.mxo",
+				"name" : "cv.jit.blur.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sc.texture.gaussian.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/patchers/video/texture",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0

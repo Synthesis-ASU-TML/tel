@@ -1069,7 +1069,7 @@
 
 			}
  ],
-		"originid" : "pat-85",
+		"originid" : "pat-151",
 		"parameters" : 		{
 			"obj-2" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
@@ -1087,16 +1087,12 @@
 		"dependency_cache" : [ 			{
 				"name" : "bypass_dummy.genjit",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/code",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/code",
+				"patcherrelativepath" : "../../../SC/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cv.jit.HSflow.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.absdiff.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1106,35 +1102,35 @@
 , 			{
 				"name" : "sc.alphablend.genjit",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/code",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/code",
+				"patcherrelativepath" : "../../../SC/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.alphareplace.genjit",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/code",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/code",
+				"patcherrelativepath" : "../../../SC/code",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.alphablend.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.alphareplace.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.texture.gaussian.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/video/texture",
-				"patcherrelativepath" : "../../Documents/Max 9/Packages/SC/patchers/video/texture",
+				"patcherrelativepath" : "../../../SC/patchers/video/texture",
 				"type" : "JSON",
 				"implicit" : 1
 			}

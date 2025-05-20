@@ -10,10 +10,22 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1263.0, 983.0 ],
+		"rect" : [ 34.0, 100.0, 1660.0, 983.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 589.229162991046906, 788.0, 150.0, 33.0 ],
+					"text" : "Scale Values to size of Mask !!!!"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
@@ -122,7 +134,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.829999999999984, 700.720000000000027, 77.0, 22.0 ],
+					"patching_rect" : [ 497.0, 656.0, 77.0, 22.0 ],
 					"text" : "loadmess 10"
 				}
 
@@ -312,7 +324,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 502.829999999999927, 761.0, 54.0, 23.0 ],
+					"patching_rect" : [ 497.0, 716.0, 54.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 272.0, 371.0, 54.0, 23.0 ]
 				}
@@ -326,7 +338,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 501.829999999999927, 739.0, 72.0, 21.0 ],
+					"patching_rect" : [ 496.0, 694.0, 72.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 271.0, 349.0, 72.0, 21.0 ],
 					"text" : "slide down",
@@ -644,7 +656,7 @@
 
 							}
  ],
-						"originid" : "pat-85"
+						"originid" : "pat-80"
 					}
 ,
 					"patching_rect" : [ 301.0, 462.0, 104.0, 22.0 ],
@@ -1299,7 +1311,7 @@
 
 			}
  ],
-		"originid" : "pat-77",
+		"originid" : "pat-78",
 		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"oscreceiveudpport" : 0
