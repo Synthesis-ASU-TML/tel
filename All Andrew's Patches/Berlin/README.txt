@@ -2,6 +2,21 @@ Code for HKW Fertile Void | 8 November 2026 | HKW Berlin
 Andrew Robinson <androb26@gmail.com>, Sha Xin Wei <sxwasu@gmail.com> 
 
 
+start_video_activity
+Uses
+	video_chooser
+	video_tiles_activity
+	video_wedge_activity
+	draw_octant
+
+TODO:
+Add bg subtraction for Presence measures
+Interpolate reciprocal warbling code on presence x activity list
+Factor Andrew's, Xinwei's, (Emiddio's) audio synth instruments into subsequent later
+Map to 8-channel √
+
+
+
 Video input layer :
 [video_chooser]: off | inlet | local camera |  NDI 
 
