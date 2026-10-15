@@ -10,9 +10,33 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 451.0, 112.0, 792.0, 436.0 ],
+		"rect" : [ 451.0, 112.0, 526.0, 599.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 343.0, 468.553451299667358, 55.0, 22.0 ],
+					"text" : "zl.slice 8"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 343.0, 526.0, 124.0, 29.0 ],
+					"text" : "Andrew_audio"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-1",
@@ -140,10 +164,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 9.0, 406.0, 468.51855593919754, 17.0 ],
+					"patching_rect" : [ 8.805031299591064, 406.0, 310.691818714141846, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.024691998958588, 336.41977995634079, 468.51855593919754, 17.0 ],
-					"text" : "1.041127 1.050654 0.831067 0.643351 0.375183 0.607478 0.771462 0.910878"
+					"text" : "0.702544 0.928228 1.006314 0.834533 0.351047 0.528209 1.04353 0.820028"
 				}
 
 			}
@@ -198,8 +222,25 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"midpoints" : [ 248.5, 390.664823863189667, 468.01855593919754, 390.664823863189667 ],
+					"midpoints" : [ 248.5, 390.664823863189667, 309.99685001373291, 390.664823863189667 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"midpoints" : [ 248.5, 389.713537666015327, 352.5, 389.713537666015327 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -220,7 +261,7 @@
 
 			}
  ],
-		"originid" : "pat-304",
+		"originid" : "pat-760",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-2::obj-61::obj-1" : [ "number[2]", "number", 0 ],
@@ -231,6 +272,14 @@
 			"obj-2::obj-61::obj-52" : [ "number[9]", "number", 0 ],
 			"obj-2::obj-61::obj-54" : [ "number[1]", "number", 0 ],
 			"obj-2::obj-61::obj-7" : [ "number[3]", "number", 0 ],
+			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
+			"obj-3::obj-61::obj-12" : [ "number[10]", "number", 0 ],
+			"obj-3::obj-61::obj-18" : [ "number[13]", "number", 0 ],
+			"obj-3::obj-61::obj-25" : [ "number[15]", "number", 0 ],
+			"obj-3::obj-61::obj-44" : [ "number[8]", "number", 0 ],
+			"obj-3::obj-61::obj-52" : [ "number[11]", "number", 0 ],
+			"obj-3::obj-61::obj-54" : [ "number[14]", "number", 0 ],
+			"obj-3::obj-61::obj-7" : [ "number[12]", "number", 0 ],
 			"obj-5::obj-2" : [ "live.text[1]", "live.text", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -252,6 +301,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Andrew_audio.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "cv.jit.ravg.mxo",
 				"type" : "iLaX"
 			}
