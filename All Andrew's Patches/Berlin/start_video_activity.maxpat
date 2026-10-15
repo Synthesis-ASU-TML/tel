@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 451.0, 112.0, 796.0, 457.0 ],
+		"rect" : [ 451.0, 112.0, 792.0, 436.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -143,7 +143,7 @@
 					"patching_rect" : [ 9.0, 406.0, 468.51855593919754, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.024691998958588, 336.41977995634079, 468.51855593919754, 17.0 ],
-					"text" : "1.02457 0.959248 0.703333 0.814308 0.9846 0.976313 0.663876 0.860452"
+					"text" : "1.041127 1.050654 0.831067 0.643351 0.375183 0.607478 0.771462 0.910878"
 				}
 
 			}
@@ -152,8 +152,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 235.0, 213.0, 123.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
@@ -220,7 +220,7 @@
 
 			}
  ],
-		"originid" : "pat-3143",
+		"originid" : "pat-304",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-2::obj-61::obj-1" : [ "number[2]", "number", 0 ],
@@ -252,11 +252,8 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "draw_octant.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "cv.jit.ravg.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",

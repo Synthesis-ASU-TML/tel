@@ -14,6 +14,20 @@
         "boxes": [
             {
                 "box": {
+                    "attr": "chans",
+                    "id": "obj-87",
+                    "maxclass": "attrui",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 251.0, 913.0, 150.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 30.0, 328.0, 150.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
                     "color": [ 1.0, 0.556862745098039, 0.0, 1.0 ],
                     "id": "obj-84",
                     "maxclass": "newobj",
@@ -2115,18 +2129,6 @@
             },
             {
                 "box": {
-                    "attr": "threshold",
-                    "id": "obj-117",
-                    "maxclass": "attrui",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 135.0, 1072.0, 150.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
                     "id": "obj-115",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -2534,7 +2536,7 @@
                     "patching_rect": [ 849.5, 527.0, 401.0, 74.0 ],
                     "presentation": 1,
                     "presentation_linecount": 5,
-                    "presentation_rect": [ 356.0, 268.0, 448.0, 74.0 ],
+                    "presentation_rect": [ 388.0, 248.5, 448.0, 74.0 ],
                     "text": "6. when motion thresh enable values motion values that pass above then back below threshold will chnage sample\n\nwhen in manual mode passing the threshold is disable. Instead select the speaker then the sample to load."
                 }
             },
@@ -2579,7 +2581,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1218.0, 749.0, 90.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 162.0, 379.0, 90.0, 20.0 ],
+                    "presentation_rect": [ 331.0, 331.0, 90.0, 20.0 ],
                     "text": "Which Sample",
                     "textjustification": 1
                 }
@@ -2593,7 +2595,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 856.0, 754.5, 93.0, 33.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 30.0, 379.0, 119.0, 20.0 ],
+                    "presentation_rect": [ 199.0, 331.0, 119.0, 20.0 ],
                     "text": "Which Speaker (1-8)",
                     "textjustification": 1
                 }
@@ -2620,7 +2622,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 667.0, 567.5, 175.0, 22.5 ],
                     "presentation": 1,
-                    "presentation_rect": [ 162.0, 266.0, 178.0, 23.0 ],
+                    "presentation_rect": [ 196.0, 274.0, 178.0, 23.0 ],
                     "text": "Manual New Sample",
                     "textcolor": [ 0.0, 0.7294117647058823, 1.0, 1.0 ],
                     "texton": "Motion Thresh New Sample",
@@ -2764,7 +2766,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1014.0, 748.0, 195.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 162.0, 401.0, 195.0, 22.0 ]
+                    "presentation_rect": [ 331.0, 353.0, 195.0, 22.0 ]
                 }
             },
             {
@@ -2780,7 +2782,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 954.0, 760.0, 50.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 99.0, 401.0, 50.0, 22.0 ]
+                    "presentation_rect": [ 268.0, 353.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -2901,7 +2903,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 530.0, 535.0, 109.0, 33.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 219.0, 295.0, 133.0, 20.0 ],
+                    "presentation_rect": [ 253.0, 303.0, 133.0, 20.0 ],
                     "text": "New Sample Threshold"
                 }
             },
@@ -2938,7 +2940,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 474.0, 535.0, 50.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 165.0, 294.0, 50.0, 22.0 ]
+                    "presentation_rect": [ 196.0, 303.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -3249,7 +3251,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "multichannelsignal" ],
                     "patching_rect": [ 39.20000058412552, 940.8000140190125, 164.0, 22.0 ],
-                    "text": "mc.mixdown~ 4 @autogain 1"
+                    "text": "mc.mixdown~ 8 @autogain 1"
                 }
             },
             {
@@ -10872,7 +10874,7 @@
             {
                 "box": {
                     "id": "obj-5",
-                    "items": "ANDREW (TouchDesigner)",
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -10956,12 +10958,6 @@
                 "patchline": {
                     "destination": [ "obj-137", 0 ],
                     "source": [ "obj-115", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-115", 0 ],
-                    "source": [ "obj-117", 0 ]
                 }
             },
             {
@@ -11401,6 +11397,12 @@
                 "patchline": {
                     "destination": [ "obj-89", 0 ],
                     "source": [ "obj-86", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-62", 0 ],
+                    "source": [ "obj-87", 0 ]
                 }
             },
             {
