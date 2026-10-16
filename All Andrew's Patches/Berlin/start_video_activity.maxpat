@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 451.0, 112.0, 526.0, 599.0 ],
+		"rect" : [ 662.0, 237.0, 526.0, 599.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -167,7 +167,7 @@
 					"patching_rect" : [ 8.805031299591064, 406.0, 310.691818714141846, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.024691998958588, 336.41977995634079, 468.51855593919754, 17.0 ],
-					"text" : "0.702544 0.928228 1.006314 0.834533 0.351047 0.528209 1.04353 0.820028"
+					"text" : "1.000147 1.000147 1.000147 1.000147 1.000147 1.000147 1.000147 1.000147"
 				}
 
 			}
@@ -261,17 +261,9 @@
 
 			}
  ],
-		"originid" : "pat-760",
+		"originid" : "pat-1445",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
-			"obj-2::obj-61::obj-1" : [ "number[2]", "number", 0 ],
-			"obj-2::obj-61::obj-12" : [ "number[4]", "number", 0 ],
-			"obj-2::obj-61::obj-18" : [ "number[5]", "number", 0 ],
-			"obj-2::obj-61::obj-25" : [ "number[6]", "number", 0 ],
-			"obj-2::obj-61::obj-44" : [ "number[7]", "number", 0 ],
-			"obj-2::obj-61::obj-52" : [ "number[9]", "number", 0 ],
-			"obj-2::obj-61::obj-54" : [ "number[1]", "number", 0 ],
-			"obj-2::obj-61::obj-7" : [ "number[3]", "number", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
 			"obj-3::obj-61::obj-12" : [ "number[10]", "number", 0 ],
 			"obj-3::obj-61::obj-18" : [ "number[13]", "number", 0 ],
