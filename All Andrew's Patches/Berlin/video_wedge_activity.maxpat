@@ -2812,6 +2812,7 @@
             },
             {
                 "box": {
+                    "color": [ 1.0, 0.556862745098039, 0.0, 1.0 ],
                     "id": "obj-170",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -7513,6 +7514,14 @@
         ],
         "parameters": {
             "obj-2": [ "live.text", "live.text", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
