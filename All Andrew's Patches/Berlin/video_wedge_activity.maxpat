@@ -20,7 +20,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1281.0, 108.43795555830002, 316.0, 47.0 ],
-                    "presentation_linecount": 6,
                     "text": "-- when I implimented this fornula it did not work. I switched to the cv.jit.ravg object which uses this formula. You adjust the time with the alpha value",
                     "textcolor": [ 1.0, 0.556862745098039, 0.0, 1.0 ]
                 }
@@ -33,7 +32,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1470.306569159031, 417.0, 179.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "-- This is being controlled in the audio part of the patch.",
                     "textcolor": [ 0.11372549019607843, 1.0, 0.0, 1.0 ]
                 }
@@ -46,7 +44,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1474.0, 361.0, 179.0, 47.0 ],
-                    "presentation_linecount": 10,
                     "text": "-- this is coming from the cv.jit.ravg object. Adjust alpha value to change time ",
                     "textcolor": [ 0.11372549019607843, 1.0, 0.0, 1.0 ]
                 }
@@ -72,28 +69,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 262.0437942147255, 120.93795555830002, 61.0, 22.0 ],
                     "text": "r get_size"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-26",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 208.7450913786888, 398.7299248576164, 35.0, 22.0 ],
-                    "text": "open"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-24",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "jit_matrix", "" ],
-                    "patching_rect": [ 314.0, 417.0, 45.0, 22.0 ],
-                    "text": "jit.grab"
                 }
             },
             {
@@ -384,7 +359,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 124.42518275976181, 1021.0, 237.645982503891, 35.0 ],
-                    "text": "96.94801 96.94801 96.94801 96.94801 96.94801 96.94801 96.94801 96.94801"
+                    "text": "10.5464 11.968441 19.238698 14.5 9.136191 12.053783 14.328014 8.932005"
                 }
             },
             {
@@ -405,7 +380,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 376.0, 109.0, 1660.0, 988.0 ],
+                        "rect": [ 34.0, 95.0, 1660.0, 988.0 ],
                         "visible": 1,
                         "boxes": [
                             {
@@ -691,7 +666,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 68.0, 841.0, 707.0, 22.0 ],
-                                    "text": "96.94801 96.94801 96.94801 96.94801 96.94801 96.94801 96.94801 96.94801"
+                                    "text": "10.5464 11.968441 19.238698 14.5 9.136191 12.053783 14.328014 8.932005"
                                 }
                             },
                             {
@@ -2798,9 +2773,8 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 247.96715232729912, 666.5620401501656, 234.0, 49.0 ],
                     "presentation": 1,
-                    "presentation_linecount": 2,
-                    "presentation_rect": [ 32.0, 186.0, 461.0, 35.0 ],
-                    "text": "9.854554 10.628218 19.449039 14.437002 97.303747 97.303747 97.303747 97.303747"
+                    "presentation_rect": [ 32.0, 186.0, 461.0, 22.0 ],
+                    "text": "10.563854 11.941921 19.367152 14.647858 9.169092 12.276266 14.284255 9.01"
                 }
             },
             {
@@ -2874,7 +2848,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 240.0, 121.90999999999997, 50.0, 35.0 ],
-                                    "text": "459 368"
+                                    "text": "320 240"
                                 }
                             },
                             {
@@ -4472,7 +4446,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 68.0, 841.0, 707.0, 22.0 ],
-                                    "text": "9.854554 10.628218 19.449039 14.437002 97.303747 97.303747 97.303747 97.303747"
+                                    "text": "10.563854 11.941921 19.367152 14.647858 9.169092 12.276266 14.284255 9.01"
                                 }
                             },
                             {
@@ -7325,18 +7299,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-17", 0 ],
-                    "source": [ "obj-24", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-24", 0 ],
-                    "source": [ "obj-26", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-6", 0 ],
                     "source": [ "obj-30", 0 ]
                 }
@@ -7551,14 +7513,6 @@
         ],
         "parameters": {
             "obj-2": [ "live.text", "live.text", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
