@@ -10,9 +10,21 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2153.0, -404.0, 1643.0, 1255.0 ],
+		"rect" : [ 1833.0, -388.0, 1643.0, 1255.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 331.914891242980957, 296.890389442443848, 376.585108757019043, 20.0 ],
+					"text" : "(Reads hardcoded audio files from subfolder named _sound )",
+					"textcolor" : [ 0.0, 1.0, 0.192156862745098, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"linecount" : 2,
@@ -451,7 +463,7 @@
 
 							}
  ],
-						"originid" : "pat-1133"
+						"originid" : "pat-1160"
 					}
 ,
 					"patching_rect" : [ 197.0, 119.0, 65.0, 22.0 ],
@@ -2858,7 +2870,7 @@
 
 							}
  ],
-						"originid" : "pat-1135"
+						"originid" : "pat-1162"
 					}
 ,
 					"patching_rect" : [ 393.0, 812.0, 151.5, 22.0 ],
@@ -3125,7 +3137,7 @@
 				"box" : 				{
 					"id" : "obj-64",
 					"ignoreclick" : 1,
-					"items" : [ "01 O vis eternitatis", ",", "02 Nunc aperuit nobis", ",", "03 Quia ergo femina mortem instruxit", ",", "06 Ave Maria, O auctrix vite", ",", "07 Spiritus Sanctus vivificans vite", ",", "bird summer", ",", "Birds Forest 02", ",", "Water Asmr", ",", "wood_chimes" ],
+					"items" : [ "Pad A1", ",", "Pad C1", ",", "Pad C2", ",", "Pad C3", ",", "Pad E1", ",", "Pad E2", ",", "Pad G1", ",", "Pad G2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3237,7 +3249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 330.0, 284.0, 377.0, 20.0 ],
+					"patching_rect" : [ 331.5, 278.0, 377.0, 20.0 ],
 					"text" : "This patch has to be in the same folder as the audio samples to work!",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
@@ -3447,12 +3459,24 @@
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 109.454563498497009, 148.0, 409.090873003005981, 20.0 ],
+									"text" : "( uses [prep_buffer] to read audio files from subfolder named _sound )",
+									"textcolor" : [ 0.0, 1.0, 0.192156862745098, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-248",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 477.0, 5.263157844543457, 58.0, 22.0 ],
+									"patching_rect" : [ 478.0, 187.0, 58.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -3464,7 +3488,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 827.454086124897003, 117.763156771659851, 65.0, 22.0 ],
+									"patching_rect" : [ 829.0, 300.0, 65.0, 22.0 ],
 									"text" : "buffer~ G2"
 								}
 
@@ -3476,7 +3500,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 826.796191394329071, 53.947367906570435, 82.0, 22.0 ],
+									"patching_rect" : [ 828.0, 236.0, 82.0, 22.0 ],
 									"text" : "\"Pad G2.wav\""
 								}
 
@@ -3667,10 +3691,10 @@
 
 											}
  ],
-										"originid" : "pat-1139"
+										"originid" : "pat-1166"
 									}
 ,
-									"patching_rect" : [ 826.796191394329071, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 828.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -3682,7 +3706,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 726.973677277565002, 117.763156771659851, 65.0, 22.0 ],
+									"patching_rect" : [ 728.0, 300.0, 65.0, 22.0 ],
 									"text" : "buffer~ G1"
 								}
 
@@ -3694,7 +3718,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 726.31578254699707, 53.947367906570435, 82.0, 22.0 ],
+									"patching_rect" : [ 728.0, 236.0, 82.0, 22.0 ],
 									"text" : "\"Pad G1.wav\""
 								}
 
@@ -3885,10 +3909,10 @@
 
 											}
  ],
-										"originid" : "pat-1141"
+										"originid" : "pat-1168"
 									}
 ,
-									"patching_rect" : [ 726.31578254699707, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 728.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -3900,7 +3924,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 622.657894730567932, 117.763156771659851, 64.0, 22.0 ],
+									"patching_rect" : [ 624.0, 300.0, 64.0, 22.0 ],
 									"text" : "buffer~ E2"
 								}
 
@@ -3912,7 +3936,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 622.0, 53.947367906570435, 81.0, 22.0 ],
+									"patching_rect" : [ 623.0, 236.0, 81.0, 22.0 ],
 									"text" : "\"Pad E2.wav\""
 								}
 
@@ -4103,10 +4127,10 @@
 
 											}
  ],
-										"originid" : "pat-1143"
+										"originid" : "pat-1170"
 									}
 ,
-									"patching_rect" : [ 622.0, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 623.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -4118,7 +4142,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 507.657894730567932, 117.763156771659851, 64.0, 22.0 ],
+									"patching_rect" : [ 509.0, 300.0, 64.0, 22.0 ],
 									"text" : "buffer~ E1"
 								}
 
@@ -4130,7 +4154,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 507.0, 53.947367906570435, 81.0, 22.0 ],
+									"patching_rect" : [ 508.0, 236.0, 81.0, 22.0 ],
 									"text" : "\"Pad E1.wav\""
 								}
 
@@ -4321,10 +4345,10 @@
 
 											}
  ],
-										"originid" : "pat-1145"
+										"originid" : "pat-1172"
 									}
 ,
-									"patching_rect" : [ 507.0, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 508.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -4336,7 +4360,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 407.236838221549988, 117.763156771659851, 65.0, 22.0 ],
+									"patching_rect" : [ 409.0, 300.0, 65.0, 22.0 ],
 									"text" : "buffer~ C3"
 								}
 
@@ -4348,7 +4372,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 406.578943490982056, 53.947367906570435, 82.0, 22.0 ],
+									"patching_rect" : [ 408.0, 236.0, 82.0, 22.0 ],
 									"text" : "\"Pad C3.wav\""
 								}
 
@@ -4371,7 +4395,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 119.0, 1000.0, 755.0 ],
+										"rect" : [ 458.0, 189.0, 1000.0, 755.0 ],
 										"gridsize" : [ 15.0, 15.0 ],
 										"boxes" : [ 											{
 												"box" : 												{
@@ -4539,10 +4563,10 @@
 
 											}
  ],
-										"originid" : "pat-1147"
+										"originid" : "pat-1174"
 									}
 ,
-									"patching_rect" : [ 406.578943490982056, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 408.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -4554,7 +4578,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 310.157894730567932, 117.763156771659851, 65.0, 22.0 ],
+									"patching_rect" : [ 312.0, 300.0, 65.0, 22.0 ],
 									"text" : "buffer~ C2"
 								}
 
@@ -4566,7 +4590,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 309.5, 53.947367906570435, 82.0, 22.0 ],
+									"patching_rect" : [ 311.0, 236.0, 82.0, 22.0 ],
 									"text" : "\"Pad C2.wav\""
 								}
 
@@ -4757,10 +4781,10 @@
 
 											}
  ],
-										"originid" : "pat-1149"
+										"originid" : "pat-1176"
 									}
 ,
-									"patching_rect" : [ 309.5, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 311.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -4772,7 +4796,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 213.657894730567932, 117.763156771659851, 65.0, 22.0 ],
+									"patching_rect" : [ 215.0, 300.0, 65.0, 22.0 ],
 									"text" : "buffer~ C1"
 								}
 
@@ -4784,7 +4808,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 213.0, 53.947367906570435, 82.0, 22.0 ],
+									"patching_rect" : [ 214.0, 236.0, 82.0, 22.0 ],
 									"text" : "\"Pad C1.wav\""
 								}
 
@@ -4975,10 +4999,10 @@
 
 											}
  ],
-										"originid" : "pat-1151"
+										"originid" : "pat-1178"
 									}
 ,
-									"patching_rect" : [ 213.0, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 214.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -4990,7 +5014,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 101.97368323802948, 117.763156771659851, 63.0, 22.0 ],
+									"patching_rect" : [ 103.0, 300.0, 63.0, 22.0 ],
 									"text" : "buffer~ A1"
 								}
 
@@ -5002,7 +5026,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 101.315788507461548, 53.947367906570435, 80.0, 22.0 ],
+									"patching_rect" : [ 103.0, 236.0, 80.0, 22.0 ],
 									"text" : "\"Pad A1.wav\""
 								}
 
@@ -5025,7 +5049,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 119.0, 1000.0, 755.0 ],
+										"rect" : [ 585.0, 208.0, 657.0, 419.0 ],
 										"gridsize" : [ 15.0, 15.0 ],
 										"boxes" : [ 											{
 												"box" : 												{
@@ -5193,10 +5217,10 @@
 
 											}
  ],
-										"originid" : "pat-1153"
+										"originid" : "pat-1180"
 									}
 ,
-									"patching_rect" : [ 101.315788507461548, 84.868420243263245, 80.0, 22.0 ],
+									"patching_rect" : [ 103.0, 267.0, 80.0, 22.0 ],
 									"text" : "p prep_buffer"
 								}
 
@@ -6507,7 +6531,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 865.0, 499.0, 50.0, 22.0 ],
-									"text" : "9"
+									"text" : "8"
 								}
 
 							}
@@ -6574,15 +6598,14 @@
 , 							{
 								"box" : 								{
 									"embed_buffers" : 									{
-										"allSamples.1" : "01 O vis eternitatis.m4a",
-										"allSamples.2" : "02 Nunc aperuit nobis.m4a",
-										"allSamples.3" : "03 Quia ergo femina mortem instruxit.m4a",
-										"allSamples.4" : "06 Ave Maria, O auctrix vite.m4a",
-										"allSamples.5" : "07 Spiritus Sanctus vivificans vite.m4a",
-										"allSamples.6" : "bird summer.mp3",
-										"allSamples.7" : "Birds Forest 02.mp3",
-										"allSamples.8" : "Water Asmr.mp3",
-										"allSamples.9" : "wood_chimes.mp3"
+										"allSamples.1" : "Pad A1.wav",
+										"allSamples.2" : "Pad C1.wav",
+										"allSamples.3" : "Pad C2.wav",
+										"allSamples.4" : "Pad C3.wav",
+										"allSamples.5" : "Pad E1.wav",
+										"allSamples.6" : "Pad E2.wav",
+										"allSamples.7" : "Pad G1.wav",
+										"allSamples.8" : "Pad G2.wav"
 									}
 ,
 									"id" : "obj-56",
@@ -6639,7 +6662,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[4]",
+											"parameter_longname" : "number[10]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -6716,7 +6739,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[5]",
+											"parameter_longname" : "number[13]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -6792,7 +6815,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[6]",
+											"parameter_longname" : "number[15]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -6868,7 +6891,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[7]",
+											"parameter_longname" : "number[8]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -6944,7 +6967,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[2]",
+											"parameter_longname" : "number[16]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -7020,7 +7043,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[3]",
+											"parameter_longname" : "number[12]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -7096,7 +7119,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[1]",
+											"parameter_longname" : "number[14]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -7172,7 +7195,7 @@
 											"parameter_initial" : [ 0 ],
 											"parameter_initial_enable" : 1,
 											"parameter_invisible" : 1,
-											"parameter_longname" : "number[9]",
+											"parameter_longname" : "number[11]",
 											"parameter_modmode" : 0,
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
@@ -8779,7 +8802,7 @@
 
 							}
  ],
-						"originid" : "pat-1137"
+						"originid" : "pat-1164"
 					}
 ,
 					"patching_rect" : [ 221.0, 283.0, 99.0, 22.0 ],
@@ -9168,16 +9191,16 @@
 
 			}
  ],
-		"originid" : "pat-1131",
+		"originid" : "pat-1158",
 		"parameters" : 		{
-			"obj-61::obj-1" : [ "number[2]", "number", 0 ],
-			"obj-61::obj-12" : [ "number[4]", "number", 0 ],
-			"obj-61::obj-18" : [ "number[5]", "number", 0 ],
-			"obj-61::obj-25" : [ "number[6]", "number", 0 ],
-			"obj-61::obj-44" : [ "number[7]", "number", 0 ],
-			"obj-61::obj-52" : [ "number[9]", "number", 0 ],
-			"obj-61::obj-54" : [ "number[1]", "number", 0 ],
-			"obj-61::obj-7" : [ "number[3]", "number", 0 ],
+			"obj-61::obj-1" : [ "number[16]", "number", 0 ],
+			"obj-61::obj-12" : [ "number[10]", "number", 0 ],
+			"obj-61::obj-18" : [ "number[13]", "number", 0 ],
+			"obj-61::obj-25" : [ "number[15]", "number", 0 ],
+			"obj-61::obj-44" : [ "number[8]", "number", 0 ],
+			"obj-61::obj-52" : [ "number[11]", "number", 0 ],
+			"obj-61::obj-54" : [ "number[14]", "number", 0 ],
+			"obj-61::obj-7" : [ "number[12]", "number", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
