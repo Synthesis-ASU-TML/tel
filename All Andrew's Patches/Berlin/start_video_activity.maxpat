@@ -10,16 +10,130 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 662.0, 237.0, 526.0, 599.0 ],
+		"rect" : [ 479.0, 100.0, 777.0, 778.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 121.5, 659.0, 47.0, 20.0 ],
+					"text" : "MUTE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 170.5, 658.0, 29.5, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-20",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 312.0, 631.0, 397.0, 38.0 ],
+					"text" : "mc.cycle~ @chans 8 @values 110 220 440 560 660 880 1200 1760"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 225.0, 596.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 225.0, 626.0, 73.0, 22.0 ],
+					"text" : "multislider 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"local" : 1,
+					"maxclass" : "mc.ezdac~",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 225.00000536441803, 788.414652943611145, 44.0, 44.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"interpinlet" : 1,
+					"maxclass" : "gain~",
+					"multichannelvariant" : 1,
+					"multislider" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"orientation" : 2,
+					"outlettype" : [ "multichannelsignal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 225.00000536441803, 684.146357774734497, 118.292685747146606, 81.707319021224976 ],
+					"saved_multichannel" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 34.756098389625549, 473.78049910068512, 188.0, 29.0 ],
+					"text" : "Andrew_videosounder"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 253.658542633056641, 473.78049910068512, 123.0, 29.0 ],
+					"text" : "Emiddio_birds"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 343.0, 468.553451299667358, 55.0, 22.0 ],
+					"patching_rect" : [ 438.0, 439.0, 55.0, 22.0 ],
 					"text" : "zl.slice 8"
 				}
 
@@ -29,9 +143,9 @@
 					"fontsize" : 18.0,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 343.0, 526.0, 124.0, 29.0 ],
+					"patching_rect" : [ 438.0, 474.0, 124.0, 29.0 ],
 					"text" : "Andrew_audio"
 				}
 
@@ -40,12 +154,13 @@
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-1",
-					"linecount" : 6,
+					"linecount" : 18,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 506.111135244369507, 5.555555820465088, 272.777790784835815, 87.0 ],
-					"text" : "TODO:  factor out (1) Three sound syntheis instruments: Emiddio, Andrew, Xinwei\n(2) Compute warbling math based on INVERSE of video activity vector \n(3) Apply warble list to Sound synthesis instruments"
+					"patching_rect" : [ 484.0, 7.317073345184326, 274.0, 248.0 ],
+					"text" : "TODO:  \n\n(1) Three sound syntheis instruments: Emiddio, Andrew, Xinwei\n\n(2) Compute warbling math based on INVERSE of video activity vector \n\n(3) Apply warble list to Sound synthesis instruments\n\n(4) Split sound out of [video_tiles_activity] into separate sub-patch [Andrew_videosounder]\n\n(5) Add final stage:\n(5.1) switch between the three instruments, and \n(5.2) set gain on 8 channels\n ",
+					"textcolor" : [ 1.0, 0.636106312274933, 1.0, 1.0 ]
 				}
 
 			}
@@ -130,7 +245,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -166,8 +280,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8.805031299591064, 406.0, 310.691818714141846, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.024691998958588, 336.41977995634079, 468.51855593919754, 17.0 ],
-					"text" : "1.000147 1.000147 1.000147 1.000147 1.000147 1.000147 1.000147 1.000147"
+					"presentation_rect" : [ 8.024691998958588, 336.41977995634079, 471.0, 17.0 ],
+					"text" : "0. 0. 0. 0. 0. 0.02 0.03 0.04 0.03 0.01 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -205,6 +319,41 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
@@ -231,7 +380,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 248.5, 389.713537666015327, 352.5, 389.713537666015327 ],
+					"midpoints" : [ 248.5, 389.713537666015327, 447.5, 389.713537666015327 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
@@ -261,7 +410,7 @@
 
 			}
  ],
-		"originid" : "pat-1445",
+		"originid" : "pat-342",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
@@ -302,6 +451,13 @@
 , 			{
 				"name" : "cv.jit.ravg.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "draw_octant.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",
