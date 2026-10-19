@@ -9,22 +9,17 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 589.0, 137.0, 847.0, 698.0 ],
+        "rect": [ 34.0, 61.0, 1660.0, 1022.0 ],
         "openinpresentation": 1,
         "toolbars_unpinned_last_save": 2,
         "boxes": [
             {
                 "box": {
-                    "attr": "chans",
-                    "id": "obj-117",
-                    "maxclass": "attrui",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 893.5, 1429.0, 150.0, 22.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 176.33333480358124, 401.0, 150.0, 22.0 ]
+                    "id": "obj-171",
+                    "maxclass": "ezdac~",
+                    "numinlets": 2,
+                    "numoutlets": 0,
+                    "patching_rect": [ 850.0, 539.0, 45.0, 45.0 ]
                 }
             },
             {
@@ -109,7 +104,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1213.0, 1237.0, 50.0, 22.0 ]
+                    "patching_rect": [ 1050.9387760162354, 1225.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -315,19 +310,6 @@
             },
             {
                 "box": {
-                    "fontface": 1,
-                    "id": "obj-136",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 71.0, 597.0, 112.0, 20.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 110.33333480358124, 495.0, 65.27868986129761, 20.0 ],
-                    "text": "ramp up"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-329",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -478,39 +460,6 @@
                     "bubble": 1,
                     "fontname": "Arial",
                     "fontsize": 13.0,
-                    "id": "obj-96",
-                    "linecount": 2,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 830.0, 1487.0, 99.0, 40.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 168.33333480358124, 373.0, 112.33333349227905, 25.0 ],
-                    "text": "Turn on Audio"
-                }
-            },
-            {
-                "box": {
-                    "bubble": 1,
-                    "fontname": "Arial",
-                    "fontsize": 13.0,
-                    "id": "obj-83",
-                    "linecount": 3,
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 1500.0, 1027.0, 197.0, 54.0 ],
-                    "presentation": 1,
-                    "presentation_linecount": 3,
-                    "presentation_rect": [ 278.6666749715805, 241.33334052562714, 197.00000268220901, 54.0 ],
-                    "text": "Drag Audio Sample Folder (not separate files). Will only use first 16 samples"
-                }
-            },
-            {
-                "box": {
-                    "bubble": 1,
-                    "fontname": "Arial",
-                    "fontsize": 13.0,
                     "id": "obj-82",
                     "linecount": 3,
                     "maxclass": "comment",
@@ -531,7 +480,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1394.7272701263428, 547.54545545578, 119.66666704416275, 25.0 ],
+                    "patching_rect": [ 1396.0, 530.1818196773529, 119.66666704416275, 25.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 157.33333802223206, 142.66667091846466, 128.3333339691162, 25.0 ],
                     "text": "Start Rendering"
@@ -617,7 +566,7 @@
                 "box": {
                     "id": "obj-2319",
                     "maxclass": "number",
-                    "maximum": 1,
+                    "maximum": 4,
                     "minimum": 1,
                     "numinlets": 1,
                     "numoutlets": 2,
@@ -632,7 +581,7 @@
                 "box": {
                     "id": "obj-2510",
                     "maxclass": "number",
-                    "maximum": 16,
+                    "maximum": 4,
                     "minimum": 1,
                     "numinlets": 1,
                     "numoutlets": 2,
@@ -904,17 +853,6 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 780.0, 1167.0, 66.0, 22.0 ],
                     "text": "round 0.01"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-77",
-                    "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1544.0, 1321.0, 53.0, 22.0 ],
-                    "text": "clip 0 16"
                 }
             },
             {
@@ -1396,338 +1334,13 @@
             },
             {
                 "box": {
-                    "attr": "chans",
-                    "id": "obj-80",
-                    "maxclass": "attrui",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 1231.0, 1422.0, 150.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-25",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1264.0, 1121.0, 71.0, 22.0 ],
-                    "text": "relativepath"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-22",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1264.0, 1150.0, 72.0, 22.0 ],
-                    "text": "prepend set"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1128",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1264.0, 1176.0, 103.0, 22.0 ],
-                    "text": "filepath search 20"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-16",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1264.0, 1087.0, 110.0, 22.0 ],
-                    "text": "prepend readfolder"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-15",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1264.0, 1005.0, 92.0, 22.0 ],
-                    "text": "loadmess types"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1129",
-                    "maxclass": "dropfile",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "patching_rect": [ 1264.0, 1033.0, 234.0, 52.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 86.6666692495346, 241.33334052562714, 190.86065578460693, 88.11147332191467 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1131",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1544.0, 1282.0, 25.0, 22.0 ],
-                    "text": "iter"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-39",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1544.0, 1254.0, 42.0, 22.0 ],
-                    "text": "thresh"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-38",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1544.0, 1422.0, 97.0, 22.0 ],
-                    "text": "setvalue $1 start"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1133",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 1438.0, 1392.0, 107.0, 20.0 ],
-                    "text": "$1 int, $2 filename"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-23",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "int" ],
-                    "patching_rect": [ 1380.0, 1171.0, 29.5, 22.0 ],
-                    "text": "t b i"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-21",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1390.0, 1392.0, 41.0, 22.0 ],
-                    "text": "join 2"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-20",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "patching_rect": [ 1390.0, 1364.0, 41.0, 22.0 ],
-                    "text": "buddy"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1134",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "int" ],
-                    "patching_rect": [ 1401.0, 1263.0, 29.5, 22.0 ],
-                    "text": "t b i"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-18",
-                    "maxclass": "number",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 1401.0, 1231.0, 50.0, 22.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1135",
-                    "maxclass": "newobj",
-                    "numinlets": 3,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "patching_rect": [ 1282.0, 1306.0, 148.0, 22.0 ],
-                    "text": "combine sampleFolder . i"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1136",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1390.0, 1422.0, 106.0, 22.0 ],
-                    "text": "setvalue $1 set $2"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1137",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "multichannelsignal", "", "" ],
-                    "patching_rect": [ 1390.0, 1467.0, 169.0, 22.0 ],
-                    "text": "mc.play~ @chans 16 @loop 1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1138",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 3,
-                    "outlettype": [ "bang", "bang", "int" ],
-                    "patching_rect": [ 1380.0, 1203.0, 40.0, 22.0 ],
-                    "text": "uzi"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-8",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "patching_rect": [ 1380.0, 1145.0, 69.0, 22.0 ],
-                    "text": "route count"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1139",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1454.0, 1092.0, 55.0, 22.0 ],
-                    "text": "getcount"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1140",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1380.0, 1091.0, 63.0, 22.0 ],
-                    "text": "readfolder"
-                }
-            },
-            {
-                "box": {
-                    "embed_buffers": {
-                        "sampleFolder.1": "Ocean Maldives 02.mp3",
-                        "sampleFolder.2": "Ocean Maldives 03.mp3",
-                        "sampleFolder.3": "Ocean Maldives 04.mp3",
-                        "sampleFolder.4": "Rain Sound effect.mp3",
-                        "sampleFolder.5": "rain+thunder.mp3",
-                        "sampleFolder.6": "SeaGull Call ~ Seagull Sound ~ Seagulls Sounds and Ocean Waves.mp3",
-                        "sampleFolder.7": "Seagull sounds.mp3",
-                        "sampleFolder.8": "Seagulls’ Early Morning Life.mp3",
-                        "sampleFolder.9": "Stream Flowing.mp3",
-                        "sampleFolder.10": "w Seagull sounds copy 2.mp3",
-                        "sampleFolder.11": "Water Asmr.mp3"
-                    },
-                    "id": "obj-1141",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "patching_rect": [ 1380.0, 1121.0, 206.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "embed": 1
-                    },
-                    "text": "polybuffer~ sampleFolder @embed 1"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1090",
-                    "maxclass": "mc.ezdac~",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 780.0, 1485.0, 45.0, 45.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 124.33333480358124, 373.0, 45.0, 45.0 ]
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1089",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 780.0, 1457.0, 92.0, 22.0 ],
-                    "text": "mc.mixdown~ 8"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-1085",
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 17,
                     "outlettype": [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-                    "patching_rect": [ 780.0, 1350.0, 187.0, 22.0 ],
+                    "patching_rect": [ 780.0, 1314.0, 187.0, 22.0 ],
                     "text": "unjoin 16"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1082",
-                    "maxclass": "newobj",
-                    "numinlets": 16,
-                    "numoutlets": 2,
-                    "outlettype": [ "setvalue", "int" ],
-                    "patching_rect": [ 780.0, 1398.0, 176.5, 22.0 ],
-                    "text": "mc.input 16"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-1078",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 780.0, 1429.0, 104.0, 22.0 ],
-                    "text": "mc.*~ @chans 16"
                 }
             },
             {
@@ -1822,13 +1435,13 @@
             {
                 "box": {
                     "id": "obj-417",
-                    "linecount": 3,
+                    "linecount": 4,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 855.0, 1307.0, 157.0, 49.0 ],
-                    "text": "0. 0. 0.02 0.01 0.05 0.11 0.16 0.15 0.12 0.19 0.23 0.24 0.18 0.19 0.2 0.19"
+                    "patching_rect": [ 987.5, 1287.0, 157.0, 62.0 ],
+                    "text": "0.16 0.23 0.44 0.45 0.18 0.28 0.39 0.44 0.24 0.33 0.29 0.27 0.35 0.23 0.32 0.32"
                 }
             },
             {
@@ -2201,867 +1814,6 @@
             },
             {
                 "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-78",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 97.33333241939545, 81.99999862909317 ],
-                    "varname": "motion.16[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-375",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.1[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-377",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.2[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-379",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.3[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-382",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.4[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-384",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.5[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-386",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.6[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-388",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.7[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-390",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.8[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-392",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.9[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-394",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.1[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-396",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.2[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-398",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.3[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-400",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.4[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-402",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.5[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-404",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.6[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-406",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.7[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-497",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.1[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-499",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.2[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-501",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.3[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-503",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.4[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-505",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.5[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-507",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.6[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-509",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.7[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-511",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.8[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-513",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.9[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-137",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.1[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-139",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.2[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-143",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.3[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-147",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.4[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-150",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.5[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-155",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.6[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-157",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.7[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-159",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.8[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-184",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.1[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-186",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.2[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-188",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.3[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-190",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.4[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-192",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.5[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-194",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.6[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-196",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 538.0, 128.0, 128.0 ],
-                    "varname": "motion.7[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
                     "background": 1,
                     "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
                     "fontname": "Arial Bold",
@@ -3110,28 +1862,6 @@
                     "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
                     "fontname": "Arial Bold",
                     "hint": "",
-                    "id": "obj-91",
-                    "ignoreclick": 1,
-                    "legacytextcolor": 1,
-                    "maxclass": "textbutton",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 932.0, 1487.0, 20.0, 20.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 288.33333480358124, 373.0, 20.0, 20.0 ],
-                    "rounded": 60.0,
-                    "text": "5",
-                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
-                }
-            },
-            {
-                "box": {
-                    "background": 1,
-                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
-                    "fontname": "Arial Bold",
-                    "hint": "",
                     "id": "obj-79",
                     "ignoreclick": 1,
                     "legacytextcolor": 1,
@@ -3140,7 +1870,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1522.909083724022, 547.54545545578, 20.0, 20.0 ],
+                    "patching_rect": [ 1524.0, 530.1818196773529, 20.0, 20.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 288.00000858306885, 142.66667091846466, 20.0, 20.0 ],
                     "rounded": 60.0,
@@ -3177,7 +1907,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-175",
+                    "id": "obj-126",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3186,659 +1916,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.1[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-177",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.2[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-179",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.3[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-181",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.4[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-185",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.5[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-189",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.6[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-528",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.1[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-530",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.2[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-532",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.3[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-534",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.4[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-536",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.5[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-538",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.6[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-540",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.7[6]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-542",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.8[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-544",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.9[3]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-546",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.10[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-548",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.11[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-550",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.12[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-552",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.13[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-554",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.14[1]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-614",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.1[8]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-616",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.2[8]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-618",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.3[8]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-620",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.4[8]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-622",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.5[8]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-624",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.6[8]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-626",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.7[7]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-628",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.8[5]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-630",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.9[4]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-632",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 134.0, 501.0, 128.0, 128.0 ],
-                    "varname": "motion.10[2]",
-                    "viewvisibility": 1
-                }
-            },
-            {
-                "box": {
-                    "background": 1,
-                    "bgcolor": [ 1.0, 0.788235, 0.470588, 1.0 ],
-                    "fontname": "Arial Bold",
-                    "hint": "",
-                    "id": "obj-102",
-                    "ignoreclick": 1,
-                    "legacytextcolor": 1,
-                    "maxclass": "textbutton",
-                    "numinlets": 1,
-                    "numoutlets": 3,
-                    "outlettype": [ "", "", "int" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 1710.0, 1042.0, 20.0, 20.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 485.3333477973938, 241.33334052562714, 20.0, 20.0 ],
-                    "rounded": 60.0,
-                    "text": "3",
-                    "textcolor": [ 0.34902, 0.34902, 0.34902, 1.0 ]
-                }
-            },
-            {
-                "box": {
-                    "bgmode": 0,
-                    "border": 0,
-                    "clickthrough": 0,
-                    "enablehscroll": 0,
-                    "enablevscroll": 0,
-                    "id": "obj-4",
-                    "lockeddragscroll": 0,
-                    "lockedsize": 0,
-                    "maxclass": "bpatcher",
-                    "name": "motionDetection.maxpat",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "offset": [ 0.0, 0.0 ],
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.1",
                     "viewvisibility": 1
                 }
@@ -3850,7 +1928,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-7",
+                    "id": "obj-128",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3859,7 +1937,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.2",
                     "viewvisibility": 1
                 }
@@ -3871,7 +1949,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-17",
+                    "id": "obj-130",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3880,7 +1958,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.3",
                     "viewvisibility": 1
                 }
@@ -3892,7 +1970,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-27",
+                    "id": "obj-132",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3901,7 +1979,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.4",
                     "viewvisibility": 1
                 }
@@ -3913,7 +1991,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-32",
+                    "id": "obj-134",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3922,7 +2000,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.5",
                     "viewvisibility": 1
                 }
@@ -3934,7 +2012,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-34",
+                    "id": "obj-136",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3943,7 +2021,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.6",
                     "viewvisibility": 1
                 }
@@ -3955,7 +2033,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-36",
+                    "id": "obj-138",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3964,7 +2042,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.7",
                     "viewvisibility": 1
                 }
@@ -3976,7 +2054,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-40",
+                    "id": "obj-141",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -3985,7 +2063,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.8",
                     "viewvisibility": 1
                 }
@@ -3997,7 +2075,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-45",
+                    "id": "obj-145",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4006,7 +2084,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.9",
                     "viewvisibility": 1
                 }
@@ -4018,7 +2096,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-51",
+                    "id": "obj-149",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4027,7 +2105,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.10",
                     "viewvisibility": 1
                 }
@@ -4039,7 +2117,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-53",
+                    "id": "obj-154",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4048,7 +2126,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.11",
                     "viewvisibility": 1
                 }
@@ -4060,7 +2138,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-57",
+                    "id": "obj-156",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4069,7 +2147,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.12",
                     "viewvisibility": 1
                 }
@@ -4081,7 +2159,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-59",
+                    "id": "obj-158",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4090,7 +2168,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.13",
                     "viewvisibility": 1
                 }
@@ -4102,7 +2180,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-65",
+                    "id": "obj-160",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4111,7 +2189,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.14",
                     "viewvisibility": 1
                 }
@@ -4123,7 +2201,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-67",
+                    "id": "obj-162",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4132,7 +2210,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.15",
                     "viewvisibility": 1
                 }
@@ -4144,7 +2222,7 @@
                     "clickthrough": 0,
                     "enablehscroll": 0,
                     "enablevscroll": 0,
-                    "id": "obj-69",
+                    "id": "obj-164",
                     "lockeddragscroll": 0,
                     "lockedsize": 0,
                     "maxclass": "bpatcher",
@@ -4153,7 +2231,7 @@
                     "numoutlets": 1,
                     "offset": [ 0.0, 0.0 ],
                     "outlettype": [ "" ],
-                    "patching_rect": [ 0.0, 0.0, 50.0, 22.0 ],
+                    "patching_rect": [ 0.0, 0.0, 50.0, 46.0 ],
                     "varname": "motion.16",
                     "viewvisibility": 1
                 }
@@ -4257,250 +2335,104 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-1089", 0 ],
-                    "source": [ "obj-1078", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-115", 0 ],
                     "source": [ "obj-108", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-1078", 0 ],
-                    "source": [ "obj-1082", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 15 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 15 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 14 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 14 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 13 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 13 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 12 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 12 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 11 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 11 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 10 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 10 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 9 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 9 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 8 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 8 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 7 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 7 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 6 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 6 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 5 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 5 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 4 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 4 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 3 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 3 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 2 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 2 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 1 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1082", 0 ],
-                    "order": 0,
-                    "source": [ "obj-1085", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-1186", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1188", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1189", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1190", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 3 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1191", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 4 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1192", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 5 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1193", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 6 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1194", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 7 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1195", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 8 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1196", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 9 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1197", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 10 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1198", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 11 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1199", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 12 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1200", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 13 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1201", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 14 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-1202", 1 ],
-                    "order": 1,
                     "source": [ "obj-1085", 15 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1090", 0 ],
-                    "source": [ "obj-1089", 0 ]
                 }
             },
             {
@@ -4525,104 +2457,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-16", 0 ],
-                    "order": 1,
-                    "source": [ "obj-1129", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-25", 0 ],
-                    "order": 0,
-                    "source": [ "obj-1129", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-111", 1 ],
                     "source": [ "obj-113", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-77", 0 ],
-                    "source": [ "obj-1131", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1135", 2 ],
-                    "source": [ "obj-1134", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1135", 0 ],
-                    "source": [ "obj-1134", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-20", 1 ],
-                    "source": [ "obj-1135", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1137", 0 ],
-                    "source": [ "obj-1136", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1078", 0 ],
-                    "source": [ "obj-1137", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-18", 0 ],
-                    "order": 1,
-                    "source": [ "obj-1138", 2 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-20", 0 ],
-                    "order": 2,
-                    "source": [ "obj-1138", 2 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-39", 0 ],
-                    "order": 0,
-                    "source": [ "obj-1138", 2 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1141", 0 ],
-                    "source": [ "obj-1139", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1141", 0 ],
-                    "source": [ "obj-1140", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1139", 0 ],
-                    "midpoints": [ 1576.5, 1145.5333389043808, 1531.200001180172, 1145.5333389043808, 1531.200001180172, 1084.5333389043808, 1463.5, 1084.5333389043808 ],
-                    "source": [ "obj-1141", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-8", 0 ],
-                    "source": [ "obj-1141", 0 ]
                 }
             },
             {
@@ -4643,12 +2479,6 @@
                     "destination": [ "obj-109", 0 ],
                     "hidden": 1,
                     "source": [ "obj-116", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1089", 0 ],
-                    "source": [ "obj-117", 0 ]
                 }
             },
             {
@@ -4773,8 +2603,50 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-381", 0 ],
+                    "source": [ "obj-126", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 1 ],
+                    "source": [ "obj-128", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 2 ],
+                    "source": [ "obj-130", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 3 ],
+                    "source": [ "obj-132", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 4 ],
+                    "source": [ "obj-134", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 5 ],
+                    "source": [ "obj-136", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-1368", 0 ],
                     "source": [ "obj-1369", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 6 ],
+                    "source": [ "obj-138", 0 ]
                 }
             },
             {
@@ -4891,114 +2763,120 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-17", 0 ],
-                    "order": 1,
-                    "source": [ "obj-14", 2 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-27", 0 ],
-                    "order": 1,
-                    "source": [ "obj-14", 3 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-32", 0 ],
-                    "order": 1,
-                    "source": [ "obj-14", 4 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-34", 0 ],
-                    "order": 1,
-                    "source": [ "obj-14", 5 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-36", 0 ],
-                    "order": 1,
-                    "source": [ "obj-14", 6 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-4", 0 ],
+                    "destination": [ "obj-126", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-40", 0 ],
+                    "destination": [ "obj-128", 0 ],
+                    "order": 1,
+                    "source": [ "obj-14", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-130", 0 ],
+                    "order": 1,
+                    "source": [ "obj-14", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-132", 0 ],
+                    "order": 1,
+                    "source": [ "obj-14", 3 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-134", 0 ],
+                    "order": 1,
+                    "source": [ "obj-14", 4 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-136", 0 ],
+                    "order": 1,
+                    "source": [ "obj-14", 5 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-138", 0 ],
+                    "order": 1,
+                    "source": [ "obj-14", 6 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-141", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 7 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-45", 0 ],
+                    "destination": [ "obj-145", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 8 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-51", 0 ],
+                    "destination": [ "obj-149", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 9 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-53", 0 ],
+                    "destination": [ "obj-154", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 10 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-57", 0 ],
+                    "destination": [ "obj-156", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 11 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-59", 0 ],
+                    "destination": [ "obj-158", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 12 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-65", 0 ],
+                    "destination": [ "obj-160", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 13 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-67", 0 ],
+                    "destination": [ "obj-162", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 14 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-69", 0 ],
+                    "destination": [ "obj-164", 0 ],
                     "order": 1,
                     "source": [ "obj-14", 15 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-7", 0 ],
-                    "order": 1,
-                    "source": [ "obj-14", 1 ]
+                    "destination": [ "obj-381", 7 ],
+                    "source": [ "obj-141", 0 ]
                 }
             },
             {
@@ -5015,6 +2893,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-381", 8 ],
+                    "source": [ "obj-145", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-144", 0 ],
                     "source": [ "obj-146", 0 ]
                 }
@@ -5027,8 +2911,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-1129", 0 ],
-                    "source": [ "obj-15", 0 ]
+                    "destination": [ "obj-381", 9 ],
+                    "source": [ "obj-149", 0 ]
                 }
             },
             {
@@ -5057,20 +2941,38 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-1141", 0 ],
-                    "source": [ "obj-16", 0 ]
+                    "destination": [ "obj-381", 10 ],
+                    "source": [ "obj-154", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 2 ],
-                    "source": [ "obj-17", 0 ]
+                    "destination": [ "obj-381", 11 ],
+                    "source": [ "obj-156", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-1134", 0 ],
-                    "source": [ "obj-18", 0 ]
+                    "destination": [ "obj-381", 12 ],
+                    "source": [ "obj-158", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 13 ],
+                    "source": [ "obj-160", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 14 ],
+                    "source": [ "obj-162", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-381", 15 ],
+                    "source": [ "obj-164", 0 ]
                 }
             },
             {
@@ -5108,30 +3010,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-21", 1 ],
-                    "source": [ "obj-20", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-21", 0 ],
-                    "source": [ "obj-20", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1136", 0 ],
-                    "source": [ "obj-21", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1128", 0 ],
-                    "source": [ "obj-22", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-2253", 0 ],
                     "source": [ "obj-2251", 0 ]
                 }
@@ -5160,18 +3038,6 @@
                     "destination": [ "obj-230", 0 ],
                     "order": 0,
                     "source": [ "obj-228", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1138", 1 ],
-                    "source": [ "obj-23", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1138", 0 ],
-                    "source": [ "obj-23", 0 ]
                 }
             },
             {
@@ -5212,12 +3078,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-22", 0 ],
-                    "source": [ "obj-25", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-2319", 0 ],
                     "source": [ "obj-2508", 0 ]
                 }
@@ -5244,12 +3104,6 @@
                 "patchline": {
                     "destination": [ "obj-2511", 0 ],
                     "source": [ "obj-2512", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 3 ],
-                    "source": [ "obj-27", 0 ]
                 }
             },
             {
@@ -5286,12 +3140,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 4 ],
-                    "source": [ "obj-32", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-113", 0 ],
                     "source": [ "obj-328", 0 ]
                 }
@@ -5310,24 +3158,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 5 ],
-                    "source": [ "obj-34", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 6 ],
-                    "source": [ "obj-36", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1137", 0 ],
-                    "source": [ "obj-38", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-1022", 0 ],
                     "order": 0,
                     "source": [ "obj-381", 0 ]
@@ -5338,24 +3168,6 @@
                     "destination": [ "obj-1026", 0 ],
                     "order": 1,
                     "source": [ "obj-381", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1131", 0 ],
-                    "source": [ "obj-39", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 0 ],
-                    "source": [ "obj-4", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 7 ],
-                    "source": [ "obj-40", 0 ]
                 }
             },
             {
@@ -5457,12 +3269,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 8 ],
-                    "source": [ "obj-45", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-14", 0 ],
                     "source": [ "obj-47", 0 ]
                 }
@@ -5527,18 +3333,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 9 ],
-                    "source": [ "obj-51", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 10 ],
-                    "source": [ "obj-53", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-182", 0 ],
                     "order": 2,
                     "source": [ "obj-54", 1 ]
@@ -5580,18 +3374,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 11 ],
-                    "source": [ "obj-57", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 12 ],
-                    "source": [ "obj-59", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-62", 0 ],
                     "source": [ "obj-60", 0 ]
                 }
@@ -5616,30 +3398,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-381", 13 ],
-                    "source": [ "obj-65", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 14 ],
-                    "source": [ "obj-67", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 15 ],
-                    "source": [ "obj-69", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-381", 1 ],
-                    "source": [ "obj-7", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-98", 0 ],
                     "source": [ "obj-73", 0 ]
                 }
@@ -5648,24 +3406,6 @@
                 "patchline": {
                     "destination": [ "obj-2510", 0 ],
                     "source": [ "obj-74", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-38", 0 ],
-                    "source": [ "obj-77", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-23", 0 ],
-                    "source": [ "obj-8", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1137", 0 ],
-                    "source": [ "obj-80", 0 ]
                 }
             },
             {
@@ -5841,6 +3581,14 @@
         ],
         "parameters": {
             "obj-2": [ "live.text", "live.text", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0,
