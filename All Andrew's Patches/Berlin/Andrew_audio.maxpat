@@ -10,9 +10,21 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -25.0, 100.0, 1152.0, 848.0 ],
+		"rect" : [ 3144.0, -478.0, 768.0, 630.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 197.0, 55.696201801300049, 55.0, 22.0 ],
+					"text" : "zl.slice 8"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
@@ -122,12 +134,15 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 18.0,
 					"id" : "obj-5",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 328.0, 236.0, 63.0, 22.0 ],
+					"patching_rect" : [ 328.0, 236.0, 90.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 40.336134910583496, 204.0, 90.0, 29.0 ],
 					"text" : "readfolder"
 				}
 
@@ -523,7 +538,7 @@
 
 							}
  ],
-						"originid" : "pat-8"
+						"originid" : "pat-1668"
 					}
 ,
 					"patching_rect" : [ 197.0, 119.0, 65.0, 22.0 ],
@@ -2930,7 +2945,7 @@
 
 							}
  ],
-						"originid" : "pat-10"
+						"originid" : "pat-1670"
 					}
 ,
 					"patching_rect" : [ 393.0, 812.0, 151.5, 22.0 ],
@@ -3197,7 +3212,7 @@
 				"box" : 				{
 					"id" : "obj-64",
 					"ignoreclick" : 1,
-					"items" : [ "Pad A1", ",", "Pad C1", ",", "Pad C2", ",", "Pad C3", ",", "Pad E1", ",", "Pad E2", ",", "Pad G1", ",", "Pad G2" ],
+					"items" : [ "Ocean Maldives 02", ",", "Ocean Maldives 03", ",", "Ocean Maldives 04", ",", "Rain Sound effect", ",", "rain+thunder", ",", "SeaGull Call ~ Seagull Sound ~ Seagulls Sounds and Ocean Waves", ",", "Seagull sounds", ",", "Seagulls’ Early Morning Life", ",", "Stream Flowing", ",", "w Seagull sounds copy 2", ",", "Water Asmr" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3322,7 +3337,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.0, 49.0, 95.0, 20.0 ],
+					"patching_rect" : [ 239.873414576053619, 26.0, 95.0, 20.0 ],
 					"text" : "MASK VALUES",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
@@ -3331,14 +3346,14 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "activity list",
 					"id" : "obj-17",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 44.0, 30.0, 30.0 ]
+					"patching_rect" : [ 197.0, 16.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -3751,7 +3766,7 @@
 
 											}
  ],
-										"originid" : "pat-14"
+										"originid" : "pat-1674"
 									}
 ,
 									"patching_rect" : [ 828.0, 267.0, 80.0, 22.0 ],
@@ -3969,7 +3984,7 @@
 
 											}
  ],
-										"originid" : "pat-16"
+										"originid" : "pat-1676"
 									}
 ,
 									"patching_rect" : [ 728.0, 267.0, 80.0, 22.0 ],
@@ -4187,7 +4202,7 @@
 
 											}
  ],
-										"originid" : "pat-18"
+										"originid" : "pat-1678"
 									}
 ,
 									"patching_rect" : [ 623.0, 267.0, 80.0, 22.0 ],
@@ -4405,7 +4420,7 @@
 
 											}
  ],
-										"originid" : "pat-20"
+										"originid" : "pat-1680"
 									}
 ,
 									"patching_rect" : [ 508.0, 267.0, 80.0, 22.0 ],
@@ -4623,7 +4638,7 @@
 
 											}
  ],
-										"originid" : "pat-22"
+										"originid" : "pat-1682"
 									}
 ,
 									"patching_rect" : [ 408.0, 267.0, 80.0, 22.0 ],
@@ -4841,7 +4856,7 @@
 
 											}
  ],
-										"originid" : "pat-24"
+										"originid" : "pat-1684"
 									}
 ,
 									"patching_rect" : [ 311.0, 267.0, 80.0, 22.0 ],
@@ -5059,7 +5074,7 @@
 
 											}
  ],
-										"originid" : "pat-26"
+										"originid" : "pat-1686"
 									}
 ,
 									"patching_rect" : [ 214.0, 267.0, 80.0, 22.0 ],
@@ -5277,7 +5292,7 @@
 
 											}
  ],
-										"originid" : "pat-28"
+										"originid" : "pat-1688"
 									}
 ,
 									"patching_rect" : [ 103.0, 267.0, 80.0, 22.0 ],
@@ -6591,7 +6606,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 865.0, 499.0, 50.0, 22.0 ],
-									"text" : "8"
+									"text" : "11"
 								}
 
 							}
@@ -6658,14 +6673,17 @@
 , 							{
 								"box" : 								{
 									"embed_buffers" : 									{
-										"allSamples.1" : "Pad A1.wav",
-										"allSamples.2" : "Pad C1.wav",
-										"allSamples.3" : "Pad C2.wav",
-										"allSamples.4" : "Pad C3.wav",
-										"allSamples.5" : "Pad E1.wav",
-										"allSamples.6" : "Pad E2.wav",
-										"allSamples.7" : "Pad G1.wav",
-										"allSamples.8" : "Pad G2.wav"
+										"allSamples.1" : "Ocean Maldives 02.mp3",
+										"allSamples.2" : "Ocean Maldives 03.mp3",
+										"allSamples.3" : "Ocean Maldives 04.mp3",
+										"allSamples.4" : "Rain Sound effect.mp3",
+										"allSamples.5" : "rain+thunder.mp3",
+										"allSamples.6" : "SeaGull Call ~ Seagull Sound ~ Seagulls Sounds and Ocean Waves.mp3",
+										"allSamples.7" : "Seagull sounds.mp3",
+										"allSamples.8" : "Seagulls’ Early Morning Life.mp3",
+										"allSamples.9" : "Stream Flowing.mp3",
+										"allSamples.10" : "w Seagull sounds copy 2.mp3",
+										"allSamples.11" : "Water Asmr.mp3"
 									}
 ,
 									"id" : "obj-56",
@@ -8862,7 +8880,7 @@
 
 							}
  ],
-						"originid" : "pat-12"
+						"originid" : "pat-1672"
 					}
 ,
 					"patching_rect" : [ 221.0, 283.0, 99.0, 22.0 ],
@@ -8983,7 +9001,7 @@
 					"destination" : [ "obj-73", 1 ],
 					"midpoints" : [ 206.5, 82.5, 805.0, 82.5, 805.0, 238.5, 865.5, 238.5 ],
 					"order" : 0,
-					"source" : [ "obj-17", 0 ]
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -8992,6 +9010,13 @@
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-94", 0 ],
 					"order" : 1,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -9286,7 +9311,7 @@
 
 			}
  ],
-		"originid" : "pat-6"
+		"originid" : "pat-1666"
 	}
 
 }
