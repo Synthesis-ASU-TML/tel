@@ -10,9 +10,26 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 603.0, 139.0, 847.0, 661.0 ],
+		"rect" : [ 534.0, 152.0, 847.0, 661.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 624.0, 554.0, 254.0, 87.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 8,
+					"presentation_rect" : [ 457.0, 415.0, 123.239438235759735, 127.0 ],
+					"text" : "TODO\nReplace this stub [p Emiddio_birds]\nby independent patcher with lift inlet = list of 8 floats \nright inlet toggle mute 0 | sound 1\n",
+					"textcolor" : [ 0.890196078431372, 0.058823529411765, 0.772549019607843, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "toggle",
@@ -225,16 +242,16 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-26",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.342322289943695, 621.0, 124.0, 35.0 ],
+					"patching_rect" : [ 281.342322289943695, 621.0, 124.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 205.0, 385.0, 124.0, 35.0 ],
-					"text" : "0.26 0.16 0.1 0.15 0.2 0.15 0.17 0.2 0.1 0.16 0.25 0.24 0.19 0.13 0.04 0.01"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 205.0, 385.0, 124.0, 26.0 ],
+					"text" : "0. 0. 0. 0.05 0.12 0.12 0.08 0.1 0.14 0.17 0.11 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -260,7 +277,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "1.002904 0.927012 1.042681 0.790065 0.38431 0.530161 0.940412 0.870244"
+					"text" : "1.019276 0.931427 0.827922 0.829746 0.509779 0.696433 0.89801 0.991077"
 				}
 
 			}
@@ -515,7 +532,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "0.26 0.16 0.1 0.15 0.2 0.15 0.17 0.2 0.1 0.16 0.25 0.24 0.19 0.13 0.04 0.01"
+					"text" : "0. 0. 0. 0.05 0.12 0.12 0.08 0.1 0.14 0.17 0.11 0. 0. 0. 0. 0."
 				}
 
 			}
