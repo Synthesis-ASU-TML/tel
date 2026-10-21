@@ -163,7 +163,7 @@
 
 							}
  ],
-						"originid" : "pat-10"
+						"originid" : "pat-136"
 					}
 ,
 					"patching_rect" : [ 474.0, 567.0, 138.0, 29.0 ],
@@ -260,7 +260,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "1.010744 0.935816 0.940276 1.020066 0.453898 0.587974 0.948615 0.970106"
+					"text" : "1.011461 0.932623 0.918902 1.030386 0.470723 0.580519 0.931964 0.950912"
 				}
 
 			}
@@ -515,7 +515,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "0.04 0. 0. 0. 0.01 0.01 0.02 0. 0. 0.03 0.01 0. 0. 0. 0. 0."
+					"text" : "0.23 0.22 0.11 0.15 0.19 0.17 0.19 0.17 0.11 0.18 0.22 0.21 0.15 0.07 0.04 0."
 				}
 
 			}
@@ -722,7 +722,7 @@
 
 			}
  ],
-		"originid" : "pat-4",
+		"originid" : "pat-130",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
@@ -770,18 +770,6 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.*.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.>=.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.absdiff.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",
