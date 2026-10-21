@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1645.0, -350.0, 1230.0, 623.0 ],
+		"rect" : [ 380.0, 166.0, 914.0, 390.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -171,7 +171,7 @@
 				"box" : 				{
 					"comment" : "list ave presence-activities",
 					"id" : "obj-96",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -256,7 +256,7 @@
 				"box" : 				{
 					"comment" : "list presence-activities",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -357,7 +357,7 @@
 				"box" : 				{
 					"comment" : "input video",
 					"id" : "obj-95",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -418,13 +418,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-79",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 124.42518275976181, 1021.0, 237.645982503890991, 35.0 ],
-					"text" : "10.5464 11.968441 19.238698 14.5 9.136191 12.053783 14.328014 8.932005"
+					"patching_rect" : [ 124.42518275976181, 1021.0, 239.645982503890991, 49.0 ],
+					"text" : "17.371136 14.865535 13.628286 14.516607 9.951557 17.538605 21.820146 20.348931"
 				}
 
 			}
@@ -757,7 +757,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 68.0, 841.0, 707.0, 22.0 ],
-									"text" : "10.5464 11.968441 19.238698 14.5 9.136191 12.053783 14.328014 8.932005"
+									"text" : "17.371136 14.865535 13.628286 14.516607 9.951557 17.538605 21.820146 20.348931"
 								}
 
 							}
@@ -2739,7 +2739,7 @@
 
 							}
  ],
-						"originid" : "pat-580"
+						"originid" : "pat-2478"
 					}
 ,
 					"patching_rect" : [ 42.42518275976181, 978.0, 151.5, 22.0 ],
@@ -2874,7 +2874,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 303.0, 637.062040150165558, 93.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 500.0, 187.0, 84.0, 20.0 ],
+					"presentation_rect" : [ 571.0, 187.0, 84.0, 20.0 ],
 					"text" : "Motion Values"
 				}
 
@@ -3106,8 +3106,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 247.967152327299118, 666.562040150165558, 234.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 32.0, 186.0, 461.0, 22.0 ],
-					"text" : "10.563854 11.941921 19.367152 14.647858 9.169092 12.276266 14.284255 9.01"
+					"presentation_rect" : [ 32.0, 186.0, 486.0, 22.0 ],
+					"text" : "17.429481 14.928867 13.694549 14.584665 9.985167 17.567901 21.857405 20.413828"
 				}
 
 			}
@@ -3365,7 +3365,7 @@
 
 							}
  ],
-						"originid" : "pat-582"
+						"originid" : "pat-2480"
 					}
 ,
 					"patching_rect" : [ 518.978099405765533, 178.832115828990936, 55.0, 22.0 ],
@@ -4935,7 +4935,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 68.0, 841.0, 707.0, 22.0 ],
-									"text" : "10.563854 11.941921 19.367152 14.647858 9.169092 12.276266 14.284255 9.01"
+									"text" : "17.429481 14.928867 13.694549 14.584665 9.985167 17.567901 21.857405 20.413828"
 								}
 
 							}
@@ -7844,7 +7844,7 @@
 
 							}
  ],
-						"originid" : "pat-584"
+						"originid" : "pat-2482"
 					}
 ,
 					"patching_rect" : [ 98.0, 673.062040150165558, 151.5, 22.0 ],
@@ -8419,49 +8419,7 @@
 
 			}
  ],
-		"originid" : "pat-574",
-		"parameters" : 		{
-			"obj-2" : [ "live.text", "live.text", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "cv.jit.ravg.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "draw_octant.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.gl.syphonserver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.ndi.receive~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "video_chooser.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+		"originid" : "pat-2472"
 	}
 
 }
