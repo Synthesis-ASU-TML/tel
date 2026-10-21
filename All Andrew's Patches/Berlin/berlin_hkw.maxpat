@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 108.0, 147.0, 847.0, 661.0 ],
+		"rect" : [ 604.0, 139.0, 847.0, 661.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -163,7 +163,7 @@
 
 							}
  ],
-						"originid" : "pat-2616"
+						"originid" : "pat-10"
 					}
 ,
 					"patching_rect" : [ 474.0, 567.0, 138.0, 29.0 ],
@@ -230,10 +230,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 281.342322289943695, 621.0, 123.657677710056305, 35.0 ],
+					"patching_rect" : [ 281.342322289943695, 621.0, 124.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 205.0, 385.0, 123.657677710056305, 35.0 ],
+					"presentation_rect" : [ 205.0, 385.0, 124.0, 35.0 ],
 					"text" : "0.07 0.03 0.01 0.03 0.04 0.05 0.06 0.03 0.02 0.02 0.02 0. 0. 0. 0. 0."
 				}
 
@@ -260,7 +260,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "0.823792 1.099205 0.861601 0.954795 0.58294 0.455087 0.700307 0.655537"
+					"text" : "1.010744 0.935816 0.940276 1.020066 0.453898 0.587974 0.948615 0.970106"
 				}
 
 			}
@@ -484,7 +484,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.0, 57.0, 284.0, 33.0 ],
+					"patching_rect" : [ 32.0, 52.0, 284.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 36.41975599527359, -18.0, 284.0, 33.0 ],
 					"text" : "berlin_hkw"
@@ -515,7 +515,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "0.07 0.03 0.01 0.03 0.04 0.05 0.06 0.03 0.02 0.02 0.02 0. 0. 0. 0. 0."
+					"text" : "0.04 0. 0. 0. 0.01 0.01 0.02 0. 0. 0.03 0.01 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -722,7 +722,7 @@
 
 			}
  ],
-		"originid" : "pat-2610",
+		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
@@ -770,6 +770,18 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.*.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.>=.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.absdiff.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",
