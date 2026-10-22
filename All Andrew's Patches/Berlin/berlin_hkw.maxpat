@@ -10,9 +10,37 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 534.0, 152.0, 847.0, 661.0 ],
+		"rect" : [ 480.0, 137.0, 556.0, 599.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 302.0, 172.0, 171.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 288.5, 168.141606450080872, 62.0, 22.0 ],
+					"text" : "wedges"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 234.0, 173.0, 165.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 246.907076299190521, 168.141606450080872, 40.0, 22.0 ],
+					"text" : "tiles"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-6",
@@ -22,8 +50,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 624.0, 554.0, 254.0, 87.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 457.0, 415.0, 123.239438235759735, 127.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 528.0, 354.5, 214.0, 87.0 ],
 					"text" : "TODO\nReplace this stub [p Emiddio_birds]\nby independent patcher with lift inlet = list of 8 floats \nright inlet toggle mute 0 | sound 1\n",
 					"textcolor" : [ 0.890196078431372, 0.058823529411765, 0.772549019607843, 1.0 ]
 				}
@@ -120,7 +148,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 84.0, 144.0, 858.0, 340.0 ],
+						"rect" : [ 84.0, 512.0, 858.0, 340.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
@@ -180,7 +208,7 @@
 
 							}
  ],
-						"originid" : "pat-266"
+						"originid" : "pat-390"
 					}
 ,
 					"patching_rect" : [ 474.0, 567.0, 138.0, 29.0 ],
@@ -217,7 +245,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 19.0, 390.0, 152.274258315563202, 26.0 ],
-					"text" : "0.07 0.03 0.01 0.03 0.04 0.05 0.06 0.03 0.02 0.02 0.02 0. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0.08 0.05 0.05 0.06 0.06 0.1 0.06 0. 0. 0."
 				}
 
 			}
@@ -251,7 +279,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 205.0, 385.0, 124.0, 26.0 ],
-					"text" : "0. 0. 0. 0.05 0.12 0.12 0.08 0.1 0.14 0.17 0.11 0. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0.08 0.05 0.05 0.06 0.06 0.1 0.06 0. 0. 0."
 				}
 
 			}
@@ -262,7 +290,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 243.0, 327.0, 89.0, 22.0 ],
+					"patching_rect" : [ 242.0, 316.0, 89.0, 22.0 ],
 					"text" : "loadmess clear"
 				}
 
@@ -277,7 +305,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "1.019276 0.931427 0.827922 0.829746 0.509779 0.696433 0.89801 0.991077"
+					"text" : "0.819533 0.88414 0.809917 0.823119 0.378127 0.490184 1.009551 0.807594"
 				}
 
 			}
@@ -292,7 +320,7 @@
 					"patching_rect" : [ 174.0, 361.0, 66.0, 53.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 213.0, 192.0, 66.423357307910919, 53.0 ],
+					"presentation_rect" : [ 169.915919661521912, 183.185855448246002, 66.423357307910919, 53.0 ],
 					"text" : "files\nandrew\nemiddio",
 					"textjustification" : 2
 				}
@@ -321,7 +349,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 242.0, 362.0, 45.333321809768677, 52.083335816860199 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 284.0, 197.0, 45.138891041278839, 43.055557608604431 ],
+					"presentation_rect" : [ 238.057518064975739, 188.495590388774872, 103.423357307910919, 43.0 ],
 					"rows" : 3
 				}
 
@@ -532,7 +560,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "0. 0. 0. 0.05 0.12 0.12 0.08 0.1 0.14 0.17 0.11 0. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0.08 0.05 0.05 0.06 0.06 0.1 0.06 0. 0. 0."
 				}
 
 			}
@@ -739,7 +767,7 @@
 
 			}
  ],
-		"originid" : "pat-260",
+		"originid" : "pat-384",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
