@@ -10,9 +10,33 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 518.0, 139.0, 712.0, 598.0 ],
+		"rect" : [ 1766.0, -488.0, 757.0, 738.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 355.0, 151.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 355.0, 124.0, 63.0, 22.0 ],
+					"text" : "route read"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 24.0,
 					"id" : "obj-9",
@@ -100,14 +124,14 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "≠ 0 start | 0 stop audio",
+					"comment" : "≠ 0 start | 0 stop audio | readfolder",
 					"id" : "obj-6",
 					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 395.0, 130.0, 30.0, 30.0 ]
+					"patching_rect" : [ 397.0, 87.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -544,14 +568,16 @@
 , 			{
 				"box" : 				{
 					"embed_buffers" : 					{
-						"sampleFolder.1" : "Pad A1.wav",
-						"sampleFolder.2" : "Pad C1.wav",
-						"sampleFolder.3" : "Pad C2.wav",
-						"sampleFolder.4" : "Pad C3.wav",
-						"sampleFolder.5" : "Pad E1.wav",
-						"sampleFolder.6" : "Pad E2.wav",
-						"sampleFolder.7" : "Pad G1.wav",
-						"sampleFolder.8" : "Pad G2.wav"
+						"sampleFolder.1" : "Foley Bag Load Grain Sack On Wagon 06.wav",
+						"sampleFolder.2" : "Foley Bamboo Stick Cinder Blocks Rattle 02.wav",
+						"sampleFolder.3" : "Foley Bamboo Stick Cinder Blocks Rattle 03.wav",
+						"sampleFolder.4" : "Foley Bamboo Stick Cinder Blocks Rattle 05.wav",
+						"sampleFolder.5" : "Foley Banana Peeling 02.wav",
+						"sampleFolder.6" : "Foley Bell Brass Handbell Ring 01.wav",
+						"sampleFolder.7" : "Foley Chain Jingle Rattle 04.wav",
+						"sampleFolder.8" : "Foley Chest Drag Concrete 01.wav",
+						"sampleFolder.9" : "Foley Cloth Rip 03.wav",
+						"sampleFolder.10" : "Foley Paper Shuffle And Roll Up 01.wav"
 					}
 ,
 					"id" : "obj-1141",
@@ -719,6 +745,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1129", 0 ]
@@ -832,6 +872,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1089", 0 ],
 					"source" : [ "obj-117", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1140", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -965,7 +1012,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1111,7 +1158,7 @@
 
 			}
  ],
-		"originid" : "pat-6"
+		"originid" : "pat-160"
 	}
 
 }

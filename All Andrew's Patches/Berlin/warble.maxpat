@@ -10,9 +10,160 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 116.0, 100.0, 1167.0, 848.0 ],
+		"rect" : [ -276.0, 100.0, 1459.0, 848.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1236.036035299301147, 98.319321870803833, 229.940116882324219, 49.0 ],
+					"presentation_linecount" : 3,
+					"text" : "23.259609 21.179335 18.961459 13.820405 9.558346 15.875918 24.712681 25.10639"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-47",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1190.990990281105042, 151.351351261138916, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-48",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1248.648647904396057, 151.351351261138916, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1179.279278576374054, 184.684684574604034, 97.0, 22.0 ],
+					"text" : "scale 0. 25. 0. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1179.279278576374054, 219.819819688796997, 139.0, 132.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1179.279278576374054, 220.720720589160919, 139.0, 132.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 3,
+					"size" : 8
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-46",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 969.3693687915802, 145.003560662269592, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-44",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1027.027026414871216, 145.003560662269592, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 715.315314888954163, 151.351351261138916, 229.940116882324219, 49.0 ],
+					"presentation_linecount" : 3,
+					"text" : "23.261515 21.180741 18.964793 13.822371 9.560563 15.879524 24.716862 25.109263"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 957.657657086849213, 178.336893975734711, 97.0, 22.0 ],
+					"text" : "scale 0. 25. 0. 1."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 957.657657086849213, 213.18179452419281, 139.0, 132.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 372.5, 176.0, 139.0, 132.0 ],
+					"setminmax" : [ 0.0, 1.0 ],
+					"setstyle" : 3,
+					"size" : 8
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 957.657657086849213, 60.515146970748901, 247.747747600078583, 29.0 ],
+					"text" : "list_moving_average"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
@@ -418,7 +569,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 830.302957057952881, 59.848479568958282, 30.0, 30.0 ],
+					"patching_rect" : [ 842.016756534576416, 43.515146970748901, 30.0, 30.0 ],
 					"varname" : "list"
 				}
 
@@ -490,13 +641,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-28",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 767.424174726009369, 137.121200025081635, 229.940116882324219, 35.0 ],
-					"text" : "0.128002 0.88387 1.501272 1.36074 1.461616 0.508317 0.22964 0.05899"
+					"patching_rect" : [ 559.663832187652588, 98.319321870803833, 229.940116882324219, 49.0 ],
+					"text" : "23.262942 21.180741 18.964793 13.822371 9.564059 15.880655 24.716862 25.109263"
 				}
 
 			}
@@ -507,8 +658,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 631.060550391674042, 76.515144765377045, 113.0, 22.0 ],
-					"text" : "r wedge_presences"
+					"patching_rect" : [ 581.512570381164551, 51.515146970748901, 80.0, 22.0 ],
+					"text" : "r maskValues"
 				}
 
 			}
@@ -836,6 +987,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 1 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 1 ],
+					"order" : 0,
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
@@ -1032,7 +1215,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-11", 0 ],
 					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
@@ -1040,8 +1223,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-28", 1 ],
 					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -1057,6 +1248,48 @@
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 2 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 1 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 1 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 2 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -1092,7 +1325,7 @@
 
 			}
  ],
-		"originid" : "pat-2421",
+		"originid" : "pat-134",
 		"parameters" : 		{
 			"obj-16" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-39" : [ "live.gain~[1]", "live.gain~", 0 ],
@@ -1111,58 +1344,65 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Pad A1.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad C1.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad C2.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad C3.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad E1.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad E2.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad G1.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Pad G2.wav",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
-				"patcherrelativepath" : "../../../../../code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/RealSense/Slice Mask Real Sense Camera Project",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound",
+				"patcherrelativepath" : "./_sound",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list_moving_average.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
