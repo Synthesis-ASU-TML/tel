@@ -1,0 +1,100 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Bold;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red11\green11\blue11;\red11\green11\blue11;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c4314\c4314\c4314;\cssrgb\c4314\c4314\c4314\c5098;\cssrgb\c0\c0\c0;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww15860\viewh12000\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 what parameter can I vary to make the pink_noise to sound more or less like a pure tone?\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \strokec4 \
+The parameter is 
+\f2\b Q
+\f1\b0 , the third inlet. It sets how narrow each resonator's passband is: bandwidth (Hz) = center frequency \'f7 Q.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Q \uc0\u8776  1\'965:
+\f1\b0  wide bands, so it sounds like coloured, breathy noise.\
+\ls1\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Q \uc0\u8776  10\'9640:
+\f1\b0  pitched noise, like wind across a bottle. Your default is 40.\
+\ls1\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Q \uc0\u8776  100\'96500+:
+\f1\b0  very narrow bands, so each partial is close to a sine wave. What's left of the noise is a slow wobble in amplitude, and its rate is roughly the bandwidth. For example, 220 Hz at Q 220 has a bandwidth of about 1 Hz, so the tone wavers about once a second.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Two other settings decide whether high Q gives a pure tone or a pitched complex sound:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f2\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Partial amplitudes:
+\f1\b0  high Q gives you eight near-sines, which is a harmonic tone, not a pure one. For a single pure tone, set the multislider to 
+\f3\fs26 1 0 0 0 0 0 0 0
+\f1\fs24  so only the fundamental sounds.\
+\ls2\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Stretch:
+\f1\b0  at your current 0.02, the partials sit within about a semitone of each other. They beat against each other, which sounds rough rather than pure. Use stretch = 1 for a clean harmonic tone.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 Raising Q also makes the sound quieter, because a narrower band lets through less noise energy. To keep the loudness roughly even as you sweep Q, scale the master gain by about \uc0\u8730 Q. In the patch, that means a 
+\f3\fs26 [sqrt]
+\f1\fs24  \uc0\u8594  
+\f3\fs26 [* 0.03]
+\f1\fs24  chain feeding the 
+\f3\fs26 *~
+\f1\fs24  gain alongside Q. I can add that compensation to 
+\f3\fs26 pink_tonal_bank.maxpat
+\f1\fs24  if you want.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 \strokec2 what does stretch control, sonically?\cb1 \
+\
+\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\fs24 \cf0 \strokec4 Stretch sets how the eight partials are spaced: partial n sits at f\uc0\u8320  \'b7 n\u738 , where f\u8320  is the tonal center. The fundamental (n = 1) stays at f\u8320  for every stretch value; only the partials above it move. Musically, stretch moves the sound between a single pitch, a chord, and a bell.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f2\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 s = 1, harmonic.
+\f1\b0  The partials are at 1, 2, 3 \'85 8 \'d7 f\uc0\u8320 . They fuse into one clear pitch, like a bowed string or a voice.\
+\ls3\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 s slightly above 1, e.g. 1.002\'961.02.
+\f1\b0  The upper partials drift sharp, increasingly so the higher they go. This sounds like the stretch of a stiff piano string: brighter, with a slight shimmer, and still one pitch.\
+\ls3\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 s well above 1, e.g. 1.1\'961.5.
+\f1\b0  The partials spread far apart and stop lining up as harmonics. You hear a metallic, bell- or gong-like sound with an ambiguous pitch, more of a "chord" made of overtones.\
+\ls3\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 s below 1, e.g. 0.5\'960.9.
+\f1\b0  The partials squeeze together. At 0.5 they are at 1, 1.41, 1.73, 2, 2.24 \'85 \'d7 f\uc0\u8320 , which gives a dense, inharmonic cluster that sounds like a muddy chord.\
+\ls3\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 s close to 0, e.g. your 0.02.
+\f1\b0  All eight partials crowd within about a semitone of f\uc0\u8320 , the 8th at only 8^0.02 \u8776  1.04 \'d7 f\u8320 . You hear one blurry pitch that beats, chorus-like. Smaller s gives slower beating.\
+\ls3\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 s = 0.
+\f1\b0  All eight filters sit exactly on f\uc0\u8320 , which gives a single pitch. Combined with a high Q, this is the most direct way to get a near-pure tone. It is also much louder, because all eight bands add up.\
+\ls3\ilvl0
+\f2\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Negative s.
+\f1\b0  The partials fall below f\uc0\u8320 ; at s = \u8722 1 they are at f\u8320 /2, f\u8320 /3 \'85, the "undertone" series. This gives a dark, low, subharmonic quality. Anything below 20 Hz is clipped.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \strokec4 Q and stretch work as a pair: Q sets how tonal each partial is (noisy versus sine-like), and stretch sets how the partials fit together (fused, beating, or bell-like).\
+}

@@ -10,10 +10,11 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2012.0, -503.0, 2177.0, 1384.0 ],
+		"openrect" : [ 40.0, 40.0, 740.0, 740.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"toolbars_unpinned_last_save" : 2,
+		"enablehscroll" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-52",
@@ -1273,8 +1274,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 987.5, 1287.0, 103.0, 62.0 ],
-					"text" : "0. 0. 0. 0. 0. 0.03 0.07 0.09 0.06 0.03 0.03 0. 0. 0. 0. 0."
+					"patching_rect" : [ 987.5, 1287.0, 106.0, 62.0 ],
+					"text" : "0.1 0.11 0.11 0.11 0.09 0.07 0.04 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -3646,7 +3647,7 @@
 
 			}
  ],
-		"originid" : "pat-1761",
+		"originid" : "pat-500",
 		"parameters" : 		{
 			"obj-2" : [ "live.text[1]", "live.text", 0 ],
 			"parameterbanks" : 			{
