@@ -17,7 +17,7 @@
 				"box" : 				{
 					"comment" : "mc audio",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -215,7 +215,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 688.0, 98.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 244.585990905761719, 60.509555041790009, 53.503185510635376, 53.503185510635376 ]
+					"presentation_rect" : [ 247.133761644363403, 54.0, 53.503185510635376, 53.503185510635376 ]
 				}
 
 			}
@@ -223,11 +223,11 @@
 				"box" : 				{
 					"comment" : "toggle on | off",
 					"id" : "obj-14",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 688.0, 50.0, 30.0, 30.0 ]
 				}
 
@@ -262,7 +262,7 @@
 				"box" : 				{
 					"comment" : "activity list",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1109,7 +1109,37 @@
 
 			}
  ],
-		"originid" : "pat-2968"
+		"originid" : "pat-3688",
+		"dependency_cache" : [ 			{
+				"name" : "pink_tonal_bank.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_mc.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_voice.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vfunction.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
