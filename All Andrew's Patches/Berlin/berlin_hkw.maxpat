@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 540.0, 183.0, 938.0, 779.0 ],
+		"rect" : [ 540.0, 169.0, 938.0, 779.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -411,7 +411,7 @@
 
 							}
  ],
-						"originid" : "pat-142"
+						"originid" : "pat-14"
 					}
 ,
 					"patching_rect" : [ 474.0, 567.0, 138.0, 29.0 ],
@@ -509,7 +509,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 343.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "1.02406 0.971512 0.780646 0.518226 0.571108 0.404429 0.622981 0.824137"
+					"text" : "0.940971 0.860031 0.849408 0.764102 0.420084 0.599276 1.000108 1.026376"
 				}
 
 			}
@@ -759,13 +759,12 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 26.0 ],
-					"text" : "0.97 0.82 0.87 1. 0.87 0.81 1. 1. 0.84 0.7 0.61 0.54 0.47 0.47 0.45 0.35"
+					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 17.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1054,7 +1053,7 @@
 
 			}
  ],
-		"originid" : "pat-134",
+		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
@@ -1102,6 +1101,18 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.*.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.>=.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.absdiff.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",

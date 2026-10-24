@@ -10,9 +10,47 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1766.0, -488.0, 757.0, 738.0 ],
+		"rect" : [ 428.0, 167.0, 703.0, 430.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 211.0, 225.33950400352478, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 90.74074798822403, 85.5, 284.567923963069916, 33.0 ],
+					"text" : "List of Values from Tiles\nDefault reads sounds from _sound/ subfolder"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 211.0, 252.5, 95.67901998758316, 35.0 ],
+					"presentation_linecount" : 3,
+					"text" : "readfolder Patcher:_sound/"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "button",
@@ -126,11 +164,11 @@
 				"box" : 				{
 					"comment" : "≠ 0 start | 0 stop audio | readfolder",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 397.0, 87.0, 30.0, 30.0 ]
 				}
 
@@ -143,7 +181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.0, 225.0, 146.0, 33.0 ],
+					"patching_rect" : [ 430.246947944164276, 42.592595994472504, 146.0, 33.0 ],
 					"text" : "TODO: pad list to make sure it's 16 length",
 					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
@@ -165,7 +203,7 @@
 				"box" : 				{
 					"comment" : "# voices",
 					"id" : "obj-1",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -192,25 +230,12 @@
 				"box" : 				{
 					"comment" : "activity list",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 262.0, 130.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"id" : "obj-2",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 88.0, 147.0, 146.0, 20.0 ],
-					"text" : "List of Values from Tiles",
-					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -237,7 +262,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 342.0, 857.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 176.333334803581238, 401.0, 150.0, 22.0 ]
+					"presentation_rect" : [ 96.296303987503052, 191.975323975086212, 150.0, 22.0 ]
 				}
 
 			}
@@ -253,7 +278,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 279.0, 916.0, 87.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 168.333334803581238, 373.0, 112.333333492279053, 25.0 ],
+					"presentation_rect" : [ 88.271611988544464, 164.197543978691101, 112.333333492279053, 25.0 ],
 					"text" : "Turn on Audio"
 				}
 
@@ -271,7 +296,7 @@
 					"patching_rect" : [ 331.0, 303.0, 199.0, 54.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 278.666674971580505, 241.333340525627136, 199.0, 54.0 ],
+					"presentation_rect" : [ 234.567919969558716, 55.555559992790222, 199.0, 54.0 ],
 					"text" : "Drag Audio Sample Folder (not separate files). Will only use first 16 samples"
 				}
 
@@ -308,7 +333,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 404.0, 71.0, 22.0 ],
+					"patching_rect" : [ 95.0, 401.680676817893982, 71.0, 22.0 ],
 					"text" : "relativepath"
 				}
 
@@ -320,7 +345,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 433.0, 72.0, 22.0 ],
+					"patching_rect" : [ 95.0, 430.252105712890625, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -332,7 +357,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 460.0, 103.0, 22.0 ],
+					"patching_rect" : [ 95.0, 457.142862319946289, 103.0, 22.0 ],
 					"text" : "filepath search 20"
 				}
 
@@ -344,7 +369,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 370.0, 110.0, 22.0 ],
+					"patching_rect" : [ 95.0, 367.226894915103912, 110.0, 22.0 ],
 					"text" : "prepend readfolder"
 				}
 
@@ -356,7 +381,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 280.0, 92.0, 22.0 ],
+					"patching_rect" : [ 95.0, 277.310927510261536, 92.0, 22.0 ],
 					"text" : "loadmess types"
 				}
 
@@ -368,9 +393,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 95.0, 308.0, 234.0, 52.0 ],
+					"patching_rect" : [ 95.0, 305.882356405258179, 234.0, 52.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.666669249534607, 241.333340525627136, 190.860655784606934, 88.111473321914673 ]
+					"presentation_rect" : [ 42.592595994472504, 55.555559992790222, 190.860655784606934, 88.111473321914673 ]
 				}
 
 			}
@@ -568,16 +593,14 @@
 , 			{
 				"box" : 				{
 					"embed_buffers" : 					{
-						"sampleFolder.1" : "Foley Bag Load Grain Sack On Wagon 06.wav",
-						"sampleFolder.2" : "Foley Bamboo Stick Cinder Blocks Rattle 02.wav",
-						"sampleFolder.3" : "Foley Bamboo Stick Cinder Blocks Rattle 03.wav",
-						"sampleFolder.4" : "Foley Bamboo Stick Cinder Blocks Rattle 05.wav",
-						"sampleFolder.5" : "Foley Banana Peeling 02.wav",
-						"sampleFolder.6" : "Foley Bell Brass Handbell Ring 01.wav",
-						"sampleFolder.7" : "Foley Chain Jingle Rattle 04.wav",
-						"sampleFolder.8" : "Foley Chest Drag Concrete 01.wav",
-						"sampleFolder.9" : "Foley Cloth Rip 03.wav",
-						"sampleFolder.10" : "Foley Paper Shuffle And Roll Up 01.wav"
+						"sampleFolder.1" : "Pad A1.wav",
+						"sampleFolder.2" : "Pad C1.wav",
+						"sampleFolder.3" : "Pad C2.wav",
+						"sampleFolder.4" : "Pad C3.wav",
+						"sampleFolder.5" : "Pad E1.wav",
+						"sampleFolder.6" : "Pad E2.wav",
+						"sampleFolder.7" : "Pad G1.wav",
+						"sampleFolder.8" : "Pad G2.wav"
 					}
 ,
 					"id" : "obj-1141",
@@ -602,7 +625,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 229.0, 913.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.333334803581238, 373.0, 45.0, 45.0 ]
+					"presentation_rect" : [ 43.827163994312286, 164.197543978691101, 45.0, 45.0 ]
 				}
 
 			}
@@ -659,7 +682,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 381.0, 916.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 288.333334803581238, 373.0, 20.0, 20.0 ],
+					"presentation_rect" : [ 208.024707973003387, 164.197543978691101, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "5",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
@@ -877,6 +900,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1141", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1140", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -949,6 +979,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1138", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -1158,7 +1195,9 @@
 
 			}
  ],
-		"originid" : "pat-160"
+		"originid" : "pat-284",
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
