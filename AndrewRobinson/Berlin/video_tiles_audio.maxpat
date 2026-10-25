@@ -14,6 +14,18 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "mc audio",
+					"id" : "obj-2",
+					"index" : 1,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 229.0, 924.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -262,23 +274,6 @@
 					"patching_rect" : [ 342.0, 857.0, 150.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 96.296303987503052, 191.975323975086212, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-96",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 279.0, 916.0, 87.0, 40.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 88.271611988544464, 164.197543978691101, 112.333333492279053, 25.0 ],
-					"text" : "Turn on Audio"
 				}
 
 			}
@@ -592,14 +587,14 @@
 , 			{
 				"box" : 				{
 					"embed_buffers" : 					{
-						"sampleFolder.1" : "Pad A1.wav",
-						"sampleFolder.2" : "Pad C1.wav",
-						"sampleFolder.3" : "Pad C2.wav",
-						"sampleFolder.4" : "Pad C3.wav",
-						"sampleFolder.5" : "Pad E1.wav",
-						"sampleFolder.6" : "Pad E2.wav",
-						"sampleFolder.7" : "Pad G1.wav",
-						"sampleFolder.8" : "Pad G2.wav"
+						"sampleFolder.1" : "Ocean Maldives 02.mp3",
+						"sampleFolder.2" : "Ocean Maldives 03.mp3",
+						"sampleFolder.3" : "Ocean Maldives 04.mp3",
+						"sampleFolder.4" : "Rain Sound effect.mp3",
+						"sampleFolder.5" : "rain+thunder.mp3",
+						"sampleFolder.6" : "SeaGull Call ~ Seagull Sound ~ Seagulls Sounds and Ocean Waves.mp3",
+						"sampleFolder.7" : "Stream Flowing.mp3",
+						"sampleFolder.8" : "Water Asmr.mp3"
 					}
 ,
 					"id" : "obj-1141",
@@ -613,18 +608,6 @@
 					}
 ,
 					"text" : "polybuffer~ sampleFolder @embed 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1090",
-					"maxclass" : "mc.ezdac~",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 229.0, 913.0, 45.0, 45.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 43.827163994312286, 164.197543978691101, 45.0, 45.0 ]
 				}
 
 			}
@@ -661,34 +644,6 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 229.0, 857.0, 104.0, 22.0 ],
 					"text" : "mc.*~ @chans 16"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"background" : 1,
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"bgoncolor" : [ 0.55, 0.55, 0.55, 1.0 ],
-					"fontname" : "Arial Bold",
-					"hint" : "",
-					"id" : "obj-91",
-					"ignoreclick" : 1,
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 381.0, 916.0, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 208.024707973003387, 164.197543978691101, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "5",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 0.1, 0.1, 0.1, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1
 				}
 
 			}
@@ -760,7 +715,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1090", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1089", 0 ]
 				}
 
@@ -1194,7 +1149,7 @@
 
 			}
  ],
-		"originid" : "pat-4439"
+		"originid" : "pat-50"
 	}
 
 }

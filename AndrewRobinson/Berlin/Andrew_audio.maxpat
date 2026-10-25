@@ -10,10 +10,22 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 263.0, 151.0, 677.0, 433.0 ],
+		"rect" : [ 2143.0, -186.0, 1419.0, 977.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "mc audio",
+					"id" : "obj-10",
+					"index" : 1,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 176.923066377639771, 760.563390254974365, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "comment",
@@ -84,8 +96,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 432.278475344181061, 63.92404979467392, 56.0, 22.0 ],
 					"restore" : 					{
-						"andrew_gain" : [ 175.0 ],
-						"andrew_movo_smooth" : [ 20 ],
+						"andrew_gain" : [ 231.0 ],
+						"andrew_movo_smooth" : [ 10 ],
 						"andrew_sample_thresh" : [ 4.0 ],
 						"textbutton" : [ 1 ]
 					}
@@ -149,11 +161,11 @@
 				"box" : 				{
 					"comment" : "≠ 0 start | 0 stop audio",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 691.366931200027466, 23.741008043289185, 30.0, 30.0 ]
 				}
 
@@ -265,7 +277,7 @@
 				"box" : 				{
 					"comment" : "video feed",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -303,7 +315,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 95.918366432189941, 589.795912742614746, 439.0, 35.0 ],
-									"text" : "-0. -0. -0. -0. -0. -0. -0. -0."
+									"text" : "0.26775 -0. -0. 0.429708 -0. 0.037016 -0. -0."
 								}
 
 							}
@@ -670,7 +682,7 @@
 
 							}
  ],
-						"originid" : "pat-70"
+						"originid" : "pat-2330"
 					}
 ,
 					"patching_rect" : [ 196.153834462165833, 302.564084529876709, 65.0, 22.0 ],
@@ -3067,7 +3079,7 @@
 
 							}
  ],
-						"originid" : "pat-72"
+						"originid" : "pat-2332"
 					}
 ,
 					"patching_rect" : [ 381.937543511390686, 161.956518650054932, 151.5, 22.0 ],
@@ -3334,7 +3346,7 @@
 				"box" : 				{
 					"id" : "obj-64",
 					"ignoreclick" : 1,
-					"items" : [ "Ocean Maldives 02", ",", "Ocean Maldives 03", ",", "Ocean Maldives 04", ",", "Rain Sound effect", ",", "rain+thunder", ",", "SeaGull Call ~ Seagull Sound ~ Seagulls Sounds and Ocean Waves", ",", "Seagull sounds", ",", "Seagulls’ Early Morning Life", ",", "Stream Flowing", ",", "w Seagull sounds copy 2", ",", "Water Asmr" ],
+					"items" : [ "Pad A1", ",", "Pad C1", ",", "Pad C2", ",", "Pad C3", ",", "Pad E1", ",", "Pad E2", ",", "Pad G1", ",", "Pad G2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3459,7 +3471,7 @@
 				"box" : 				{
 					"comment" : "activity list",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3758,7 +3770,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad G2.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad G2.wav\""
 												}
 
 											}
@@ -3866,7 +3878,7 @@
 
 											}
  ],
-										"originid" : "pat-76"
+										"originid" : "pat-2336"
 									}
 ,
 									"patching_rect" : [ 828.0, 267.0, 80.0, 22.0 ],
@@ -3976,7 +3988,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad G1.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad G1.wav\""
 												}
 
 											}
@@ -4084,7 +4096,7 @@
 
 											}
  ],
-										"originid" : "pat-78"
+										"originid" : "pat-2338"
 									}
 ,
 									"patching_rect" : [ 728.0, 267.0, 80.0, 22.0 ],
@@ -4194,7 +4206,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad E2.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad E2.wav\""
 												}
 
 											}
@@ -4302,7 +4314,7 @@
 
 											}
  ],
-										"originid" : "pat-80"
+										"originid" : "pat-2340"
 									}
 ,
 									"patching_rect" : [ 623.0, 267.0, 80.0, 22.0 ],
@@ -4412,7 +4424,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad E1.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad E1.wav\""
 												}
 
 											}
@@ -4520,7 +4532,7 @@
 
 											}
  ],
-										"originid" : "pat-82"
+										"originid" : "pat-2342"
 									}
 ,
 									"patching_rect" : [ 508.0, 267.0, 80.0, 22.0 ],
@@ -4630,7 +4642,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad C3.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad C3.wav\""
 												}
 
 											}
@@ -4738,7 +4750,7 @@
 
 											}
  ],
-										"originid" : "pat-84"
+										"originid" : "pat-2344"
 									}
 ,
 									"patching_rect" : [ 408.0, 267.0, 80.0, 22.0 ],
@@ -4848,7 +4860,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad C2.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad C2.wav\""
 												}
 
 											}
@@ -4956,7 +4968,7 @@
 
 											}
  ],
-										"originid" : "pat-86"
+										"originid" : "pat-2346"
 									}
 ,
 									"patching_rect" : [ 311.0, 267.0, 80.0, 22.0 ],
@@ -5066,7 +5078,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad C1.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad C1.wav\""
 												}
 
 											}
@@ -5174,7 +5186,7 @@
 
 											}
  ],
-										"originid" : "pat-88"
+										"originid" : "pat-2348"
 									}
 ,
 									"patching_rect" : [ 214.0, 267.0, 80.0, 22.0 ],
@@ -5284,7 +5296,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 228.395079970359802, 205.09878396987915, 267.283971965312958, 49.0 ],
-													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/_sound/Pad A1.wav\""
+													"text" : "\"sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_sound/Pad A1.wav\""
 												}
 
 											}
@@ -5392,7 +5404,7 @@
 
 											}
  ],
-										"originid" : "pat-90"
+										"originid" : "pat-2350"
 									}
 ,
 									"patching_rect" : [ 103.0, 267.0, 80.0, 22.0 ],
@@ -6706,7 +6718,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 865.0, 499.0, 50.0, 22.0 ],
-									"text" : "11"
+									"text" : "8"
 								}
 
 							}
@@ -6773,17 +6785,14 @@
 , 							{
 								"box" : 								{
 									"embed_buffers" : 									{
-										"allSamples.1" : "Ocean Maldives 02.mp3",
-										"allSamples.2" : "Ocean Maldives 03.mp3",
-										"allSamples.3" : "Ocean Maldives 04.mp3",
-										"allSamples.4" : "Rain Sound effect.mp3",
-										"allSamples.5" : "rain+thunder.mp3",
-										"allSamples.6" : "SeaGull Call ~ Seagull Sound ~ Seagulls Sounds and Ocean Waves.mp3",
-										"allSamples.7" : "Seagull sounds.mp3",
-										"allSamples.8" : "Seagulls’ Early Morning Life.mp3",
-										"allSamples.9" : "Stream Flowing.mp3",
-										"allSamples.10" : "w Seagull sounds copy 2.mp3",
-										"allSamples.11" : "Water Asmr.mp3"
+										"allSamples.1" : "Pad A1.wav",
+										"allSamples.2" : "Pad C1.wav",
+										"allSamples.3" : "Pad C2.wav",
+										"allSamples.4" : "Pad C3.wav",
+										"allSamples.5" : "Pad E1.wav",
+										"allSamples.6" : "Pad E2.wav",
+										"allSamples.7" : "Pad G1.wav",
+										"allSamples.8" : "Pad G2.wav"
 									}
 ,
 									"id" : "obj-56",
@@ -8980,21 +8989,11 @@
 
 							}
  ],
-						"originid" : "pat-74"
+						"originid" : "pat-2334"
 					}
 ,
 					"patching_rect" : [ 219.230756163597107, 466.666638851165771, 99.0, 22.0 ],
 					"text" : "p Audio Samples"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-137",
-					"maxclass" : "mc.ezdac~",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 176.923066377639771, 762.820467352867126, 45.0, 45.0 ]
 				}
 
 			}
@@ -9034,7 +9033,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-137", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-115", 0 ]
 				}
 
@@ -9398,38 +9397,7 @@
 
 			}
  ],
-		"originid" : "pat-68",
-		"parameters" : 		{
-			"obj-61::obj-1" : [ "number[16]", "number", 0 ],
-			"obj-61::obj-12" : [ "number[10]", "number", 0 ],
-			"obj-61::obj-18" : [ "number[13]", "number", 0 ],
-			"obj-61::obj-25" : [ "number[15]", "number", 0 ],
-			"obj-61::obj-44" : [ "number[8]", "number", 0 ],
-			"obj-61::obj-52" : [ "number[11]", "number", 0 ],
-			"obj-61::obj-54" : [ "number[14]", "number", 0 ],
-			"obj-61::obj-7" : [ "number[12]", "number", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "cv.jit.ravg.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.*.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+		"originid" : "pat-2328"
 	}
 
 }
