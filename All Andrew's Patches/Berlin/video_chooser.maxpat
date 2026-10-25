@@ -10,9 +10,23 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 411.0, 100.0, 465.0, 740.0 ],
+		"rect" : [ 573.0, 111.0, 585.0, 427.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ -2.027026891708374, 173.648637056350708, 126.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 60.076925754547119, 173.0, 126.0, 20.0 ],
+					"style" : "helpfile_label",
+					"text" : "Select video source"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
@@ -552,7 +566,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 275.862083435058594, 189.655182361602783, 126.0, 20.0 ],
 					"style" : "helpfile_label",
-					"text" : "Select an NDI source"
+					"text" : "Select NDI source"
 				}
 
 			}
@@ -960,7 +974,7 @@
 
 			}
  ],
-		"originid" : "pat-5892"
+		"originid" : "pat-62"
 	}
 
 }
