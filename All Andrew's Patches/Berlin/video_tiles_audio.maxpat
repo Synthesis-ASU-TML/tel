@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 428.0, 167.0, 703.0, 430.0 ],
+		"rect" : [ 544.0, 115.0, 934.0, 703.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -44,9 +44,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 252.5, 95.67901998758316, 35.0 ],
-					"presentation_linecount" : 3,
-					"text" : "readfolder Patcher:_sound/"
+					"patching_rect" : [ 210.975614786148071, 252.5, 106.097563505172729, 35.0 ],
+					"text" : "readfolder Patcher:_sound2/"
 				}
 
 			}
@@ -164,11 +163,11 @@
 				"box" : 				{
 					"comment" : "≠ 0 start | 0 stop audio | readfolder",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 397.0, 87.0, 30.0, 30.0 ]
 				}
 
@@ -203,7 +202,7 @@
 				"box" : 				{
 					"comment" : "# voices",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -230,7 +229,7 @@
 				"box" : 				{
 					"comment" : "activity list",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1195,9 +1194,7 @@
 
 			}
  ],
-		"originid" : "pat-284",
-		"dependency_cache" : [  ],
-		"autosave" : 0
+		"originid" : "pat-4439"
 	}
 
 }
