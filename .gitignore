@@ -1,6 +1,7 @@
 All Andrew's Patches/.DS_Store
 .DS_Store
 _old/
-_media
-_sound
-_video
+_media/
+_sound/
+_video/
+_unused/
