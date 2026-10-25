@@ -45,16 +45,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-171",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 850.0, 539.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -70,7 +60,7 @@
 				"box" : 				{
 					"comment" : "input video",
 					"id" : "obj-87",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -205,7 +195,7 @@
 				"box" : 				{
 					"comment" : "activity (list i)",
 					"id" : "obj-106",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1274,8 +1264,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 987.5, 1287.0, 106.0, 62.0 ],
-					"text" : "0.1 0.11 0.11 0.11 0.09 0.07 0.04 0. 0. 0. 0. 0. 0. 0. 0. 0."
+					"patching_rect" : [ 987.5, 1287.0, 84.0, 62.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1788,7 +1778,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.1",
 					"viewvisibility" : 1
 				}
@@ -1810,7 +1800,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.2",
 					"viewvisibility" : 1
 				}
@@ -1832,7 +1822,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.3",
 					"viewvisibility" : 1
 				}
@@ -1854,7 +1844,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.4",
 					"viewvisibility" : 1
 				}
@@ -1876,7 +1866,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.5",
 					"viewvisibility" : 1
 				}
@@ -1898,7 +1888,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.6",
 					"viewvisibility" : 1
 				}
@@ -1920,7 +1910,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.7",
 					"viewvisibility" : 1
 				}
@@ -1942,7 +1932,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.8",
 					"viewvisibility" : 1
 				}
@@ -1964,7 +1954,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.9",
 					"viewvisibility" : 1
 				}
@@ -1986,7 +1976,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.10",
 					"viewvisibility" : 1
 				}
@@ -2008,7 +1998,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.11",
 					"viewvisibility" : 1
 				}
@@ -2030,7 +2020,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.12",
 					"viewvisibility" : 1
 				}
@@ -2052,7 +2042,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.13",
 					"viewvisibility" : 1
 				}
@@ -2074,7 +2064,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.14",
 					"viewvisibility" : 1
 				}
@@ -2096,7 +2086,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.15",
 					"viewvisibility" : 1
 				}
@@ -2118,7 +2108,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 50.0, 46.0 ],
+					"patching_rect" : [ 0.0, 0.0, 71.0, 351.0 ],
 					"varname" : "motion.16",
 					"viewvisibility" : 1
 				}
@@ -3647,34 +3637,7 @@
 
 			}
  ],
-		"originid" : "pat-500",
-		"parameters" : 		{
-			"obj-2" : [ "live.text[1]", "live.text", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "jit.gl.syphonserver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "motionDetection.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
+		"originid" : "pat-5894",
 		"styles" : [ 			{
 				"name" : "rnbodefault",
 				"default" : 				{

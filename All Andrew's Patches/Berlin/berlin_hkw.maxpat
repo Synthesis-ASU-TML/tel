@@ -20,7 +20,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 167.0, 252.0, 80.0, 60.0 ],
+					"patching_rect" : [ 160.0, 260.518082618713379, 80.0, 60.0 ],
 					"sync" : 1
 				}
 
@@ -35,7 +35,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 575.172374367713928, 239.999983549118042, 69.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 576.51724374294281, 240.079319208860397, 131.0, 27.0 ],
+					"presentation_rect" : [ 576.0, 241.500003635883331, 131.0, 27.0 ],
 					"text" : "Master Volume"
 				}
 
@@ -51,7 +51,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 171.341467499732971, 773.780506253242493, 43.963416218757629, 79.2682945728302 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 298.70000484585762, 45.0, 79.310339391231537 ],
+					"presentation_rect" : [ 616.0, 306.0, 77.0, 79.0 ],
 					"size" : 160.0
 				}
 
@@ -91,7 +91,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 171.341467499732971, 854.878069162368774, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 380.079309612512589, 45.0, 22.0 ]
+					"presentation_rect" : [ 616.0, 386.544834464788437, 77.0, 22.0 ]
 				}
 
 			}
@@ -103,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 812.0, 490.963873565196991, 70.0, 22.0 ],
+					"patching_rect" : [ 822.289187014102936, 494.5, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -116,7 +116,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 235.542177379131317, 279.518082618713379, 58.0, 22.0 ],
+					"patching_rect" : [ 257.5, 279.605260491371155, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -129,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 235.542177379131317, 304.819288372993469, 67.0, 22.0 ],
+					"patching_rect" : [ 257.5, 304.605260252952576, 67.0, 22.0 ],
 					"text" : "clear, 0 2 1"
 				}
 
@@ -142,9 +142,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 812.0, 526.347298800945282, 29.0, 29.0 ],
+					"patching_rect" : [ 825.894761800765991, 526.347298800945282, 29.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 678.0, 422.900006353855133, 29.0, 29.0 ]
+					"presentation_rect" : [ 677.481926620006561, 426.140969663858414, 29.518073379993439, 29.518073379993439 ]
 				}
 
 			}
@@ -186,7 +186,7 @@
 					"patching_rect" : [ 474.011294066905975, 607.18562114238739, 229.378528475761414, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 380.0, 497.0, 332.0, 22.0 ],
-					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -218,7 +218,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 24.651498347520828, 494.190425932407379, 155.0, 35.0 ],
-					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -578,7 +578,7 @@
 
 							}
  ],
-						"originid" : "pat-5015"
+						"originid" : "pat-34"
 					}
 ,
 					"patching_rect" : [ 474.0, 569.5, 138.0, 29.0 ],
@@ -613,7 +613,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 342.965974003076553, 492.5, 155.555562973022461, 26.0 ],
-					"text" : "0.069756 0.03756 0.18242 0.174953 0.789964 1. 0.378804 0.054574"
+					"text" : "0.743712 0.817907 0.955274 1. 0.376529 0. 0.482538 0.694485"
 				}
 
 			}
@@ -670,7 +670,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 122.341467499732971, 745.512212872505188, 47.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 659.96551388502121, 272.493110090494156, 47.0, 20.0 ],
+					"presentation_rect" : [ 564.0, 278.544834464788437, 47.0, 20.0 ],
 					"text" : "MUTE"
 				}
 
@@ -684,7 +684,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 171.341467499732971, 744.512212872505188, 43.902440071105957, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 271.113799840211868, 43.902440071105957, 22.0 ],
+					"presentation_rect" : [ 616.0, 277.544834464788437, 76.0, 22.0 ],
 					"text" : "0"
 				}
 
@@ -752,7 +752,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 4,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "jit_matrix" ],
 					"patching_rect" : [ 83.0, 191.0, 214.991955280303955, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 211.200003147125244, 238.400003552436829, 126.0, 29.0 ],
@@ -846,7 +846,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1.0, 497.0, 155.555562973022461, 17.0 ],
-					"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1167,6 +1167,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-72", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
 					"order" : 0,
 					"source" : [ "obj-72", 0 ]
 				}
@@ -1174,22 +1181,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"order" : 2,
-					"source" : [ "obj-72", 0 ]
-				}
-
-			}
  ],
-		"originid" : "pat-4985",
+		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
@@ -1237,6 +1236,14 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.*.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.absdiff.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "jit.gl.syphonserver.mxo",
