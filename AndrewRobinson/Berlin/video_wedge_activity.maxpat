@@ -15,6 +15,54 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 282.5581294298172, 939.63963907957077, 83.0, 22.0 ],
+					"text" : "r wedgeVIdeo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 277.325571477413177, 1035.861997961997986, 142.906965911388397, 110.0 ],
+					"sync" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"int" : 1,
+					"maxclass" : "gswitch",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 277.325571477413177, 993.0, 41.0, 32.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 143.232549905776978, 799.310290038585663, 85.0, 22.0 ],
+					"text" : "s wedgeVIdeo"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -41,7 +89,7 @@
 				"box" : 				{
 					"comment" : "wedge_i activity_f",
 					"id" : "obj-19",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -140,7 +188,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 300.581384599208832, 881.976712644100189, 56.0, 22.0 ],
+					"patching_rect" : [ 623.255791664123535, 14.414414405822754, 56.0, 22.0 ],
 					"restore" : 					{
 						"live.text" : [ 1.0 ],
 						"textbutton" : [ 1 ]
@@ -159,8 +207,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 789.0, 1073.0, 87.0, 116.0 ],
-					"text" : "0.659403 0.396613 0.183752 0.011335 0.813082 0.521093 0.284581 0.093006"
+					"patching_rect" : [ 789.0, 1073.0, 71.0, 116.0 ],
+					"text" : "1. 0.557975 0.046322 0.034164 0.062181 0.000049 0.136242 0.208737"
 				}
 
 			}
@@ -216,12 +264,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-58",
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 526.0, 1054.605253100395203, 115.0, 22.0 ],
-					"text" : "0. 0. 0. 0. 0. 0. 0. 0."
+					"patching_rect" : [ 526.0, 1054.605253100395203, 115.0, 62.0 ],
+					"text" : "1. 0.571828 0.050668 0.04377 0.06362 0. 0.134052 0.216803"
 				}
 
 			}
@@ -301,18 +350,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 855.232527554035187, -24.418603777885437, 58.0, 20.0 ],
-					"text" : "-- DONE!",
-					"textcolor" : [ 0.113725490196078, 1.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 1.0, 0.556862745098039, 0.0, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "newobj",
@@ -339,15 +376,15 @@
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-16",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 623.255791664123535, -51.162788867950439, 351.021893084049225, 47.0 ],
+					"patching_rect" : [ 602.325559854507446, -41.860463619232178, 351.021893084049225, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 494.0, 17.0, 340.0, 47.0 ],
-					"text" : "Derived from Real Sense Camera 8 Slice Mask Ver3\nTODO:  \nFix LCD hovering does not select wedge? "
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 494.0, 17.0, 340.0, 33.0 ],
+					"text" : "Derived from Real Sense Camera 8 Slice Mask Ver3\ns wedgeVideo processed video"
 				}
 
 			}
@@ -370,7 +407,7 @@
 				"box" : 				{
 					"comment" : "list ave presence-activities [0. 1.]",
 					"id" : "obj-96",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -407,7 +444,7 @@
 				"box" : 				{
 					"comment" : "list presence-activities  [0. 1.]",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -431,11 +468,11 @@
 				"box" : 				{
 					"comment" : "input video",
 					"id" : "obj-95",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 80.232555270195007, 244.18603777885437, 30.0, 30.0 ],
 					"varname" : "video"
 				}
@@ -806,7 +843,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 68.0, 841.0, 707.0, 22.0 ],
-									"text" : "0.151045 0.12611 0.19678 0.127475 0.149296 0.077962 0.154396 0.44479"
+									"text" : "0.330378 0.176115 0.040727 0.016626 0.0328 0.022104 0.052703 0.074178"
 								}
 
 							}
@@ -2788,7 +2825,7 @@
 
 							}
  ],
-						"originid" : "pat-2576"
+						"originid" : "pat-3913"
 					}
 ,
 					"patching_rect" : [ 42.671536028385162, 1024.0, 53.0, 22.0 ],
@@ -3156,7 +3193,7 @@
 					"patching_rect" : [ 248.25580507516861, 617.441838383674622, 249.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 32.0, 186.0, 486.0, 22.0 ],
-					"text" : "0.165884 0.152537 0.218584 0.154211 0.181651 0.09402 0.167615 0.442057"
+					"text" : "0.241097 0.153212 0.046241 0.044825 0.048899 0.035841 0.063356 0.080341"
 				}
 
 			}
@@ -3237,7 +3274,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.0, 121.909999999999968, 50.0, 35.0 ],
-									"text" : "320 256"
+									"text" : "1512 945"
 								}
 
 							}
@@ -3414,7 +3451,7 @@
 
 							}
  ],
-						"originid" : "pat-2578"
+						"originid" : "pat-3915"
 					}
 ,
 					"patching_rect" : [ 519.186027944087982, 129.651158154010773, 55.0, 22.0 ],
@@ -4984,7 +5021,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 68.0, 841.0, 707.0, 22.0 ],
-									"text" : "0.165884 0.152537 0.218584 0.154211 0.181651 0.09402 0.167615 0.442057"
+									"text" : "0.241097 0.153212 0.046241 0.044825 0.048899 0.035841 0.063356 0.080341"
 								}
 
 							}
@@ -7893,7 +7930,7 @@
 
 							}
  ],
-						"originid" : "pat-2580"
+						"originid" : "pat-3917"
 					}
 ,
 					"patching_rect" : [ 98.255810439586639, 623.837186992168427, 151.5, 22.0 ],
@@ -8199,6 +8236,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
+					"order" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -8385,6 +8431,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 2 ],
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-64", 0 ]
 				}
@@ -8471,100 +8531,7 @@
 
 			}
  ],
-		"originid" : "pat-2564",
-		"parameters" : 		{
-			"obj-2" : [ "live.text", "live.text", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "code_wedge1.jpg",
-				"bootpath" : "~/Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
-				"patcherrelativepath" : "../../../../../../Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cv.jit.ravg.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "draw_octant.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.gl.syphonserver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sc.avg.vecrunning.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/utilities",
-				"patcherrelativepath" : "../../../../../../Documents/Max 9/Packages/SC/patchers/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.list_normalize.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "video_wedge_activity.maxsnap",
-				"bootpath" : "~/Documents/Max 9/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 9/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
-		"snapshot" : 		{
-			"filetype" : "C74Snapshot",
-			"version" : 2,
-			"minorversion" : 0,
-			"name" : "snapshotlist",
-			"origin" : "jpatcher",
-			"type" : "list",
-			"subtype" : "Undefined",
-			"embed" : 1,
-			"snapshotlist" : 			{
-				"current_snapshot" : -1,
-				"entries" : [ 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "video_wedge_activity",
-						"origin" : "video_wedge_activity",
-						"type" : "patcher",
-						"subtype" : "Undefined",
-						"embed" : 0,
-						"fileref" : 						{
-							"name" : "video_wedge_activity",
-							"filename" : "video_wedge_activity.maxsnap",
-							"filepath" : "~/Documents/Max 9/Snapshots",
-							"filepos" : -1,
-							"snapshotfileid" : "ddc2c804ca97c31e1085927b19a79e21"
-						}
-
-					}
- ]
-			}
-
-		}
-
+		"originid" : "pat-3901"
 	}
 
 }
