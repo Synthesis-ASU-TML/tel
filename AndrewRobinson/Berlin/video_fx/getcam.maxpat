@@ -10,13 +10,13 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1627.0, -522.0, 977.0, 704.0 ],
+		"rect" : [ 384.0, 149.0, 588.0, 382.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "nessage sc.matrix.camera.simple",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -29,7 +29,7 @@
 				"box" : 				{
 					"comment" : "message jit.world",
 					"id" : "obj-3",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -439,7 +439,7 @@
 
 							}
  ],
-						"originid" : "pat-712"
+						"originid" : "pat-306"
 					}
 ,
 					"patching_rect" : [ 934.223609745502472, 289.217742919921875, 55.0, 22.0 ],
@@ -538,8 +538,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "bang", "" ],
-					"patching_rect" : [ 423.206648409366608, 252.777064085006714, 667.0, 35.0 ],
-					"text" : "jit.world noisy2 @windowposition 40 160 @size 320 240 @visible 0 @floating 1 @fsaa 1 @fsmenubar 0 @output_texture 1 @erase_color 0 0 0 1",
+					"patching_rect" : [ 423.206648409366608, 252.777064085006714, 666.864296317100525, 35.0 ],
+					"text" : "jit.world noisy2 @windowposition 40 400 @size 320 240 @visible 0 @floating 1 @fsaa 1 @fsmenubar 0 @output_texture 1 @erase_color 0 0 0 1",
 					"varname" : "jit.world"
 				}
 
@@ -548,7 +548,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-61",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -724,7 +724,34 @@
 
 			}
  ],
-		"originid" : "pat-704"
+		"originid" : "pat-298",
+		"parameters" : 		{
+			"obj-2" : [ "live.text", "live.text", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "sc.matrix.camera.simple.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/video/matrix",
+				"patcherrelativepath" : "../../../../../../../Documents/Max 9/Packages/SC/patchers/video/matrix",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
