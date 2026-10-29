@@ -15,13 +15,37 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1016.363666653633118, 825.0, 50.0, 22.0 ],
+					"text" : "16"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1011.0, 789.0, 37.0, 22.0 ],
+					"text" : "zl.len"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "0 off | inlet | local | ndi",
 					"id" : "obj-73",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 217.0, 143.0, 30.0, 30.0 ]
 				}
 
@@ -34,8 +58,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 184.0, 54.6875, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 62.0, 110.0, 81.325304210186005, 20.0 ],
 					"text" : "video inllet",
 					"textjustification" : 2
 				}
@@ -45,7 +67,7 @@
 				"box" : 				{
 					"comment" : "video",
 					"id" : "obj-70",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -113,16 +135,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-33",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 746.0, 697.0, 133.432829976081848, 49.0 ],
+					"patching_rect" : [ 746.0, 697.0, 133.432829976081848, 35.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 617.910425662994385, 517.85713791847229, 132.946711301803589, 49.0 ],
-					"text" : "0.34 1. 0.81 0.52 0.63 1. 0.69 0.83 0.78 1. 1. 0.86 0. 0. 0. 0."
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 617.910425662994385, 517.85713791847229, 132.946711301803589, 35.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -335,9 +357,9 @@
 					"patching_rect" : [ 661.0, 168.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
-						"master_fader" : [ 0.0, 0.0, 0.0, 1.0 ],
-						"master_volume" : [ 199.0 ],
-						"videosource" : [ 1 ]
+						"master_fader" : [ 0.0, 0.0, 0.196797536265466, 0.007044219201611 ],
+						"master_volume" : [ 79.230105681627833 ],
+						"videosource" : [ 2 ]
 					}
 ,
 					"text" : "autopattr",
@@ -608,16 +630,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-51",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 697.0, 133.195746302604675, 62.0 ],
+					"patching_rect" : [ 534.0, 697.0, 133.195746302604675, 35.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 438.0, 517.85713791847229, 137.499995827674866, 62.0 ],
-					"text" : "0.08 0.18 0.23 0.29 0.08 0.09 0.27 0.28 0.18 0.15 0.26 0.28 0. 0. 0. 0."
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 438.0, 517.85713791847229, 137.499995827674866, 35.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -640,16 +662,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-48",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 691.0, 155.0, 35.0 ],
+					"patching_rect" : [ 97.0, 691.0, 155.0, 49.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 82.142856359481812, 514.285709381103516, 155.0, 35.0 ],
-					"text" : "0. 0. 0. 0. 0. 0.03 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 82.142856359481812, 514.285709381103516, 155.0, 49.0 ],
+					"text" : "0.01 0.22 0.23 0.17 0.16 0.23 0.29 0.37 0.21 0.42 0.49 0.33 0. 0. 0. 0."
 				}
 
 			}
@@ -977,7 +999,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 391.0, 582.0, 155.555562973022461, 26.0 ],
-					"text" : "0.972182 0.792549 0.800149 0.53946 0. 0.2251 0.650427 1."
+					"text" : "0.657556 0.79799 0.811979 1. 0.139384 0. 0.902823 0.716179"
 				}
 
 			}
@@ -1199,7 +1221,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 49.0, 579.0, 147.555562973022461, 26.0 ],
-					"text" : "0.34 1. 0.81 0.52 0.63 1. 0.69 0.83 0.78 1. 1. 0.86 0. 0. 0. 0."
+					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1904,6 +1926,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-77", 1 ],
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "ms", 0 ],
 					"hidden" : 1,
 					"source" : [ "p0", 0 ]
@@ -1958,7 +1987,186 @@
 
 			}
  ],
-		"originid" : "pat-1742"
+		"originid" : "pat-992",
+		"parameters" : 		{
+			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
+			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-2::obj-2" : [ "live.text", "live.text", 0 ],
+			"obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
+			"obj-3::obj-61::obj-12" : [ "number[10]", "number", 0 ],
+			"obj-3::obj-61::obj-18" : [ "number[13]", "number", 0 ],
+			"obj-3::obj-61::obj-25" : [ "number[15]", "number", 0 ],
+			"obj-3::obj-61::obj-44" : [ "number[8]", "number", 0 ],
+			"obj-3::obj-61::obj-52" : [ "number[11]", "number", 0 ],
+			"obj-3::obj-61::obj-54" : [ "number[14]", "number", 0 ],
+			"obj-3::obj-61::obj-7" : [ "number[12]", "number", 0 ],
+			"obj-5::obj-2" : [ "live.text[1]", "live.text", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "Andrew_audio.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Emiddio_birds.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "code_wedge1.jpg",
+				"bootpath" : "~/Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
+				"patcherrelativepath" : "../../../../../../Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cv.jit.ravg.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "draw_octant.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.ndi.receive~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "list_resize_interp.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list_slide.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mc_mix4.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "motionDetection.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "./pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_mc.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "./pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_voice.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "./pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.avg.vecrunning.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../Documents/Max 9/Packages/SC/patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.clap.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/sound",
+				"patcherrelativepath" : "../../../../../../Documents/Max 9/Packages/SC/patchers/sound",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.list_normalize.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vfunction.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "./pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_chooser.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_tiles_activity.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_tiles_audio.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_wedge_activity.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vpink_noises.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "./pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
