@@ -15,6 +15,63 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-74",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 214.838703274726868, 18.064515590667725, 418.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 216.737886607646942, 26.500000298023224, 301.935474872589111, 20.0 ],
+					"text" : "Andrew Robinson, Sha Xin Wei, EV, Synthesis 2026"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 1867.0, -150.0, 651.0, 395.0 ],
+						"gridsize" : [ 15.0, 15.0 ],
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 16,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 43.0, 39.0, 433.0, 234.0 ],
+									"text" : "\nUses: SC/projects/SC_Videosounder, + abstractions in https://github.com/Synthesis-ASU-TML/tel/tree/master/AndrewRobinson/Berlin\n\n\nBe sure to follow the textbutton steps (1), (2)… etc.  Mostly automatic so you just have to tweak (6) master volume and (7) mixer between instruments.\n\nTo enable your own instrument:\n(3) check the matrixctrl button to direct activity lists from either video_tiles_activity or video_wedge_activity \n\tand send them to one of the 4 instruments.\n(4) Toggle the mute for your  instrument (right inlet).\nWave hands\n\nOpen Andrew’s video_wedge_activity to choose Presence | Motion\n"
+								}
+
+							}
+ ],
+						"lines" : [  ],
+						"originid" : "pat-1460"
+					}
+,
+					"patching_rect" : [ 603.225788474082947, 72.903223633766174, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 556.774176955223083, 25.500000298023224, 70.0, 22.0 ],
+					"text" : "p README"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-77",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -357,7 +414,7 @@
 					"patching_rect" : [ 661.0, 168.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
-						"master_fader" : [ 0.0, 0.0, 0.196797536265466, 0.007044219201611 ],
+						"master_fader" : [ 0.0, 0.0, 0.0, 1.0 ],
 						"master_volume" : [ 79.230105681627833 ],
 						"videosource" : [ 2 ]
 					}
@@ -877,7 +934,7 @@
 					"patching_rect" : [ 767.0, 462.0, 254.0, 100.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 606.666684746742249, 92.00000274181366, 214.0, 100.0 ],
+					"presentation_rect" : [ 549.032241702079773, 68.387094736099243, 214.0, 100.0 ],
 					"text" : "TODO\nReplace this stub [p Emiddio_birds]\nby independent patcher with lift inlet = list of 8 floats \nright inlet toggle mute 0 | sound 1\nOutlet: mc 8 -channel audio\n",
 					"textcolor" : [ 0.890196078431372, 0.058823529411765, 0.772549019607843, 1.0 ]
 				}
@@ -922,23 +979,6 @@
 					"patching_rect" : [ 626.0, 615.0, 29.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 547.321423351764679, 446.428567171096802, 29.0, 29.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontsize" : 12.0,
-					"id" : "obj-32",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 767.0, 78.0, 418.0, 47.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 607.666684746742249, 8.000000238418579, 212.0, 74.0 ],
-					"text" : "TODO:\n(1)  independent dac~  on/off for each instrument\n(2) Add volume control for video_tiles_audio (mow it's jusrt ~)",
-					"textcolor" : [ 0.890196078431372, 0.058823529411765, 0.772549019607843, 1.0 ]
 				}
 
 			}
@@ -999,7 +1039,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 391.0, 582.0, 155.555562973022461, 26.0 ],
-					"text" : "0.657556 0.79799 0.811979 1. 0.139384 0. 0.902823 0.716179"
+					"text" : "0.891053 1. 0.867887 0.854369 0.390548 0. 0.774521 0.718217"
 				}
 
 			}
@@ -1170,15 +1210,15 @@
 				"box" : 				{
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 73.0, 46.0, 418.0, 87.0 ],
+					"patching_rect" : [ 73.0, 46.0, 418.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 41.600000619888306, 61.60000091791153, 549.999963283538818, 74.0 ],
-					"text" : "For Hapticality Workshop | HKW | Berlin Nov 2026 Fertile Void\nOutput: list of floats\nComputes activity of m x n matrix or of a pie of 8 wedges \nUses: SC/projects/SC_Videosounder, [video_chooser], [videosounder_berlin], [wedge_mask_berlin]\nDefault: Uses local camera, with vpink_noises"
+					"presentation_rect" : [ 41.290321350097656, 61.60000091791153, 485.806437134742737, 74.0 ],
+					"text" : "For Hapticality Workshop | HKW | Berlin Nov 2026 Fertile Void\nOutput: list of floats\nInput: video (only if you want to embed this.  Normally stand-alone)\nComputes activity of m x n matrix or of a pie of 8 wedges \nDefault: Uses local camera, with vpink_noises"
 				}
 
 			}
@@ -1191,7 +1231,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 73.0, 9.0, 284.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 41.600000619888306, 20.000000298023224, 284.0, 33.0 ],
+					"presentation_rect" : [ 41.290321350097656, 20.000000298023224, 158.451853841543198, 33.0 ],
 					"text" : "berlin_hkw"
 				}
 
@@ -1987,7 +2027,7 @@
 
 			}
  ],
-		"originid" : "pat-992",
+		"originid" : "pat-1234",
 		"parameters" : 		{
 			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
