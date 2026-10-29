@@ -15,6 +15,89 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 14.0,
+					"id" : "obj-45",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.87214058637619, 260.902232468128204, 61.0, 38.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 351.527147591114044, 269.924788057804108, 103.007509648799896, 22.0 ],
+					"text" : "video source",
+					"textcolor" : [ 1.0, 0.35, 0.85, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.298039215686275, 0.631372549019608, 0.172549019607843, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.298039215686275, 0.631372549019608, 0.172549019607843, 1.0 ],
+					"bgfillcolor_color1" : [ 0.243137254901961, 0.666666666666667, 0.105882352941176, 1.0 ],
+					"bgfillcolor_color2" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-69",
+					"items" : [ "off", ",", "inlet", ",", "local", ",", "NDI" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 790.977373361587524, 730.97747415304184, 56.153851509094238, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 282.354221403598785, 269.172908425331116, 56.153851509094238, 23.0 ],
+					"varname" : "videosource"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.631372549019608, 0.741176470588235, 0.019607843137255, 1.0 ],
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 690.225502610206604, 731.729353785514832, 91.0, 22.0 ],
+					"text" : "r trembly_video"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.631372549019608, 0.741176470588235, 0.019607843137255, 1.0 ],
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 78.947371244430542, 832.330753147602081, 93.0, 22.0 ],
+					"text" : "s trembly_video"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 690.225502610206604, 766.315816879272461, 100.0, 29.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 243.256480515003204, 298.496214091777802, 95.0, 29.0 ],
+					"text" : "berlin_hkw",
+					"varname" : "berlin_hkw"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -470,7 +553,7 @@
 
 							}
  ],
-						"originid" : "pat-336"
+						"originid" : "pat-374"
 					}
 ,
 					"patching_rect" : [ 433.684226036071777, 526.086960911750793, 111.0, 22.0 ],
@@ -1177,7 +1260,7 @@
 
 							}
  ],
-						"originid" : "pat-338"
+						"originid" : "pat-376"
 					}
 ,
 					"patching_rect" : [ 496.842123031616211, 284.210536479949951, 208.0, 26.0 ],
@@ -2690,7 +2773,7 @@
 
 							}
  ],
-						"originid" : "pat-340"
+						"originid" : "pat-378"
 					}
 ,
 					"patching_rect" : [ 433.846195220947266, 463.846198081970215, 146.0, 26.0 ],
@@ -2759,7 +2842,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 78.947371244430542, 790.526344060897827, 203.0, 22.0 ],
+					"patching_rect" : [ 90.7368483543396, 790.526344060897827, 203.0, 22.0 ],
 					"text" : "jit.gl.videoplane @transform_reset 2"
 				}
 
@@ -3232,6 +3315,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -3262,6 +3352,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-6", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 1 ],
+					"source" : [ "obj-69", 0 ]
 				}
 
 			}
@@ -3310,8 +3407,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "outV", 0 ],
+					"destination" : [ "obj-31", 0 ],
 					"order" : 1,
+					"source" : [ "rep", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "outV", 0 ],
+					"order" : 2,
 					"source" : [ "rep", 0 ]
 				}
 
@@ -3361,9 +3466,19 @@
 
 			}
  ],
-		"originid" : "pat-332",
+		"originid" : "pat-370",
 		"parameters" : 		{
 			"obj-1::obj-2" : [ "live.text", "live.text", 0 ],
+			"obj-27::obj-2::obj-2" : [ "live.text[1]", "live.text", 0 ],
+			"obj-27::obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-12" : [ "number[10]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-18" : [ "number[13]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-25" : [ "number[15]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-44" : [ "number[8]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-52" : [ "number[11]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-54" : [ "number[14]", "number", 0 ],
+			"obj-27::obj-3::obj-61::obj-7" : [ "number[12]", "number", 0 ],
+			"obj-27::obj-5::obj-2" : [ "live.text[2]", "live.text", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -3373,10 +3488,53 @@
 
 			}
 ,
+			"parameter_overrides" : 			{
+				"obj-27::obj-2::obj-2" : 				{
+					"parameter_longname" : "live.text[1]"
+				}
+,
+				"obj-27::obj-5::obj-2" : 				{
+					"parameter_longname" : "live.text[2]"
+				}
+
+			}
+,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Andrew_audio.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "berlin_hkw.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "code_wedge1.jpg",
+				"bootpath" : "~/Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
+				"patcherrelativepath" : "../../../../../../../Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cv.jit.ravg.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "draw_octant.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "getcam.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/video_fx",
 				"patcherrelativepath" : ".",
@@ -3388,9 +3546,62 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "jit.ndi.receive~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "list_zero_item.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "motionDetection.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "../pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_mc.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "../pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_voice.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "../pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.avg.vecrunning.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../../Documents/Max 9/Packages/SC/patchers/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "sc.clap.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/sound",
-				"patcherrelativepath" : "../../../../../../../Documents/Max 9/Packages/SC/patchers/sound",
+				"bootpath" : "~/code/MAX_Objects/sc examples",
+				"patcherrelativepath" : "../../../../../../MAX_Objects/sc examples",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.list_normalize.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3398,6 +3609,48 @@
 				"name" : "sc.matrix.camera.simple.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/video/matrix",
 				"patcherrelativepath" : "../../../../../../../Documents/Max 9/Packages/SC/patchers/video/matrix",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vfunction.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "../pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_chooser.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_tiles_activity.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_tiles_audio.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video_wedge_activity.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
+				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vpink_noises.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
+				"patcherrelativepath" : "../pinknoise",
 				"type" : "JSON",
 				"implicit" : 1
 			}
