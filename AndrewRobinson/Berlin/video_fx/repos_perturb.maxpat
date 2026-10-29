@@ -553,7 +553,7 @@
 
 							}
  ],
-						"originid" : "pat-374"
+						"originid" : "pat-1392"
 					}
 ,
 					"patching_rect" : [ 433.684226036071777, 526.086960911750793, 111.0, 22.0 ],
@@ -1260,7 +1260,7 @@
 
 							}
  ],
-						"originid" : "pat-376"
+						"originid" : "pat-1394"
 					}
 ,
 					"patching_rect" : [ 496.842123031616211, 284.210536479949951, 208.0, 26.0 ],
@@ -2773,7 +2773,7 @@
 
 							}
  ],
-						"originid" : "pat-378"
+						"originid" : "pat-1396"
 					}
 ,
 					"patching_rect" : [ 433.846195220947266, 463.846198081970215, 146.0, 26.0 ],
@@ -3466,9 +3466,11 @@
 
 			}
  ],
-		"originid" : "pat-370",
+		"originid" : "pat-1278",
 		"parameters" : 		{
 			"obj-1::obj-2" : [ "live.text", "live.text", 0 ],
+			"obj-27::ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
+			"obj-27::obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-27::obj-2::obj-2" : [ "live.text[1]", "live.text", 0 ],
 			"obj-27::obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
 			"obj-27::obj-3::obj-61::obj-12" : [ "number[10]", "number", 0 ],
@@ -3504,15 +3506,22 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Andrew_audio.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Emiddio_birds.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "berlin_hkw.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3529,8 +3538,8 @@
 			}
 , 			{
 				"name" : "draw_octant.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3550,16 +3559,23 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "list_zero_item.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"name" : "list_moving_average.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mc_mix4.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "motionDetection.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3593,15 +3609,15 @@
 			}
 , 			{
 				"name" : "sc.clap.maxpat",
-				"bootpath" : "~/code/MAX_Objects/sc examples",
-				"patcherrelativepath" : "../../../../../../MAX_Objects/sc examples",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/sound",
+				"patcherrelativepath" : "../../../../../../../Documents/Max 9/Packages/SC/patchers/sound",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sc.list_normalize.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3621,29 +3637,29 @@
 			}
 , 			{
 				"name" : "video_chooser.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video_tiles_activity.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video_tiles_audio.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video_wedge_activity.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel_261025/All Andrew's Patches/Berlin",
-				"patcherrelativepath" : "../../../../tel_261025/All Andrew's Patches/Berlin",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
