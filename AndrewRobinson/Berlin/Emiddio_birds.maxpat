@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1634.0, -511.0, 1234.0, 895.0 ],
+		"rect" : [ 599.0, 100.0, 1234.0, 848.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -22,7 +22,7 @@
 					"patching_rect" : [ 204.819284677505493, 25.608434736728668, 408.433750033378601, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 11,
-					"presentation_rect" : [ 204.819284677505493, 27.108434736728668, 150.0, 154.0 ],
+					"presentation_rect" : [ 204.819284677505493, 27.108434736728668, 151.0, 154.0 ],
 					"text" : "Emiddio_birds:  DUMMY STAND-IN FOR Emiddio's birds instrument\n\nYou can adapt [p list_smooth_resize] to smooth the activity list.\nNotice it also downsamples / interpolates  the list to a list of length 8 if necessary"
 				}
 
@@ -34,7 +34,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 162.650608420372009, 635.542192161083221, 112.422359645366669, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "TEST SOUND"
 				}
 
@@ -127,9 +126,8 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2747.0, -121.0, 846.0, 789.0 ],
+						"rect" : [ 349.0, 637.0, 467.0, 311.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "slide_down",
@@ -458,7 +456,7 @@
 
 							}
  ],
-						"originid" : "pat-1226"
+						"originid" : "pat-46"
 					}
 ,
 					"patching_rect" : [ 139.759041309356689, 169.277114689350128, 173.0, 29.0 ],
@@ -947,7 +945,7 @@
 
 			}
  ],
-		"originid" : "pat-1028"
+		"originid" : "pat-44"
 	}
 
 }

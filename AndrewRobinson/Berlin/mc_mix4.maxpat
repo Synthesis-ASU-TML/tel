@@ -701,6 +701,24 @@
      "outlettype": [],
      "text": "four MC cables into one outlet = channel-wise sum"
     }
+   },
+   {
+    "box": {
+     "id": "ps",
+     "maxclass": "newobj",
+     "text": "prepend set",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      ""
+     ],
+     "patching_rect": [
+      835,
+      131,
+      75.0,
+      22.0
+     ]
+    }
    }
   ],
   "lines": [
@@ -935,30 +953,6 @@
    {
     "patchline": {
      "source": [
-      "inR",
-      0
-     ],
-     "destination": [
-      "ap0",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "dR",
-      0
-     ],
-     "destination": [
-      "ap0",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
       "up",
       1
      ],
@@ -1001,30 +995,6 @@
      "destination": [
       "g1",
       0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "inR",
-      0
-     ],
-     "destination": [
-      "ap1",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "dR",
-      0
-     ],
-     "destination": [
-      "ap1",
-      1
      ]
     }
    },
@@ -1079,30 +1049,6 @@
    {
     "patchline": {
      "source": [
-      "inR",
-      0
-     ],
-     "destination": [
-      "ap2",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "dR",
-      0
-     ],
-     "destination": [
-      "ap2",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
       "up",
       3
      ],
@@ -1151,30 +1097,6 @@
    {
     "patchline": {
      "source": [
-      "inR",
-      0
-     ],
-     "destination": [
-      "ap3",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "dR",
-      0
-     ],
-     "destination": [
-      "ap3",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
       "g0",
       0
      ],
@@ -1216,6 +1138,78 @@
      ],
      "destination": [
       "out",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "inR",
+      0
+     ],
+     "destination": [
+      "ps",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "dR",
+      0
+     ],
+     "destination": [
+      "ps",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "ps",
+      0
+     ],
+     "destination": [
+      "ap0",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "ps",
+      0
+     ],
+     "destination": [
+      "ap1",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "ps",
+      0
+     ],
+     "destination": [
+      "ap2",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "ps",
+      0
+     ],
+     "destination": [
+      "ap3",
       0
      ]
     }
