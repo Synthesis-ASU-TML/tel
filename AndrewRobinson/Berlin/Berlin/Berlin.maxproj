@@ -2,7 +2,7 @@
 	"name" : "Berlin",
 	"version" : 1,
 	"creationdate" : 3875723687,
-	"modificationdate" : 3875724964,
+	"modificationdate" : 3876205424,
 	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -17,12 +17,11 @@
 ,
 			"vpink_noises.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/All Andrew's Patches/Berlin/pinknoise",
-					"projectrelativepath" : "../pinknoise"
-				}
-
+				"local" : 1
+			}
+,
+			"repos_perturb.maxpat" : 			{
+				"kind" : "patcher"
 			}
 
 		}
