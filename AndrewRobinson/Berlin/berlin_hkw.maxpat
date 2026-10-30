@@ -15,6 +15,24 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "FullCamera, Slice, Presence, Motion",
+					"fontsize" : 14.0,
+					"id" : "obj-49",
+					"items" : [ "FullCamera", ",", "Slice", ",", "Presence", ",", "Motion" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 511.5, 305.0, 100.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 459.688617050647736, 216.0, 100.0, 24.0 ],
+					"valuepopup" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-88",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -95,7 +113,7 @@
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-162"
+						"originid" : "pat-3830"
 					}
 ,
 					"patching_rect" : [ 603.225788474082947, 72.903223633766174, 100.0, 22.0 ],
@@ -385,7 +403,7 @@
 					"patching_rect" : [ 661.0, 168.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
-						"master_fader" : [ 1.0, 0.0, 0.0, 0.0 ],
+						"master_fader" : [ 0.0, 0.0, 0.0, 1.0 ],
 						"master_volume" : [ 85.893264810444919 ],
 						"videosource" : [ 2 ]
 					}
@@ -962,7 +980,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 391.0, 582.0, 155.555562973022461, 26.0 ],
-					"text" : "0.691401 0.838153 1. 0.920018 0.347799 0. 0.490924 0.622432"
+					"text" : "0.999948 0.520895 0.003612 0.044933 0. 0.048588 0.029483 0.119168"
 				}
 
 			}
@@ -1184,7 +1202,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 49.0, 579.0, 147.555562973022461, 26.0 ],
-					"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0.02 0.02 0.08 0. 0. 0. 0. 0."
+					"text" : "0. 0.11 0.03 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -1193,7 +1211,7 @@
 					"fontsize" : 18.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 391.0, 335.0, 180.0, 29.0 ],
@@ -2308,6 +2326,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-49", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
@@ -2464,7 +2489,7 @@
 
 			}
  ],
-		"originid" : "pat-160",
+		"originid" : "pat-3828",
 		"parameters" : 		{
 			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
@@ -2546,6 +2571,13 @@
 			}
 , 			{
 				"name" : "mc_mix4.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "motionDetection.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
