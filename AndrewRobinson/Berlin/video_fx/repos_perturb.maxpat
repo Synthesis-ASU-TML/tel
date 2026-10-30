@@ -15,28 +15,6 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 505.0, 428.0, 80.0, 13.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"maxclass" : "meter~",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 422.0, 428.0, 80.0, 13.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-45",
 					"linecount" : 2,
@@ -575,7 +553,7 @@
 
 							}
  ],
-						"originid" : "pat-1854"
+						"originid" : "pat-2030"
 					}
 ,
 					"patching_rect" : [ 433.684226036071777, 526.086960911750793, 111.0, 22.0 ],
@@ -1282,7 +1260,7 @@
 
 							}
  ],
-						"originid" : "pat-1856"
+						"originid" : "pat-2032"
 					}
 ,
 					"patching_rect" : [ 496.842123031616211, 284.210536479949951, 208.0, 26.0 ],
@@ -2795,7 +2773,7 @@
 
 							}
  ],
-						"originid" : "pat-1858"
+						"originid" : "pat-2034"
 					}
 ,
 					"patching_rect" : [ 433.846195220947266, 463.846198081970215, 146.0, 26.0 ],
@@ -3488,7 +3466,7 @@
 
 			}
  ],
-		"originid" : "pat-1740",
+		"originid" : "pat-1902",
 		"parameters" : 		{
 			"obj-1::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-27::ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
@@ -3581,7 +3559,14 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "list_moving_average.maxpat",
+				"name" : "list_resize_interp.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list_slide.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
