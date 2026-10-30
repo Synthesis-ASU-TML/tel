@@ -553,7 +553,7 @@
 
 							}
  ],
-						"originid" : "pat-2030"
+						"originid" : "pat-1508"
 					}
 ,
 					"patching_rect" : [ 433.684226036071777, 526.086960911750793, 111.0, 22.0 ],
@@ -1260,7 +1260,7 @@
 
 							}
  ],
-						"originid" : "pat-2032"
+						"originid" : "pat-1510"
 					}
 ,
 					"patching_rect" : [ 496.842123031616211, 284.210536479949951, 208.0, 26.0 ],
@@ -2773,7 +2773,7 @@
 
 							}
  ],
-						"originid" : "pat-2034"
+						"originid" : "pat-1512"
 					}
 ,
 					"patching_rect" : [ 433.846195220947266, 463.846198081970215, 146.0, 26.0 ],
@@ -3466,12 +3466,20 @@
 
 			}
  ],
-		"originid" : "pat-1902",
+		"originid" : "pat-1384",
 		"parameters" : 		{
 			"obj-1::obj-2" : [ "live.text", "live.text", 0 ],
 			"obj-27::ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-27::obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-27::obj-2::obj-2" : [ "live.text[1]", "live.text", 0 ],
+			"obj-27::obj-2::obj-61::obj-1" : [ "number[2]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-12" : [ "number[4]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-18" : [ "number[5]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-25" : [ "number[6]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-44" : [ "number[7]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-52" : [ "number[9]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-54" : [ "number[1]", "number", 0 ],
+			"obj-27::obj-2::obj-61::obj-7" : [ "number[3]", "number", 0 ],
 			"obj-27::obj-3::obj-61::obj-1" : [ "number[16]", "number", 0 ],
 			"obj-27::obj-3::obj-61::obj-12" : [ "number[10]", "number", 0 ],
 			"obj-27::obj-3::obj-61::obj-18" : [ "number[13]", "number", 0 ],
@@ -3513,35 +3521,21 @@
 			}
 , 			{
 				"name" : "Emiddio_birds.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused",
+				"patcherrelativepath" : "../_unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "berlin_hkw.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused",
+				"patcherrelativepath" : "../_unused",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "code_wedge1.jpg",
-				"bootpath" : "~/Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
-				"patcherrelativepath" : "../../../../../../../Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/images",
-				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cv.jit.ravg.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "draw_octant.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
 			}
 , 			{
 				"name" : "getcam.maxpat",
@@ -3574,15 +3568,15 @@
 			}
 , 			{
 				"name" : "mc_mix4.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused",
+				"patcherrelativepath" : "../_unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "motionDetection.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/Claude",
+				"patcherrelativepath" : "../../../../../../../Documents/philosophy/Malaspina,Cecile/Berlin Fertile Void Nov 2026/Claude",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3604,13 +3598,6 @@
 				"name" : "pink_tonal_bank_voice.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
 				"patcherrelativepath" : "../pinknoise",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.avg.vecrunning.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/utilities",
-				"patcherrelativepath" : "../../../../../../../Documents/Max 9/Packages/SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3658,15 +3645,15 @@
 			}
 , 			{
 				"name" : "video_tiles_audio.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused",
+				"patcherrelativepath" : "../_unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video_wedge_activity.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused",
+				"patcherrelativepath" : "../_unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
