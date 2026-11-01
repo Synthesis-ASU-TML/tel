@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 373.0, 118.0, 771.0, 774.0 ],
+		"rect" : [ 262.0, 116.0, 523.0, 408.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
@@ -1432,6 +1432,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.986251711845398, 0.00723597407341, 0.02742300927639, 1.0 ],
 					"bgcolor2" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1 ],
+					"bgfillcolor_autogradient" : 0.0,
 					"bgfillcolor_color" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1 ],
 					"bgfillcolor_color1" : [ 0.986251711845398, 0.00723597407341, 0.02742300927639, 1.0 ],
 					"bgfillcolor_color2" : [ 0.172137149796092, 0.172137100044002, 0.172137113045018, 1 ],
@@ -2296,7 +2297,7 @@
 
 			}
  ],
-		"originid" : "pat-696",
+		"originid" : "pat-677",
 		"dependency_cache" : [ 			{
 				"name" : "hkw_speaker_map.txt",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",

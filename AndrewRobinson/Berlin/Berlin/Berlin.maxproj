@@ -2,8 +2,8 @@
 	"name" : "Berlin",
 	"version" : 1,
 	"creationdate" : 3875723687,
-	"modificationdate" : 3876288377,
-	"viewrect" : [ 25.0, 119.0, 300.0, 500.0 ],
+	"modificationdate" : 3876368283,
+	"viewrect" : [ 66.0, 265.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -25,6 +25,10 @@
 			}
 ,
 			"calibration.maxpat" : 			{
+				"kind" : "patcher"
+			}
+,
+			"aeolian_harp.maxpat" : 			{
 				"kind" : "patcher"
 			}
 

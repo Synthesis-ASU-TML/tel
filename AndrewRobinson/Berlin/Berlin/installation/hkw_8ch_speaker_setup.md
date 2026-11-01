@@ -12,6 +12,9 @@ Goal: MC channel k (wedge k in the overhead camera view) plays from the speaker 
 2. **Choose the interface:**
    - It needs at least 8 outputs in the format they take, and a driver for your macOS version. Class-compliant USB or Thunderbolt interfaces need no driver.
    - For Dante, use a Dante interface or Dante Virtual Soundcard on the Mac.
+     - 30 day license from https://www.getdante.com/account/products/trial/dante-virtual-soundcard 
+     - CVOWO-52XEF-SXFAI-KT6JS-53JEN
+     - on macos sonoma how to use dante virtual soundcard to connect my Max/MSP mc audio to Dante network
    - Avoid aggregate devices and Bluetooth.
 3. **Make one output stage in the patch** (the last thing before the hardware):
    `mc.*~ (master)` → `mc.unpack~ 8` → `limi~ 8` → `mc.pack~ 8` → `mc.dac~ 1 2 3 4 5 6 7 8`, with a meter per channel.
@@ -19,7 +22,32 @@ Goal: MC channel k (wedge k in the overhead camera view) plays from the speaker 
    - Keep the remap in one place only. Leave Max's I/O Mappings at 1:1.
    - Store the remap as a message box, fired by a `loadbang` after the audio starts.
 4. **Bring speaker_test_8**, adapted to this output stage, plus a stereo fallback (`mc.stereo~` → headphone out).
-
+5. **Dante Setup**
+   1. The "Offline Network" Trick
+      
+      If you have an Ethernet adapter but just lack an internet connection/switch, you can force DVS to start anyway:
+      1. Plug an Ethernet adapter (like an Apple USB-C to Gigabit Ethernet adapter) into your Mac.
+      
+      2. Leave the other end of the Ethernet cable completely unplugged, or plug it into a dead router/device just to trigger the physical hardware connection link.
+      
+      3. Open the DVS control panel. It should now let you click **Start**. [[1](https://support.focusrite.com/hc/en-gb/articles/36904064153746-Installing-and-Activating-Dante-Virtual-Soundcard-DVS)]
+      
+      4. Once DVS status says **Running**, it will instantly appear inside Max/MSP's **Audio Status** dropdown menu, even though no data is traveling anywhere yet. [[1](https://dev.audinate.com/GA/dvs/userguide/webhelp/content/choosing_dvs_as_your_audio_interface_-_windows.htm)]
+   2. Get core background driver engine is actively **Running**
+      1. Go back to the first tab, labeled **Settings**.
+      
+      2. Make sure you have forced a network link (using the "Offline Network" trick from earlier, such as plugging in a USB-C Ethernet adapter or connecting to a standalone router).
+      
+      3. Click the large **Start** button at the bottom of the window.
+      
+      4. Once the status indicator changes from *Stopped* to **Running**, click back over to the **Device Lock** tab. It will now be active, allowing you to configure a PIN to lock the soundcard's settings.
+      
+      5. The **Device Lock** tab will unlock and become accessible.
+      
+      6. **Dante Virtual Soundcard** will instantly appear as an option in Max/MSP's **Audio Status** menu under Output/Input devices.
+      
+      7. Go ahead and click it, and you will be completely ready to start mapping your `mc~` objects in Max!
+   3. 
 ## B. Mac setup on site
 
 5. Connect the interface and power it on **before** launching Max. Install its driver if it needs one, and restart.
