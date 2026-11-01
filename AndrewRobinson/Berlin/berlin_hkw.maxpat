@@ -726,7 +726,7 @@
 
 							}
  ],
-						"originid" : "pat-24"
+						"originid" : "pat-1103"
 					}
 ,
 					"patching_rect" : [ 217.796615362167358, 940.677988529205322, 103.0, 29.0 ],
@@ -838,7 +838,7 @@
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-26"
+						"originid" : "pat-1105"
 					}
 ,
 					"patching_rect" : [ 591.525437831878662, 71.186442375183105, 100.0, 22.0 ],
@@ -1090,7 +1090,7 @@
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
 						"master_fader" : [ 0.0, 0.0, 1.0, 0.0, 0.0 ],
-						"master_volume" : [ 61.423067685409855 ],
+						"master_volume" : [ 102.88847783567175 ],
 						"videosource" : [ 2 ]
 					}
 ,
@@ -1123,7 +1123,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 539.813568353652954, 398.0, 50.0, 22.0 ],
+					"patching_rect" : [ 539.893613159656525, 433.510635197162628, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 523.357661426067352, 276.922224164009094, 28.205131769180298, 22.0 ]
 				}
@@ -1136,7 +1136,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "float" ],
-					"patching_rect" : [ 539.813568353652954, 369.0, 70.83246237039566, 22.0 ],
+					"patching_rect" : [ 539.893613159656525, 404.787231147289276, 70.83246237039566, 22.0 ],
 					"text" : "unpack i f"
 				}
 
@@ -1151,7 +1151,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 590.813568353652954, 398.0, 44.0, 20.0 ],
+					"patching_rect" : [ 590.957442581653595, 433.510635197162628, 44.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 523.357661426067352, 301.009815275669098, 44.0, 20.0 ]
 				}
@@ -1177,11 +1177,11 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-59",
-					"linecount" : 6,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.372888326644897, 313.559329509735107, 39.0, 74.0 ],
+					"patching_rect" : [ 228.191487729549408, 329.787231683731079, 94.148935496807098, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 259.737886607646942, 291.422360181808472, 91.0, 29.0 ],
@@ -1370,17 +1370,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 42.37288236618042, 367.796618938446045, 77.0, 22.0 ],
-					"text" : "s tile_activity"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.298039215686275, 0.631372549019608, 0.172549019607843, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
@@ -1414,7 +1403,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 288.135600090026855, 142.372884750366211, 59.0, 85.0 ],
+					"patching_rect" : [ 293.567803621292114, 142.07627534866333, 59.0, 85.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 312.650613963603973, 169.600002527236938, 183.0, 29.0 ],
@@ -1608,8 +1597,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.813568353652954, 580.508488416671753, 155.555562973022461, 26.0 ],
-					"text" : "1. 0.96823 0.871223 0.823405 0.622031 0. 0.467978 0.800595"
+					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 155.555562973022461, 26.0 ],
+					"text" : "0.08695 0.051326 0.205941 0.20997 0.126517 0.085777 0.170168 0.279575"
 				}
 
 			}
@@ -1770,8 +1759,8 @@
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 49.152543544769287, 333.898313045501709, 159.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 28.467153131961823, 243.795619130134583, 159.0, 29.0 ],
@@ -1783,13 +1772,13 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-4",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.28813648223877, 577.966115474700928, 151.0, 26.0 ],
-					"text" : "0.6 0.99 0.87 1. 0.63 0.56 1. 1. 0.8 0.59 0.76 1. 0. 0. 0. 0."
+					"patching_rect" : [ 57.152543544769287, 579.033911943435669, 151.0, 44.0 ],
+					"text" : "3.887074 2.155633 1.504253 1.547427 4.326395 4.928203 5.65 4.172865 4.104436 2.252151 2.48 4.310945 0 0 0 0"
 				}
 
 			}
@@ -1799,8 +1788,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 378.813568353652954, 333.898313045501709, 180.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 380.000005662441254, 244.000003635883331, 180.0, 29.0 ],
@@ -2344,7 +2333,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1060.0, 380.0, 222.0, 167.0 ],
+					"patching_rect" : [ 1060.0, 380.0, 229.0, 167.0 ],
 					"text" : "MATRIX STATE  (r colrowval ... vexpr)\nClicking a cell in the routing matrix sends 'col row value' (col 0 = tiles, col 1 = wedges; row = instrument 0-4). zl.reg keeps the whole matrix as one flat list of 10 values, index = row*2 + col. [t b b l l] fires right to left: compute the index, pick out the value, load the index list 0..9, then recall the stored state. vexpr replaces only the clicked entry and keeps the others; [t l l] stores the new state back into zl.reg and passes it on."
 				}
 
@@ -2694,13 +2683,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-53", 2 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -2785,7 +2767,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2793,16 +2774,17 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 2 ],
-					"midpoints" : [ 388.313568353652954, 416.168811332667246, 358.987624108791351, 416.168811332667246 ],
+					"midpoints" : [ 441.98023502031964, 410.365298472577706, 358.987624108791351, 410.365298472577706 ],
 					"order" : 1,
-					"source" : [ "obj-2", 0 ]
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 1 ],
-					"midpoints" : [ 468.813568353652954, 365.574640742037445, 524.869131326675415, 365.574640742037445 ],
+					"midpoints" : [ 441.98023502031964, 365.574640742037445, 524.778964519500732, 365.574640742037445 ],
+					"order" : 0,
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -2947,7 +2929,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -2955,17 +2936,17 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 1 ],
-					"midpoints" : [ 58.652543544769287, 417.462707364233211, 317.718391507863998, 417.462707364233211 ],
+					"midpoints" : [ 198.652543544769287, 417.462707364233211, 317.718391507863998, 417.462707364233211 ],
 					"order" : 0,
-					"source" : [ "obj-5", 0 ]
+					"source" : [ "obj-5", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"order" : 2,
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-4", 1 ],
+					"order" : 1,
+					"source" : [ "obj-5", 1 ]
 				}
 
 			}
@@ -3102,7 +3083,7 @@
 
 			}
  ],
-		"originid" : "pat-10",
+		"originid" : "pat-1089",
 		"parameters" : 		{
 			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
@@ -3197,10 +3178,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.*.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "jit.gl.syphonserver.mxo",
 				"type" : "iLaX"
 			}
@@ -3266,13 +3243,6 @@
 				"name" : "pink_tonal_bank_voice.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
 				"patcherrelativepath" : "./pinknoise",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.avg.vecrunning.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/utilities",
-				"patcherrelativepath" : "../../../../../../Documents/Max 9/Packages/SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
