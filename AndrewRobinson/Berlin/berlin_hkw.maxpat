@@ -63,7 +63,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 615.0, 158.0, 480.0, 540.0 ],
+						"rect" : [ 690.0, 342.0, 755.0, 603.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
@@ -726,7 +726,7 @@
 
 							}
  ],
-						"originid" : "pat-1103"
+						"originid" : "pat-4384"
 					}
 ,
 					"patching_rect" : [ 217.796615362167358, 940.677988529205322, 103.0, 29.0 ],
@@ -838,7 +838,7 @@
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-1105"
+						"originid" : "pat-4386"
 					}
 ,
 					"patching_rect" : [ 591.525437831878662, 71.186442375183105, 100.0, 22.0 ],
@@ -1089,8 +1089,8 @@
 					"patching_rect" : [ 593.220353126525879, 103.389832973480225, 56.0, 22.0 ],
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
-						"master_fader" : [ 0.0, 0.0, 1.0, 0.0, 0.0 ],
-						"master_volume" : [ 102.88847783567175 ],
+						"master_fader" : [ 0.0, 0.0, 0.0, 0.0, 1.0 ],
+						"master_volume" : [ 95.428260537949754 ],
 						"videosource" : [ 2 ]
 					}
 ,
@@ -1592,13 +1592,13 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-19",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 155.555562973022461, 26.0 ],
-					"text" : "0.08695 0.051326 0.205941 0.20997 0.126517 0.085777 0.170168 0.279575"
+					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 155.555562973022461, 35.0 ],
+					"text" : "8.89 11.676642 9.565725 17.354249 10.575741 9.295031 18.449741 10.457956"
 				}
 
 			}
@@ -1686,7 +1686,8 @@
 					"patching_rect" : [ 116.949155330657959, 276.271193027496338, 284.441156446933746, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 216.737886607646942, 243.795619130134583, 126.0, 29.0 ],
-					"text" : "video_chooser"
+					"text" : "video_chooser",
+					"varname" : "video_chooser"
 				}
 
 			}
@@ -1772,13 +1773,13 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-4",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.152543544769287, 579.033911943435669, 151.0, 44.0 ],
-					"text" : "3.887074 2.155633 1.504253 1.547427 4.326395 4.928203 5.65 4.172865 4.104436 2.252151 2.48 4.310945 0 0 0 0"
+					"patching_rect" : [ 57.152543544769287, 579.033911943435669, 167.0, 35.0 ],
+					"text" : "3.23507 1.053312 1.211176 1.026282 1.695505 3.545414 2.505697 1.432437 1.442392 1.935332 1.700451 1.792191 0 0 0 0"
 				}
 
 			}
@@ -2333,7 +2334,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1060.0, 380.0, 229.0, 167.0 ],
+					"patching_rect" : [ 1060.0, 380.0, 237.0, 167.0 ],
 					"text" : "MATRIX STATE  (r colrowval ... vexpr)\nClicking a cell in the routing matrix sends 'col row value' (col 0 = tiles, col 1 = wedges; row = instrument 0-4). zl.reg keeps the whole matrix as one flat list of 10 values, index = row*2 + col. [t b b l l] fires right to left: compute the index, pick out the value, load the index list 0..9, then recall the stored state. vexpr replaces only the clicked entry and keeps the others; [t l l] stores the new state back into zl.reg and passes it on."
 				}
 
@@ -3083,7 +3084,7 @@
 
 			}
  ],
-		"originid" : "pat-1089",
+		"originid" : "pat-4362",
 		"parameters" : 		{
 			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
@@ -3133,8 +3134,8 @@
 			}
 , 			{
 				"name" : "aeolian_harp.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/aeolian_harp",
-				"patcherrelativepath" : "./aeolian_harp",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/aeolian_harp/_unused",
+				"patcherrelativepath" : "./aeolian_harp/_unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3200,6 +3201,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "list_smooth_resize.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mc_mix5.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
 				"patcherrelativepath" : ".",
@@ -3207,11 +3215,39 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mlys.closed-open-tube.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mlys.force.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mlys.jet.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mlys.labium.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "mlys.lua.mxo",
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "mlys.point-input.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mlys.point-output.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "mlys.script.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mlys.signal.mxo",
 				"type" : "iLaX"
 			}
 , 			{

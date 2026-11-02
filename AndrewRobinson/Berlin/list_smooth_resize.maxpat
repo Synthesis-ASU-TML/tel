@@ -10,10 +10,61 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 436.0, 175.0, 606.0, 618.0 ],
+		"rect" : [ 775.0, 241.0, 625.0, 587.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 88.0, 150.404760241508484, 97.0, 22.0 ],
+					"text" : "sc.list_normalize"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 408.5, 168.0, 77.0, 22.0 ],
+					"text" : "loadmess 10"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 412.0, 138.095236778259277, 70.0, 22.0 ],
+					"text" : "loadmess 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 372.218136310577393, 311.904758930206299, 208.680856168270111, 49.0 ],
+					"text" : "0.617564 0.641834 0.469453 0.912427 0.609451 0.753228 0.490912 0.544879"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-7",
@@ -42,11 +93,11 @@
 				"box" : 				{
 					"comment" : "0 step 1 drop 2 pulse",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 282.142854452133179, 138.095236778259277, 30.0, 30.0 ]
 				}
 
@@ -55,7 +106,7 @@
 				"box" : 				{
 					"comment" : "slide_down",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -68,7 +119,7 @@
 				"box" : 				{
 					"comment" : "slide_up",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -264,12 +315,12 @@
 				"box" : 				{
 					"comment" : "activity list any length",
 					"id" : "obj-21",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.499999165534973, 138.095236778259277, 30.0, 30.0 ]
+					"patching_rect" : [ 88.0, 111.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -277,7 +328,7 @@
 				"box" : 				{
 					"comment" : "smoothed length 8 list",
 					"id" : "obj-23",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -295,8 +346,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -316,7 +382,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -324,6 +390,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "bp", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"order" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -385,31 +460,16 @@
 				}
 
 			}
- ],
-		"originid" : "pat-1323",
-		"dependency_cache" : [ 			{
-				"name" : "list_resize_interp.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
 , 			{
-				"name" : "list_slide.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vfunction.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
-				"patcherrelativepath" : "./pinknoise",
-				"type" : "JSON",
-				"implicit" : 1
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"hidden" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
 			}
  ],
-		"autosave" : 0
+		"originid" : "pat-2243"
 	}
 
 }
