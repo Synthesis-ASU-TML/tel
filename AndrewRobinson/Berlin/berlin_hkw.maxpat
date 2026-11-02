@@ -726,7 +726,7 @@
 
 							}
  ],
-						"originid" : "pat-4384"
+						"originid" : "pat-1384"
 					}
 ,
 					"patching_rect" : [ 217.796615362167358, 940.677988529205322, 103.0, 29.0 ],
@@ -838,7 +838,7 @@
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-4386"
+						"originid" : "pat-1386"
 					}
 ,
 					"patching_rect" : [ 591.525437831878662, 71.186442375183105, 100.0, 22.0 ],
@@ -1089,7 +1089,7 @@
 					"patching_rect" : [ 593.220353126525879, 103.389832973480225, 56.0, 22.0 ],
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
-						"master_fader" : [ 0.0, 0.0, 0.0, 0.0, 1.0 ],
+						"master_fader" : [ 0.0, 0.0, 1.0, 0.0, 0.0 ],
 						"master_volume" : [ 95.428260537949754 ],
 						"videosource" : [ 2 ]
 					}
@@ -1597,8 +1597,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 155.555562973022461, 35.0 ],
-					"text" : "8.89 11.676642 9.565725 17.354249 10.575741 9.295031 18.449741 10.457956"
+					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 157.555562973022461, 35.0 ],
+					"text" : "29.781004 13.091402 10.268782 12.317932 9.56 7.795122 17.045301 23.458694"
 				}
 
 			}
@@ -1773,13 +1773,13 @@
 				"box" : 				{
 					"fontsize" : 8.0,
 					"id" : "obj-4",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.152543544769287, 579.033911943435669, 167.0, 35.0 ],
-					"text" : "3.23507 1.053312 1.211176 1.026282 1.695505 3.545414 2.505697 1.432437 1.442392 1.935332 1.700451 1.792191 0 0 0 0"
+					"patching_rect" : [ 57.152543544769287, 579.033911943435669, 165.0, 44.0 ],
+					"text" : "5.09156 8.403418 15.072775 16.952363 27.534433 23.290546 23.766238 19.133145 10.26461 39.29054 42.787904 28.936823 0 0 0 0"
 				}
 
 			}
@@ -2784,7 +2784,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 1 ],
-					"midpoints" : [ 441.98023502031964, 365.574640742037445, 524.778964519500732, 365.574640742037445 ],
+					"midpoints" : [ 441.98023502031964, 365.574640742037445, 526.778964519500732, 365.574640742037445 ],
 					"order" : 0,
 					"source" : [ "obj-2", 1 ]
 				}
@@ -3084,7 +3084,7 @@
 
 			}
  ],
-		"originid" : "pat-4362",
+		"originid" : "pat-1362",
 		"parameters" : 		{
 			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
@@ -3108,13 +3108,6 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-21::obj-7" : 				{
-					"parameter_longname" : "mc.live.gain~[1]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
@@ -3134,8 +3127,8 @@
 			}
 , 			{
 				"name" : "aeolian_harp.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/aeolian_harp/_unused",
-				"patcherrelativepath" : "./aeolian_harp/_unused",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/aeolian_harp",
+				"patcherrelativepath" : "./aeolian_harp",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3169,6 +3162,13 @@
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "getvarname.js",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/jsextensions",
+				"patcherrelativepath" : "../../../../../../Documents/Max 9/Packages/SC/jsextensions",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -3279,6 +3279,13 @@
 				"name" : "pink_tonal_bank_voice.maxpat",
 				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/pinknoise",
 				"patcherrelativepath" : "./pinknoise",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.autoscale.maxpat",
+				"bootpath" : "~/Documents/Max 9/Packages/SC/patchers/utilities",
+				"patcherrelativepath" : "../../../../../../Documents/Max 9/Packages/SC/patchers/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}

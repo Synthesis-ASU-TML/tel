@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 452.0, 150.0, 695.0, 639.0 ],
+		"rect" : [ 656.0, 150.0, 695.0, 639.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -55,7 +55,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 327.0, 496.0, 680.0, 450.0 ],
+						"rect" : [ 370.0, 302.0, 531.0, 405.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
@@ -65,6 +65,12 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 332.258079171180725, 107.526886463165283, 56.0, 22.0 ],
+									"restore" : 									{
+										"brightness" : [ "brightness", 2.2 ],
+										"contrast" : [ "contrast", 2.0 ],
+										"saturation" : [ "saturation", 1.0 ]
+									}
+,
 									"text" : "autopattr",
 									"varname" : "u843004399"
 								}
@@ -77,7 +83,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 223.178827000000013, 225.324520111083984, 57.0, 22.0 ],
+									"patching_rect" : [ 223.129249572753906, 225.324520111083984, 65.986393928527832, 22.0 ],
 									"text" : "jit.brcosa",
 									"varname" : "enhance_brcosa"
 								}
@@ -141,7 +147,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 223.178827000000013, 153.324520111083984, 150.0, 22.0 ]
+									"patching_rect" : [ 223.178827000000013, 153.324520111083984, 150.0, 22.0 ],
+									"varname" : "brightness"
 								}
 
 							}
@@ -154,7 +161,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 223.178827000000013, 177.324520111083984, 150.0, 22.0 ]
+									"patching_rect" : [ 223.178827000000013, 177.324520111083984, 150.0, 22.0 ],
+									"varname" : "contrast"
 								}
 
 							}
@@ -167,7 +175,8 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 223.178827000000013, 201.324520111083984, 150.0, 22.0 ]
+									"patching_rect" : [ 223.178827000000013, 201.324520111083984, 150.0, 22.0 ],
+									"varname" : "saturation"
 								}
 
 							}
@@ -224,7 +233,7 @@
 
 							}
  ],
-						"originid" : "pat-1400"
+						"originid" : "pat-1062"
 					}
 ,
 					"patching_rect" : [ 176.00000524520874, 766.000022828578949, 100.0, 22.0 ],
@@ -1248,7 +1257,7 @@
 
 			}
  ],
-		"originid" : "pat-1398"
+		"originid" : "pat-1060"
 	}
 
 }
