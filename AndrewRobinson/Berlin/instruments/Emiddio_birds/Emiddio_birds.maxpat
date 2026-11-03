@@ -3089,7 +3089,7 @@
      "patching_rect": [
       961.0,
       165.0,
-      320.0,
+      360.0,
       22.0
      ],
      "saved_object_attributes": {
@@ -3105,14 +3105,14 @@
       "const-loss": 1.0,
       "freq-loss": 1.0,
       "length": 1.0,
-      "modes": 80,
+      "modes": 8,
       "name": "tube1_hkw",
       "pitch": 160.0,
       "pitch-parameter": "length",
       "radius0": 0.009999999776483,
       "radius1": 0.009999999776483
      },
-     "text": "mlys.closed-open-tube 2 1 @pitch 160 @name tube1_hkw"
+     "text": "mlys.closed-open-tube 2 1 @pitch 160 @modes 8 @name tube1_hkw"
     }
    },
    {
@@ -4112,7 +4112,7 @@
       560,
       50.0
      ],
-     "text": "TWITTER LAYER (one bird per voice). Snowfall still sets the phrases; this adds rapid syllables, each a quick downward pitch glide with its own air puff, around a distinct tonal centre per voice.",
+     "text": "TWITTER LAYER (one bird per voice). Snowfall still sets the phrases; this adds rapid smooth air puffs (syllables) at a different rate per voice. Each voice has a fixed pitch centre and its own timbre.",
      "numinlets": 1,
      "numoutlets": 0,
      "linecount": 3
@@ -4187,42 +4187,6 @@
      "numoutlets": 1,
      "outlettype": [
       ""
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-inv",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      115,
-      70,
-      22.0
-     ],
-     "text": "mc.!-~ 1.",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-sq",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      150,
-      60,
-      22.0
-     ],
-     "text": "mc.*~",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
      ]
     }
    },
@@ -4334,271 +4298,6 @@
    },
    {
     "box": {
-     "id": "tw-dep",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2350.0,
-      115,
-      330,
-      22.0
-     ],
-     "text": "mc.sig~ @chans 8 @values 0.25 0.5 0.18 0.4 0.6 0.3 0.45 0.22",
-     "numinlets": 1,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-cdep",
-     "maxclass": "comment",
-     "patching_rect": [
-      2690.0,
-      115,
-      330,
-      20.0
-     ],
-     "text": "glide depth per voice (0.5 = starts a fifth above the centre)",
-     "numinlets": 1,
-     "numoutlets": 0,
-     "linecount": 1
-    }
-   },
-   {
-    "box": {
-     "id": "tw-gl",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      230,
-      60,
-      22.0
-     ],
-     "text": "mc.*~",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-g1",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      262,
-      70,
-      22.0
-     ],
-     "text": "mc.+~ 1.",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-ctr",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2350.0,
-      262,
-      370,
-      22.0
-     ],
-     "text": "mc.sig~ @chans 8 @values 1760 1976 2093 2349 2637 2794 3136 3520",
-     "numinlets": 1,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-cctr",
-     "maxclass": "comment",
-     "patching_rect": [
-      2730.0,
-      262,
-      330,
-      20.0
-     ],
-     "text": "tonal centre per voice, Hz (A6 B6 C7 D7 E7 F7 G7 A7)",
-     "numinlets": 1,
-     "numoutlets": 0,
-     "linecount": 1
-    }
-   },
-   {
-    "box": {
-     "id": "tw-pc",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      295,
-      60,
-      22.0
-     ],
-     "text": "mc.*~",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-tr",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      328,
-      60,
-      22.0
-     ],
-     "text": "mc.*~ 1.",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      "multichannelsignal"
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-trm",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2350.0,
-      300,
-      80,
-      22.0
-     ],
-     "text": "loadmess 1.",
-     "numinlets": 1,
-     "numoutlets": 1,
-     "outlettype": [
-      ""
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-trf",
-     "maxclass": "flonum",
-     "patching_rect": [
-      2350.0,
-      328,
-      50.0,
-      22.0
-     ],
-     "format": 6,
-     "numinlets": 1,
-     "numoutlets": 2,
-     "outlettype": [
-      "",
-      "bang"
-     ],
-     "parameter_enable": 0
-    }
-   },
-   {
-    "box": {
-     "id": "tw-ctrc",
-     "maxclass": "comment",
-     "patching_rect": [
-      2405.0,
-      328,
-      400,
-      35.0
-     ],
-     "text": "transpose all (1. = as listed; 0.5 = octave down if the jets don't speak up there)",
-     "numinlets": 1,
-     "numoutlets": 0,
-     "linecount": 2
-    }
-   },
-   {
-    "box": {
-     "id": "tw-ps",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      365,
-      100,
-      22.0
-     ],
-     "text": "mc.snapshot~ 5.",
-     "numinlets": 2,
-     "numoutlets": 2,
-     "outlettype": [
-      "",
-      ""
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-pp",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      398,
-      140,
-      22.0
-     ],
-     "text": "prepend tube1_hkw@pitch",
-     "numinlets": 1,
-     "numoutlets": 1,
-     "outlettype": [
-      ""
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-tg",
-     "maxclass": "newobj",
-     "patching_rect": [
-      2150.0,
-      430,
-      70,
-      22.0
-     ],
-     "text": "mc.target",
-     "numinlets": 2,
-     "numoutlets": 1,
-     "outlettype": [
-      ""
-     ]
-    }
-   },
-   {
-    "box": {
-     "id": "tw-ctg",
-     "maxclass": "comment",
-     "patching_rect": [
-      2230.0,
-      430,
-      330,
-      20.0
-     ],
-     "text": "-> setvalue N tube1_hkw@pitch f  -> mc.modalys~",
-     "numinlets": 1,
-     "numoutlets": 0,
-     "linecount": 1
-    }
-   },
-   {
-    "box": {
      "id": "tw-rs",
      "maxclass": "newobj",
      "patching_rect": [
@@ -4659,15 +4358,15 @@
       2150.0,
       512,
       560,
-      110.0
+      140
      ],
-     "text": "setvalue 1 tube1_hkw@radius1 0.004, setvalue 1 tube1_hkw@freq-loss 0.6, setvalue 1 lab1_hkw@noise 0.0, setvalue 2 tube1_hkw@radius1 0.012, setvalue 2 tube1_hkw@freq-loss 2.5, setvalue 2 lab1_hkw@noise 0.15, setvalue 3 tube1_hkw@radius1 0.006, setvalue 3 tube1_hkw@freq-loss 1.0, setvalue 3 lab1_hkw@noise 0.05, setvalue 4 tube1_hkw@radius1 0.009, setvalue 4 tube1_hkw@freq-loss 1.8, setvalue 4 lab1_hkw@noise 0.3, setvalue 5 tube1_hkw@radius1 0.003, setvalue 5 tube1_hkw@freq-loss 0.4, setvalue 5 lab1_hkw@noise 0.02, setvalue 6 tube1_hkw@radius1 0.01, setvalue 6 tube1_hkw@freq-loss 3.0, setvalue 6 lab1_hkw@noise 0.2, setvalue 7 tube1_hkw@radius1 0.005, setvalue 7 tube1_hkw@freq-loss 0.8, setvalue 7 lab1_hkw@noise 0.1, setvalue 8 tube1_hkw@radius1 0.008, setvalue 8 tube1_hkw@freq-loss 1.4, setvalue 8 lab1_hkw@noise 0.25",
+     "text": "setvalue 1 tube1_hkw@pitch 196, setvalue 1 tube1_hkw@radius1 0.004, setvalue 1 tube1_hkw@freq-loss 0.6, setvalue 1 lab1_hkw@noise 0.0, setvalue 2 tube1_hkw@pitch 262, setvalue 2 tube1_hkw@radius1 0.012, setvalue 2 tube1_hkw@freq-loss 2.5, setvalue 2 lab1_hkw@noise 0.15, setvalue 3 tube1_hkw@pitch 330, setvalue 3 tube1_hkw@radius1 0.006, setvalue 3 tube1_hkw@freq-loss 1.0, setvalue 3 lab1_hkw@noise 0.05, setvalue 4 tube1_hkw@pitch 440, setvalue 4 tube1_hkw@radius1 0.009, setvalue 4 tube1_hkw@freq-loss 1.8, setvalue 4 lab1_hkw@noise 0.3, setvalue 5 tube1_hkw@pitch 587, setvalue 5 tube1_hkw@radius1 0.003, setvalue 5 tube1_hkw@freq-loss 0.4, setvalue 5 lab1_hkw@noise 0.02, setvalue 6 tube1_hkw@pitch 784, setvalue 6 tube1_hkw@radius1 0.01, setvalue 6 tube1_hkw@freq-loss 3.0, setvalue 6 lab1_hkw@noise 0.2, setvalue 7 tube1_hkw@pitch 988, setvalue 7 tube1_hkw@radius1 0.005, setvalue 7 tube1_hkw@freq-loss 0.8, setvalue 7 lab1_hkw@noise 0.1, setvalue 8 tube1_hkw@pitch 1245, setvalue 8 tube1_hkw@radius1 0.008, setvalue 8 tube1_hkw@freq-loss 1.4, setvalue 8 lab1_hkw@noise 0.25",
      "numinlets": 2,
      "numoutlets": 1,
      "outlettype": [
       ""
      ],
-     "linecount": 8
+     "linecount": 10
     }
    },
    {
@@ -4676,14 +4375,362 @@
      "maxclass": "comment",
      "patching_rect": [
       2150.0,
-      628,
+      660,
       560,
-      50.0
+      65
      ],
-     "text": "TIMBRE per voice, re-sent 300 ms after each model build: radius1 = bore flare (narrow = pure whistle, wide = reedier), freq-loss = damping of high partials (low = bright, high = dull), lab1 noise = breathiness. Edit by ear.",
+     "text": "PITCH + TIMBRE per voice, sent once, 300 ms after each model build (never while playing = no clicks). pitch Hz: 196 262 330 440 587 784 988 1245 (G3 C4 E4 A4 D5 G5 B5 D#6) (keep <= 1300 with @modes 8). radius1 = bore flare (narrow = pure whistle, wide = reedier), freq-loss = damping of highs (low = bright), lab1 noise = breathiness.",
      "numinlets": 1,
      "numoutlets": 0,
-     "linecount": 3
+     "linecount": 4
+    }
+   },
+   {
+    "box": {
+     "id": "tw-cos",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      115,
+      80,
+      22
+     ],
+     "text": "mc.cycle~ 0.",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "tw-hann",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      150,
+      150,
+      22
+     ],
+     "text": "mc.scale~ 1. -1. 0. 1.",
+     "numinlets": 6,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "tw-chann",
+     "maxclass": "comment",
+     "patching_rect": [
+      2310.0,
+      150,
+      330,
+      20
+     ],
+     "text": "smooth puff shape (hann): no step in air pressure = no click",
+     "numinlets": 1,
+     "numoutlets": 0
+    }
+   },
+   {
+    "box": {
+     "id": "tw-cmod",
+     "maxclass": "comment",
+     "patching_rect": [
+      1330,
+      165,
+      420,
+      35
+     ],
+     "linecount": 2,
+     "text": "@modes 8: highest pitch x (2*modes-1) must stay under half the sample rate, else Modalys trims modes and warns. 8 modes OK up to ~1300 Hz.",
+     "numinlets": 1,
+     "numoutlets": 0
+    }
+   },
+   {
+    "box": {
+     "id": "pv-title",
+     "maxclass": "comment",
+     "patching_rect": [
+      2150.0,
+      760.0,
+      560,
+      35.0
+     ],
+     "text": "PITCH WANDER per voice (after Modalys, no clicks): wander depth = max cents x (1 - activity). Activity 1 = steady pitch, activity 0 = widest wander.",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 2
+    }
+   },
+   {
+    "box": {
+     "id": "pv-app",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      805.0,
+      115,
+      22.0
+     ],
+     "text": "prepend applyvalues",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      ""
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-sig",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      835.0,
+      110,
+      22.0
+     ],
+     "text": "mc.sig~ @chans 8",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-clip",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      865.0,
+      90,
+      22.0
+     ],
+     "text": "mc.clip~ 0. 1.",
+     "numinlets": 3,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-sm",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      895.0,
+      280,
+      22.0
+     ],
+     "text": "mc.rampsmooth~ @rampup 9600 @rampdown 9600",
+     "numinlets": 3,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-csm",
+     "maxclass": "comment",
+     "patching_rect": [
+      2440.0,
+      895.0,
+      260,
+      20.0
+     ],
+     "text": "activity smoothed ~200 ms (samples)",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "pv-inv",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      925.0,
+      70,
+      22.0
+     ],
+     "text": "mc.!-~ 1.",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-dep",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      955.0,
+      60,
+      22.0
+     ],
+     "text": "mc.*~ 1200.",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-dm",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2300.0,
+      925.0,
+      90,
+      22.0
+     ],
+     "text": "loadmess 1200.",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      ""
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-df",
+     "maxclass": "flonum",
+     "patching_rect": [
+      2300.0,
+      955.0,
+      50.0,
+      22.0
+     ],
+     "format": 6,
+     "numinlets": 1,
+     "numoutlets": 2,
+     "outlettype": [
+      "",
+      "bang"
+     ],
+     "parameter_enable": 0
+    }
+   },
+   {
+    "box": {
+     "id": "pv-cdf",
+     "maxclass": "comment",
+     "patching_rect": [
+      2355.0,
+      955.0,
+      340,
+      20.0
+     ],
+     "text": "max wander, cents (1200 = +/- one octave at activity 0)",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "pv-rnd",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2570.0,
+      985.0,
+      330,
+      22.0
+     ],
+     "text": "mc.rand~ @chans 8 @values 2.3 3.1 4.2 2.7 3.7 5.1 1.9 4.6",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-crnd",
+     "maxclass": "comment",
+     "patching_rect": [
+      2570.0,
+      1010.0,
+      330,
+      20.0
+     ],
+     "text": "smooth random -1..1, wander speed per voice (Hz)",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "pv-mul",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      985.0,
+      60,
+      22.0
+     ],
+     "text": "mc.*~",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-ps",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      1020.0,
+      170,
+      22.0
+     ],
+     "text": "mc.pitchshift~ @usecents 1",
+     "numinlets": 2,
+     "numoutlets": 2,
+     "outlettype": [
+      "multichannelsignal",
+      ""
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-cps",
+     "maxclass": "comment",
+     "patching_rect": [
+      2330.0,
+      1020.0,
+      330,
+      20.0
+     ],
+     "text": "inserted between mc.modalys~ and [mc.*~ 2500.]",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
     }
    }
   ],
@@ -5406,18 +5453,6 @@
    },
    {
     "patchline": {
-     "destination": [
-      "obj-45",
-      0
-     ],
-     "source": [
-      "obj-44",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
      "color": [
       0.986251711845398,
       0.00723597407341,
@@ -5935,54 +5970,6 @@
    {
     "patchline": {
      "source": [
-      "tw-ph",
-      0
-     ],
-     "destination": [
-      "tw-inv",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-inv",
-      0
-     ],
-     "destination": [
-      "tw-sq",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-inv",
-      0
-     ],
-     "destination": [
-      "tw-sq",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-sq",
-      0
-     ],
-     "destination": [
-      "tw-env",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
       "obj-65",
       0
      ],
@@ -6037,162 +6024,6 @@
      "destination": [
       "obj-65",
       3
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-inv",
-      0
-     ],
-     "destination": [
-      "tw-gl",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-dep",
-      0
-     ],
-     "destination": [
-      "tw-gl",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-gl",
-      0
-     ],
-     "destination": [
-      "tw-g1",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-g1",
-      0
-     ],
-     "destination": [
-      "tw-pc",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-ctr",
-      0
-     ],
-     "destination": [
-      "tw-pc",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-pc",
-      0
-     ],
-     "destination": [
-      "tw-tr",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-trm",
-      0
-     ],
-     "destination": [
-      "tw-trf",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-trf",
-      0
-     ],
-     "destination": [
-      "tw-tr",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-tr",
-      0
-     ],
-     "destination": [
-      "tw-ps",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-ps",
-      0
-     ],
-     "destination": [
-      "tw-pp",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-pp",
-      0
-     ],
-     "destination": [
-      "tw-tg",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-ps",
-      1
-     ],
-     "destination": [
-      "tw-tg",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "source": [
-      "tw-tg",
-      0
-     ],
-     "destination": [
-      "obj-44",
-      0
      ]
     }
    },
@@ -6276,6 +6107,198 @@
      ],
      "destination": [
       "obj-44",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "tw-ph",
+      0
+     ],
+     "destination": [
+      "tw-cos",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "tw-cos",
+      0
+     ],
+     "destination": [
+      "tw-hann",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "tw-hann",
+      0
+     ],
+     "destination": [
+      "tw-env",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-30",
+      0
+     ],
+     "destination": [
+      "pv-app",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-app",
+      0
+     ],
+     "destination": [
+      "pv-sig",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-sig",
+      0
+     ],
+     "destination": [
+      "pv-clip",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-clip",
+      0
+     ],
+     "destination": [
+      "pv-sm",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-sm",
+      0
+     ],
+     "destination": [
+      "pv-inv",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-inv",
+      0
+     ],
+     "destination": [
+      "pv-dep",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-dm",
+      0
+     ],
+     "destination": [
+      "pv-df",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-df",
+      0
+     ],
+     "destination": [
+      "pv-dep",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-dep",
+      0
+     ],
+     "destination": [
+      "pv-mul",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-rnd",
+      0
+     ],
+     "destination": [
+      "pv-mul",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-mul",
+      0
+     ],
+     "destination": [
+      "pv-ps",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-44",
+      0
+     ],
+     "destination": [
+      "pv-ps",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-ps",
+      0
+     ],
+     "destination": [
+      "obj-45",
       0
      ]
     }
