@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid102\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww18360\viewh15320\viewkind0
+\deftab720
+\pard\pardeftab720\ri-1330\sa240\partightenfactor0
+
+\f0\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 How the twittering works:
+\f1\b0 \
+\pard\pardeftab720\ri-1330\partightenfactor0
+\ls1\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Syllables:
+\f1\b0  a 
+\f2\fs26 mc.phasor~
+\f1\fs24  drives each voice at its own rate: 9, 13, 7, 11, 15, 8, 12 and 10 syllables per second. A 
+\f0\b rate
+\f1\b0  number box scales all of them.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Air puffs:
+\f1\b0  each syllable gives the jet a puff, (1\uc0\u8722 phase)\'b2 scaled to 0.3\'961. That puff multiplies your snowfall pressure before 
+\f2\fs26 mc.snapshot~
+\f1\fs24 , which now samples every 5 ms so the puffs come through cleanly.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Continuous:
+\f1\b0  an 
+\f0\b air floor
+\f1\b0  number box (default 4.) sets the lowest pressure of 
+\f2\fs26 mc.scale~
+\f1\fs24 , so every jet keeps twittering between snowfall events. Set it to 0 and you get the old intermittent chirps back.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pitch glides:
+\f1\b0  each syllable glides down onto that voice's centre. The tube pitch goes out every 5 ms through 
+\f2\fs26 mc.target
+\f1\fs24  as 
+\f2\fs26 setvalue N tube1_hkw@pitch f
+\f1\fs24 .\
+\pard\pardeftab720\ri-1330\sa240\partightenfactor0
+
+\f0\b \cf0 Distinct per voice:
+\f1\b0 \
+\pard\pardeftab720\ri-1330\sa240\partightenfactor0
+\ls2\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Tonal centre:
+\f1\b0  1760, 1976, 2093, 2349, 2637, 2794, 3136 and 3520 Hz (A6 to A7, all different). Voices 1\'963, which get less pressure, have the lower centres. A 
+\f0\b transpose
+\f1\b0  number box scales them all.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Glide depth:
+\f1\b0  from 0.18 to 0.6 above the centre; 0.5 starts a fifth above.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Timbre:
+\f1\b0  about 300 ms after each model build, a message box sends each voice its own settings:\
+\pard\pardeftab720\ri-1330\partightenfactor0
+\ls2\ilvl1
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 bore flare
+\f1\b0  (
+\f2\fs26 radius1
+\f1\fs24 ): narrow gives a pure whistle, wide a reedier sound.\
+\ls2\ilvl1
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 brightness
+\f1\b0  (
+\f2\fs26 freq-loss
+\f1\fs24 ): low is bright, high is dull.\
+\ls2\ilvl1
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 breathiness
+\f1\b0  (
+\f2\fs26 lab1_hkw@noise
+\f1\fs24 ).\
+\pard\pardeftab720\ri-1330\sa240\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Edit that message box to retune.\
+\pard\pardeftab720\ri-1330\sa240\partightenfactor0
+
+\f0\b \cf0 Risk:
+\f1\b0  the jet was set up for a 160 Hz tube. If voices don't sound at these high pitches, or they squeal, set 
+\f0\b transpose
+\f1\b0  to 0.5 or 0.25 first, then raise the air floor.\
+The Max Console will show more "reduced number of modes" warnings at these pitches. They're harmless.\
+}

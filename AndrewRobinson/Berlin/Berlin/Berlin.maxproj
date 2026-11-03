@@ -2,8 +2,8 @@
 	"name" : "Berlin",
 	"version" : 1,
 	"creationdate" : 3875723687,
-	"modificationdate" : 3876368283,
-	"viewrect" : [ 66.0, 265.0, 300.0, 500.0 ],
+	"modificationdate" : 3876513780,
+	"viewrect" : [ 19.0, 132.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,7 +17,12 @@
 ,
 			"vpink_noises.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+					"projectrelativepath" : ".."
+				}
+
 			}
 ,
 			"repos_perturb.maxpat" : 			{
@@ -29,12 +34,22 @@
 			}
 ,
 			"aeolian_harp.maxpat" : 			{
-				"kind" : "patcher"
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/instruments/aeolian_harp",
+					"projectrelativepath" : "../instruments/aeolian_harp"
+				}
+
 			}
 
 		}
 ,
 		"media" : 		{
+
+		}
+,
+		"code" : 		{
 
 		}
 ,
