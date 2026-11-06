@@ -1876,7 +1876,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 60."
+         "text": "scale 0. 10. 0. 200."
         }
        },
        {
@@ -1894,7 +1894,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 60."
+         "text": "scale 0. 10. 0. 165."
         }
        },
        {
@@ -1912,7 +1912,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 60."
+         "text": "scale 0. 10. 0. 135."
         }
        },
        {
@@ -1930,7 +1930,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 60."
+         "text": "scale 0. 10. 0. 110."
         }
        },
        {
@@ -1948,7 +1948,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 60."
+         "text": "scale 0. 10. 0. 90."
         }
        },
        {
@@ -1966,7 +1966,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 10."
+         "text": "scale 0. 10. 0. 70."
         }
        },
        {
@@ -1984,7 +1984,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 10."
+         "text": "scale 0. 10. 0. 55."
         }
        },
        {
@@ -2002,7 +2002,7 @@
           97.0,
           22.0
          ],
-         "text": "scale 0. 1. 0. 10."
+         "text": "scale 0. 10. 0. 40."
         }
        },
        {
@@ -4358,15 +4358,15 @@
       2150.0,
       512,
       560,
-      140
+      170.0
      ],
-     "text": "setvalue 1 tube1_hkw@pitch 660, setvalue 1 tube1_hkw@radius1 0.004, setvalue 1 tube1_hkw@freq-loss 0.6, setvalue 1 lab1_hkw@noise 0.0, setvalue 2 tube1_hkw@pitch 740, setvalue 2 tube1_hkw@radius1 0.012, setvalue 2 tube1_hkw@freq-loss 2.5, setvalue 2 lab1_hkw@noise 0.15, setvalue 3 tube1_hkw@pitch 830, setvalue 3 tube1_hkw@radius1 0.006, setvalue 3 tube1_hkw@freq-loss 1.0, setvalue 3 lab1_hkw@noise 0.05, setvalue 4 tube1_hkw@pitch 880, setvalue 4 tube1_hkw@radius1 0.009, setvalue 4 tube1_hkw@freq-loss 1.8, setvalue 4 lab1_hkw@noise 0.3, setvalue 5 tube1_hkw@pitch 990, setvalue 5 tube1_hkw@radius1 0.003, setvalue 5 tube1_hkw@freq-loss 0.4, setvalue 5 lab1_hkw@noise 0.02, setvalue 6 tube1_hkw@pitch 1110, setvalue 6 tube1_hkw@radius1 0.01, setvalue 6 tube1_hkw@freq-loss 3.0, setvalue 6 lab1_hkw@noise 0.2, setvalue 7 tube1_hkw@pitch 1245, setvalue 7 tube1_hkw@radius1 0.005, setvalue 7 tube1_hkw@freq-loss 0.8, setvalue 7 lab1_hkw@noise 0.1, setvalue 8 tube1_hkw@pitch 1320, setvalue 8 tube1_hkw@radius1 0.008, setvalue 8 tube1_hkw@freq-loss 1.4, setvalue 8 lab1_hkw@noise 0.25",
+     "text": "setvalue 1 tube1_hkw@pitch 196, setvalue 1 jet1_hkw@flue-labium-distance 0.0075, setvalue 1 tube1_hkw@radius1 0.004, setvalue 1 tube1_hkw@freq-loss 1.5, setvalue 1 lab1_hkw@noise 0.0, setvalue 2 tube1_hkw@pitch 262, setvalue 2 jet1_hkw@flue-labium-distance 0.0066, setvalue 2 tube1_hkw@radius1 0.012, setvalue 2 tube1_hkw@freq-loss 3.5, setvalue 2 lab1_hkw@noise 0.06, setvalue 3 tube1_hkw@pitch 330, setvalue 3 jet1_hkw@flue-labium-distance 0.0059, setvalue 3 tube1_hkw@radius1 0.006, setvalue 3 tube1_hkw@freq-loss 2.0, setvalue 3 lab1_hkw@noise 0.02, setvalue 4 tube1_hkw@pitch 440, setvalue 4 jet1_hkw@flue-labium-distance 0.005, setvalue 4 tube1_hkw@radius1 0.009, setvalue 4 tube1_hkw@freq-loss 3.0, setvalue 4 lab1_hkw@noise 0.08, setvalue 5 tube1_hkw@pitch 587, setvalue 5 jet1_hkw@flue-labium-distance 0.0041, setvalue 5 tube1_hkw@radius1 0.003, setvalue 5 tube1_hkw@freq-loss 1.2, setvalue 5 lab1_hkw@noise 0.01, setvalue 6 tube1_hkw@pitch 784, setvalue 6 jet1_hkw@flue-labium-distance 0.0034, setvalue 6 tube1_hkw@radius1 0.01, setvalue 6 tube1_hkw@freq-loss 4.0, setvalue 6 lab1_hkw@noise 0.05, setvalue 7 tube1_hkw@pitch 988, setvalue 7 jet1_hkw@flue-labium-distance 0.003, setvalue 7 tube1_hkw@radius1 0.005, setvalue 7 tube1_hkw@freq-loss 1.8, setvalue 7 lab1_hkw@noise 0.03, setvalue 8 tube1_hkw@pitch 1245, setvalue 8 jet1_hkw@flue-labium-distance 0.0026, setvalue 8 tube1_hkw@radius1 0.008, setvalue 8 tube1_hkw@freq-loss 2.5, setvalue 8 lab1_hkw@noise 0.07",
      "numinlets": 2,
      "numoutlets": 1,
      "outlettype": [
       ""
      ],
-     "linecount": 10
+     "linecount": 12
     }
    },
    {
@@ -4375,14 +4375,14 @@
      "maxclass": "comment",
      "patching_rect": [
       2150.0,
-      660,
+      690.0,
       560,
       65
      ],
-     "text": "PITCH + TIMBRE per voice, sent once, 300 ms after each model build (never while playing = no clicks). pitch Hz: 660 740 830 880 990 1110 1245 1320 (keep <= 1300 with @modes 8). radius1 = bore flare (narrow = pure whistle, wide = reedier), freq-loss = damping of highs (low = bright), lab1 noise = breathiness.",
+     "text": "PER-VOICE SETTINGS, sent once 300 ms after each model build. pitch Hz 196..1245 (G3..D#6). jet flue-labium-distance (m): longer for low voices so the jet speaks on the FUNDAMENTAL instead of squealing on upper modes (rule of thumb f ~ 0.18 x jet speed / distance). radius1 = bore flare, freq-loss = damping of highs (higher = darker), lab1 noise = breath.",
      "numinlets": 1,
      "numoutlets": 0,
-     "linecount": 4
+     "linecount": 5
     }
    },
    {
@@ -4450,6 +4450,337 @@
      "text": "@modes 8: highest pitch x (2*modes-1) must stay under half the sample rate, else Modalys trims modes and warns. 8 modes OK up to ~1300 Hz.",
      "numinlets": 1,
      "numoutlets": 0
+    }
+   },
+   {
+    "box": {
+     "id": "pv-title",
+     "maxclass": "comment",
+     "patching_rect": [
+      2150.0,
+      760.0,
+      560,
+      35.0
+     ],
+     "text": "PITCH WANDER per voice (after Modalys, no clicks): wander depth = max cents x (1 - activity). Activity 1 = steady pitch, activity 0 = widest wander.",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 2
+    }
+   },
+   {
+    "box": {
+     "id": "pv-app",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      805.0,
+      115,
+      22.0
+     ],
+     "text": "prepend applyvalues",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      ""
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-sig",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      835.0,
+      110,
+      22.0
+     ],
+     "text": "mc.sig~ @chans 8",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-clip",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      865.0,
+      90,
+      22.0
+     ],
+     "text": "mc.clip~ 0. 1.",
+     "numinlets": 3,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-sm",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      895.0,
+      280,
+      22.0
+     ],
+     "text": "mc.rampsmooth~ @rampup 9600 @rampdown 9600",
+     "numinlets": 3,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-csm",
+     "maxclass": "comment",
+     "patching_rect": [
+      2440.0,
+      895.0,
+      260,
+      20.0
+     ],
+     "text": "activity smoothed ~200 ms (samples)",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "pv-inv",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      925.0,
+      70,
+      22.0
+     ],
+     "text": "mc.!-~ 1.",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-dep",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      955.0,
+      60,
+      22.0
+     ],
+     "text": "mc.*~ 1200.",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-dm",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2300.0,
+      925.0,
+      90,
+      22.0
+     ],
+     "text": "loadmess 300.",
+     "numinlets": 1,
+     "numoutlets": 1,
+     "outlettype": [
+      ""
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-df",
+     "maxclass": "flonum",
+     "patching_rect": [
+      2300.0,
+      955.0,
+      50.0,
+      22.0
+     ],
+     "format": 6,
+     "numinlets": 1,
+     "numoutlets": 2,
+     "outlettype": [
+      "",
+      "bang"
+     ],
+     "parameter_enable": 0
+    }
+   },
+   {
+    "box": {
+     "id": "pv-cdf",
+     "maxclass": "comment",
+     "patching_rect": [
+      2355.0,
+      955.0,
+      340,
+      20.0
+     ],
+     "text": "max wander, cents (300 = +/- minor third at activity 0; 1200 made idle birds jump an octave up = shrill)",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "pv-rnd",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2570.0,
+      985.0,
+      330,
+      22.0
+     ],
+     "text": "mc.rand~ @chans 8 @values 2.3 3.1 4.2 2.7 3.7 5.1 1.9 4.6",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-crnd",
+     "maxclass": "comment",
+     "patching_rect": [
+      2570.0,
+      1010.0,
+      330,
+      20.0
+     ],
+     "text": "smooth random -1..1, wander speed per voice (Hz)",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "pv-mul",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      985.0,
+      60,
+      22.0
+     ],
+     "text": "mc.*~",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-ps",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      1020.0,
+      260.0,
+      22.0
+     ],
+     "text": "mc.pitchshift~ @usecents 1 @quality better",
+     "numinlets": 2,
+     "numoutlets": 2,
+     "outlettype": [
+      "multichannelsignal",
+      ""
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "pv-cps",
+     "maxclass": "comment",
+     "patching_rect": [
+      2330.0,
+      1020.0,
+      330,
+      20.0
+     ],
+     "text": "inserted between mc.modalys~ and [mc.*~ 2500.]",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "ls-lp",
+     "maxclass": "newobj",
+     "patching_rect": [
+      2150.0,
+      1055.0,
+      110,
+      22.0
+     ],
+     "text": "mc.onepole~ 3500.",
+     "numinlets": 2,
+     "numoutlets": 1,
+     "outlettype": [
+      "multichannelsignal"
+     ]
+    }
+   },
+   {
+    "box": {
+     "id": "ls-c",
+     "maxclass": "comment",
+     "patching_rect": [
+      2270.0,
+      1055.0,
+      420,
+      20.0
+     ],
+     "text": "anti-screech lowpass (6 dB/oct). Lower = mellower; raise to 6000 for more air.",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 1
+    }
+   },
+   {
+    "box": {
+     "id": "ls-c2",
+     "maxclass": "comment",
+     "patching_rect": [
+      1600,
+      600,
+      420,
+      35.0
+     ],
+     "text": "SENDPRESSURE: gate outlet k -> voice k (was scrambled), each voice's max pressure matched to its pitch: 40..200 Pa (was 100 / 600 Pa).",
+     "numinlets": 1,
+     "numoutlets": 0,
+     "linecount": 2
     }
    }
   ],
@@ -5172,18 +5503,6 @@
    },
    {
     "patchline": {
-     "destination": [
-      "obj-45",
-      0
-     ],
-     "source": [
-      "obj-44",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
      "color": [
       0.986251711845398,
       0.00723597407341,
@@ -5519,102 +5838,6 @@
    {
     "patchline": {
      "destination": [
-      "obj-206",
-      4
-     ],
-     "source": [
-      "obj-66",
-      7
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      6
-     ],
-     "source": [
-      "obj-66",
-      6
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      5
-     ],
-     "source": [
-      "obj-66",
-      5
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      2
-     ],
-     "source": [
-      "obj-66",
-      4
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      7
-     ],
-     "source": [
-      "obj-66",
-      3
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      1
-     ],
-     "source": [
-      "obj-66",
-      2
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      3
-     ],
-     "source": [
-      "obj-66",
-      1
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
-      "obj-206",
-      0
-     ],
-     "source": [
-      "obj-66",
-      0
-     ]
-    }
-   },
-   {
-    "patchline": {
-     "destination": [
       "obj-19",
       1
      ],
@@ -5874,6 +6097,270 @@
      ],
      "destination": [
       "tw-env",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-30",
+      0
+     ],
+     "destination": [
+      "pv-app",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-app",
+      0
+     ],
+     "destination": [
+      "pv-sig",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-sig",
+      0
+     ],
+     "destination": [
+      "pv-clip",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-clip",
+      0
+     ],
+     "destination": [
+      "pv-sm",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-sm",
+      0
+     ],
+     "destination": [
+      "pv-inv",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-inv",
+      0
+     ],
+     "destination": [
+      "pv-dep",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-dm",
+      0
+     ],
+     "destination": [
+      "pv-df",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-df",
+      0
+     ],
+     "destination": [
+      "pv-dep",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-dep",
+      0
+     ],
+     "destination": [
+      "pv-mul",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-rnd",
+      0
+     ],
+     "destination": [
+      "pv-mul",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-mul",
+      0
+     ],
+     "destination": [
+      "pv-ps",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-44",
+      0
+     ],
+     "destination": [
+      "pv-ps",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      0
+     ],
+     "destination": [
+      "obj-206",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      1
+     ],
+     "destination": [
+      "obj-206",
+      1
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      2
+     ],
+     "destination": [
+      "obj-206",
+      2
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      3
+     ],
+     "destination": [
+      "obj-206",
+      3
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      4
+     ],
+     "destination": [
+      "obj-206",
+      4
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      5
+     ],
+     "destination": [
+      "obj-206",
+      5
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      6
+     ],
+     "destination": [
+      "obj-206",
+      6
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "obj-66",
+      7
+     ],
+     "destination": [
+      "obj-206",
+      7
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "pv-ps",
+      0
+     ],
+     "destination": [
+      "ls-lp",
+      0
+     ]
+    }
+   },
+   {
+    "patchline": {
+     "source": [
+      "ls-lp",
+      0
+     ],
+     "destination": [
+      "obj-45",
       0
      ]
     }

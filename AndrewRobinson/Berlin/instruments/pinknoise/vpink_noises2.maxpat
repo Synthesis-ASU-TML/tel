@@ -24,7 +24,7 @@
 					"patching_rect" : [ 303.703698635101318, 623.666685223579407, 64.629645228385925, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 369.003931283950806, 87.096778035163879, 50.599994421005249, 33.0 ],
+					"presentation_rect" : [ 369.003931283950806, 87.096778035163879, 51.0, 33.0 ],
 					"text" : "volume scale"
 				}
 
@@ -123,7 +123,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 573.00000661611557, 203.0, 50.0, 22.0 ]
+					"patching_rect" : [ 573.0, 210.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -137,20 +137,20 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 511.00000661611557, 203.0, 50.0, 22.0 ]
+					"patching_rect" : [ 511.0, 210.0, 50.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 501.0, 388.0, 169.0, 49.0 ],
-					"text" : "3.492819 3.488585 0.535121 0.580674 0.520726 1.533258 0.522481 0.54442"
+					"patching_rect" : [ 501.0, 388.0, 157.0, 35.0 ],
+					"text" : "0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5"
 				}
 
 			}
@@ -162,7 +162,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 444.00000661611557, 173.0, 158.0, 29.0 ],
+					"patching_rect" : [ 444.0, 167.0, 158.0, 29.0 ],
 					"text" : "list_smooth_resize"
 				}
 
@@ -323,7 +323,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 97.222220599651337, 454.216884255409241, 109.259257435798645, 100.0 ],
+					"patching_rect" : [ 97.222220599651337, 454.216884255409241, 111.0, 100.0 ],
 					"text" : "NEW (orange): lag-smoothed gains A (slide up/down in samples) and 20 ms fade on master on/off",
 					"textcolor" : [ 1.0, 0.55, 0.0, 1.0 ]
 				}
@@ -411,7 +411,7 @@
 				"box" : 				{
 					"comment" : "mc audio",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -528,11 +528,11 @@
 				"box" : 				{
 					"comment" : "toggle on | off",
 					"id" : "obj-14",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 729.600010871887207, 36.000000536441803, 30.0, 30.0 ]
 				}
 
@@ -555,7 +555,7 @@
 				"box" : 				{
 					"comment" : "activity list",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1140,14 +1140,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 4 ],
+					"destination" : [ "obj-42", 3 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 5 ],
+					"destination" : [ "obj-42", 4 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -1347,7 +1347,65 @@
 
 			}
  ],
-		"originid" : "pat-460"
+		"originid" : "pat-5785",
+		"dependency_cache" : [ 			{
+				"name" : "list_resize_interp.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "../..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list_slide.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "../..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list_smooth_resize.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "../..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/instruments/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_mc.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/instruments/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pink_tonal_bank_voice.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/instruments/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.list_normalize.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : "../..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vfunction.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/instruments/pinknoise",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
