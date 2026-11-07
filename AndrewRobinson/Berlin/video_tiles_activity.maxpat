@@ -10,20 +10,18 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 397.0, 168.0, 888.0, 732.0 ],
+		"rect" : [ 335.0, 209.0, 724.0, 544.0 ],
+		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-31",
-					"linecount" : 2,
+					"id" : "obj-45",
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 684.656095266342163, 377.777783632278442, 96.648040890693665, 33.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 684.656095266342163, 376.719582557678223, 96.648040890693665, 33.0 ],
-					"text" : "floor scale for HKW"
+					"patching_rect" : [ 138.297875225543976, 161.28369128704071, 150.0, 60.0 ],
+					"text" : "tile_scale_bar\ntile_scale_f\ntile_floor_bar\ntile_floor_f"
 				}
 
 			}
@@ -32,10 +30,59 @@
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 63.120568692684174, 160.28369128704071, 56.0, 22.0 ],
+					"restore" : 					{
+						"tile_floor_bar" : [ 1.33 ],
+						"tile_floor_f" : [ 1.33 ],
+						"tile_scale_bar" : [ 1.88 ],
+						"tile_scale_f" : [ 1.88 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u966005736"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "float" ],
+					"patching_rect" : [ 684.848451375961304, 433.549776971340179, 61.0, 22.0 ],
+					"text" : "unpack f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "message",
+					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 546.323518991470337, 336.530609130859375, 58.0, 22.0 ],
-					"text" : "loadbang"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 684.848451375961304, 406.277051031589508, 61.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 23.243242204189301, 296.756743490695953, 59.0, 22.0 ],
+					"text" : "1.33 1.88"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 684.848451375961304, 371.428567886352539, 96.648040890693665, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 23.243242204189301, 247.756743490695953, 78.0, 47.0 ],
+					"text" : "DEFAULT\nfloor & scale for HKW"
 				}
 
 			}
@@ -48,7 +95,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 502.904168844223022, 633.894730806350708, 237.419347763061523, 62.0 ],
-					"text" : "3.025058 4.836884 3.284787 3.072968 0.652452 3.36 5.419791 2.879238 1.944589 2.239771 5.850944 4.013582 2.02 1.851427 2.686927 6.202729"
+					"text" : "0.2427 0.594612 0.624693 0.476842 0.316049 0.718173 0.726362 0.530124 0.591201 1.18858 1.035479 0.446489 0.282343 0.243464 0.607513 0.173106"
 				}
 
 			}
@@ -74,8 +121,8 @@
 					"patching_rect" : [ 567.647047996520996, 377.777783632278442, 96.648040890693665, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 524.479146659374237, 228.78687858581543, 96.648040890693665, 33.0 ],
-					"text" : "floor scale for hotel"
+					"presentation_rect" : [ 23.243242204189301, 336.216201186180115, 78.0, 33.0 ],
+					"text" : "floor & scale for hotel"
 				}
 
 			}
@@ -88,7 +135,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 546.323518991470337, 407.352933406829834, 32.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 518.550594508647919, 210.0, 45.0, 22.0 ],
+					"presentation_rect" : [ 23.243242204189301, 371.351334750652313, 45.0, 22.0 ],
 					"text" : "0. 1."
 				}
 
@@ -126,9 +173,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 645.588222980499268, 474.999990940093994, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 730.833315908908844, 382.499990880489349, 50.0, 22.0 ]
+					"patching_rect" : [ 645.588222980499268, 474.999990940093994, 50.0, 22.0 ]
 				}
 
 			}
@@ -156,7 +201,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 532.352931022644043, 531.617636919021606, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.721307277679443, 267.213107109069824, 50.0, 22.0 ]
+					"presentation_rect" : [ 124.324318766593933, 242.162151336669922, 50.0, 22.0 ],
+					"varname" : "tile_floor_f"
 				}
 
 			}
@@ -171,7 +217,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 637.499987840652466, 533.088225126266479, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 281.967205047607422, 267.213107109069824, 50.0, 22.0 ]
+					"presentation_rect" : [ 258.378366827964783, 245.405394434928894, 50.0, 22.0 ],
+					"varname" : "tile_scale_f"
 				}
 
 			}
@@ -187,8 +234,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 637.499987840652466, 506.617637395858765, 106.122447967529297, 18.36734676361084 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 280.263155221939087, 231.578945159912109, 117.266191244125366, 28.057554960250854 ],
-					"size" : 10.0
+					"presentation_rect" : [ 256.756745278835297, 209.7297203540802, 117.266191244125366, 28.057554960250854 ],
+					"size" : 10.0,
+					"varname" : "tile_scale_bar"
 				}
 
 			}
@@ -203,7 +251,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 671.323516607284546, 529.411754608154297, 69.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 397.540972232818604, 232.78687858581543, 96.614753723144531, 25.0 ],
+					"presentation_rect" : [ 374.05403733253479, 210.810801386833191, 96.614753723144531, 25.0 ],
 					"text" : "scale"
 				}
 
@@ -220,8 +268,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 534.558813333511353, 505.147049188613892, 86.785396099090576, 20.143885612487793 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 141.237703323364258, 227.414192914962769, 95.237408399581909, 30.827338695526123 ],
-					"size" : 10.0
+					"presentation_rect" : [ 117.837832570075989, 205.405396223068237, 95.237408399581909, 30.827338695526123 ],
+					"size" : 10.0,
+					"varname" : "tile_floor_bar"
 				}
 
 			}
@@ -234,7 +283,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 376.930039048194885, 633.894730806350708, 108.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 384.166657507419586, 621.666651844978333, 108.0, 20.0 ],
+					"presentation_rect" : [ 111.351346373558044, 376.756739914417267, 108.0, 20.0 ],
 					"text" : "Amplitude Levels"
 				}
 
@@ -482,7 +531,7 @@
 
 							}
  ],
-						"originid" : "pat-462"
+						"originid" : "pat-5567"
 					}
 ,
 					"patching_rect" : [ 471.806779384613037, 274.295762002468109, 73.0, 22.0 ],
@@ -494,7 +543,7 @@
 				"box" : 				{
 					"comment" : "FullCamera Slice Presence Motion",
 					"id" : "obj-69",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -559,7 +608,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 497.808413028717041, 213.133657872676849, 106.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.0, 177.0, 106.0, 20.0 ],
+					"presentation_rect" : [ 243.243232369422913, 155.135128200054169, 106.0, 20.0 ],
 					"text" : "4. Detection Mode"
 				}
 
@@ -598,7 +647,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 636.756728291511536, 163.243235945701599, 200.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 175.0, 218.0, 24.0 ],
+					"presentation_rect" : [ 23.243242204189301, 152.972966134548187, 218.0, 24.0 ],
 					"tabs" : [ "Prescence", "Motion" ]
 				}
 
@@ -703,7 +752,7 @@
 				"box" : 				{
 					"comment" : "list f raw activity",
 					"id" : "obj-28",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -715,7 +764,7 @@
 				"box" : 				{
 					"comment" : "list f activity [0. 1.]",
 					"id" : "obj-27",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1106,7 +1155,7 @@
 				"box" : 				{
 					"comment" : "input video",
 					"id" : "obj-87",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1160,8 +1209,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 365.930039048194885, 668.947361469268799, 119.0, 58.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.885241985321045, 304.098351955413818, 270.0, 87.0 ],
-					"setminmax" : [ -1.0, 10.0 ],
+					"presentation_rect" : [ 113.513508439064026, 282.162149548530579, 270.0, 87.0 ],
+					"setminmax" : [ 0.0, 10.0 ],
 					"setstyle" : 1,
 					"size" : 16
 				}
@@ -1310,13 +1359,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-100", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -1448,6 +1490,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-94", 1 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -1651,6 +1700,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
 					"order" : 0,
 					"source" : [ "obj-94", 0 ]
@@ -1682,7 +1745,30 @@
 
 			}
  ],
-		"originid" : "pat-456"
+		"originid" : "pat-5561",
+		"dependency_cache" : [ 			{
+				"name" : "list_floorscale.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "motionDetection.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sc.list_normalize.maxpat",
+				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

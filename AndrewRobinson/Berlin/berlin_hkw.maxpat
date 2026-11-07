@@ -608,7 +608,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "// settings \"speaker map\": <top patch folder>/_installation/hkw_speaker_map.txt\n// The path is relative to the TOP-LEVEL patch (berlin_hkw or calibration):\n//   top patch in <dir>/               -> <dir>/_installation/hkw_speaker_map.txt\n//   top patch in <dir>/_installation/ -> <dir>/_installation/hkw_speaker_map.txt\n// The file is read and written HERE (no coll file I/O), so Max never opens a\n// file dialog. Missing or unreadable file -> defaults: 1 2 3 4 5 6 7 8\n// File format (unchanged, coll style):  1, v1 v2 ... ;\ninlets = 1;\noutlets = 1;   // the values (file or defaults)\nconst me = this;\nconst FILE = \"hkw_speaker_map.txt\";\nconst KIND = \"speaker map\";\nconst DEFAULT = [1, 2, 3, 4, 5, 6, 7, 8];\nlet nofile = 0;\n\nfunction target() {\n    let top = me.patcher;\n    while (top.parentpatcher) top = top.parentpatcher;\n    let p = top;\n    if (!p.filepath) {\n        p = me.patcher;\n        while (p && !p.filepath) p = p.parentpatcher;\n    }\n    if (!p || !p.filepath) return null;\n    const f = p.filepath;\n    let dir = f.substring(0, f.lastIndexOf(\"/\") + 1);\n    if (!/\\/_installation\\/$/.test(dir)) dir += \"_installation/\";\n    return dir + FILE;\n}\n\nfunction setnofile(v) { nofile = v ? 1 : 0; }\n\nfunction parse(s) {\n    let t = s.replace(/;/g, \" \");\n    const c = t.indexOf(\",\");\n    if (c >= 0) t = t.substring(c + 1);\n    return t.trim().split(/\\s+/).filter(function (x) { return x.length > 0; })\n            .map(Number).filter(function (x) { return !isNaN(x); });\n}\n\nfunction read() {\n    if (nofile) return;\n    const f = target();\n    let vals = null;\n    if (f) {\n        try {\n            const h = new File(f, \"read\");\n            if (h.isopen) {\n                let s = \"\";\n                let guard = 0;\n                while (h.position < h.eof && guard++ < 1000) {\n                    const line = h.readline(4096);\n                    if (line === null || line === undefined) break;\n                    s += line + \" \";\n                }\n                h.close();\n                vals = parse(s);\n            }\n        } catch (e) { vals = null; }\n    }\n    if (vals && vals.length === DEFAULT.length) {\n        post(KIND + \": read \" + f + \"\\n\");\n        outlet(0, vals);\n    } else {\n        post(KIND + \": no valid file at \" + f + \" - using defaults\\n\");\n        outlet(0, DEFAULT);\n    }\n}\n\nfunction save() {\n    if (nofile) return;\n    const vals = Array.prototype.slice.call(arguments);\n    const f = target();\n    if (!f) { post(KIND + \": save the top patch first\\n\"); return; }\n    try {\n        const h = new File(f, \"write\", \"TEXT\");\n        if (!h.isopen) { post(KIND + \": cannot write \" + f + \" (is there an _installation folder?)\\n\"); return; }\n        h.position = 0;\n        h.writestring(\"1, \" + vals.join(\" \") + \";\\n\");\n        h.eof = h.position;\n        h.close();\n        post(KIND + \": saved \" + f + \"\\n\");\n    } catch (e) { post(KIND + \": save failed: \" + e + \"\\n\"); }\n}\n",
+									"code" : "// settings \"speaker map\": <top patch folder>/_installation/hkw_speaker_map.txt\n// The path is relative to the TOP-LEVEL patch (berlin_hkw or calibration):\n//   top patch in <dir>/               -> <dir>/_installation/hkw_speaker_map.txt\n//   top patch in <dir>/_installation/ -> <dir>/_installation/hkw_speaker_map.txt\n// The file is read and written HERE (no coll file I/O), so Max never opens a\n// file dialog. Missing or unreadable file -> defaults: 1 2 3 4 5 6 7 8\n// File format (unchanged, coll style):  1, v1 v2 ... ;\ninlets = 1;\noutlets = 1;   // the values (file or defaults)\nconst me = this;\nconst FILE = \"hkw_speaker_map.txt\";\nconst KIND = \"speaker map\";\nconst DEFAULT = [1, 2, 3, 4, 5, 6, 7, 8];\nlet nofile = 0;\n\nfunction target() {\n    let top = me.patcher;\n    while (top.parentpatcher) top = top.parentpatcher;\n    let p = top;\n    if (!p.filepath) {\n        p = me.patcher;\n        while (p && !p.filepath) p = p.parentpatcher;\n    }\n    if (!p || !p.filepath) return null;\n    const f = p.filepath;\n    let dir = f.substring(0, f.lastIndexOf(\"/\") + 1);\n    if (!/\\/_installation\\/$/.test(dir)) dir += \"_installation/\";\n    return dir + FILE;\n}\n\nfunction setnofile(v) { nofile = v ? 1 : 0; }\n\nfunction parse(s) {\n    let t = s.replace(/;/g, \" \");\n    const c = t.indexOf(\",\");\n    if (c >= 0) t = t.substring(c + 1);\n    return t.trim().split(/\\s+/).filter(function (x) { return x.length > 0; })\n            .map(Number).filter(function (x) { return !isNaN(x); });\n}\n\nfunction readsettings() {\n    if (nofile) return;\n    const f = target();\n    let vals = null;\n    if (f) {\n        try {\n            const h = new File(f, \"read\");\n            if (h.isopen) {\n                let s = \"\";\n                let guard = 0;\n                while (h.position < h.eof && guard++ < 1000) {\n                    const line = h.readline(4096);\n                    if (line === null || line === undefined) break;\n                    s += line + \" \";\n                }\n                h.close();\n                vals = parse(s);\n            }\n        } catch (e) { vals = null; }\n    }\n    if (vals && vals.length === DEFAULT.length) {\n        post(KIND + \": read \" + f + \"\\n\");\n        outlet(0, vals);\n    } else {\n        post(KIND + \": no valid file at \" + f + \" - using defaults\\n\");\n        outlet(0, DEFAULT);\n    }\n}\n\nfunction save() {\n    if (nofile) return;\n    const vals = Array.prototype.slice.call(arguments);\n    const f = target();\n    if (!f) { post(KIND + \": save the top patch first\\n\"); return; }\n    try {\n        const h = new File(f, \"write\", \"TEXT\");\n        if (!h.isopen) { post(KIND + \": cannot write \" + f + \" (is there an _installation folder?)\\n\"); return; }\n        h.position = 0;\n        h.writestring(\"1, \" + vals.join(\" \") + \";\\n\");\n        h.eof = h.position;\n        h.close();\n        post(KIND + \": saved \" + f + \"\\n\");\n    } catch (e) { post(KIND + \": save failed: \" + e + \"\\n\"); }\n}\n",
 									"filename" : "none",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
@@ -629,12 +629,13 @@
 , 							{
 								"box" : 								{
 									"id" : "ip-rd",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 700.0, 440.0, 35.0, 22.0 ],
-									"text" : "read"
+									"text" : "readsettings"
 								}
 
 							}
@@ -892,7 +893,7 @@
 
 							}
  ],
-						"originid" : "pat-804"
+						"originid" : "pat-5905"
 					}
 ,
 					"patching_rect" : [ 217.796615362167358, 940.677988529205322, 103.0, 29.0 ],
@@ -1004,7 +1005,7 @@
 							}
  ],
 						"lines" : [  ],
-						"originid" : "pat-806"
+						"originid" : "pat-5907"
 					}
 ,
 					"patching_rect" : [ 591.525437831878662, 71.186442375183105, 100.0, 22.0 ],
@@ -1078,7 +1079,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 275.423735380172729, 688.13560962677002, 53.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 261.797773718833923, 527.528132021427155, 63.725494146347046, 20.0 ],
+					"presentation_rect" : [ 266.0, 595.460716605186462, 63.725494146347046, 20.0 ],
 					"text" : "Mute",
 					"textjustification" : 2
 				}
@@ -1256,8 +1257,8 @@
 					"patching_rect" : [ 593.220353126525879, 103.389832973480225, 56.0, 22.0 ],
 					"restore" : 					{
 						"berlin_xfade_ramptime" : [ 500 ],
-						"master_fader" : [ 0.0, 0.0, 0.0, 1.0, 0.0 ],
-						"master_volume" : [ 40.425670917772841 ],
+						"master_fader" : [ 1.0, 0.0, 0.0, 0.0, 0.0 ],
+						"master_volume" : [ 54.760007664796653 ],
 						"videosource" : [ 2 ]
 					}
 ,
@@ -1368,7 +1369,7 @@
 					"patching_rect" : [ 122.881358861923218, 848.305104970932007, 93.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 274.719123065471649, 562.359595477581024, 59.999997317790985, 47.0 ],
+					"presentation_rect" : [ 273.0, 522.0, 59.999997317790985, 47.0 ],
 					"text" : "Master Volume\nrecalled",
 					"textjustification" : 2
 				}
@@ -1385,9 +1386,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 217.796615362167358, 852.542393207550049, 43.963416218757629, 79.2682945728302 ],
+					"patching_rect" : [ 218.0, 824.0, 44.0, 108.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 336.516880810260773, 546.629257142543793, 44.607845902442932, 62.745101928710938 ],
+					"presentation_rect" : [ 337.0, 527.528132021427155, 45.0, 82.471867978572845 ],
 					"size" : 130.0,
 					"varname" : "master_volume"
 				}
@@ -1771,8 +1772,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 185.0, 26.0 ],
-					"text" : "10.331667 16.040311 16.662856 10.088946 6.488816 6.154409 6.373661 3.191983"
+					"patching_rect" : [ 378.723401546478271, 602.127655267715454, 198.0, 26.0 ],
+					"text" : "78.96419 62.750766 59.210515 45.544307 9.168771 44.386308 31.729615 29.875799"
 				}
 
 			}
@@ -1828,9 +1829,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 217.796615362167358, 823.728833198547363, 43.902440071105957, 22.0 ],
+					"patching_rect" : [ 171.492503881454468, 876.235771834850311, 43.902440071105957, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 334.831487417221069, 521.910154044628143, 43.627453684806824, 22.0 ],
+					"presentation_rect" : [ 300.0000239610672, 571.460716605186462, 32.9999760389328, 22.0 ],
 					"text" : "0"
 				}
 
@@ -1876,7 +1877,7 @@
 					"patching_rect" : [ 378.813568353652954, 429.661027193069458, 139.0, 132.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 409.550594508647919, 279.775303244590759, 139.0, 132.0 ],
-					"setminmax" : [ -1.0, 10.0 ],
+					"setminmax" : [ -1.0, 100.0 ],
 					"setstyle" : 3,
 					"size" : 8
 				}
@@ -1893,6 +1894,7 @@
 					"patching_rect" : [ 49.152543544769287, 429.661027193069458, 139.0, 132.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 73.595511496067047, 283.707887828350067, 139.0, 132.0 ],
+					"setminmax" : [ -1.0, 10.0 ],
 					"setstyle" : 3,
 					"size" : 16
 				}
@@ -1939,7 +1941,8 @@
 					"patching_rect" : [ 49.152543544769287, 333.898313045501709, 159.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 57.865173161029816, 244.382041990756989, 159.0, 29.0 ],
-					"text" : "video_tiles_activity"
+					"text" : "video_tiles_activity",
+					"varname" : "video_tiles_activity"
 				}
 
 			}
@@ -1953,7 +1956,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.152543544769287, 578.651731610298157, 177.0, 44.0 ],
-					"text" : "0.464521 0.923552 1.209087 0.274766 0.548071 2.104363 2.383527 0.327774 0.549217 0.858243 1.395851 0.45158 0.212922 0.951792 0.701453 0.081924"
+					"text" : "0.177356 0.7918 0.515489 2.198225 2.903164 4.149416 2.783106 0. 2.671064 1.370754 9.997113 5.818603 0. 0. 8.354951 12.591081"
 				}
 
 			}
@@ -1989,7 +1992,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 619.85594367980957, 907.539809703826904, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 261.797773718833923, 567.977573454380035, 20.0, 20.0 ],
+					"presentation_rect" : [ 260.0, 528.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"saved_attribute_attributes" : 					{
 						"bgcolor" : 						{
@@ -2959,7 +2962,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 1 ],
-					"midpoints" : [ 441.98023502031964, 365.574640742037445, 554.223401546478271, 365.574640742037445 ],
+					"midpoints" : [ 441.98023502031964, 365.574640742037445, 567.223401546478271, 365.574640742037445 ],
 					"order" : 0,
 					"source" : [ "obj-2", 1 ]
 				}
@@ -3300,7 +3303,7 @@
 
 			}
  ],
-		"originid" : "pat-780",
+		"originid" : "pat-5883",
 		"parameters" : 		{
 			"ms" : [ "mast4r_fader", "mast4r_fader", 0 ],
 			"obj-12::obj-7" : [ "mc.live.gain~", "mc.live.gain~", 0 ],

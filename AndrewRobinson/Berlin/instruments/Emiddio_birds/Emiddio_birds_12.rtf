@@ -1,32 +1,111 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2761
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;}
+\f3\ftech\fcharset77 Symbol;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
-{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
-{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid301\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
 \margl1440\margr1440\vieww15860\viewh12000\viewkind0
 \deftab720
 \pard\pardeftab720\sa240\partightenfactor0
 
-\f0\b\fs32 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Emiddio_birds_12 note
-\f1\b0\fs24 \
+\f0\b\fs36 \cf0 \expnd0\expndtw0\kerning0
+Emiddio_birds_13 note\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b0\fs28 \cf0 \outl0\strokewidth0 \strokec2 I've built v13 with both fixes, from your Nov 5 Emiddio_birds.maxpat with your pressure gate kept as it was. It's attached as Emiddio_birds.maxpat. I can't run Max here, so it's untested.\
+
+\f0\b About the \'d7100:
+\f1\b0  it isn't too large. A 
+\f2\fs30 gain~
+\f1\fs28  position of 128 is unity (0 dB), so 100 is roughly \uc0\u8722 10 dB. The silence came from the activity values reaching 0, not from the \'d7100. I relabelled the comment next to the 100.\
+
+\f0\b Fix A: the faders never all drop to 0
+\f1\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Divide by the loudest wedge:
+\f1\b0  Emiddio's own 
+\f2\fs30 sc.list_normalize
+\f1\fs28  is replaced by 
+\f2\fs30 [t l l]
+\f1\fs28  
+\f3 \uc0\u8594 
+\f1  
+\f2\fs30 [maximum]
+\f1\fs28  
+\f3 \uc0\u8594 
+\f1  
+\f2\fs30 [vexpr $f1 / $f2]
+\f1\fs28 , labelled. The loudest wedge is 1 and the others keep their relative levels. The quietest wedge is no longer forced to 0, and a still room no longer gives all zeros. This output feeds both the faders and the pitch wander, as before.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Fader floor:
+\f1\b0  the 
+\f2\fs30 vexpr
+\f1\fs28  is now 
+\f2\fs30 ($f3 + (1. \uc0\u8722  $f3) \'d7 $f1) \'d7 $f2
+\f1\fs28 . The 
+\f0\b fader floor
+\f1\b0  number box defaults to 0.3, so a bird in a still wedge plays quietly instead of falling silent. Set it to 0 to get the old behaviour back.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Not changed:
+\f1\b0  the shared 
+\f2\fs30 list_smooth_resize
+\f1\fs28 , because other instruments may use it. It still min\'96max normalizes inside, which is harmless now that the floor exists.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 Fix B: model stability
+\f1\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Shorter jets:
+\f1\b0  the flue-to-labium distances now run from 5.0 to 2.6 mm. v12 went up to 7.5 mm, and longer jets are more prone to blowing up.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 NaN guard:
+\f1\b0  
+\f2\fs30 mc.bitsafe~
+\f1\fs28  now sits between 
+\f2\fs30 mc.modalys~
+\f1\fs28  and 
+\f2\fs30 mc.pitchshift~
+\f1\fs28 . It replaces NaN or infinite values with 0, so the pitch shift and the lowpass can never get stuck.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Auto-rebuild:
+\f1\b0  a detector watches the raw Modalys output (
+\f2\fs30 x != x
+\f1\fs28  is true only for NaN), checked every 250 ms. If any voice outputs NaN, it rebuilds the model, and your pressure gate reopens 300 ms later. The Max Console prints 
+\f0\b EMIDDIO_NaN_rebuild
+\f1\b0  each time, so you'll know if cause B was really happening. If that line keeps repeating, shorten the jets of the voices that blow up, or lower their pressure.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 My working copies are kept in my workspace, including Emiddio_birds_v13_floor_nanguard.maxpat. I didn't write to your folder.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs36 \cf0 \outl0\strokewidth0 \
+Emiddio_birds_12 note
+\f1\b0\fs28 \
 I compared Emiddio_birds_9.maxpat with Emiddio_birds_10_warble.maxpat, which is also your current Emiddio_birds.maxpat. I built a fix as v12 (Emiddio_birds.maxpat, attached). I can't run Max here, so the diagnosis comes from reading the patches and from flute physics, and it's untested.\
 \pard\pardeftab720\sa240\partightenfactor0
 
 \f0\b \cf0 Why it's shrill.
 \f1\b0  The jet is overblowing. A jet only sounds a tube's lowest note, its fundamental, when its air speed suits that pitch and the distance from the flue to the labium edge. Too fast, and it jumps to the tube's 3rd, 5th or 7th harmonic: a squeal. In this patch every voice still has Emiddio's original jet, set for one fixed pitch and lots of air:\
 \pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls1\ilvl0
-\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Short jet:
+\ls3\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Short jet:
 \f1\b0  the flue-to-labium distance is 2 mm for all 8 voices.\
-\ls1\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Too much air:
+\ls3\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Too much air:
 \f1\b0  the pressure messages go up to 100 Pa for voices 1\'963 and 600 Pa for voices 4\'968. As a rough recorder rule (pitch \uc0\u8776  0.18 \'d7 jet speed \'f7 distance), 600 Pa through 2 mm wants about 2.8 kHz. Your 196\'961245 Hz tubes can't play that, so they overblow onto upper harmonics in the 1\'966 kHz range.\
 \pard\pardeftab720\sa240\partightenfactor0
 
@@ -108,8 +187,8 @@ I compared Emiddio_birds_9.maxpat with Emiddio_birds_10_warble.maxpat, which is 
 \cf0 idle birds get shifted 
 \f0\b up to an octave higher
 \f1\b0 , through 
-\f2\fs26 pitchshift~
-\f1\fs24  at basic quality, which sounds grainy\cell \row
+\f2\fs30 pitchshift~
+\f1\fs28  at basic quality, which sounds grainy\cell \row
 
 \itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
 \clvertalc \clshdrawnil \clwWidth1297\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
@@ -131,59 +210,59 @@ I compared Emiddio_birds_9.maxpat with Emiddio_birds_10_warble.maxpat, which is 
 \f0\b \cf0 What v12 changes, all labelled in the patch:
 \f1\b0 \
 \pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls2\ilvl0
-\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 The jet suits each voice's pitch.
+\ls4\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+The jet suits each voice's pitch.
 \f1\b0  After each model build, each voice now also gets its own flue-to-labium distance, from 7.5 mm at 196 Hz down to 2.6 mm at 1245 Hz. A longer jet lets the low voices sound their real pitch instead of squealing.\
-\ls2\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Air matched to each pitch.
+\ls4\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Air matched to each pitch.
 \f1\b0  The SENDPRESSURE scaling now gives each voice its own maximum: 40, 55, 70, 90, 110, 135, 165 and 200 Pa from low to high. The 100/600 split is gone. The air floor still keeps every bird warbling continuously.\
-\ls2\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Voice routing fixed.
+\ls4\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Voice routing fixed.
 \f1\b0  gate outlet k now drives voice k, so the air, the activity fader and the pitch wander all act on the same bird and the same wedge.\
-\ls2\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Gentler wander.
+\ls4\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Gentler wander.
 \f1\b0  The default maximum is 300 cents (\'b1 a minor third), and 
-\f2\fs26 mc.pitchshift~
-\f1\fs24  now runs at 
-\f2\fs26 @quality better
-\f1\fs24 .\
-\ls2\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Darker, distinct timbres.
+\f2\fs30 mc.pitchshift~
+\f1\fs28  now runs at 
+\f2\fs30 @quality better
+\f1\fs28 .\
+\ls4\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	5	}\expnd0\expndtw0\kerning0
+Darker, distinct timbres.
 \f1\b0  Each voice keeps its own bore flare (
-\f2\fs26 radius1
-\f1\fs24 ). The damping of high partials (
-\f2\fs26 freq-loss
-\f1\fs24 ) is raised to between 1.2 and 4, and the breath noise is lowered to 0.08 at most.\
-\ls2\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	6	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Anti-screech lowpass.
+\f2\fs30 radius1
+\f1\fs28 ). The damping of high partials (
+\f2\fs30 freq-loss
+\f1\fs28 ) is raised to between 1.2 and 4, and the breath noise is lowered to 0.08 at most.\
+\ls4\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	6	}\expnd0\expndtw0\kerning0
+Anti-screech lowpass.
 \f1\b0  An 
-\f2\fs26 mc.onepole~ 3500.
-\f1\fs24  sits after the pitch shift. Lower it for a mellower sound, or raise it to about 6000 Hz for more air.\
+\f2\fs30 mc.onepole~ 3500.
+\f1\fs28  sits after the pitch shift. Lower it for a mellower sound, or raise it to about 6000 Hz for more air.\
 \pard\pardeftab720\sa240\partightenfactor0
 \cf0 The physics rule is approximate, so tune by ear in this order:\
 \pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
-\ls3\ilvl0
-\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 A voice is silent or only breathy:
+\ls5\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+A voice is silent or only breathy:
 \f1\b0  raise its pressure (the per-voice 
-\f2\fs26 scale
-\f1\fs24  in SENDPRESSURE) or shorten its jet distance a little.\
-\ls3\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 A voice still squeals:
+\f2\fs30 scale
+\f1\fs28  in SENDPRESSURE) or shorten its jet distance a little.\
+\ls5\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+A voice still squeals:
 \f1\b0  lengthen its jet distance or lower its pressure.\
-\ls3\ilvl0
-\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Everything is still too bright:
+\ls5\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Everything is still too bright:
 \f1\b0  lower the lowpass.\
 \pard\pardeftab720\sa240\partightenfactor0
 \cf0 I built v12 on your current v10. v11 (
-\f2\fs26 Emiddio_birds_11_ragged.maxpat
-\f1\fs24 ) has the irregular timing; if you want it, I can carry these fixes over. My working copies are kept in my workspace, including Emiddio_birds_v12_mellow.maxpat. I didn't write to your folder.\
+\f2\fs30 Emiddio_birds_11_ragged.maxpat
+\f1\fs28 ) has the irregular timing; if you want it, I can carry these fixes over. My working copies are kept in my workspace, including Emiddio_birds_v12_mellow.maxpat. I didn't write to your folder.\
 }
