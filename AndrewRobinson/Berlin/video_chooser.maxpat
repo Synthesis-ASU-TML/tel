@@ -143,20 +143,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 411.028517007827759, 830.43476676940918, 120.143889188766479, 91.366909742355347 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 34.108527660369873, 225.581398844718933, 120.143889188766479, 91.366909742355347 ],
-					"sync" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-44",
 					"int" : 1,
 					"maxclass" : "gswitch",
@@ -188,9 +174,8 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 261.0, 125.0, 788.0, 546.0 ],
+						"rect" : [ 200.0, 389.0, 788.0, 546.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-22",
@@ -482,7 +467,7 @@
 
 											}
  ],
-										"originid" : "pat-1396"
+										"originid" : "pat-392"
 									}
 ,
 									"patching_rect" : [ 222.0, 355.0, 307.0, 35.0 ],
@@ -853,7 +838,7 @@
 
 							}
  ],
-						"originid" : "pat-1394"
+						"originid" : "pat-390"
 					}
 ,
 					"patching_rect" : [ 178.160916566848755, 756.115134954452515, 167.816089153289795, 29.0 ],
@@ -1396,7 +1381,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"items" : "AVM-HKW-NUC (TouchDesigner)",
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1716,16 +1701,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"order" : 0,
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-44", 2 ],
-					"order" : 1,
 					"source" : [ "obj-43", 0 ]
 				}
 
@@ -1942,7 +1918,7 @@
 
 			}
  ],
-		"originid" : "pat-1392"
+		"originid" : "pat-388"
 	}
 
 }
