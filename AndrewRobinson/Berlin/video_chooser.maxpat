@@ -188,9 +188,22 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 483.0, 144.0, 788.0, 546.0 ],
+						"rect" : [ 261.0, 125.0, 788.0, 546.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 588.09809336066246, 100.142860770225525, 29.5, 22.0 ],
+									"text" : "15"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-21",
 									"maxclass" : "comment",
@@ -207,7 +220,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 691.772142827510834, 55.0, 81.645568549633026, 20.0 ],
+									"patching_rect" : [ 744.911384105682373, 55.0, 81.645568549633026, 20.0 ],
 									"text" : "fstter ring"
 								}
 
@@ -220,7 +233,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 662.658219158649445, 53.0, 24.0, 24.0 ]
+									"patching_rect" : [ 715.911384105682373, 53.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -255,7 +268,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 543.11376565694809, 138.323351562023163, 29.5, 22.0 ],
+									"patching_rect" : [ 549.25, 100.142860770225525, 29.5, 22.0 ],
 									"text" : "10"
 								}
 
@@ -469,7 +482,7 @@
 
 											}
  ],
-										"originid" : "pat-922"
+										"originid" : "pat-1396"
 									}
 ,
 									"patching_rect" : [ 222.0, 355.0, 307.0, 35.0 ],
@@ -681,7 +694,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
+									"destination" : [ "obj-22", 0 ],
 									"order" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
@@ -729,6 +742,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -833,7 +853,7 @@
 
 							}
  ],
-						"originid" : "pat-920"
+						"originid" : "pat-1394"
 					}
 ,
 					"patching_rect" : [ 178.160916566848755, 756.115134954452515, 167.816089153289795, 29.0 ],
@@ -1376,7 +1396,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"items" : "<empty>",
+					"items" : "AVM-HKW-NUC (TouchDesigner)",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1922,7 +1942,7 @@
 
 			}
  ],
-		"originid" : "pat-918"
+		"originid" : "pat-1392"
 	}
 
 }

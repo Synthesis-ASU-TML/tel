@@ -1,0 +1,9 @@
+1, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_fire/;
+2, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_footsteps/;
+3, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_forest/;
+4, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_french/;
+5, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_mix_ocean_church/;
+6, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_nature+children/;
+7, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_ocean/;
+8, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_Pad/;
+0, sxwm1pro14:/Users/xinwei/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin/_unused/_sound_storm/;

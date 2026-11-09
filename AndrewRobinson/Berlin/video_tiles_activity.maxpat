@@ -10,10 +10,22 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 335.0, 209.0, 724.0, 544.0 ],
+		"rect" : [ 354.0, 343.0, 724.0, 544.0 ],
 		"openinpresentation" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 684.848451375961304, 336.530609130859375, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-45",
 					"linecount" : 4,
@@ -34,10 +46,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 63.120568692684174, 160.28369128704071, 56.0, 22.0 ],
 					"restore" : 					{
-						"tile_floor_bar" : [ 1.33 ],
-						"tile_floor_f" : [ 1.33 ],
-						"tile_scale_bar" : [ 1.88 ],
-						"tile_scale_f" : [ 1.88 ]
+						"tile_floor_bar" : [ 0.795451392789011 ],
+						"tile_floor_f" : [ 0.795451392789011 ],
+						"tile_scale_bar" : [ 8.033113908780571 ],
+						"tile_scale_f" : [ 8.033113908780571 ]
 					}
 ,
 					"text" : "autopattr",
@@ -67,7 +79,7 @@
 					"patching_rect" : [ 684.848451375961304, 406.277051031589508, 61.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 23.243242204189301, 296.756743490695953, 59.0, 22.0 ],
-					"text" : "1.33 1.88"
+					"text" : "0.79 8.05"
 				}
 
 			}
@@ -89,13 +101,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.904168844223022, 633.894730806350708, 237.419347763061523, 62.0 ],
-					"text" : "0.2427 0.594612 0.624693 0.476842 0.316049 0.718173 0.726362 0.530124 0.591201 1.18858 1.035479 0.446489 0.282343 0.243464 0.607513 0.173106"
+					"patching_rect" : [ 502.904168844223022, 633.894730806350708, 83.419347763061523, 76.0 ],
+					"text" : "0. 0. 0. 0. 0. 0. 0.732523 0. 0. 0. 13.616724 0. 0. 0. 0. 0."
 				}
 
 			}
@@ -531,7 +543,7 @@
 
 							}
  ],
-						"originid" : "pat-5567"
+						"originid" : "pat-1404"
 					}
 ,
 					"patching_rect" : [ 471.806779384613037, 274.295762002468109, 73.0, 22.0 ],
@@ -543,7 +555,7 @@
 				"box" : 				{
 					"comment" : "FullCamera Slice Presence Motion",
 					"id" : "obj-69",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -752,7 +764,7 @@
 				"box" : 				{
 					"comment" : "list f raw activity",
 					"id" : "obj-28",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -764,7 +776,7 @@
 				"box" : 				{
 					"comment" : "list f activity [0. 1.]",
 					"id" : "obj-27",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1155,7 +1167,7 @@
 				"box" : 				{
 					"comment" : "input video",
 					"id" : "obj-87",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1523,6 +1535,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-37", 0 ]
 				}
@@ -1745,30 +1764,7 @@
 
 			}
  ],
-		"originid" : "pat-5561",
-		"dependency_cache" : [ 			{
-				"name" : "list_floorscale.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "motionDetection.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sc.list_normalize.maxpat",
-				"bootpath" : "~/code/Synthesis/TelematicEmbodiedLearning/tel/AndrewRobinson/Berlin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+		"originid" : "pat-1398"
 	}
 
 }

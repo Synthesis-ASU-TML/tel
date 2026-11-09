@@ -69,7 +69,7 @@
 					"patching_rect" : [ 1070.666698575019836, 654.000019490718842, 45.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 27.868853688240051, 340.43717348575592, 52.0, 22.0 ],
-					"text" : "3.04 2.2"
+					"text" : "1.17 8.2"
 				}
 
 			}
@@ -360,13 +360,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-80",
-					"linecount" : 4,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 821.192121505737305, 1064.794792175292969, 142.0, 62.0 ],
-					"text" : "23.869689 16.336519 9.209301 3.757382 0. 11.943231 16.726275 15.60291"
+					"patching_rect" : [ 821.192121505737305, 1064.794792175292969, 44.0, 102.0 ],
+					"text" : "0. 0. 0. 0. 0. 14.028841 12.98678 0."
 				}
 
 			}
@@ -665,7 +665,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 526.0, 1054.605253100395203, 115.0, 62.0 ],
-					"text" : "1. 0.686257 0.389421 0.162358 0. 0.503284 0.702489 0.655703"
+					"text" : "0.004679 0. 0.020041 0.006876 0.09473 1. 0.95488 0.033608"
 				}
 
 			}
@@ -1090,7 +1090,7 @@
 
 											}
  ],
-										"originid" : "pat-5100"
+										"originid" : "pat-1446"
 									}
 ,
 									"patching_rect" : [ 30.0, 70.0, 600.0, 22.0 ],
@@ -1387,7 +1387,7 @@
 
 							}
  ],
-						"originid" : "pat-5098"
+						"originid" : "pat-1444"
 					}
 ,
 					"patching_rect" : [ 42.671536028385162, 1024.0, 53.0, 22.0 ],
@@ -1745,11 +1745,11 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 248.25580507516861, 617.441838383674622, 231.0, 49.0 ],
+					"patching_rect" : [ 248.25580507516861, 617.441838383674622, 217.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 32.0, 186.0, 424.0, 35.0 ],
-					"text" : "13.89 10.46569 7.226046 4.747901 2.97594 8.468741 10.642852 10.132232"
+					"presentation_rect" : [ 32.0, 186.0, 422.0, 35.0 ],
+					"text" : "0.09815 0.085181 0.140725 0.104239 0.347723 2.856674 2.731625 0.178325"
 				}
 
 			}
@@ -1830,7 +1830,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.0, 121.909999999999968, 50.0, 35.0 ],
-									"text" : "320 240"
+									"text" : "1773 981"
 								}
 
 							}
@@ -2007,7 +2007,7 @@
 
 							}
  ],
-						"originid" : "pat-5104"
+						"originid" : "pat-1450"
 					}
 ,
 					"patching_rect" : [ 519.186027944087982, 129.651158154010773, 55.0, 22.0 ],
@@ -2219,7 +2219,7 @@
 
 											}
  ],
-										"originid" : "pat-5108"
+										"originid" : "pat-1454"
 									}
 ,
 									"patching_rect" : [ 30.0, 70.0, 600.0, 22.0 ],
@@ -2516,7 +2516,7 @@
 
 							}
  ],
-						"originid" : "pat-5106"
+						"originid" : "pat-1452"
 					}
 ,
 					"patching_rect" : [ 98.255810439586639, 623.837186992168427, 151.5, 22.0 ],
@@ -2784,7 +2784,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1900.0, 180.0, 125.0, 22.0 ],
+					"patching_rect" : [ 1900.0, 180.0, 85.0, 22.0 ],
 					"text" : "readsettings"
 				}
 
@@ -3324,7 +3324,7 @@
 			}
 , 			{
 				"box" : 				{
-					"code" : "// settings \"wedge layout\": <top patch folder>/_installation/hkw_wedges.txt\n// The path is relative to the TOP-LEVEL patch (berlin_hkw or calibration):\n//   top patch in <dir>/               -> <dir>/_installation/hkw_wedges.txt\n//   top patch in <dir>/_installation/ -> <dir>/_installation/hkw_wedges.txt\n// The file is read and written HERE (no coll file I/O), so Max never opens a\n// file dialog. Missing or unreadable file -> defaults: 0.5 0.5 0 0 80\n// File format (unchanged, coll style):  1, v1 v2 ... ;\ninlets = 1;\noutlets = 1;   // the values (file or defaults)\nconst me = this;\nconst FILE = \"hkw_wedges.txt\";\nconst KIND = \"wedge layout\";\nconst DEFAULT = [0.5, 0.5, 0, 0, 80];\nlet nofile = 0;\n\nfunction target() {\n    let top = me.patcher;\n    while (top.parentpatcher) top = top.parentpatcher;\n    let p = top;\n    if (!p.filepath) {\n        p = me.patcher;\n        while (p && !p.filepath) p = p.parentpatcher;\n    }\n    if (!p || !p.filepath) return null;\n    const f = p.filepath;\n    let dir = f.substring(0, f.lastIndexOf(\"/\") + 1);\n    if (!/\\/_installation\\/$/.test(dir)) dir += \"_installation/\";\n    return dir + FILE;\n}\n\nfunction setnofile(v) { nofile = v ? 1 : 0; }\n\nfunction parse(s) {\n    let t = s.replace(/;/g, \" \");\n    const c = t.indexOf(\",\");\n    if (c >= 0) t = t.substring(c + 1);\n    return t.trim().split(/\\s+/).filter(function (x) { return x.length > 0; })\n            .map(Number).filter(function (x) { return !isNaN(x); });\n}\n\nfunction readsettings() {\n    if (nofile) return;\n    const f = target();\n    let vals = null;\n    if (f) {\n        try {\n            const h = new File(f, \"read\");\n            if (h.isopen) {\n                let s = \"\";\n                let guard = 0;\n                while (h.position < h.eof && guard++ < 1000) {\n                    const line = h.readline(4096);\n                    if (line === null || line === undefined) break;\n                    s += line + \" \";\n                }\n                h.close();\n                vals = parse(s);\n            }\n        } catch (e) { vals = null; }\n    }\n    if (vals && vals.length === DEFAULT.length) {\n        post(KIND + \": read \" + f + \"\\n\");\n        outlet(0, vals);\n    } else {\n        post(KIND + \": no valid file at \" + f + \" - using defaults\\n\");\n        outlet(0, DEFAULT);\n    }\n}\n\nfunction save() {\n    if (nofile) return;\n    const vals = Array.prototype.slice.call(arguments);\n    const f = target();\n    if (!f) { post(KIND + \": save the top patch first\\n\"); return; }\n    try {\n        const h = new File(f, \"write\", \"TEXT\");\n        if (!h.isopen) { post(KIND + \": cannot write \" + f + \" (is there an _installation folder?)\\n\"); return; }\n        h.position = 0;\n        h.writestring(\"1, \" + vals.join(\" \") + \";\\n\");\n        h.eof = h.position;\n        h.close();\n        post(KIND + \": saved \" + f + \"\\n\");\n    } catch (e) { post(KIND + \": save failed: \" + e + \"\\n\"); }\n}\n",
+					"code" : "// settings \"wedge layout\": <top patch folder>/_installation/hkw_wedges.txt\n// Path is relative to the TOP-LEVEL patch (berlin_hkw or calibration):\n//   top patch in <dir>/               -> <dir>/_installation/hkw_wedges.txt\n//   top patch in <dir>/_installation/ -> <dir>/_installation/hkw_wedges.txt\n// Read and written here (no coll file I/O, never a file dialog).\n// Missing / unreadable / incomplete file -> defaults: 0.5 0.5 0 0 80\n// File format (coll style):  1, v1 v2 ... ;\n// NOTE: functions must NOT be called read / write / save: v8.codebox and Max\n// use those names themselves (read/write load the code from a file; save is\n// called when the patch is saved).\ninlets = 1;\noutlets = 1;\nconst me = this;\nconst FILE = \"hkw_wedges.txt\";\nconst KIND = \"wedge layout\";\nconst DEFAULT = [0.5, 0.5, 0, 0, 80];\nlet nofile = 0;\n\nfunction target() {\n    let top = me.patcher;\n    while (top.parentpatcher) top = top.parentpatcher;\n    let p = top;\n    if (!p.filepath) { p = me.patcher; while (p && !p.filepath) p = p.parentpatcher; }\n    if (!p || !p.filepath) return null;\n    const f = p.filepath;\n    let dir = f.substring(0, f.lastIndexOf(\"/\") + 1);\n    if (!/\\/_installation\\/$/.test(dir)) dir += \"_installation/\";\n    return dir + FILE;\n}\n\nfunction setnofile(v) { nofile = v ? 1 : 0; }\n\nfunction parse(s) {\n    let t = s.replace(/;/g, \" \");\n    const c = t.indexOf(\",\");\n    if (c >= 0) t = t.substring(c + 1);\n    return t.trim().split(/\\s+/).filter(function (x) { return x.length > 0; })\n            .map(Number).filter(function (x) { return !isNaN(x); });\n}\n\nfunction readsettings() {\n    if (nofile) return;\n    const f = target();\n    let vals = null;\n    if (f) {\n        try {\n            const h = new File(f, \"read\");\n            if (h.isopen) {\n                let s = \"\", g = 0;\n                while (h.position < h.eof && g++ < 1000) {\n                    const line = h.readline(4096);\n                    if (line === null || line === undefined) break;\n                    s += line + \" \";\n                }\n                h.close();\n                vals = parse(s);\n            }\n        } catch (e) { vals = null; }\n    }\n    if (vals && vals.length === DEFAULT.length) {\n        post(KIND + \": read \" + f + \"\\n\");\n        outlet(0, vals);\n    } else {\n        post(KIND + \": no valid file at \" + f + \" - using defaults\\n\");\n        outlet(0, DEFAULT);\n    }\n}\n\nfunction storesettings() {\n    if (nofile) return;\n    const vals = Array.prototype.slice.call(arguments);\n    if (vals.length !== DEFAULT.length) {\n        post(KIND + \": not saved - expected \" + DEFAULT.length + \" values, got \" + vals.length + \"\\n\");\n        return;\n    }\n    const f = target();\n    if (!f) { post(KIND + \": save the top patch first\\n\"); return; }\n    try {\n        const h = new File(f, \"write\", \"TEXT\");\n        if (!h.isopen) { post(KIND + \": cannot write \" + f + \" (is there an _installation folder?)\\n\"); return; }\n        h.position = 0;\n        h.writestring(\"1, \" + vals.join(\" \") + \";\\n\");\n        h.eof = h.position;\n        h.close();\n        post(KIND + \": saved \" + f + \"\\n\");\n    } catch (e) { post(KIND + \": save failed: \" + e + \"\\n\"); }\n}\n",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
@@ -3827,7 +3827,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
-					"midpoints" : [ 107.755810439586639, 648.731032133102417, 84.733576834201813, 648.731032133102417, 84.733576834201813, 609.731032133102417, 469.75580507516861, 609.731032133102417 ],
+					"midpoints" : [ 107.755810439586639, 648.731032133102417, 84.733576834201813, 648.731032133102417, 84.733576834201813, 609.731032133102417, 455.75580507516861, 609.731032133102417 ],
 					"order" : 1,
 					"source" : [ "obj-124", 0 ]
 				}
@@ -4427,7 +4427,7 @@
 
 			}
  ],
-		"originid" : "pat-5092"
+		"originid" : "pat-1438"
 	}
 
 }
